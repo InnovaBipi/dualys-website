@@ -43,18 +43,18 @@ export function CapabilityCard({
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className={cn(
-        'group relative rounded-xl border border-neutral-200 bg-white p-6 shadow-sm transition-all hover:border-primary-200 hover:shadow-md',
+        'group relative rounded-xl border border-neutral-200 bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:border-accent-300 hover:shadow-xl hover:-translate-y-1',
         className
       )}
     >
-      <div className="mb-4 inline-flex rounded-lg bg-primary-50 p-3 text-primary-500">
+      <div className="mb-4 inline-flex rounded-lg bg-accent-50 p-3 text-accent-500 transition-colors duration-300 group-hover:bg-accent-100">
         <Icon className="h-6 w-6" />
       </div>
       <h3 className="mb-2 text-xl font-semibold text-neutral-900">{title}</h3>
       <p className="mb-4 text-neutral-600">{description}</p>
       <Link
         href={href}
-        className="inline-flex items-center text-sm font-medium text-primary-500 transition-colors hover:text-primary-600"
+        className="inline-flex items-center text-sm font-medium text-accent-500 transition-colors hover:text-accent-600"
       >
         Learn more
         <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />

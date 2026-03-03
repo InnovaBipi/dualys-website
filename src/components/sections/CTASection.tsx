@@ -14,15 +14,16 @@ export function CTASection() {
     <section className="py-20 md:py-28">
       <Container>
         <motion.div
-          className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary-500 to-primary-700 px-6 py-16 text-center sm:px-12 md:py-20"
+          className="relative overflow-hidden rounded-2xl bg-primary-500 px-6 py-16 text-center sm:px-12 md:py-20"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          {/* Background decoration */}
-          <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-white/5" />
-          <div className="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-white/5" />
+          {/* Background decoration with accent color */}
+          <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-accent-500/10" />
+          <div className="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-accent-500/10" />
+          <div className="absolute inset-0 bg-gradient-to-br from-transparent to-accent-500/5" />
 
           <div className="relative">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">

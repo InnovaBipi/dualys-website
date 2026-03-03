@@ -20,7 +20,8 @@ export function PageHeader({
   const variants = {
     default: 'bg-neutral-50 text-neutral-900',
     dark: 'bg-primary-500 text-white',
-    gradient: 'bg-gradient-to-br from-primary-500 via-primary-600 to-primary-700 text-white',
+    // Black background with subtle blue accent gradient
+    gradient: 'bg-primary-500 bg-gradient-to-br from-primary-500 to-primary-500/95 text-white',
   };
 
   const subtitleColors = {

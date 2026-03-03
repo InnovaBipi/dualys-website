@@ -31,9 +31,9 @@
 - Logo URL defined in `getOrganizationSchema()`: `${baseUrl}/logo.png`
 
 ## Brand Colors (from logo)
-- Background: Dark charcoal (#191919 approximate)
-- Primary text: White
-- Accent: Blue "y" (#4A90D9 approximate)
+- Background: Black (#000000)
+- Primary text: White (#FFFFFF)
+- Accent: Blue "y" (#4F61E7 - PANTONE 2132 C)
 
 ## Regenerating Assets
 

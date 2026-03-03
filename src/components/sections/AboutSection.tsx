@@ -23,29 +23,29 @@ export function AboutSection() {
           <div>
             <motion.h2
               className="text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl"
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
             >
               {t('title')}
             </motion.h2>
             <motion.p
               className="mt-4 text-lg text-neutral-600"
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
+              transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             >
               {t('subtitle')}
             </motion.p>
 
             <motion.div
               className="mt-10 space-y-8"
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
+              transition={{ duration: 0.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             >
               <div>
                 <h3 className="text-xl font-semibold text-neutral-900">
@@ -66,10 +66,10 @@ export function AboutSection() {
           <div>
             <motion.h3
               className="text-xl font-semibold text-neutral-900"
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
             >
               {t('values.title')}
             </motion.h3>
@@ -80,13 +80,13 @@ export function AboutSection() {
                 return (
                   <motion.div
                     key={value.key}
-                    className="rounded-lg border border-neutral-200 bg-white p-5"
-                    initial={{ opacity: 0, y: 20 }}
+                    className="rounded-lg border border-neutral-200 bg-white p-5 transition-all duration-300 hover:border-accent-200 hover:shadow-md"
+                    initial={{ opacity: 0, y: 16 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.1 + index * 0.1 }}
+                    transition={{ duration: 0.4, delay: 0.1 + index * 0.08, ease: [0.16, 1, 0.3, 1] }}
                   >
-                    <div className="inline-flex rounded-lg bg-primary-50 p-2 text-primary-500">
+                    <div className="inline-flex rounded-lg bg-accent-50 p-2 text-accent-500">
                       <Icon className="h-5 w-5" />
                     </div>
                     <h4 className="mt-3 font-semibold text-neutral-900">

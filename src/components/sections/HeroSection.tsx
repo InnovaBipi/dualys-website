@@ -6,18 +6,21 @@ import { ArrowRight } from 'lucide-react';
 import { Link } from '@/lib/i18n/navigation';
 import { Container } from '@/components/ui/container';
 import { Button } from '@/components/ui/button';
+import { AccentDot } from '@/components/brand/AccentDot';
 
 export function HeroSection() {
   const t = useTranslations('hero');
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-primary-500 via-primary-600 to-primary-700 py-20 md:py-32">
-      {/* Background pattern */}
-      <div className="absolute inset-0 opacity-10">
+    <section className="relative overflow-hidden bg-primary-500 py-20 md:py-32">
+      {/* Background pattern with accent color */}
+      <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234F61E7' fill-opacity='0.6'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
         }} />
       </div>
+      {/* Accent gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-accent-500/10" />
 
       <Container className="relative">
         <div className="mx-auto max-w-4xl text-center">
@@ -26,8 +29,9 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="inline-block rounded-full bg-white/10 px-4 py-1.5 text-sm font-medium text-white/90">
+            <span className="inline-flex items-center rounded-full bg-white/10 px-4 py-1.5 text-sm font-medium text-white/90">
               {t('tagline')}
+              <AccentDot size="sm" className="ml-2" />
             </span>
           </motion.div>
 

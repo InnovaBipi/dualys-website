@@ -4,25 +4,33 @@
 
 @layer base {
   :root {
+    /* Dualyss Brand Colors (Official Guidelines 2026) */
+    /* Distribution: 40% black, 40% white, 20% blue accent */
     --background: 0 0% 100%;
-    --foreground: 220 14% 10%;
+    --foreground: 0 0% 0%;
     --card: 0 0% 100%;
-    --card-foreground: 220 14% 10%;
+    --card-foreground: 0 0% 0%;
     --popover: 0 0% 100%;
-    --popover-foreground: 220 14% 10%;
-    --primary: 213 55% 24%;
+    --popover-foreground: 0 0% 0%;
+    --primary: 0 0% 0%; /* Black #000000 */
     --primary-foreground: 0 0% 100%;
-    --secondary: 220 14% 96%;
-    --secondary-foreground: 220 14% 10%;
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 14% 46%;
-    --accent: 43 70% 47%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 232 77% 61%; /* Blue #4F61E7 */
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-    --border: 220 14% 90%;
-    --input: 220 14% 90%;
-    --ring: 213 55% 24%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 0%;
+    --info: 217 91% 60%;
+    --info-foreground: 0 0% 100%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 232 77% 61%; /* Blue accent for focus rings */
     --radius: 0.5rem;
   }
 }
@@ -32,11 +40,27 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
     font-feature-settings: 'rlig' 1, 'calt' 1;
   }
   html {
     scroll-behavior: smooth;
+  }
+  /* Typography - Outfit for headings (TOSH A alternative), Inter for body */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold tracking-tight;
+  }
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+  h4 {
+    @apply text-xl md:text-2xl;
   }
 }
 
@@ -45,6 +69,6 @@
     text-wrap: balance;
   }
   .text-gradient {
-    @apply bg-gradient-to-r from-primary-500 to-accent-500 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-neutral-900 to-accent-500 bg-clip-text text-transparent;
   }
 }

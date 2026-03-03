@@ -58,9 +58,9 @@ export function Header() {
                 key={item.name}
                 href={item.href}
                 className={cn(
-                  'text-sm font-medium transition-colors hover:text-primary-500',
+                  'text-sm font-medium transition-colors hover:text-accent-500',
                   pathname === item.href
-                    ? 'text-primary-500'
+                    ? 'text-accent-500'
                     : 'text-neutral-600'
                 )}
               >
@@ -113,7 +113,7 @@ export function Header() {
                 className={cn(
                   'block rounded-md px-3 py-3 text-base font-medium min-h-[48px] flex items-center',
                   pathname === item.href
-                    ? 'bg-primary-50 text-primary-500'
+                    ? 'bg-accent-50 text-accent-500'
                     : 'text-neutral-600 hover:bg-neutral-50'
                 )}
                 onClick={() => setMobileMenuOpen(false)}

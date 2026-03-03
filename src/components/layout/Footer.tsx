@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/lib/i18n/navigation';
 import { Container } from '@/components/ui/container';
-import { Linkedin, Twitter } from 'lucide-react';
+import { Linkedin, Twitter, Shield, Award, CheckCircle } from 'lucide-react';
 
 export function Footer() {
   const t = useTranslations('footer');
@@ -41,7 +41,7 @@ export function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-neutral-500 transition-colors hover:text-primary-500"
+                className="text-neutral-500 transition-colors hover:text-accent-500"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5" />
@@ -50,7 +50,7 @@ export function Footer() {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-neutral-500 transition-colors hover:text-primary-500"
+                className="text-neutral-500 transition-colors hover:text-accent-500"
                 aria-label="Twitter"
               >
                 <Twitter className="h-5 w-5" />
@@ -66,7 +66,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-neutral-600 transition-colors hover:text-primary-500"
+                    className="text-sm text-neutral-600 transition-colors hover:text-accent-500"
                   >
                     {link.name}
                   </Link>
@@ -83,7 +83,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-neutral-600 transition-colors hover:text-primary-500"
+                    className="text-sm text-neutral-600 transition-colors hover:text-accent-500"
                   >
                     {link.name}
                   </Link>
@@ -93,8 +93,26 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Copyright */}
+        {/* Trust Signals */}
         <div className="mt-12 border-t border-neutral-200 pt-8">
+          <div className="flex flex-wrap items-center justify-center gap-8 opacity-60">
+            <div className="flex items-center gap-2 text-neutral-500">
+              <Shield className="h-5 w-5" />
+              <span className="text-xs font-medium uppercase tracking-wider">EU Security Standards</span>
+            </div>
+            <div className="flex items-center gap-2 text-neutral-500">
+              <Award className="h-5 w-5" />
+              <span className="text-xs font-medium uppercase tracking-wider">ISO 27001</span>
+            </div>
+            <div className="flex items-center gap-2 text-neutral-500">
+              <CheckCircle className="h-5 w-5" />
+              <span className="text-xs font-medium uppercase tracking-wider">NATO Compatible</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Copyright */}
+        <div className="mt-8 border-t border-neutral-200 pt-8">
           <p className="text-center text-sm text-neutral-500">
             {t('copyright', { year: currentYear })}
           </p>

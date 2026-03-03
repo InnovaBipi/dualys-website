@@ -35,32 +35,33 @@ const config: Config = {
           DEFAULT: 'hsl(var(--secondary))',
           foreground: 'hsl(var(--secondary-foreground))',
         },
-        // Dualyss Brand Colors
+        // Dualyss Brand Colors (Official Guidelines 2026)
+        // Distribution: 40% black, 40% white, 20% blue accent
         primary: {
-          50: '#eff6ff',
-          100: '#dbeafe',
-          200: '#bfdbfe',
-          300: '#93c5fd',
-          400: '#60a5fa',
-          500: '#1e3a5f', // Main brand navy
-          600: '#172e4d',
-          700: '#10223a',
-          800: '#0a1628',
-          900: '#050b14',
-          950: '#020509',
+          50: '#f5f5f5',
+          100: '#e5e5e5',
+          200: '#cccccc',
+          300: '#b3b3b3',
+          400: '#808080',
+          500: '#000000', // Main brand black
+          600: '#000000',
+          700: '#000000',
+          800: '#000000',
+          900: '#000000',
+          950: '#000000',
         },
         accent: {
-          50: '#fffbeb',
-          100: '#fef3c7',
-          200: '#fde68a',
-          300: '#fcd34d',
-          400: '#fbbf24',
-          500: '#c9a227', // European gold
-          600: '#a78320',
-          700: '#85651a',
-          800: '#634713',
-          900: '#42290d',
-          950: '#211506',
+          50: '#eef0fd',
+          100: '#d5d9f9',
+          200: '#b3baf4',
+          300: '#8a96ed',
+          400: '#6c7ae9',
+          500: '#4F61E7', // Pantone 2132 C - The blue "y"
+          600: '#3d4fd4',
+          700: '#2b3dc1',
+          800: '#1f2d9e',
+          900: '#151f7a',
+          950: '#0c1357',
         },
         neutral: {
           50: '#fafafa',
@@ -75,14 +76,32 @@ const config: Config = {
           900: '#171717',
           950: '#0a0a0a',
         },
+        // Semantic colors
+        success: {
+          DEFAULT: 'hsl(var(--success))',
+          foreground: 'hsl(var(--success-foreground))',
+        },
+        warning: {
+          DEFAULT: 'hsl(var(--warning))',
+          foreground: 'hsl(var(--warning-foreground))',
+        },
+        info: {
+          DEFAULT: 'hsl(var(--info))',
+          foreground: 'hsl(var(--info-foreground))',
+        },
       },
       fontFamily: {
+        // Body text - Inter (Google Fonts)
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        display: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        // Headings - Outfit (Google Fonts) as TOSH A alternative
+        // Geometric sans-serif with similar weight range and characteristics
+        display: ['var(--font-outfit)', 'var(--font-inter)', 'system-ui', 'sans-serif'],
       },
       animation: {
-        'fade-in': 'fadeIn 0.5s ease-out',
-        'slide-up': 'slideUp 0.5s ease-out',
+        'fade-in': 'fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
+        'slide-up': 'slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1)',
+        'slide-in-right': 'slideInRight 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
+        'scale-in': 'scaleIn 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
       },
       keyframes: {
         fadeIn: {
@@ -90,9 +109,20 @@ const config: Config = {
           '100%': { opacity: '1' },
         },
         slideUp: {
-          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '0%': { opacity: '0', transform: 'translateY(16px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
+        slideInRight: {
+          '0%': { opacity: '0', transform: 'translateX(-8px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        scaleIn: {
+          '0%': { opacity: '0', transform: 'scale(0.96)' },
+          '100%': { opacity: '1', transform: 'scale(1)' },
+        },
+      },
+      transitionTimingFunction: {
+        'out-expo': 'cubic-bezier(0.16, 1, 0.3, 1)',
       },
     },
   },
