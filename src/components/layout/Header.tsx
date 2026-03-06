@@ -36,7 +36,7 @@ export function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-neutral-800 bg-primary-900/95 backdrop-blur supports-[backdrop-filter]:bg-primary-900/80">
+    <header className="sticky top-0 z-50 w-full border-b border-neutral-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
       <Container>
         <nav className="flex h-16 items-center justify-between" aria-label="Global">
           {/* Logo */}
@@ -58,10 +58,10 @@ export function Header() {
                 key={item.name}
                 href={item.href}
                 className={cn(
-                  'text-sm font-medium transition-colors hover:text-accent-400',
+                  'text-sm font-medium transition-colors hover:text-accent-500',
                   pathname === item.href
-                    ? 'text-accent-400'
-                    : 'text-neutral-300'
+                    ? 'text-accent-500'
+                    : 'text-neutral-600'
                 )}
               >
                 {item.name}
@@ -81,7 +81,7 @@ export function Header() {
           <div className="flex md:hidden">
             <button
               type="button"
-              className="inline-flex items-center justify-center rounded-md p-2.5 text-neutral-300 hover:text-white min-h-[44px] min-w-[44px]"
+              className="inline-flex items-center justify-center rounded-md p-2.5 text-neutral-600 hover:text-primary-900 min-h-[44px] min-w-[44px]"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-expanded={mobileMenuOpen}
               aria-controls="mobile-menu"
@@ -105,7 +105,7 @@ export function Header() {
             mobileMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
           )}
         >
-          <div className="space-y-1 pb-4 pt-2 bg-primary-900">
+          <div className="space-y-1 pb-4 pt-2 bg-white">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -113,8 +113,8 @@ export function Header() {
                 className={cn(
                   'block rounded-md px-3 py-3 text-base font-medium min-h-[48px] flex items-center',
                   pathname === item.href
-                    ? 'bg-accent-500/20 text-accent-400'
-                    : 'text-neutral-300 hover:bg-neutral-800'
+                    ? 'bg-accent-500/20 text-accent-500'
+                    : 'text-neutral-600 hover:bg-neutral-100'
                 )}
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -122,9 +122,9 @@ export function Header() {
               </Link>
             ))}
             {/* Mobile actions - stacked vertically for better touch UX */}
-            <div className="mt-4 space-y-3 px-3 border-t border-neutral-700 pt-4">
+            <div className="mt-4 space-y-3 px-3 border-t border-neutral-200 pt-4">
               <div className="flex items-center justify-between">
-                <span className="text-sm text-neutral-400">{t('language') || 'Language'}</span>
+                <span className="text-sm text-neutral-500">{t('language') || 'Language'}</span>
                 <LanguageSwitcher />
               </div>
               <Button asChild variant="accent" className="w-full min-h-[48px]">
