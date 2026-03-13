@@ -9,8 +9,8 @@
 - **Animations**: Framer Motion (subtle, professional)
 
 ### Internationalization
-- **Languages**: English (en), French (fr), Spanish (es), German (de), Italian (it), Catalan (ca)
-- **Default**: English (en)
+- **Languages**: English (en), French (fr), Spanish (es), Catalan (ca)
+- **Default**: Catalan (ca)
 - **URL Structure**: Subdirectory pattern (`/en/`, `/fr/`, `/es/`, etc.)
 - **i18n Library**: next-intl
 
@@ -57,8 +57,6 @@ src/
     en.json
     fr.json
     es.json
-    de.json
-    it.json
     ca.json
 ```
 

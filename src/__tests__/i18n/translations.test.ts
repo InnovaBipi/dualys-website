@@ -3,8 +3,6 @@ import * as en from '@/messages/en.json';
 import * as es from '@/messages/es.json';
 import * as ca from '@/messages/ca.json';
 import * as fr from '@/messages/fr.json';
-import * as de from '@/messages/de.json';
-import * as itJson from '@/messages/it.json';
 import { locales } from '@/lib/i18n/config';
 
 type TranslationObject = Record<string, unknown>;
@@ -14,8 +12,6 @@ const translations: Record<string, TranslationObject> = {
   es: es as unknown as TranslationObject,
   ca: ca as unknown as TranslationObject,
   fr: fr as unknown as TranslationObject,
-  de: de as unknown as TranslationObject,
-  it: itJson as unknown as TranslationObject,
 };
 
 /**
@@ -181,26 +177,6 @@ describe('i18n Translations', () => {
       // French should have accents or special chars
       const hasFrenchChars = /[àâäéèêëîïôùûüç]/i.test(content);
       expect(hasFrenchChars, 'French content should contain French accents or characters').toBe(true);
-    });
-
-    it('German contains German special characters', () => {
-      const title = getValueByKey(de, 'metadata.title') as string;
-      const description = getValueByKey(de, 'metadata.description') as string;
-      const content = title + description;
-
-      // German should have umlauts or ß somewhere
-      const hasGermanChars = /[äöüßÄÖÜ]/i.test(content);
-      expect(hasGermanChars, 'German content should contain German umlauts or ß').toBe(true);
-    });
-
-    it('Italian contains Italian special characters', () => {
-      const title = getValueByKey(itJson as unknown as TranslationObject, 'metadata.title') as string;
-      const description = getValueByKey(itJson as unknown as TranslationObject, 'metadata.description') as string;
-      const content = title + description;
-
-      // Italian should have accents
-      const hasItalianChars = /[àèéìíîòóùú]/i.test(content);
-      expect(hasItalianChars, 'Italian content should contain Italian accents').toBe(true);
     });
   });
 

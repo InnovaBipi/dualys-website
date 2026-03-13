@@ -25,7 +25,7 @@ See: `.claude/skills/brand-guidelines/SKILL.md` for complete brand guide.
 | Framework | Next.js 15 (App Router) |
 | Language | TypeScript (strict) |
 | Styling | Tailwind CSS + shadcn/ui |
-| i18n | next-intl (6 languages: en, fr, es, de, it, ca) |
+| i18n | next-intl (4 languages: en, fr, es, ca) |
 | Target | Lighthouse 95+, WCAG 2.2 AA |
 
 ## Key Rules
@@ -74,7 +74,7 @@ Run `/audit` to check current compliance.
 
 1. Read relevant rules
 2. Run SEO validations before commit
-3. Test all 6 languages for content changes
+3. Test all 4 languages for content changes
 4. Verify accessibility with UI changes
 
 ## Key Messages

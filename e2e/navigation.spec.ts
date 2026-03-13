@@ -70,7 +70,7 @@ test.describe('Site Navigation', () => {
 });
 
 test.describe('Language Switching', () => {
-  const locales = ['en', 'es', 'fr', 'de', 'it', 'ca'];
+  const locales = ['en', 'es', 'fr', 'ca'];
 
   test('language switcher is visible', async ({ page }) => {
     await page.goto('/en');

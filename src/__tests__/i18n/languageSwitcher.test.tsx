@@ -61,7 +61,7 @@ describe('LanguageSwitcher', () => {
       expect(screen.getByRole('menu')).toBeInTheDocument();
     });
 
-    it('renders all 6 language options when open', () => {
+    it('renders all 4 language options when open', () => {
       render(<LanguageSwitcher />);
 
       const button = screen.getByRole('button');
@@ -80,7 +80,7 @@ describe('LanguageSwitcher', () => {
       fireEvent.click(button);
 
       const menuItems = screen.getAllByRole('menuitem');
-      expect(menuItems).toHaveLength(6);
+      expect(menuItems).toHaveLength(4);
     });
 
     it('closes dropdown when clicking a language', () => {
@@ -117,8 +117,6 @@ describe('LanguageSwitcher', () => {
     it('calls router.replace with correct locale for each language', () => {
       const testCases = [
         { name: 'Español', locale: 'es' },
-        { name: 'Deutsch', locale: 'de' },
-        { name: 'Italiano', locale: 'it' },
         { name: 'Català', locale: 'ca' },
       ];
 
@@ -164,7 +162,7 @@ describe('LanguageSwitcher', () => {
       fireEvent.click(button);
 
       const menuItems = screen.getAllByRole('menuitem');
-      expect(menuItems).toHaveLength(6);
+      expect(menuItems).toHaveLength(4);
     });
 
     it('menu has correct aria-orientation', () => {
@@ -188,8 +186,6 @@ describe('LanguageSwitcher', () => {
       expect(screen.getByText('English')).toBeInTheDocument();
       expect(screen.getByText('Français')).toBeInTheDocument();
       expect(screen.getByText('Español')).toBeInTheDocument();
-      expect(screen.getByText('Deutsch')).toBeInTheDocument();
-      expect(screen.getByText('Italiano')).toBeInTheDocument();
       expect(screen.getByText('Català')).toBeInTheDocument();
     });
   });

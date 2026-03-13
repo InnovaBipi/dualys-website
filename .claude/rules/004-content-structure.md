@@ -59,12 +59,10 @@
 
 | Language | Priority | Notes |
 |----------|----------|-------|
-| English | Primary | International/EU audience |
-| Catalan | High | Local identity, public narrative |
+| Catalan | Primary | Local identity, default language |
+| English | High | International/EU audience |
 | Spanish | High | National context |
 | French | Medium | Key EU partner |
-| German | Medium | Industrial partnerships |
-| Italian | Medium | EU defense programs |
 
 ## Key Messages per Audience
 

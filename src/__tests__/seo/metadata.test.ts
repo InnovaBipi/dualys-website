@@ -35,8 +35,6 @@ describe('SEO Metadata', () => {
       expect(languages?.en).toContain('/en/test');
       expect(languages?.fr).toContain('/fr/test');
       expect(languages?.es).toContain('/es/test');
-      expect(languages?.de).toContain('/de/test');
-      expect(languages?.it).toContain('/it/test');
       expect(languages?.ca).toContain('/ca/test');
       expect(languages?.['x-default']).toContain('/en/test');
     });
