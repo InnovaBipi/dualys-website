@@ -245,7 +245,10 @@
       "Bash(printf '{\"\"\"\"tool_input\"\"\"\":{\"\"\"\"file_path\"\"\"\":\"\"\"\"/tmp/src/test.tsx\"\"\"\"}}')",
       "Bash(RC=$?)",
       "Bash(chmod +x .claude/hooks/run-brand-validator.sh)",
-      "Bash(EXIT=$?)"
+      "Bash(EXIT=$?)",
+      "Bash(bridging civil industry into the European defense sector.\":*)",
+      "Bash(for t:*)",
+      "Bash(do sed:*)"
     ]
   },
   "enableAllProjectMcpServers": true,

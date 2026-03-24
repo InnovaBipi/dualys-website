@@ -25,7 +25,7 @@ export function generatePageMetadata({
   for (const loc of locales) {
     languages[loc] = `${baseUrl}/${loc}${path}`;
   }
-  languages['x-default'] = `${baseUrl}/en${path}`;
+  languages['x-default'] = `${baseUrl}/ca${path}`;
 
   return {
     title,
@@ -89,11 +89,14 @@ export function getOrganizationSchema() {
     alternateName: 'Dualys AIE',
     url: baseUrl,
     logo: `${baseUrl}/logo.png`,
-    description: 'Protecting democracy with dual deterrence technologies. Enabling capabilities in defense, cybersecurity, and biosecurity for European strategic autonomy.',
+    description: 'Consultora estratégica especializada en facilitar la entrada de empresas industriales, tecnológicas y de software en la cadena de suministro del sector defensa europeo.',
+    email: 'info@dualys.eu',
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Barcelona',
-      addressRegion: 'Catalonia',
+      streetAddress: 'Camí Can Ametller 36 Planta Baixa',
+      addressLocality: 'Sant Cugat del Vallès',
+      addressRegion: 'Barcelona',
+      postalCode: '08195',
       addressCountry: 'ES',
     },
     sameAs: [
@@ -111,12 +114,11 @@ export function getOrganizationSchema() {
       name: 'Europe',
     },
     knowsAbout: [
-      'Dual-use technologies',
-      'Defense technologies',
-      'Cybersecurity',
-      'Biosecurity',
-      'European strategic autonomy',
-      'Unmanned systems',
+      'Defense sector consulting',
+      'Dual-use technology transition',
+      'Defense supply chain',
+      'AQAP/PECAL certification',
+      'European defense market',
     ],
   };
 }

@@ -1,7 +1,7 @@
 ---
 id: TASK-150
 title: "Actualizar metadata.ts (organization schema, dirección real)"
-status: backlog
+status: done
 priority: P1
 type: feature
 phase: 5

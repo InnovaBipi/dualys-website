@@ -1,7 +1,7 @@
 ---
 id: TASK-142
 title: "Configurar redirects 301 (old → new routes)"
-status: backlog
+status: done
 priority: P0
 type: infrastructure
 phase: 4

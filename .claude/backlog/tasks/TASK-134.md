@@ -1,7 +1,7 @@
 ---
 id: TASK-134
 title: "Crear página /recursos (blog con categorías)"
-status: backlog
+status: done
 priority: P2
 type: page
 phase: 3

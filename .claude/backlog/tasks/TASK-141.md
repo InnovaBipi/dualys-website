@@ -1,7 +1,7 @@
 ---
 id: TASK-141
 title: "Eliminar /about/team y /about/partners"
-status: backlog
+status: done
 priority: P1
 type: refactor
 phase: 4

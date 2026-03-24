@@ -1,7 +1,7 @@
 ---
 id: TASK-140
 title: "Eliminar /capabilities/* (4 sub-páginas)"
-status: backlog
+status: done
 priority: P1
 type: refactor
 phase: 4
