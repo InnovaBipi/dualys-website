@@ -1,7 +1,7 @@
 ---
 id: TASK-152
 title: "Generar nuevo og-image.png"
-status: backlog
+status: done
 priority: P2
 type: feature
 phase: 5
