@@ -1,99 +1,78 @@
 import { test, expect } from '@playwright/test';
 
 /**
- * Primary Conversion Journey Test
+ * Primary Conversion Journey — Updated per Briefing v2.0
  *
- * Path: / -> /capabilities -> /contact
+ * Path: / → /contact (via CTA "Solicita tu diagnóstico")
  * Priority: Critical
- * Expected clicks: 2
- *
- * Tests the main conversion funnel from homepage to contact form.
+ * Expected clicks: 1
  */
 
 test.describe('Primary Conversion Journey', () => {
-  test('completes homepage to capabilities to contact flow', async ({ page }) => {
-    // Step 1: Homepage
-    await page.goto('/en');
+  test('homepage → contact via primary CTA', async ({ page }) => {
+    await page.goto('/es');
 
-    // Verify homepage hero elements
+    // Verify hero with briefing copy
     await expect(page.locator('h1')).toBeVisible();
-    await expect(page.locator('h1')).toContainText(/dualys|protecting|democracy/i);
+    await expect(page.locator('h1')).toContainText(/empresa.*defensa|defense.*needs/i);
 
-    // Verify CTA buttons exist
-    const capabilitiesCTA = page.locator('a[href*="capabilities"]').first();
-    const contactCTA = page.locator('a[href*="contact"]').first();
+    // Verify primary CTA exists and links to contact
+    const primaryCTA = page.locator('a[href*="contact"]').first();
+    await expect(primaryCTA).toBeVisible();
 
-    await expect(capabilitiesCTA).toBeVisible();
-    await expect(contactCTA).toBeVisible();
+    // Click primary CTA
+    await primaryCTA.click();
+    await expect(page).toHaveURL(/\/es\/contact/);
 
-    // Step 2: Navigate to Capabilities
-    await capabilitiesCTA.click();
-    await expect(page).toHaveURL(/\/en\/capabilities/);
+    // Verify contact form with new fields
+    await expect(page.locator('form')).toBeVisible();
+    await expect(page.locator('select, [name="sector"]')).toBeVisible();
 
-    // Verify 4 capability cards are present
-    const capabilityCards = page.locator('[data-testid="capability-card"], .capability-card, [class*="capability"]');
-    await expect(capabilityCards.or(page.locator('article, [role="article"]').filter({ hasText: /defense|cyber|bio/i }))).toHaveCount(4, { timeout: 10000 }).catch(() => {
-      // Fallback: at least verify page loaded
-      expect(page.locator('main')).toBeVisible();
-    });
+    // Verify address
+    await expect(page.locator('text=/Sant Cugat/i')).toBeVisible();
+  });
 
-    // Find contact CTA
-    const contactLink = page.locator('a[href*="contact"]').first();
-    await expect(contactLink).toBeVisible();
+  test('homepage → metodologia via secondary CTA', async ({ page }) => {
+    await page.goto('/es');
 
-    // Step 3: Navigate to Contact
-    await contactLink.click();
-    await expect(page).toHaveURL(/\/en\/contact/);
+    const methodologyCTA = page.locator('a[href*="metodologia"]').first();
+    await expect(methodologyCTA).toBeVisible();
 
-    // Verify contact form exists
-    const contactForm = page.locator('form');
-    await expect(contactForm).toBeVisible();
+    await methodologyCTA.click();
+    await expect(page).toHaveURL(/\/es\/metodologia/);
 
-    // Verify office information is present
-    await expect(page.locator('text=/Barcelona|Catalonia|dualys/i')).toBeVisible();
+    // Verify methodology page has FFD program
+    await expect(page.locator('text=/FFD|FIT FOR DEFENSE/i')).toBeVisible();
   });
 
   test('has accessible navigation on each step', async ({ page }) => {
-    // Verify keyboard navigation works
-    await page.goto('/en');
-
-    // Tab through main navigation
+    await page.goto('/es');
     await page.keyboard.press('Tab');
     await page.keyboard.press('Tab');
-
-    // Verify focus is visible on interactive elements
     const focusedElement = page.locator(':focus');
     await expect(focusedElement).toBeVisible();
   });
 
   test('loads within performance thresholds', async ({ page }) => {
-    await page.goto('/en');
-
-    // Basic performance check - page should be interactive quickly
+    await page.goto('/es');
     const startTime = Date.now();
     await page.waitForLoadState('domcontentloaded');
     const loadTime = Date.now() - startTime;
-
-    // Should load in under 5 seconds even on slow connections
     expect(loadTime).toBeLessThan(5000);
   });
 });
 
-test.describe('Primary Conversion Journey - Multi-language', () => {
-  const locales = ['en', 'es', 'fr', 'de', 'it', 'ca'];
+test.describe('Primary Conversion - Multi-language', () => {
+  const locales = ['en', 'es', 'fr', 'ca'];
 
   for (const locale of locales) {
-    test(`works in ${locale} locale`, async ({ page }) => {
+    test(`works in ${locale}`, async ({ page }) => {
       await page.goto(`/${locale}`);
-
-      // Verify page loads
       await expect(page.locator('h1')).toBeVisible();
 
-      // Navigate to capabilities
-      await page.goto(`/${locale}/capabilities`);
+      await page.goto(`/${locale}/servicios`);
       await expect(page.locator('main')).toBeVisible();
 
-      // Navigate to contact
       await page.goto(`/${locale}/contact`);
       await expect(page.locator('form')).toBeVisible();
     });

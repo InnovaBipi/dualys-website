@@ -1,7 +1,7 @@
 ---
 id: TASK-180
 title: "Actualizar tests E2E para nueva navegación y páginas"
-status: backlog
+status: done
 priority: P1
 type: testing
 phase: 8

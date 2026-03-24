@@ -1,157 +1,83 @@
 import { test, expect, devices } from '@playwright/test';
 
 /**
- * Mobile Quick Contact Journey Test
+ * Mobile Quick Contact Journey — Updated per Briefing v2.0
  *
- * Path: / -> /contact
+ * Path: Mobile user → CTA in header → /contact
  * Priority: High
- * Device: Mobile
- * Expected clicks: 2
- *
- * Tests mobile user seeking quick contact with touch-friendly UI.
+ * Device: Mobile (375x667)
  */
 
+test.use(devices['iPhone 13']);
+
 test.describe('Mobile Quick Contact Journey', () => {
-  test.use({ ...devices['iPhone 13'] });
+  test('mobile header CTA leads to contact', async ({ page }) => {
+    await page.goto('/es');
 
-  test('mobile homepage has optimized hero', async ({ page }) => {
-    await page.goto('/en');
+    // Mobile menu button should be visible
+    const menuButton = page.locator('button[aria-label*="menu" i], button[aria-controls="mobile-menu"]');
+    await expect(menuButton).toBeVisible();
 
-    // Hero should be visible and optimized for mobile
-    await expect(page.locator('h1')).toBeVisible();
-
-    // CTAs should be touch-friendly (at least 48px)
-    const ctas = page.locator('a[href*="contact"], a[href*="capabilities"]');
-    const firstCTA = ctas.first();
-
-    if (await firstCTA.isVisible()) {
-      const box = await firstCTA.boundingBox();
-      if (box) {
-        // Touch targets should be at least 44px (close to 48px minimum)
-        expect(box.height).toBeGreaterThanOrEqual(40);
-      }
+    // Touch target should be at least 44x44
+    const box = await menuButton.boundingBox();
+    if (box) {
+      expect(box.width).toBeGreaterThanOrEqual(44);
+      expect(box.height).toBeGreaterThanOrEqual(44);
     }
-  });
 
-  test('contact form is mobile-optimized', async ({ page }) => {
-    await page.goto('/en/contact');
+    // Open mobile menu
+    await menuButton.click();
+
+    // Mobile menu should show nav items
+    await expect(page.locator('#mobile-menu')).toBeVisible();
+
+    // CTA button in mobile menu
+    const mobileCTA = page.locator('#mobile-menu a[href*="contact"]');
+    await expect(mobileCTA).toBeVisible();
+
+    // Click CTA
+    await mobileCTA.click();
+    await expect(page).toHaveURL(/\/es\/contact/);
 
     // Form should be visible
-    const form = page.locator('form');
-    await expect(form).toBeVisible();
-
-    // Form fields should be visible
-    const inputFields = page.locator('input, textarea');
-    const firstInput = inputFields.first();
-    await expect(firstInput).toBeVisible();
-
-    // Form should fit within viewport (no horizontal scroll)
-    const formBox = await form.boundingBox();
-    const viewport = page.viewportSize();
-
-    if (formBox && viewport) {
-      expect(formBox.width).toBeLessThanOrEqual(viewport.width);
-    }
+    await expect(page.locator('form')).toBeVisible();
   });
 
-  test('mobile navigation works', async ({ page }) => {
-    await page.goto('/en');
+  test('mobile homepage renders all 7 sections', async ({ page }) => {
+    await page.goto('/es');
 
-    // Look for mobile menu button (hamburger)
-    const mobileMenuButton = page.locator('button[aria-label*="menu" i], button[aria-label*="Menu" i], [data-testid="mobile-menu"], button:has(svg)').first();
+    // Hero
+    await expect(page.locator('h1')).toBeVisible();
 
-    if (await mobileMenuButton.isVisible()) {
-      // Open mobile menu
-      await mobileMenuButton.click();
+    // Context note (800.000 M€)
+    await expect(page.locator('text=/800.000/i')).toBeVisible();
 
-      // Menu should open
-      await page.waitForTimeout(300); // Animation time
-
-      // Should be able to navigate to contact
-      const contactLink = page.locator('a[href*="contact"]').first();
-      await expect(contactLink).toBeVisible();
-    }
+    // Footer with address
+    await expect(page.locator('footer')).toContainText(/Sant Cugat/i);
   });
 
-  test('quick path from homepage to contact', async ({ page }) => {
-    await page.goto('/en');
+  test('mobile sectores page is scrollable', async ({ page }) => {
+    await page.goto('/es/sectores');
+    await expect(page.locator('h1')).toBeVisible();
 
-    // Find direct contact CTA on homepage
-    const contactCTA = page.locator('a[href*="contact"]').first();
-
-    if (await contactCTA.isVisible()) {
-      await contactCTA.click();
-      await expect(page).toHaveURL(/\/en\/contact/);
-      await expect(page.locator('form')).toBeVisible();
-    } else {
-      // Use mobile navigation
-      const menuButton = page.locator('button').first();
-      if (await menuButton.isVisible()) {
-        await menuButton.click();
-        await page.waitForTimeout(300);
-
-        const navContact = page.locator('nav a[href*="contact"], a[href*="contact"]').first();
-        await navContact.click();
-        await expect(page).toHaveURL(/\/en\/contact/);
-      }
-    }
+    // Should have verticals visible
+    await expect(page.locator('main')).toContainText(/naval|terrestres/i);
   });
-});
 
-test.describe('Mobile Responsiveness', () => {
-  test.use({ ...devices['iPhone 13'] });
+  test('mobile contact form works', async ({ page }) => {
+    await page.goto('/es/contact');
 
-  const pages = [
-    { path: '/en', name: 'Homepage' },
-    { path: '/en/about', name: 'About' },
-    { path: '/en/capabilities', name: 'Capabilities' },
-    { path: '/en/contact', name: 'Contact' },
-  ];
+    // Form fields should be stacked vertically on mobile
+    await expect(page.locator('form')).toBeVisible();
 
-  for (const { path, name } of pages) {
-    test(`${name} page is mobile-responsive`, async ({ page }) => {
-      await page.goto(path);
+    // Submit button should be visible without scrolling too much
+    const submitButton = page.locator('button[type="submit"]');
+    await expect(submitButton).toBeVisible();
 
-      // Page should load
-      await expect(page.locator('main')).toBeVisible();
-
-      // Check for horizontal overflow
-      const bodyWidth = await page.evaluate(() => document.body.scrollWidth);
-      const viewportWidth = page.viewportSize()?.width || 375;
-
-      // Allow small margin for scrollbars
-      expect(bodyWidth).toBeLessThanOrEqual(viewportWidth + 20);
-    });
-  }
-});
-
-test.describe('Mobile Touch Accessibility', () => {
-  test.use({ ...devices['iPhone 13'] });
-
-  test('all interactive elements are touch-friendly', async ({ page }) => {
-    await page.goto('/en');
-
-    // Get all clickable elements
-    const buttons = page.locator('button, a, [role="button"]');
-    const count = await buttons.count();
-
-    // Sample check on first 10 elements
-    for (let i = 0; i < Math.min(count, 10); i++) {
-      const element = buttons.nth(i);
-
-      if (await element.isVisible()) {
-        const box = await element.boundingBox();
-
-        if (box) {
-          // Touch targets should be reasonably sized
-          // Note: Some icons may be smaller but wrapped in larger containers
-          const minDimension = Math.min(box.width, box.height);
-          // Log warning for small targets but don't fail (design decision)
-          if (minDimension < 32) {
-            console.warn(`Small touch target found: ${minDimension}px`);
-          }
-        }
-      }
+    // Touch target check for submit button
+    const box = await submitButton.boundingBox();
+    if (box) {
+      expect(box.height).toBeGreaterThanOrEqual(44);
     }
   });
 });

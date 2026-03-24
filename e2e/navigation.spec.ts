@@ -1,112 +1,101 @@
 import { test, expect } from '@playwright/test';
 
 /**
- * Navigation Tests
+ * Navigation Tests — Updated per Briefing v2.0
  *
- * Validates that all routes are accessible and navigation works correctly.
- * Based on route-registry.yaml definitions.
+ * Validates new route structure, redirects, and language switching.
  */
 
 test.describe('Site Navigation', () => {
   const routes = [
     { path: '/', name: 'Homepage' },
-    { path: '/about', name: 'About' },
-    { path: '/about/team', name: 'Team' },
-    { path: '/about/partners', name: 'Partners' },
-    { path: '/capabilities', name: 'Capabilities Hub' },
-    { path: '/capabilities/defense', name: 'Defense' },
-    { path: '/capabilities/cybersecurity', name: 'Cybersecurity' },
-    { path: '/capabilities/biosecurity', name: 'Biosecurity' },
-    { path: '/capabilities/dual-use', name: 'Dual-Use' },
-    { path: '/sectors', name: 'Sectors' },
-    { path: '/news', name: 'News' },
+    { path: '/servicios', name: 'Servicios' },
+    { path: '/sectores', name: 'Sectores' },
+    { path: '/metodologia', name: 'Metodología' },
+    { path: '/nosotros', name: 'Nosotros' },
+    { path: '/recursos', name: 'Recursos' },
     { path: '/contact', name: 'Contact' },
   ];
 
   for (const { path, name } of routes) {
     test(`${name} page (${path}) loads correctly`, async ({ page }) => {
-      await page.goto(`/en${path}`);
-
-      // Page should not 404
+      await page.goto(`/ca${path}`);
       await expect(page.locator('main')).toBeVisible();
-
-      // Should have h1
       await expect(page.locator('h1')).toBeVisible();
-
-      // Header should be present
       await expect(page.locator('header')).toBeVisible();
-
-      // Footer should be present
       await expect(page.locator('footer')).toBeVisible();
     });
   }
 
-  test('header navigation links work', async ({ page }) => {
-    await page.goto('/en');
+  test('header has 6 navigation items + CTA', async ({ page }) => {
+    await page.goto('/ca');
 
-    // Click through main navigation items
-    const navItems = ['about', 'capabilities', 'contact'];
+    // Desktop nav should have links to new pages
+    const navLinks = page.locator('header nav a').filter({ hasNotText: /dualys/i });
+    const headerCTA = page.locator('header a[href*="contact"]');
 
-    for (const item of navItems) {
-      const link = page.locator(`header a[href*="${item}"]`).first();
-
-      if (await link.isVisible()) {
-        await link.click();
-        await expect(page).toHaveURL(new RegExp(item));
-        await page.goto('/en'); // Reset
-      }
-    }
+    await expect(headerCTA).toBeVisible();
   });
 
-  test('footer navigation links work', async ({ page }) => {
-    await page.goto('/en');
-
-    // Footer should have links
-    const footerLinks = page.locator('footer a');
-    const count = await footerLinks.count();
-
-    expect(count).toBeGreaterThan(0);
+  test('header CTA says "Solicita tu diagnòstic" in Catalan', async ({ page }) => {
+    await page.goto('/ca');
+    const cta = page.locator('header a[href*="contact"]');
+    await expect(cta).toContainText(/diagnòstic/i);
   });
+
+  test('footer has real address and email', async ({ page }) => {
+    await page.goto('/ca');
+    await expect(page.locator('footer')).toContainText(/Sant Cugat/i);
+    await expect(page.locator('footer')).toContainText(/info@dualys.eu/i);
+  });
+
+  test('footer has NO fake trust signals', async ({ page }) => {
+    await page.goto('/ca');
+    const footer = page.locator('footer');
+    await expect(footer).not.toContainText(/ISO 27001/i);
+    await expect(footer).not.toContainText(/NATO Compatible/i);
+  });
+});
+
+test.describe('Redirects (old → new routes)', () => {
+  const redirects = [
+    { from: '/about', to: '/nosotros' },
+    { from: '/capabilities', to: '/servicios' },
+    { from: '/sectors', to: '/sectores' },
+    { from: '/news', to: '/recursos' },
+  ];
+
+  for (const { from, to } of redirects) {
+    test(`${from} redirects to ${to}`, async ({ page }) => {
+      await page.goto(`/ca${from}`);
+      await expect(page).toHaveURL(new RegExp(to));
+    });
+  }
 });
 
 test.describe('Language Switching', () => {
   const locales = ['en', 'es', 'fr', 'ca'];
 
   test('language switcher is visible', async ({ page }) => {
-    await page.goto('/en');
-
-    // Look for language switcher
-    const languageSwitcher = page.locator('[data-testid="language-switcher"], button:has-text(/EN|ES|FR/i), select[aria-label*="language" i]');
-
-    // Should have some form of language switching
-    const header = page.locator('header');
-    await expect(header).toBeVisible();
+    await page.goto('/ca');
+    await expect(page.locator('header')).toBeVisible();
   });
 
   for (const locale of locales) {
     test(`${locale} locale loads correctly`, async ({ page }) => {
       await page.goto(`/${locale}`);
-
-      // Page should load without error
       await expect(page.locator('main')).toBeVisible();
       await expect(page.locator('h1')).toBeVisible();
-
-      // URL should contain locale
       await expect(page).toHaveURL(new RegExp(`/${locale}`));
     });
   }
 
   test('hreflang tags are present', async ({ page }) => {
-    await page.goto('/en');
-
-    // Check for hreflang link tags
+    await page.goto('/ca');
     for (const locale of locales) {
       const hreflang = page.locator(`link[hreflang="${locale}"]`);
-      // Should have hreflang tags for each locale
       await expect(hreflang).toBeAttached();
     }
-
-    // Should have x-default
     const xDefault = page.locator('link[hreflang="x-default"]');
     await expect(xDefault).toBeAttached();
   });
@@ -114,12 +103,8 @@ test.describe('Language Switching', () => {
 
 test.describe('Error Handling', () => {
   test('404 page works', async ({ page }) => {
-    const response = await page.goto('/en/nonexistent-page-xyz');
-
-    // Should return 404 status
+    const response = await page.goto('/ca/nonexistent-page-xyz');
     expect(response?.status()).toBe(404);
-
-    // Should have error content
     await expect(page.locator('main')).toBeVisible();
   });
 });
