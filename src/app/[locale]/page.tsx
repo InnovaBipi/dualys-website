@@ -1,8 +1,11 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { HeroSection } from '@/components/sections/HeroSection';
-import { CapabilitiesSection } from '@/components/sections/CapabilitiesSection';
-import { AboutSection } from '@/components/sections/AboutSection';
+import { ContextSection } from '@/components/sections/ContextSection';
+import { AudienceSection } from '@/components/sections/AudienceSection';
+import { KeyMessagesSection } from '@/components/sections/KeyMessagesSection';
+import { VerticalsSection } from '@/components/sections/VerticalsSection';
+import { TeamTrustSection } from '@/components/sections/TeamTrustSection';
 import { CTASection } from '@/components/sections/CTASection';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { generatePageMetadata, getOrganizationSchema, getWebSiteSchema } from '@/lib/seo/metadata';
@@ -36,8 +39,11 @@ export default async function HomePage({ params }: PageProps) {
       <JsonLd data={organizationSchema} />
       <JsonLd data={websiteSchema} />
       <HeroSection />
-      <CapabilitiesSection />
-      <AboutSection />
+      <ContextSection />
+      <AudienceSection />
+      <KeyMessagesSection />
+      <VerticalsSection />
+      <TeamTrustSection />
       <CTASection />
     </>
   );

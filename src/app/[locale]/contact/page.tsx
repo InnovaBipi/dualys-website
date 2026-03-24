@@ -1,6 +1,6 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
-import { MapPin, Mail, Phone, Clock } from 'lucide-react';
+import { MapPin, Mail } from 'lucide-react';
 import { Container } from '@/components/ui/container';
 import { PageHeader } from '@/components/content/PageHeader';
 import { Breadcrumbs } from '@/components/content/Breadcrumbs';
@@ -15,11 +15,11 @@ interface PageProps {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'pages.contact' });
+  const t = await getTranslations({ locale, namespace: 'contact' });
 
   return generatePageMetadata({
-    title: t('meta.title'),
-    description: t('meta.description'),
+    title: t('title'),
+    description: t('subtitle'),
     locale: locale as Locale,
     path: '/contact',
   });
@@ -28,11 +28,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function ContactPage({ params }: PageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: 'pages.contact' });
+  const t = await getTranslations({ locale, namespace: 'contact' });
 
   const pageSchema = getWebPageSchema({
-    title: t('meta.title'),
-    description: t('meta.description'),
+    title: t('title'),
+    description: t('subtitle'),
     locale: locale as Locale,
     path: '/contact',
   });
@@ -41,29 +41,6 @@ export default async function ContactPage({ params }: PageProps) {
     { name: 'Home', url: '' },
     { name: t('title'), url: '/contact' },
   ], locale as Locale);
-
-  const contactInfo = [
-    {
-      icon: MapPin,
-      title: t('info.address.title'),
-      lines: [t('info.address.line1'), t('info.address.line2')],
-    },
-    {
-      icon: Mail,
-      title: t('info.email.title'),
-      lines: [t('info.email.general'), t('info.email.press')],
-    },
-    {
-      icon: Phone,
-      title: t('info.phone.title'),
-      lines: [t('info.phone.main')],
-    },
-    {
-      icon: Clock,
-      title: t('info.hours.title'),
-      lines: [t('info.hours.weekdays'), t('info.hours.weekend')],
-    },
-  ];
 
   return (
     <>
@@ -87,24 +64,38 @@ export default async function ContactPage({ params }: PageProps) {
             <div className="lg:col-span-1">
               <h2 className="mb-6 text-2xl font-bold text-neutral-900">{t('info.title')}</h2>
               <div className="space-y-6">
-                {contactInfo.map((info) => (
-                  <div key={info.title} className="flex gap-4">
-                    <div className="flex-shrink-0 rounded-lg bg-primary-50 p-3 text-primary-500">
-                      <info.icon className="h-5 w-5" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-neutral-900">{info.title}</h3>
-                      {info.lines.map((line, index) => (
-                        <p key={index} className="text-sm text-neutral-600">{line}</p>
-                      ))}
-                    </div>
+                {/* Address */}
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 rounded-lg bg-primary-50 p-3 text-primary-500">
+                    <MapPin className="h-5 w-5" />
                   </div>
-                ))}
+                  <div>
+                    <h3 className="font-semibold text-neutral-900">{t('info.address.title')}</h3>
+                    <p className="text-sm text-neutral-600">{t('info.address.line1')}</p>
+                    <p className="text-sm text-neutral-600">{t('info.address.line2')}</p>
+                  </div>
+                </div>
+
+                {/* Email */}
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 rounded-lg bg-primary-50 p-3 text-primary-500">
+                    <Mail className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-neutral-900">{t('info.email.title')}</h3>
+                    <a
+                      href={`mailto:${t('info.email.value')}`}
+                      className="text-sm text-accent-600 hover:text-accent-700 hover:underline"
+                    >
+                      {t('info.email.value')}
+                    </a>
+                  </div>
+                </div>
               </div>
 
               {/* Social Links */}
               <div className="mt-8">
-                <h3 className="mb-4 font-semibold text-neutral-900">{t('social.title')}</h3>
+                <h3 className="mb-4 font-semibold text-neutral-900">LinkedIn</h3>
                 <div className="flex gap-3">
                   <a
                     href="https://www.linkedin.com/company/dualys-strategy/"
@@ -135,7 +126,6 @@ export default async function ContactPage({ params }: PageProps) {
             {/* Contact Form */}
             <div className="lg:col-span-2">
               <div className="rounded-xl border border-neutral-200 bg-white p-8 shadow-sm">
-                <h2 className="mb-6 text-2xl font-bold text-neutral-900">{t('form.title')}</h2>
                 <ContactForm />
               </div>
             </div>

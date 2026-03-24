@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ArrowRight } from 'lucide-react';
 import { Link, usePathname } from '@/lib/i18n/navigation';
 import { Container } from '@/components/ui/container';
 import { Button } from '@/components/ui/button';
@@ -27,12 +27,15 @@ export function Header() {
     };
   }, [mobileMenuOpen]);
 
+  const tCta = useTranslations('cta');
+
   const navigation = [
     { name: t('home'), href: '/' },
-    { name: t('about'), href: '/about' },
-    { name: t('capabilities'), href: '/capabilities' },
-    { name: t('sectors'), href: '/sectors' },
-    { name: t('news'), href: '/news' },
+    { name: t('servicios'), href: '/servicios' },
+    { name: t('sectores'), href: '/sectores' },
+    { name: t('metodologia'), href: '/metodologia' },
+    { name: t('nosotros'), href: '/nosotros' },
+    { name: t('recursos'), href: '/recursos' },
   ];
 
   return (
@@ -73,7 +76,10 @@ export function Header() {
           <div className="hidden md:flex md:items-center md:gap-x-4">
             <LanguageSwitcher />
             <Button asChild size="sm" variant="accent">
-              <Link href="/contact">{t('contact')}</Link>
+              <Link href="/contact" className="flex items-center gap-1">
+                {tCta('button')}
+                <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              </Link>
             </Button>
           </div>
 
@@ -128,8 +134,9 @@ export function Header() {
                 <LanguageSwitcher />
               </div>
               <Button asChild variant="accent" className="w-full min-h-[48px]">
-                <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
-                  {t('contact')}
+                <Link href="/contact" onClick={() => setMobileMenuOpen(false)} className="flex items-center justify-center gap-1">
+                  {tCta('button')}
+                  <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </Link>
               </Button>
             </div>

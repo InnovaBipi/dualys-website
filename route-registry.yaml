@@ -1,52 +1,49 @@
 # Route Registry - Dualys Website
 # Single source of truth for all routes
-# Used by: sitemap generation, navigation validation, SEO audits, UX journey validation
+# Updated per Briefing v2.0 (March 2026)
 
-version: "1.0"
+version: "2.0"
 framework: "nextjs-app-router"
-locales: ["en", "fr", "es", "de", "it", "ca"]
-default_locale: "en"
+locales: ["ca", "es", "en", "fr"]
+default_locale: "ca"
 
-# Validation schema
 validation:
   statuses:
     published: "Page is live and accessible"
     draft: "Page exists but not ready for production"
     coming_soon: "Placeholder page with coming soon message"
-    placeholder: "Page structure ready, content is placeholder"
+    planned: "Not yet built"
 
   content_requirements:
-    - has_hero           # Hero section with title/subtitle
-    - has_cta            # Call-to-action button
-    - has_breadcrumbs    # Breadcrumb navigation
-    - has_structured_data # JSON-LD schema
-    - has_team           # Team member cards
-    - has_partners       # Partner logos
-    - has_form           # Contact form
-    - has_faq            # FAQ section
+    - has_hero
+    - has_cta
+    - has_breadcrumbs
+    - has_structured_data
+    - has_form
+    - has_verticals
+    - has_methodology
+    - has_team_profiles
+    - has_categories
 
-# Hub & Spoke SEO clusters
+# Hub & Spoke SEO clusters (new structure per briefing)
 clusters:
-  - name: "Capabilities"
-    hub: "/capabilities"
+  - name: "Services & Methodology"
+    hub: "/servicios"
     spokes:
-      - "/capabilities/defense"
-      - "/capabilities/cybersecurity"
-      - "/capabilities/biosecurity"
-      - "/capabilities/dual-use"
+      - "/metodologia"
 
-  - name: "About"
-    hub: "/about"
-    spokes:
-      - "/about/team"
-      - "/about/partners"
+  - name: "Defense Verticals"
+    hub: "/sectores"
+    spokes: []
 
-  - name: "Sectors"
-    hub: "/sectors"
+  - name: "Company"
+    hub: "/nosotros"
+    spokes: []
+
+  - name: "Resources"
+    hub: "/recursos"
     spokes:
-      - "/sectors/institutional"
-      - "/sectors/industrial"
-      - "/sectors/academic"
+      - "/recursos/[slug]"
 
 routes:
   # === CORE PAGES ===
@@ -56,158 +53,105 @@ routes:
     priority: 1.0
     changefreq: weekly
     seo:
-      focus_keyword: "dual-use technologies europe"
+      focus_keyword: "consultoria entrada sector defensa"
       secondary:
-        - "defense cybersecurity biosecurity"
-        - "european strategic autonomy"
-        - "dual technologies spain"
+        - "dual use consulting españa"
+        - "como entrar sector defensa"
+        - "capacidades duales industria"
       intent: commercial
       cluster_role: pillar
     entry_points: []
-    exit_points: ["/about", "/capabilities", "/news", "/contact"]
-    content_requirements: [has_hero, has_cta, has_structured_data]
+    exit_points: ["/servicios", "/sectores", "/metodologia", "/nosotros", "/contact"]
+    content_requirements: [has_hero, has_cta, has_structured_data, has_verticals]
 
-  - path: "/about"
-    status: published
+  - path: "/servicios"
+    status: draft
+    nav: [header, footer]
+    priority: 0.95
+    changefreq: monthly
+    seo:
+      focus_keyword: "servicios consultoria defensa"
+      secondary:
+        - "programa entrada sector defensa"
+        - "acompañamiento transicion dual use"
+      intent: commercial
+      cluster_role: hub
+    entry_points: ["/"]
+    exit_points: ["/metodologia", "/sectores", "/contact"]
+    content_requirements: [has_hero, has_cta, has_breadcrumbs, has_structured_data]
+
+  - path: "/sectores"
+    status: draft
     nav: [header, footer]
     priority: 0.9
     changefreq: monthly
     seo:
-      focus_keyword: "dualys company"
+      focus_keyword: "verticales defensa empresas"
       secondary:
-        - "catalan defense technology"
-        - "dual-use technology company"
+        - "como homologar proveedor defensa"
+        - "AQAP PECAL empresa manufacturera"
+        - "sector defensa oportunidades"
       intent: informational
       cluster_role: hub
-    entry_points: ["/"]
-    exit_points: ["/about/team", "/about/partners", "/capabilities"]
-    content_requirements: [has_hero, has_breadcrumbs, has_structured_data]
-    children:
-      - path: "/about/team"
-        status: placeholder
-        priority: 0.7
-        changefreq: monthly
-        seo:
-          focus_keyword: "dualys leadership team"
-          cluster_role: spoke
-        content_requirements: [has_breadcrumbs, has_team]
-        validation:
-          notes: "Awaiting real team member data from CMS"
+    entry_points: ["/", "/servicios"]
+    exit_points: ["/contact", "/servicios"]
+    content_requirements: [has_hero, has_breadcrumbs, has_structured_data, has_verticals]
 
-      - path: "/about/partners"
-        status: placeholder
-        priority: 0.7
-        changefreq: monthly
-        seo:
-          focus_keyword: "dualys partners ecosystem"
-          cluster_role: spoke
-        content_requirements: [has_breadcrumbs, has_partners]
-        validation:
-          notes: "Awaiting real partner data from CMS"
-
-  - path: "/capabilities"
-    status: published
-    nav: [header]
-    priority: 0.95
-    changefreq: weekly
-    seo:
-      focus_keyword: "defense cybersecurity biosecurity capabilities"
-      secondary:
-        - "dual-use technology services"
-        - "european defense solutions"
-      intent: commercial
-      cluster_role: hub
-    entry_points: ["/"]
-    exit_points:
-      - "/capabilities/defense"
-      - "/capabilities/cybersecurity"
-      - "/capabilities/biosecurity"
-      - "/capabilities/dual-use"
-    content_requirements: [has_hero, has_cta, has_structured_data]
-    children:
-      - path: "/capabilities/defense"
-        status: published
-        priority: 0.9
-        changefreq: monthly
-        seo:
-          focus_keyword: "defense unmanned systems"
-          secondary:
-            - "autonomous platforms defense"
-            - "unmanned aerial systems europe"
-          cluster_role: spoke
-        content_requirements: [has_hero, has_breadcrumbs, has_cta]
-
-      - path: "/capabilities/cybersecurity"
-        status: published
-        priority: 0.9
-        changefreq: monthly
-        seo:
-          focus_keyword: "cybersecurity infrastructure protection"
-          secondary:
-            - "digital infrastructure security"
-            - "critical infrastructure protection"
-          cluster_role: spoke
-        content_requirements: [has_hero, has_breadcrumbs, has_cta]
-
-      - path: "/capabilities/biosecurity"
-        status: published
-        priority: 0.9
-        changefreq: monthly
-        seo:
-          focus_keyword: "biosecurity response capabilities"
-          secondary:
-            - "bio-sanitary response"
-            - "pandemic preparedness technology"
-          cluster_role: spoke
-        content_requirements: [has_hero, has_breadcrumbs, has_cta]
-
-      - path: "/capabilities/dual-use"
-        status: published
-        priority: 0.9
-        changefreq: monthly
-        seo:
-          focus_keyword: "dual-use technologies"
-          secondary:
-            - "civil defense applications"
-            - "dual-purpose technology"
-          cluster_role: spoke
-        content_requirements: [has_hero, has_breadcrumbs, has_cta]
-
-  - path: "/sectors"
-    status: published
+  - path: "/metodologia"
+    status: draft
     nav: [header]
     priority: 0.85
     changefreq: monthly
     seo:
-      focus_keyword: "sectors served defense"
+      focus_keyword: "metodologia entrada defensa"
+      secondary:
+        - "programa FFD fit for defense"
+        - "ruta dual use"
+      intent: commercial
+      cluster_role: spoke
+    entry_points: ["/", "/servicios"]
+    exit_points: ["/contact"]
+    content_requirements: [has_hero, has_cta, has_breadcrumbs, has_structured_data, has_methodology]
+
+  - path: "/nosotros"
+    status: draft
+    nav: [header, footer]
+    priority: 0.8
+    changefreq: monthly
+    seo:
+      focus_keyword: "dualys consultora defensa"
+      secondary:
+        - "equipo consultoria defensa españa"
+        - "consultora dual use cataluña"
       intent: informational
       cluster_role: hub
     entry_points: ["/"]
-    exit_points: ["/contact"]
-    content_requirements: [has_hero, has_structured_data]
+    exit_points: ["/contact", "/servicios"]
+    content_requirements: [has_hero, has_breadcrumbs, has_structured_data, has_team_profiles]
 
-  - path: "/news"
-    status: placeholder
+  - path: "/recursos"
+    status: draft
     nav: [header, footer]
     priority: 0.8
     changefreq: weekly
     seo:
-      focus_keyword: "dualys news insights"
+      focus_keyword: "blog defensa dual use"
+      secondary:
+        - "guia certificacion defensa"
+        - "analisis mercado defensa europa"
       intent: informational
       cluster_role: hub
-    content_requirements: [has_hero]
-    validation:
-      notes: "Awaiting Contentful CMS integration for dynamic articles"
+    entry_points: ["/"]
+    exit_points: ["/contact"]
+    content_requirements: [has_hero, has_categories]
     children:
-      - path: "/news/[slug]"
-        status: placeholder
+      - path: "/recursos/[slug]"
+        status: draft
         priority: 0.7
         changefreq: daily
         seo:
           focus_keyword: "dynamic"
           cluster_role: spoke
-        validation:
-          notes: "Dynamic route - content from Contentful CMS"
 
   - path: "/contact"
     status: published
@@ -215,10 +159,10 @@ routes:
     priority: 0.9
     changefreq: monthly
     seo:
-      focus_keyword: "contact dualys"
+      focus_keyword: "contacto dualys"
       secondary:
-        - "defense technology partnership"
-        - "dual-use technology inquiry"
+        - "solicitar diagnostico defensa"
+        - "consultoria entrada defensa contacto"
       intent: transactional
     content_requirements: [has_hero, has_form, has_structured_data]
 
@@ -229,7 +173,7 @@ routes:
     priority: 0.3
     changefreq: yearly
     seo:
-      focus_keyword: "dualys privacy policy"
+      focus_keyword: "dualys politica privacidad"
       intent: informational
 
   - path: "/legal/terms"
@@ -238,7 +182,7 @@ routes:
     priority: 0.3
     changefreq: yearly
     seo:
-      focus_keyword: "dualys terms of use"
+      focus_keyword: "dualys aviso legal"
       intent: informational
 
   - path: "/legal/cookies"
@@ -247,25 +191,88 @@ routes:
     priority: 0.3
     changefreq: yearly
     seo:
-      focus_keyword: "dualys cookie policy"
+      focus_keyword: "dualys politica cookies"
       intent: informational
 
-# Crosslinks (bidirectional capability<>sector relationships)
+  # === FUTURE LANDING PAGES ===
+  - path: "/pre-evaluacion"
+    status: planned
+    nav: []  # No nav for conversion
+    priority: 0.6
+    seo:
+      focus_keyword: "preevaluacion entrada defensa"
+      intent: transactional
+
+  - path: "/para-industriales"
+    status: planned
+    nav: []
+    priority: 0.6
+    seo:
+      focus_keyword: "empresas industriales sector defensa"
+      intent: commercial
+
+  - path: "/para-tecnologia"
+    status: planned
+    nav: []
+    priority: 0.6
+    seo:
+      focus_keyword: "empresas tecnologia sector defensa"
+      intent: commercial
+
+  - path: "/para-primes"
+    status: planned
+    nav: []
+    priority: 0.6
+    seo:
+      focus_keyword: "proveedores cadena suministro defensa"
+      intent: commercial
+
+# Redirects 301 (old → new)
+redirects:
+  - from: "/about"
+    to: "/nosotros"
+    status: 301
+  - from: "/about/team"
+    to: "/nosotros"
+    status: 301
+  - from: "/about/partners"
+    to: "/nosotros"
+    status: 301
+  - from: "/capabilities"
+    to: "/servicios"
+    status: 301
+  - from: "/capabilities/defense"
+    to: "/servicios"
+    status: 301
+  - from: "/capabilities/cybersecurity"
+    to: "/servicios"
+    status: 301
+  - from: "/capabilities/biosecurity"
+    to: "/servicios"
+    status: 301
+  - from: "/capabilities/dual-use"
+    to: "/servicios"
+    status: 301
+  - from: "/sectors"
+    to: "/sectores"
+    status: 301
+  - from: "/news"
+    to: "/recursos"
+    status: 301
+
+# Crosslinks
 crosslinks:
-  capability_to_sector:
-    defense: ["/sectors"]
-    cybersecurity: ["/sectors"]
-    biosecurity: ["/sectors"]
-    dual-use: ["/sectors"]
+  service_to_vertical:
+    servicios: ["/sectores"]
+    metodologia: ["/servicios", "/contact"]
 
-  sector_to_capability:
-    institutional: ["/capabilities/defense", "/capabilities/cybersecurity"]
-    industrial: ["/capabilities/dual-use", "/capabilities/defense"]
-    academic: ["/capabilities/biosecurity", "/capabilities/dual-use"]
-
-# VALIDATION STATUS:
-# Phase 1 Complete - All core pages published
-# Pending:
-# - /news/* - Awaiting Contentful integration
-# - /about/team - Awaiting real data
-# - /about/partners - Awaiting real data
+  vertical_to_audience:
+    terrestres: ["industriales"]
+    naval: ["industriales"]
+    aeronautica: ["industriales"]
+    aeroespacial: ["tecnologia"]
+    c4isr: ["tecnologia"]
+    ciberdefensa: ["tecnologia"]
+    uav_robotica: ["tecnologia"]
+    simulacion: ["tecnologia"]
+    auxiliar: ["industriales"]

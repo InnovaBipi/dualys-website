@@ -1,0 +1,167 @@
+import { getTranslations, setRequestLocale } from 'next-intl/server';
+import type { Metadata } from 'next';
+import {
+  Truck,
+  Ship,
+  Plane,
+  Rocket,
+  Radio,
+  Shield,
+  Bot,
+  Gamepad2,
+  Wrench,
+  ArrowRight,
+} from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
+import { Container } from '@/components/ui/container';
+import { PageHeader } from '@/components/content/PageHeader';
+import { Breadcrumbs } from '@/components/content/Breadcrumbs';
+import { JsonLd } from '@/components/seo/JsonLd';
+import { Button } from '@/components/ui/button';
+import { Link } from '@/lib/i18n/navigation';
+import { generatePageMetadata, getWebPageSchema, getBreadcrumbSchema } from '@/lib/seo/metadata';
+import type { Locale } from '@/lib/i18n/config';
+
+interface PageProps {
+  params: Promise<{ locale: string }>;
+}
+
+interface Vertical {
+  key: string;
+  icon: LucideIcon;
+}
+
+const verticals: Vertical[] = [
+  { key: 'terrestrial', icon: Truck },
+  { key: 'naval', icon: Ship },
+  { key: 'aeronautics', icon: Plane },
+  { key: 'aerospace', icon: Rocket },
+  { key: 'c4isr', icon: Radio },
+  { key: 'cyber', icon: Shield },
+  { key: 'uav', icon: Bot },
+  { key: 'simulation', icon: Gamepad2 },
+  { key: 'auxiliary', icon: Wrench },
+];
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'sectores' });
+
+  return generatePageMetadata({
+    title: t('meta.title'),
+    description: t('meta.description'),
+    locale: locale as Locale,
+    path: '/sectores',
+  });
+}
+
+export default async function SectoresPage({ params }: PageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: 'sectores' });
+  const tVerticals = await getTranslations({ locale, namespace: 'homepage.verticals' });
+
+  const pageSchema = getWebPageSchema({
+    title: t('meta.title'),
+    description: t('meta.description'),
+    locale: locale as Locale,
+    path: '/sectores',
+  });
+
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: 'Home', url: '' },
+    { name: t('title'), url: '/sectores' },
+  ], locale as Locale);
+
+  return (
+    <>
+      <JsonLd data={pageSchema} />
+      <JsonLd data={breadcrumbSchema} />
+
+      <Breadcrumbs
+        items={[{ label: t('title') }]}
+      />
+
+      <PageHeader
+        title={t('title')}
+        subtitle={t('subtitle')}
+        variant="gradient"
+      />
+
+      {/* Intro Section */}
+      <section className="py-16 md:py-24">
+        <Container>
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-lg leading-relaxed text-neutral-600">
+              {t('intro')}
+            </p>
+          </div>
+        </Container>
+      </section>
+
+      {/* Verticals Grid */}
+      <section className="bg-neutral-50 py-16 md:py-24">
+        <Container>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {verticals.map((vertical) => {
+              const Icon = vertical.icon;
+
+              return (
+                <div
+                  key={vertical.key}
+                  className="group rounded-xl border border-neutral-200 bg-white p-6 transition-shadow hover:shadow-lg"
+                >
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent-500/10">
+                    <Icon className="h-6 w-6 text-accent-500" aria-hidden="true" />
+                  </div>
+                  <h3 className="mb-2 font-display text-lg font-semibold text-primary-950">
+                    {tVerticals(`${vertical.key}.title`)}
+                  </h3>
+                  <p className="text-sm leading-relaxed text-neutral-500">
+                    {tVerticals(`${vertical.key}.description`)}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </Container>
+      </section>
+
+      {/* Origin Section */}
+      <section className="py-16 md:py-24">
+        <Container>
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-primary-950 sm:text-4xl">
+              {t('originSection.title')}
+            </h2>
+            <p className="mt-4 text-lg text-neutral-600">
+              {t('originSection.subtitle')}
+            </p>
+          </div>
+        </Container>
+      </section>
+
+      {/* CTA Section */}
+      <section className="bg-primary-500 py-16">
+        <Container>
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="text-3xl font-bold text-white">
+              {t('title')}
+            </h2>
+            <p className="mt-4 text-lg text-white/80">
+              {t('subtitle')}
+            </p>
+            <div className="mt-8">
+              <Button variant="accent" size="lg" asChild>
+                <Link href="/contact" className="inline-flex items-center gap-2">
+                  {t('cta')}
+                  <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </Container>
+      </section>
+    </>
+  );
+}

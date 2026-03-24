@@ -150,17 +150,22 @@
 
 ## Slogan Usage
 
-**Primary Slogan**
-> "Protecting democracy with dual deterrence technologies"
+**Primary Slogan (updated per briefing v2.0, March 2026)**
+> "Building Dual Capabilities for the Industry"
 
-- Use in hero sections
-- Use in brand statements
-- Adapt for context but maintain core message
+**Propuestas de valor (usar literalmente del briefing)**
+1. "Construir capacidades duales para la industria."
+2. "Convertimos la capacidad industrial y tecnológica de tu empresa en negocio real dentro del sector defensa."
+3. "Somos el puente estratégico que faltaba entre la industria y los mercados duales europeos."
+
+**CTAs oficiales**
+- Primary: "Solicita tu diagnóstico →"
+- Secondary: "Habla con nosotros →" / "Conoce nuestra metodología →"
 
 **Variations by Context**
-- Institutional: "Enabling European defense autonomy"
-- Industrial: "Your partner in dual-use innovation"
-- Public: "Technology that protects what matters"
+- Institutional: "Enabling European defense autonomy through industrial capabilities"
+- Industrial: "Tu puente estratégico al sector defensa"
+- Public: "Construyendo capacidades para la industria"
 
 ## Translation Notes
 
@@ -171,24 +176,42 @@ When translating content:
 3. **Keep key messages**: Core positioning must remain consistent
 4. **Adapt cultural context**: EU perspective in all languages
 
-### Language-Specific Considerations
+### Language-Specific Considerations (4 languages)
 
-- **Catalan (ca)**: Emphasize local identity, European context
-- **Spanish (es)**: National context with European perspective
-- **French (fr)**: Formal register, EU partnership focus
-- **German (de)**: Technical precision, industrial focus
-- **Italian (it)**: EU programs emphasis, collaboration
-- **English (en)**: International standard, EU/NATO context
+- **Catalan (ca)**: Default language. Emphasize local identity, Catalan ecosystem, European context. IEC normative standard. Elisions: l'empresa, d'innovació.
+- **Spanish (es)**: Primary content language. Copy from briefing is source of truth. "Usted" in body, "tú" in CTAs. Spain Spanish (not LatAm).
+- **English (en)**: International B2B professional. "Defense" (not "defence"). Adapt concepts, don't translate literally.
+- **French (fr)**: Formal register, vouvoiement. EU partnership focus. "Technologies à double usage", "secteur de la défense".
+
+### Translation Terminology (ES → CA)
+| ES | CA |
+|---|---|
+| I+D+i | R+D+i |
+| subvenciones | subvencions |
+| ayudas | ajuts |
+| pyme | pime |
+| certificaciones | certificacions |
+| empresa | empresa (NOT companyia) |
 
 ## Quality Checklist
 
 Before publishing any content:
 
-- [ ] Does it align with deterrence (not aggression) messaging?
-- [ ] Is the tone professional and authoritative?
+- [ ] Does the copy match the briefing EXACTLY (for ES)?
+- [ ] Does it align with the new positioning (consultora estratégica, not tech company)?
+- [ ] Is the tone professional, strategic, and NOT militaristic?
 - [ ] Are technical terms explained when needed?
 - [ ] Does it emphasize European perspective?
-- [ ] Is the language accessible to the target audience?
-- [ ] Are claims substantiated?
+- [ ] Are claims substantiated with real data (800.000 M€, 44.000 M€, 2% PIB)?
 - [ ] Does it avoid forbidden terminology?
-- [ ] Is it consistent across all 6 languages?
+- [ ] Is it consistent across all 4 languages?
+- [ ] Are CTAs using the exact text from the briefing?
+- [ ] Are trust elements real (not invented like "ISO 27001 certified")?
+
+## 5 Key Messages (embed throughout site)
+
+1. **El momento es ahora** — Europa ha comprometido inversiones sin precedentes
+2. **España y Catalunya están preparadas** — Falta articulación, no potencial
+3. **Añadimos valor real** — No hacemos informes, aceleramos entradas al mercado
+4. **Tu tecnología civil ya es ventaja** — Transferencia civil→defensa
+5. **Reducimos el riesgo** — Normativa AQAP/PECAL, certificaciones, export controls

@@ -1,186 +1,107 @@
 # CTA Registry - Dualys Website
-# Single source of truth for all cross-page CTA relationships
-# Used by: validate-cta-mapping.js hook, navigation validation, UX journey audits
+# Updated per Briefing v2.0 (March 2026)
+# CTAs from briefing section 9
 
-version: "1.0"
-last_updated: "2026-03-01"
-locales: [en, fr, es, de, it, ca]
+version: "2.0"
+last_updated: "2026-03-24"
+locales: [ca, es, en, fr]
 
-# === CAPABILITY → SECTOR (CTAs on capability pages) ===
-# Maps each capability page's CTAs to their destinations
-capability_to_sector:
-  defense:
-    file: "app/[locale]/capabilities/defense/page.tsx"
-    primary_cta:
-      destination: "/contact"
-      label: "Discuss Your Requirements"
-      semantic_match: high
-    secondary_ctas:
-      - destination: "/capabilities/dual-use"
-        label: "Explore Dual-Use"
-        semantic_match: high
-      - destination: "/sectors"
-        label: "View Sectors"
-        semantic_match: medium
-
-  cybersecurity:
-    file: "app/[locale]/capabilities/cybersecurity/page.tsx"
-    primary_cta:
-      destination: "/contact"
-      label: "Request Assessment"
-      semantic_match: high
-    secondary_ctas:
-      - destination: "/capabilities/defense"
-        label: "Defense Integration"
-        semantic_match: high
-      - destination: "/about/partners"
-        label: "Partner Ecosystem"
-        semantic_match: medium
-
-  biosecurity:
-    file: "app/[locale]/capabilities/biosecurity/page.tsx"
-    primary_cta:
-      destination: "/contact"
-      label: "Discuss Capabilities"
-      semantic_match: high
-    secondary_ctas:
-      - destination: "/capabilities/dual-use"
-        label: "Dual Applications"
-        semantic_match: high
-      - destination: "/news"
-        label: "Latest Insights"
-        semantic_match: medium
-
-  dual-use:
-    file: "app/[locale]/capabilities/dual-use/page.tsx"
-    primary_cta:
-      destination: "/contact"
-      label: "Partner With Us"
-      semantic_match: high
-    secondary_ctas:
-      - destination: "/capabilities/defense"
-        label: "Defense Applications"
-        semantic_match: high
-      - destination: "/capabilities/cybersecurity"
-        label: "Cyber Applications"
-        semantic_match: high
-      - destination: "/capabilities/biosecurity"
-        label: "Bio Applications"
-        semantic_match: high
-
-# === SECTOR → CAPABILITY (CTAs on sector pages) ===
-sector_to_capability:
-  institutional:
-    file: "app/[locale]/sectors/page.tsx"
-    section: "institutional"
-    related_capabilities:
-      - "/capabilities/defense"
-      - "/capabilities/cybersecurity"
-    cta:
-      destination: "/contact"
-      label: "European Programs"
-      semantic_match: high
-
-  industrial:
-    file: "app/[locale]/sectors/page.tsx"
-    section: "industrial"
-    related_capabilities:
-      - "/capabilities/dual-use"
-      - "/capabilities/defense"
-    cta:
-      destination: "/contact"
-      label: "Partnership Inquiry"
-      semantic_match: high
-
-  academic:
-    file: "app/[locale]/sectors/page.tsx"
-    section: "academic"
-    related_capabilities:
-      - "/capabilities/biosecurity"
-      - "/capabilities/dual-use"
-    cta:
-      destination: "/contact"
-      label: "Research Collaboration"
-      semantic_match: high
+# === GLOBAL CTAs (consistent across all pages) ===
+global_ctas:
+  primary:
+    label_key: "cta.primary"  # "Solicita tu diagnóstico →"
+    destination: "/contact"
+    variant: "accent"
+  secondary:
+    label_key: "cta.secondary"  # "Habla con nosotros →"
+    destination: "/contact"
+    variant: "outline"
+  methodology:
+    label_key: "cta.methodology"  # "Conoce nuestra metodología →"
+    destination: "/metodologia"
+    variant: "link"
 
 # === HEADER NAVIGATION ===
 header:
   file: "components/layout/Header.tsx"
   main_nav:
-    - { path: "/", label: "home" }
-    - { path: "/about", label: "about" }
-    - { path: "/capabilities", label: "capabilities" }
-    - { path: "/sectors", label: "sectors" }
-    - { path: "/news", label: "news" }
+    - { path: "/", label_key: "nav.home" }
+    - { path: "/servicios", label_key: "nav.servicios" }
+    - { path: "/sectores", label_key: "nav.sectores" }
+    - { path: "/metodologia", label_key: "nav.metodologia" }
+    - { path: "/nosotros", label_key: "nav.nosotros" }
+    - { path: "/recursos", label_key: "nav.recursos" }
   cta:
     path: "/contact"
-    label: "contact"
-    variant: "primary"
+    label_key: "cta.primary"
+    variant: "accent"
 
 # === FOOTER NAVIGATION ===
 footer:
   file: "components/layout/Footer.tsx"
   sections:
     quick_links:
-      - "/about"
-      - "/capabilities"
-      - "/sectors"
-      - "/news"
+      - "/servicios"
+      - "/sectores"
+      - "/metodologia"
+      - "/nosotros"
+      - "/recursos"
       - "/contact"
     legal:
       - "/legal/privacy"
       - "/legal/terms"
       - "/legal/cookies"
+  contact:
+    email: "info@dualys.eu"
+    address: "Camí Can Ametller 36 Planta Baixa, 08195 Sant Cugat del Vallès (Barcelona)"
 
 # === PAGE CTA MATRIX ===
-# Quick reference for all primary CTAs across pages
 page_ctas:
-  # Core pages
   "/":
     primary:
-      destination: "/capabilities"
-      label: "Explore Capabilities"
+      destination: "/contact"
+      label_key: "cta.primary"  # "Solicita tu diagnóstico →"
     secondary:
+      destination: "/metodologia"
+      label_key: "cta.methodology"  # "Conoce nuestra metodología →"
+    audience_cards:
+      - { destination: "/sectores", label: "industriales" }
+      - { destination: "/sectores", label: "tecnologia" }
+      - { destination: "/contact", label: "primes" }
+    verticals:
+      destination: "/sectores"
+      label_key: "homepage.verticals.cta"  # "Descubre en qué vertical encaja tu empresa →"
+    final_cta:
       destination: "/contact"
-      label: "Contact Us"
+      label_key: "cta.primary"
 
-  "/about":
+  "/servicios":
     primary:
-      destination: "/about/partners"
-      label: "Our Partners"
+      destination: "/contact"
+      label_key: "cta.primary"
     secondary:
-      destination: "/contact"
-      label: "Get in Touch"
+      destination: "/metodologia"
+      label_key: "cta.methodology"
 
-  "/about/team":
+  "/sectores":
     primary:
       destination: "/contact"
-      label: "Work With Us"
+      label_key: "cta.primary"
 
-  "/about/partners":
+  "/metodologia":
     primary:
       destination: "/contact"
-      label: "Become a Partner"
+      label_key: "cta.primary"
 
-  "/capabilities":
+  "/nosotros":
     primary:
       destination: "/contact"
-      label: "Discuss Your Needs"
-    capabilities_grid:
-      - { destination: "/capabilities/defense", label: "Defense" }
-      - { destination: "/capabilities/cybersecurity", label: "Cybersecurity" }
-      - { destination: "/capabilities/biosecurity", label: "Biosecurity" }
-      - { destination: "/capabilities/dual-use", label: "Dual-Use" }
+      label_key: "cta.primary"
 
-  "/sectors":
+  "/recursos":
     primary:
       destination: "/contact"
-      label: "Partner Inquiry"
-
-  "/news":
-    primary:
-      destination: "/contact"
-      label: "Stay Informed"
+      label_key: "cta.primary"
 
   "/contact":
     primary:
@@ -188,23 +109,34 @@ page_ctas:
       action: "submit"
 
 # === JOURNEY STAGE MAPPING ===
-# Maps pages to customer journey stages for UX validation
 journey_stages:
   awareness:
     - "/"
-    - "/about"
-    - "/news"
-    - "/news/*"
+    - "/nosotros"
+    - "/recursos"
+    - "/recursos/*"
 
   consideration:
-    - "/capabilities"
-    - "/capabilities/*"
-    - "/sectors"
-    - "/about/partners"
+    - "/servicios"
+    - "/sectores"
+    - "/metodologia"
 
   decision:
     - "/contact"
-    - "/about/team"
+    - "/pre-evaluacion"
+
+# === CONVERSION FUNNEL (from briefing section 9.3) ===
+conversion_funnel:
+  step_1_captacion:
+    channels: ["SEO orgánico", "LinkedIn", "eventos", "prensa"]
+    landing: ["/", "/recursos/*"]
+  step_2_cualificacion:
+    action: "Formulario de contacto"
+    fields: ["nombre", "empresa", "email", "sector", "reto"]
+    auto_response: "Email de confirmación automático"
+  step_3_contacto:
+    sla: "48 horas"
+    action: "Equipo DUALYS contacta para explicar metodología"
 
 # === VALIDATION RULES ===
 validation_rules:
@@ -220,6 +152,6 @@ validation_rules:
     description: "Contact page must be reachable within 2 clicks from any page"
     severity: warning
 
-  - rule: "journey_progression"
-    description: "CTAs should progress users through the journey (awareness → consideration → decision)"
-    severity: info
+  - rule: "cta_text_from_briefing"
+    description: "Primary CTA must use exact text from briefing: 'Solicita tu diagnóstico →'"
+    severity: error

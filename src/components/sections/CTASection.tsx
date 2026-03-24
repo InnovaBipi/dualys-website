@@ -11,10 +11,10 @@ export function CTASection() {
   const t = useTranslations('cta');
 
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-20 md:py-28 bg-primary-950">
       <Container>
         <motion.div
-          className="relative overflow-hidden rounded-2xl bg-primary-500 px-6 py-16 text-center sm:px-12 md:py-20"
+          className="relative px-6 py-16 text-center sm:px-12 md:py-20"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -23,20 +23,24 @@ export function CTASection() {
           {/* Background decoration with accent color */}
           <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-accent-500/10" />
           <div className="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-accent-500/10" />
-          <div className="absolute inset-0 bg-gradient-to-br from-transparent to-accent-500/5" />
 
           <div className="relative">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            <h2 className="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">
               {t('title')}
             </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-white/80">
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80 md:text-xl">
               {t('subtitle')}
             </p>
-            <div className="mt-8">
+            <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Button asChild size="xl" variant="accent">
                 <Link href="/contact">
                   {t('button')}
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
+                </Link>
+              </Button>
+              <Button asChild size="xl" variant="outline" className="border-white/30 text-white hover:bg-white/10">
+                <Link href="/contact">
+                  {t('buttonSecondary')}
                 </Link>
               </Button>
             </div>

@@ -1,607 +1,271 @@
 {
   "metadata": {
-    "title": "Dualys | Dual-Use Technologies for European Security",
-    "description": "Protecting democracy with dual deterrence technologies. Dualys develops enabling capabilities in defense, cybersecurity, and biosecurity for European strategic autonomy."
+    "title": "Dualys | Strategic Consultancy for the Defense Sector",
+    "description": "We build dual-use capabilities for industry. We facilitate the entry of industrial and technology companies into the European defense sector."
   },
   "nav": {
     "home": "Home",
-    "about": "About",
-    "aboutUs": "About Us",
-    "team": "Team",
-    "partners": "Partners",
-    "capabilities": "Capabilities",
-    "defense": "Defense",
-    "cybersecurity": "Cybersecurity",
-    "biosecurity": "Biosecurity",
-    "dualUse": "Dual-Use Tech",
-    "sectors": "Sectors",
-    "news": "News",
+    "servicios": "Services",
+    "sectores": "Sectors",
+    "metodologia": "Methodology",
+    "nosotros": "About Us",
+    "recursos": "Resources",
     "contact": "Contact",
     "language": "Language"
   },
   "hero": {
-    "tagline": "Dual-Use Technologies",
-    "title": "Preparing Industrial Companies for the Defense Sector",
-    "subtitle": "We develop enabling capabilities in defense, cybersecurity, and biosecurity to strengthen European strategic autonomy.",
-    "cta": "Discover Our Capabilities",
-    "ctaSecondary": "Contact Us"
+    "title": "Your company has what the defense sector needs. We help you get there.",
+    "subtitle": "DUALYS is the bridge between the industrial and technological capability of Spanish companies — with an initial emphasis on Catalan firms — and European dual-use markets. We accelerate your entry into the defense sector with expertise, methodology, and a real network of contacts.",
+    "cta": "Request your assessment",
+    "ctaSecondary": "Learn about our methodology",
+    "contextNote": "Europe has committed over 800,000 M€ to defense through 2030. The time to position yourself is now."
   },
-  "capabilities": {
-    "title": "Our Capabilities",
-    "subtitle": "Enabling technologies for a more secure and autonomous Europe",
-    "defense": {
-      "title": "Defense",
-      "description": "Unmanned systems, advanced sensors, and autonomous platforms for modern defense requirements."
+  "homepage": {
+    "context": {
+      "title": "Why now",
+      "paragraph1": "Europe is undergoing a structural transformation in defense. Readiness Europe 2030 mobilizes up to 800,000 million euros in procurement and projects aimed at strengthening the European Defense Technological and Industrial Base (EDTIB). In Spain, the Industrial Security and Defense Plan is already active with a 44,000 million euro allocation for the coming years and the policy of reaching and maintaining 2% of GDP in defense investment.",
+      "paragraph2": "Spain has a world-class industrial and technological ecosystem: leading companies in automotive, aeronautics, composites, electronics, artificial intelligence, robotics, and cybersecurity. Capabilities that the defense sector needs right now to build more resilient supply chains of European origin.",
+      "paragraph3": "The problem is not a lack of potential. Most SMEs and Catalan technology companies are unfamiliar with the entry mechanisms, the required certifications, or the defense market circuits. That is exactly what DUALYS solves.",
+      "stat1": "800,000 M€",
+      "stat1Label": "European defense investment through 2030",
+      "stat2": "44,000 M€",
+      "stat2Label": "Spain's Industrial Security and Defense Plan",
+      "stat3": "2%",
+      "stat3Label": "GDP target for defense investment"
     },
-    "cybersecurity": {
-      "title": "Cybersecurity",
-      "description": "Protecting critical digital infrastructure with resilient and secure communication systems."
+    "audience": {
+      "title": "Who DUALYS is for",
+      "industrial": {
+        "title": "For manufacturers",
+        "description": "Component manufacturers, precision manufacturing, automotive, aeronautics, composites, industrial electronics.",
+        "cta": "See how we work with manufacturers"
+      },
+      "tech": {
+        "title": "For technology and software",
+        "description": "AI, robotics, cybersecurity, communications, simulation, digital twins, drones, and IoT companies.",
+        "cta": "See how we work with tech companies"
+      },
+      "primes": {
+        "title": "For major primes",
+        "description": "Defense sector companies that need to expand their supply chain with qualified local capability.",
+        "cta": "Talk to us"
+      }
     },
-    "biosecurity": {
-      "title": "Biosecurity",
-      "description": "Bio-sanitary response capabilities and health security solutions for emerging threats."
+    "messages": {
+      "title": "Why DUALYS",
+      "message1": {
+        "title": "The time is now",
+        "text": "Europe has committed hundreds of billions to defense and technological sovereignty. Spain's Industrial Security and Defense Plan is already active. Companies that position themselves now will gain a structural advantage."
+      },
+      "message2": {
+        "title": "Spain and Catalonia are ready, but alignment is missing",
+        "text": "Spain has world-class technology, industry, and talent. The problem is not potential: it is the disconnect between that potential and the rules of the game in the sector."
+      },
+      "message3": {
+        "title": "We are a consultancy that adds real value to your business",
+        "text": "We do not produce reports that end up in a drawer. We accelerate market entry, reduce risk, and open real commercial doors."
+      },
+      "message4": {
+        "title": "Your civil technology is already a competitive advantage in defense",
+        "text": "If you manufacture precision parts for the automotive industry, you can manufacture them for ground or naval platforms. DUALYS helps you see that transfer and make it operational."
+      },
+      "message5": {
+        "title": "We reduce the risk of transition",
+        "text": "The defense sector has specific regulations (AQAP/PECAL, RID, EN9100, ISO 27001, ITAR, export controls). DUALYS diagnoses first, plans second, and executes with expertise."
+      }
     },
-    "dualUse": {
-      "title": "Dual-Use Technologies",
-      "description": "Civil and defense applications that drive innovation while ensuring strategic preparedness."
-    }
-  },
-  "about": {
-    "title": "About Dualys",
-    "subtitle": "Building European strategic autonomy through enabling capabilities",
-    "mission": {
-      "title": "Our Mission",
-      "text": "We articulate Catalonia's technological ecosystem to develop enabling capabilities, giving them scale and positioning them in European programs and debates."
+    "verticals": {
+      "title": "Defense verticals",
+      "subtitle": "Discover which defense sector areas your company can position itself in",
+      "cta": "Discover which vertical fits your company",
+      "terrestrial": { "title": "Ground platforms", "description": "Vehicles, mechanical components, hydraulic systems" },
+      "naval": { "title": "Naval sector", "description": "Shipbuilding, composites, marine electronics" },
+      "aeronautics": { "title": "Military aeronautics", "description": "Civil aeronautics tier 1/2, machining, composites" },
+      "aerospace": { "title": "Aerospace and New Space", "description": "Ultra-light materials, high-precision electronics" },
+      "c4isr": { "title": "Communications (C4ISR)", "description": "Telecommunications, software, secure networks" },
+      "cyber": { "title": "Cyber defense", "description": "Security, encryption, digital forensics" },
+      "uav": { "title": "UAV / UGV / USV", "description": "Robotics, machine vision, applied AI, drones" },
+      "simulation": { "title": "Simulation and training", "description": "Simulation software, VR/AR, digital twins" },
+      "auxiliary": { "title": "Auxiliary sector", "description": "Technical textiles, protection, CNC machining" }
     },
-    "vision": {
-      "title": "Our Vision",
-      "text": "A more secure, more autonomous, and better-prepared Europe—built on a solid, integrated, and innovative industrial and technological base."
-    },
-    "values": {
-      "title": "Our Values",
-      "deterrence": "Deterrence",
-      "deterrenceDesc": "Security through technological superiority and preparedness",
-      "autonomy": "Autonomy",
-      "autonomyDesc": "Developing sovereign capabilities to reduce dependencies",
-      "innovation": "Innovation",
-      "innovationDesc": "Cutting-edge solutions for complex challenges",
-      "collaboration": "Collaboration",
-      "collaborationDesc": "Integrating SMEs, research centers, and industrial partners"
+    "team": {
+      "title": "The team",
+      "text": "The founding team of DUALYS combines profiles rarely found together: executive experience in security and defense institutions, top-level political career with deep knowledge of the Spanish — and particularly the Catalan — business ecosystem, technical and commercial expertise in international industrial and defense projects, and the ability to orchestrate innovation ecosystems and complex value chains. Together, we cover the four pillars required for a successful dual-use transition: sector knowledge, business development, institutional access, and executive capability.",
+      "cta": "Meet the team"
     }
   },
   "cta": {
-    "title": "Ready to Strengthen European Security?",
-    "subtitle": "Join our ecosystem of technology partners and contribute to building strategic autonomy.",
-    "button": "Get in Touch"
+    "title": "Building dual-use capabilities for industry.",
+    "subtitle": "In 2 sessions we give you a clear assessment, an opportunity map, and an action plan.",
+    "button": "Request your assessment",
+    "buttonSecondary": "Talk to us"
   },
   "footer": {
-    "description": "Protecting democracy with dual deterrence technologies.",
+    "description": "We build dual-use capabilities for industry. We facilitate the entry of industrial and technology companies into the European defense sector.",
     "quickLinks": "Quick Links",
     "legal": "Legal",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Use",
+    "terms": "Legal Notice",
     "cookies": "Cookie Policy",
     "followUs": "Follow Us",
-    "copyright": "© {year} Dualys AIE. All rights reserved."
+    "copyright": "© {year} Dualys AIE. All rights reserved.",
+    "address": "Camí Can Ametller 36 Planta Baixa, 08195 Sant Cugat del Vallès (Barcelona)",
+    "email": "info@dualys.eu"
   },
   "contact": {
-    "title": "Contact Us",
-    "subtitle": "Get in touch with our team",
+    "title": "Contact",
+    "subtitle": "Request your assessment or tell us about your challenge",
     "form": {
-      "name": "Full Name",
-      "email": "Email Address",
-      "organization": "Organization",
-      "subject": "Subject",
-      "message": "Message",
-      "submit": "Send Message"
+      "name": "Name",
+      "company": "Company",
+      "email": "Email address",
+      "sector": "Sector",
+      "sectorOptions": {
+        "industrial": "Industrial / Manufacturing",
+        "tech": "Technology / Software",
+        "defense": "Defense / Primes",
+        "other": "Other"
+      },
+      "challenge": "Briefly describe your challenge",
+      "privacy": "I accept the privacy policy and the processing of my data.",
+      "submit": "Request your assessment"
+    },
+    "info": {
+      "title": "Contact information",
+      "address": {
+        "title": "Address",
+        "line1": "Camí Can Ametller 36 Planta Baixa",
+        "line2": "08195 Sant Cugat del Vallès (Barcelona)"
+      },
+      "email": {
+        "title": "Email",
+        "value": "info@dualys.eu"
+      }
     }
   },
   "common": {
-    "learnMore": "Learn More",
-    "readMore": "Read More",
-    "viewAll": "View All",
+    "learnMore": "Learn more",
+    "readMore": "Read more",
+    "viewAll": "View all",
     "back": "Back",
     "loading": "Loading..."
   },
+  "servicios": {
+    "meta": {
+      "title": "Services | Defense Sector Entry Program | Dualys",
+      "description": "We accelerate your entry into the defense market with a structured, proven, and results-oriented program."
+    },
+    "title": "Services",
+    "subtitle": "We accelerate your entry into the defense market with a structured, proven, and results-oriented program.",
+    "program": {
+      "name": "FFD Program",
+      "fullName": "FIT FOR DEFENSE",
+      "description": "A comprehensive support program designed to transform your company's industrial and technological capability into real opportunities within the defense sector."
+    },
+    "cta": "Request your assessment"
+  },
+  "sectores": {
+    "meta": {
+      "title": "Defense Sectors and Verticals | Dualys",
+      "description": "Discover which defense sector areas your company can position itself in based on your technological and industrial profile."
+    },
+    "title": "Defense verticals",
+    "subtitle": "Discover which defense sector areas your company can position itself in and which industrial or technological capabilities are transferable.",
+    "intro": "The website should communicate which defense sector verticals a client company can position itself in, based on its technological and industrial profile.",
+    "originSection": {
+      "title": "Where you come from, where you can go",
+      "subtitle": "Explicit connections between your sector of origin and the most accessible defense verticals."
+    },
+    "cta": "Request your assessment"
+  },
+  "metodologia": {
+    "meta": {
+      "title": "FFD Methodology | Defense Sector Entry Program | Dualys",
+      "description": "Learn about our FFD program: a proven methodology to accelerate your company's entry into the defense sector."
+    },
+    "title": "Methodology",
+    "subtitle": "FFD: Dualys — Dualys Methodology",
+    "description": "A structured, proven, and results-oriented program. Under non-disclosure agreement.",
+    "phases": {
+      "phase1": { "title": "Assessment", "description": "Comprehensive evaluation of capabilities and fit with the defense sector." },
+      "phase2": { "title": "Positioning", "description": "Opportunity map, required certifications, and action plan." },
+      "phase3": { "title": "Activation", "description": "Real market entry with contacts, contracts, and ongoing support." }
+    },
+    "nda": "All assessment and advisory processes are carried out under a non-disclosure agreement.",
+    "cta": "Request your assessment"
+  },
+  "nosotros": {
+    "meta": {
+      "title": "About Us | Team and Vision | Dualys",
+      "description": "DUALYS was born from the conviction that Spain has the ingredients to become a European benchmark in industrial and technological dual-use."
+    },
+    "title": "About Us",
+    "subtitle": "Strategic accelerators for the dual-use transition",
+    "narrative": {
+      "paragraph1": "DUALYS was born from a conviction: Spain has the ingredients to become a European benchmark in industrial and technological dual-use. World-class technology, robust industry, an innovative ecosystem, and internationally recognized talent. What was missing was someone to align that potential with the rules of the game in the defense market.",
+      "paragraph2": "Recently founded but with extensive experience gained over years, DUALYS is that player. We are not a conventional consultancy or an intermediary. We are strategic accelerators: we help industrial, technology, and software companies understand the defense sector, position themselves within it, and secure their first real contracts. With a proven methodology, a team with top-level experience, and a network of contacts built over years in institutions, sector companies, and European organizations.",
+      "vision": "Our ten-year vision: for Spain to be one of Europe's leading hubs for dual-use innovation and production, with dozens of companies serving as strategic suppliers to the major European defense programs and as a dual-use acceleration hub for Europe."
+    },
+    "founders": {
+      "title": "The founding team",
+      "profile1": {
+        "title": "Institutional vision and security",
+        "text": "One of the founders brings a senior management career in public security and Catalan institutions. He has led security agencies at the highest executive level and possesses deep knowledge of how administrations function and how decisions are made in sensitive environments."
+      },
+      "profile2": {
+        "title": "Strategy and political-institutional knowledge and business ecosystem",
+        "text": "Another founder provides the strategic vision required for this sector. He has held top-level political leadership positions in Catalan institutions, with direct responsibility over industrial policy, enterprise, and labor. His access to institutional, business, and public funding networks is a strategic differentiator for DUALYS."
+      },
+      "profile3": {
+        "title": "Technical-industrial expertise and international operations",
+        "text": "The team includes a profile with direct experience in building and scaling companies at the intersection of industry and cutting-edge technology. His experience in business development, project execution, certification processes, complex supply chains, and entrepreneurial vision is the backbone of DUALYS's support methodology."
+      },
+      "profile4": {
+        "title": "Defense commercialization and business development",
+        "text": "The fourth founding team profile is the commercial engine of DUALYS. With specific experience in business development focused on the defense sector, he knows the channels, the timelines, the stakeholders, and the sales dynamics in a market that operates in a radically different way from standard B2B commerce."
+      }
+    },
+    "vision": {
+      "title": "Future vision",
+      "phase1": {
+        "title": "Phase 1 — The Awakening (2025-2026)",
+        "text": "Identify and activate the latent dual-use potential in the Catalan ecosystem. Help the first 20-30 companies take the step."
+      },
+      "phase2": {
+        "title": "Phase 2 — The Acceleration (2027-2028)",
+        "text": "Build an interconnected dual-use ecosystem. Facilitate alliances between Catalan startups and major European corporations. Attract specialized investment."
+      },
+      "phase3": {
+        "title": "Phase 3 — The Leadership (2029-2030)",
+        "text": "Spain as a leading European hub for dual-use innovation and production. Export the model to other regions. Connect the Spanish ecosystem with global opportunities."
+      }
+    },
+    "cta": "Request your assessment"
+  },
+  "recursos": {
+    "meta": {
+      "title": "Resources & Insights | Defense Sector Analysis | Dualys",
+      "description": "Articles, guides, and analysis on the European defense market, certifications, and opportunities for industrial and technology companies."
+    },
+    "title": "Resources & Insights",
+    "subtitle": "Analysis, guides, and trends in the European defense market",
+    "categories": {
+      "market": "Market analysis",
+      "guides": "Guides and tutorials",
+      "cases": "Dual-use transition cases",
+      "opinion": "Opinion and trends"
+    },
+    "empty": "Coming soon: articles and analysis on the defense sector. We are preparing valuable content to help you understand the market.",
+    "cta": "Request your assessment"
+  },
   "pages": {
-    "about": {
-      "meta": {
-        "title": "About Dualys | European Dual-Use Technology Leader",
-        "description": "Learn about Dualys, a Catalan Economic Interest Grouping specializing in dual-use technologies for defense, cybersecurity, and biosecurity."
-      },
-      "title": "About Dualys",
-      "subtitle": "Building European strategic autonomy through enabling capabilities",
-      "mission": {
-        "title": "Our Mission",
-        "text": "We articulate Catalonia's technological ecosystem to develop enabling capabilities, giving them scale and positioning them in European programs and debates."
-      },
-      "vision": {
-        "title": "Our Vision",
-        "text": "A more secure, more autonomous, and better-prepared Europe—built on a solid, integrated, and innovative industrial and technological base."
-      },
-      "values": {
-        "title": "Our Values",
-        "deterrence": "Deterrence",
-        "deterrenceDesc": "Security through technological superiority and preparedness",
-        "autonomy": "Autonomy",
-        "autonomyDesc": "Developing sovereign capabilities to reduce dependencies",
-        "innovation": "Innovation",
-        "innovationDesc": "Cutting-edge solutions for complex challenges",
-        "collaboration": "Collaboration",
-        "collaborationDesc": "Integrating SMEs, research centers, and industrial partners"
-      },
-      "european": {
-        "title": "European Commitment",
-        "text": "As a European-focused organization, we are committed to strengthening the continent's technological sovereignty and industrial base. We actively participate in EU defense and security programs, contributing to a more resilient and autonomous Europe."
-      },
-      "links": {
-        "team": "Meet Our Team",
-        "teamDesc": "Discover the experts driving our mission forward.",
-        "partners": "Our Partners",
-        "partnersDesc": "Explore our ecosystem of industrial and academic partners."
-      }
-    },
-    "team": {
-      "meta": {
-        "title": "Our Team | Dualys Leadership",
-        "description": "Meet the leadership team at Dualys, experts in defense, cybersecurity, and dual-use technologies."
-      },
-      "title": "Our Team",
-      "subtitle": "Meet the experts driving European technological autonomy",
-      "leadership": {
-        "title": "Leadership Team",
-        "subtitle": "Our diverse team brings together expertise from defense, technology, and European institutions."
-      },
-      "members": {
-        "member1": {
-          "name": "Executive Director",
-          "role": "Chief Executive Officer",
-          "description": "Leading Dualys's strategic vision and European positioning."
-        },
-        "member2": {
-          "name": "Technology Director",
-          "role": "Chief Technology Officer",
-          "description": "Overseeing technological development and innovation programs."
-        },
-        "member3": {
-          "name": "Operations Director",
-          "role": "Chief Operations Officer",
-          "description": "Managing partnerships and operational excellence."
-        },
-        "member4": {
-          "name": "Strategy Director",
-          "role": "Chief Strategy Officer",
-          "description": "Driving European program participation and market development."
-        }
-      },
-      "joinUs": {
-        "title": "Join Our Team",
-        "text": "We're always looking for talented professionals passionate about European security and dual-use technologies.",
-        "cta": "Contact Us"
-      }
-    },
-    "partners": {
-      "meta": {
-        "title": "Partners | Dualys Ecosystem",
-        "description": "Explore Dualys's partner ecosystem of industrial leaders, academic institutions, and research centers."
-      },
-      "title": "Our Partners",
-      "subtitle": "Building capabilities through strategic collaboration",
-      "ecosystem": {
-        "title": "Partner Ecosystem",
-        "text": "Our strength lies in our diverse network of partners, combining industrial expertise, academic research, and institutional support to deliver cutting-edge solutions."
-      },
-      "categories": {
-        "industry": {
-          "title": "Industrial Partners",
-          "description": "Leading defense and technology companies"
-        },
-        "academic": {
-          "title": "Academic Partners",
-          "description": "Universities and educational institutions"
-        },
-        "research": {
-          "title": "Research Centers",
-          "description": "Innovation and R&D organizations"
-        },
-        "institutional": {
-          "title": "Institutional Partners",
-          "description": "Government and EU agencies"
-        }
-      },
-      "cta": {
-        "title": "Become a Partner",
-        "text": "Join our ecosystem and contribute to European technological sovereignty.",
-        "button": "Get in Touch"
-      }
-    },
-    "capabilities": {
-      "meta": {
-        "title": "Capabilities | Dualys Technologies",
-        "description": "Explore Dualys's capabilities in defense, cybersecurity, biosecurity, and dual-use technologies."
-      },
-      "title": "Our Capabilities",
-      "subtitle": "Enabling technologies for a more secure and autonomous Europe",
-      "approach": {
-        "title": "Our Approach",
-        "text": "We follow a systematic approach to developing and delivering enabling capabilities.",
-        "step1": {
-          "title": "Identify",
-          "text": "Assess needs and identify technological gaps"
-        },
-        "step2": {
-          "title": "Develop",
-          "text": "Build solutions with our partner ecosystem"
-        },
-        "step3": {
-          "title": "Deploy",
-          "text": "Implement and support operational readiness"
-        }
-      },
-      "cta": {
-        "title": "Ready to Explore Our Capabilities?",
-        "text": "Contact us to discuss how we can support your security and technology needs.",
-        "button": "Contact Us"
-      }
-    },
-    "defense": {
-      "meta": {
-        "title": "Defense Technologies | Dualys",
-        "description": "Discover Dualys's defense capabilities including unmanned systems, sensors, and autonomous platforms."
-      },
-      "title": "Defense Technologies",
-      "subtitle": "Advanced systems for modern defense requirements",
-      "overview": {
-        "title": "Defense Capabilities Overview",
-        "text1": "Our defense technology portfolio encompasses cutting-edge unmanned systems, advanced sensors, and autonomous platforms designed to meet the evolving needs of modern armed forces.",
-        "text2": "We work closely with defense institutions and industrial partners to develop solutions that enhance operational capabilities while ensuring interoperability with allied systems."
-      },
-      "technologies": {
-        "title": "Key Technologies",
-        "subtitle": "Comprehensive defense technology solutions"
-      },
-      "tech": {
-        "uav": {
-          "title": "Unmanned Aerial Vehicles",
-          "description": "Advanced drone systems for reconnaissance, surveillance, and tactical operations."
-        },
-        "comms": {
-          "title": "Secure Communications",
-          "description": "Encrypted communication systems for battlefield coordination."
-        },
-        "sensors": {
-          "title": "Advanced Sensors",
-          "description": "Multi-spectral sensing and target acquisition systems."
-        },
-        "surveillance": {
-          "title": "Surveillance Systems",
-          "description": "Integrated surveillance networks for situational awareness."
-        },
-        "autonomous": {
-          "title": "Autonomous Systems",
-          "description": "AI-enabled autonomous platforms for various defense applications."
-        },
-        "protection": {
-          "title": "Force Protection",
-          "description": "Systems for personnel and asset protection in hostile environments."
-        }
-      },
-      "useCases": {
-        "title": "Applications",
-        "defense": "Defense",
-        "civil": "Civil",
-        "case1": {
-          "title": "Border Surveillance",
-          "description": "Integrated sensor networks for continuous border monitoring."
-        },
-        "case2": {
-          "title": "Search and Rescue",
-          "description": "UAV-assisted search operations in difficult terrain."
-        },
-        "case3": {
-          "title": "Maritime Security",
-          "description": "Naval surveillance and protection systems."
-        }
-      },
-      "cta": {
-        "title": "Interested in Defense Solutions?",
-        "text": "Contact us to discuss your defense technology requirements.",
-        "button": "Get in Touch"
-      }
-    },
-    "cybersecurity": {
-      "meta": {
-        "title": "Cybersecurity Solutions | Dualys",
-        "description": "Comprehensive cybersecurity solutions for critical infrastructure protection and digital resilience."
-      },
-      "title": "Cybersecurity",
-      "subtitle": "Protecting critical digital infrastructure",
-      "overview": {
-        "title": "Cybersecurity Capabilities",
-        "text1": "In an increasingly connected world, protecting digital infrastructure is paramount. Our cybersecurity solutions address the full spectrum of threats facing modern organizations and nations.",
-        "text2": "We combine technical expertise with deep understanding of regulatory requirements to deliver comprehensive security solutions."
-      },
-      "services": {
-        "title": "Our Services",
-        "subtitle": "End-to-end cybersecurity capabilities",
-        "protection": {
-          "title": "Threat Protection",
-          "description": "Advanced threat detection and prevention systems."
-        },
-        "infrastructure": {
-          "title": "Infrastructure Security",
-          "description": "Securing critical infrastructure and operational technology."
-        },
-        "network": {
-          "title": "Network Security",
-          "description": "Comprehensive network monitoring and defense solutions."
-        },
-        "crypto": {
-          "title": "Cryptographic Solutions",
-          "description": "Advanced encryption and key management systems."
-        },
-        "threat": {
-          "title": "Threat Intelligence",
-          "description": "Real-time threat intelligence and analysis services."
-        },
-        "compliance": {
-          "title": "Compliance & Governance",
-          "description": "Regulatory compliance and security governance support."
-        }
-      },
-      "standards": {
-        "title": "Standards & Compliance",
-        "text": "Our solutions are designed to meet the highest international security standards and regulatory requirements."
-      },
-      "cta": {
-        "title": "Strengthen Your Cyber Defenses",
-        "text": "Contact us to assess your cybersecurity posture and requirements.",
-        "button": "Contact Us"
-      }
-    },
-    "biosecurity": {
-      "meta": {
-        "title": "Biosecurity Capabilities | Dualys",
-        "description": "Bio-sanitary response capabilities and health security solutions for emerging biological threats."
-      },
-      "title": "Biosecurity",
-      "subtitle": "Health security solutions for emerging threats",
-      "overview": {
-        "title": "Biosecurity Capabilities",
-        "text1": "Our biosecurity portfolio addresses the growing need for preparedness against biological threats, from natural pandemics to deliberate biological incidents.",
-        "text2": "We develop integrated solutions that combine detection, response, and protection capabilities to safeguard public health and national security."
-      },
-      "capabilities": {
-        "title": "Key Capabilities",
-        "subtitle": "Comprehensive biosecurity solutions",
-        "detection": {
-          "title": "Threat Detection",
-          "description": "Early warning systems for biological agent detection."
-        },
-        "monitoring": {
-          "title": "Health Monitoring",
-          "description": "Surveillance systems for epidemiological monitoring."
-        },
-        "response": {
-          "title": "Rapid Response",
-          "description": "Coordinated response capabilities for biological incidents."
-        },
-        "medical": {
-          "title": "Medical Countermeasures",
-          "description": "Development and stockpiling of medical countermeasures."
-        },
-        "protection": {
-          "title": "Personal Protection",
-          "description": "Advanced protective equipment and decontamination systems."
-        },
-        "health": {
-          "title": "Public Health Systems",
-          "description": "Integrated public health information systems."
-        }
-      },
-      "applications": {
-        "title": "Applications",
-        "text": "Our biosecurity solutions serve both civilian public health needs and defense requirements, ensuring comprehensive protection against biological threats."
-      },
-      "cta": {
-        "title": "Enhance Your Biosecurity Preparedness",
-        "text": "Contact us to discuss biosecurity solutions for your organization.",
-        "button": "Get in Touch"
-      }
-    },
-    "dualUse": {
-      "meta": {
-        "title": "Dual-Use Technologies | Dualys",
-        "description": "Technologies with both civil and defense applications, driving innovation while ensuring strategic preparedness."
-      },
-      "title": "Dual-Use Technologies",
-      "subtitle": "Innovation for both civil and defense applications",
-      "overview": {
-        "title": "The Dual-Use Advantage",
-        "text1": "Dual-use technologies represent the intersection of civil innovation and defense capability. By developing technologies with applications in both domains, we maximize value and accelerate innovation.",
-        "text2": "This approach allows us to leverage commercial advancements for defense applications while ensuring civil society benefits from security-driven innovations."
-      },
-      "concept": {
-        "title": "Understanding Dual-Use",
-        "text": "Dual-use technologies serve legitimate purposes in both civilian and defense contexts, creating synergies that benefit society as a whole.",
-        "defense": {
-          "title": "Defense Applications",
-          "item1": "Surveillance and reconnaissance",
-          "item2": "Secure communications",
-          "item3": "Autonomous systems"
-        },
-        "civil": {
-          "title": "Civil Applications",
-          "item1": "Emergency response",
-          "item2": "Infrastructure monitoring",
-          "item3": "Environmental protection"
-        }
-      },
-      "civilApps": {
-        "title": "Civil Applications",
-        "subtitle": "Defense technologies serving society"
-      },
-      "applications": {
-        "firefighting": {
-          "title": "Firefighting Support",
-          "description": "UAV systems for fire detection, monitoring, and coordination of firefighting efforts."
-        },
-        "rescue": {
-          "title": "Search and Rescue",
-          "description": "Advanced sensors and autonomous systems for locating missing persons in difficult terrain."
-        },
-        "maritime": {
-          "title": "Maritime Safety",
-          "description": "Surveillance systems for maritime safety and environmental protection."
-        },
-        "infrastructure": {
-          "title": "Critical Infrastructure",
-          "description": "Monitoring and protection systems for essential infrastructure."
-        }
-      },
-      "cta": {
-        "title": "Explore Dual-Use Opportunities",
-        "text": "Contact us to discover how dual-use technologies can benefit your organization.",
-        "button": "Contact Us"
-      }
-    },
-    "sectors": {
-      "meta": {
-        "title": "Sectors We Serve | Dualys",
-        "description": "Dualys serves institutional, industrial, academic, and public sectors across Europe."
-      },
-      "title": "Sectors We Serve",
-      "subtitle": "Delivering capabilities across diverse sectors",
-      "sectors": {
-        "institutional": {
-          "title": "Institutional Sector",
-          "description": "Supporting European and national institutions in defense and security programs.",
-          "service1": "EU program participation support",
-          "service2": "Policy and strategy advisory",
-          "service3": "Capability assessment and planning"
-        },
-        "industrial": {
-          "title": "Industrial Sector",
-          "description": "Partnering with defense contractors and technology companies.",
-          "service1": "Technology integration services",
-          "service2": "Supply chain management",
-          "service3": "Joint development programs"
-        },
-        "academic": {
-          "title": "Academic Sector",
-          "description": "Collaborating with universities and research institutions.",
-          "service1": "Research partnerships",
-          "service2": "Technology transfer programs",
-          "service3": "Talent development initiatives"
-        },
-        "public": {
-          "title": "Public Sector",
-          "description": "Serving public safety and civil protection agencies.",
-          "service1": "Emergency response systems",
-          "service2": "Public safety technologies",
-          "service3": "Civil protection solutions"
-        }
-      },
-      "european": {
-        "title": "European Focus",
-        "text": "We are committed to strengthening European technological sovereignty and contributing to the EU's strategic autonomy in defense and security technologies."
-      },
-      "cta": {
-        "title": "How Can We Help Your Sector?",
-        "text": "Contact us to discuss sector-specific solutions and partnerships.",
-        "button": "Get in Touch"
-      }
-    },
-    "news": {
-      "meta": {
-        "title": "News & Insights | Dualys",
-        "description": "Latest news, announcements, and insights from Dualys on defense, cybersecurity, and dual-use technologies."
-      },
-      "title": "News & Insights",
-      "subtitle": "Stay updated with our latest developments",
-      "readMore": "Read More",
-      "categories": {
-        "announcement": "Announcement",
-        "partnership": "Partnership",
-        "technology": "Technology",
-        "event": "Event"
-      },
-      "articles": {
-        "article1": {
-          "title": "Dualys Announces Strategic Partnership",
-          "excerpt": "New collaboration to strengthen European defense capabilities through innovative dual-use technologies."
-        },
-        "article2": {
-          "title": "Participation in EU Defense Program",
-          "excerpt": "Dualys selected for participation in major European defense research initiative."
-        },
-        "article3": {
-          "title": "New Cybersecurity Solution Launch",
-          "excerpt": "Introducing advanced threat detection capabilities for critical infrastructure protection."
-        },
-        "article4": {
-          "title": "European Security Conference 2026",
-          "excerpt": "Join us at the upcoming conference to discuss the future of European defense technologies."
-        },
-        "article5": {
-          "title": "Expanding Our Partner Network",
-          "excerpt": "Welcome to our newest industrial and academic partners joining the Dualys ecosystem."
-        },
-        "article6": {
-          "title": "Innovation in Biosecurity",
-          "excerpt": "Latest developments in biological threat detection and response capabilities."
-        }
-      },
-      "newsletter": {
-        "title": "Stay Informed",
-        "text": "Subscribe to our newsletter for the latest updates on European defense and security technologies.",
-        "placeholder": "Enter your email",
-        "button": "Subscribe"
-      }
-    },
-    "contact": {
-      "meta": {
-        "title": "Contact Us | Dualys",
-        "description": "Get in touch with Dualys for inquiries about our defense, cybersecurity, and dual-use technology solutions."
-      },
-      "title": "Contact Us",
-      "subtitle": "We'd love to hear from you",
-      "info": {
-        "title": "Contact Information",
-        "address": {
-          "title": "Address",
-          "line1": "Barcelona, Catalonia",
-          "line2": "Spain, Europe"
-        },
-        "email": {
-          "title": "Email",
-          "general": "info@dualys.eu",
-          "press": "press@dualys.eu"
-        },
-        "phone": {
-          "title": "Phone",
-          "main": "+34 XXX XXX XXX"
-        },
-        "hours": {
-          "title": "Business Hours",
-          "weekdays": "Monday - Friday: 9:00 - 18:00 CET",
-          "weekend": "Weekend: Closed"
-        }
-      },
-      "form": {
-        "title": "Send Us a Message"
-      },
-      "social": {
-        "title": "Follow Us"
-      }
-    },
     "privacy": {
       "meta": {
         "title": "Privacy Policy | Dualys",
         "description": "Dualys privacy policy explaining how we collect, use, and protect your personal information."
       },
       "title": "Privacy Policy",
-      "lastUpdated": "Last updated: January 2026",
+      "lastUpdated": "Last updated: March 2026",
       "sections": {
         "introduction": {
           "title": "Introduction",
@@ -609,7 +273,7 @@
         },
         "dataCollection": {
           "title": "Information We Collect",
-          "content": "We collect information that you voluntarily provide to us when you contact us through our website, including your name, email address, organization, and any other information you choose to provide in your message."
+          "content": "We collect information that you voluntarily provide when you contact us through our website, including your name, company, email address, sector, and a description of your challenge."
         },
         "dataUse": {
           "title": "How We Use Your Information",
@@ -629,7 +293,7 @@
         },
         "cookies": {
           "title": "Cookies",
-          "content": "Our website uses cookies to enhance your experience. Please refer to our Cookie Policy for more information about how we use cookies."
+          "content": "Our website uses cookies to enhance your experience. Please refer to our Cookie Policy for more information."
         },
         "changes": {
           "title": "Changes to This Policy",
@@ -637,17 +301,17 @@
         },
         "contact": {
           "title": "Contact Us",
-          "content": "If you have any questions about this Privacy Policy, please contact us at privacy@dualys.eu."
+          "content": "If you have any questions about this Privacy Policy, please contact us at info@dualys.eu."
         }
       }
     },
     "terms": {
       "meta": {
-        "title": "Terms of Use | Dualys",
-        "description": "Terms and conditions for using the Dualys website and services."
+        "title": "Legal Notice | Dualys",
+        "description": "Legal notice and terms of use for the Dualys website."
       },
-      "title": "Terms of Use",
-      "lastUpdated": "Last updated: January 2026",
+      "title": "Legal Notice",
+      "lastUpdated": "Last updated: March 2026",
       "sections": {
         "acceptance": {
           "title": "Acceptance of Terms",
@@ -661,13 +325,9 @@
           "title": "Intellectual Property",
           "content": "All content on this website, including text, graphics, logos, and images, is the property of Dualys or its content suppliers and is protected by intellectual property laws."
         },
-        "userConduct": {
-          "title": "User Conduct",
-          "content": "You agree not to use this website in any way that could damage, disable, or impair the website, or interfere with any other party's use of the website."
-        },
         "disclaimers": {
           "title": "Disclaimers",
-          "content": "This website and its content are provided \"as is\" without warranties of any kind, either express or implied. Dualys does not warrant that the website will be uninterrupted or error-free."
+          "content": "This website and its content are provided \"as is\" without warranties of any kind. Dualys does not warrant that the website will be uninterrupted or error-free."
         },
         "limitation": {
           "title": "Limitation of Liability",
@@ -677,13 +337,9 @@
           "title": "Governing Law",
           "content": "These Terms shall be governed by and construed in accordance with the laws of Spain and the European Union. Any disputes shall be subject to the exclusive jurisdiction of the courts of Barcelona."
         },
-        "changes": {
-          "title": "Changes to Terms",
-          "content": "We reserve the right to modify these Terms at any time. Changes will be effective immediately upon posting to the website."
-        },
         "contact": {
           "title": "Contact",
-          "content": "For questions about these Terms, please contact us at legal@dualys.eu."
+          "content": "For questions about this Legal Notice, please contact us at info@dualys.eu."
         }
       }
     },
@@ -693,7 +349,7 @@
         "description": "Information about how Dualys uses cookies on its website."
       },
       "title": "Cookie Policy",
-      "lastUpdated": "Last updated: January 2026",
+      "lastUpdated": "Last updated: March 2026",
       "sections": {
         "whatAreCookies": {
           "title": "What Are Cookies?",
@@ -701,15 +357,11 @@
         },
         "howWeUse": {
           "title": "How We Use Cookies",
-          "content": "We use cookies to understand how you interact with our website, to remember your preferences, and to improve your overall experience on our site."
+          "content": "We use cookies to understand how you interact with our website, to remember your preferences, and to improve your overall experience."
         },
         "types": {
           "title": "Types of Cookies We Use",
           "content": "Essential Cookies: Required for the website to function properly.\nAnalytics Cookies: Help us understand how visitors interact with our website.\nPreference Cookies: Remember your settings and preferences."
-        },
-        "thirdParty": {
-          "title": "Third-Party Cookies",
-          "content": "We may use third-party services that place cookies on your device. These services help us analyze website traffic and improve our services."
         },
         "manage": {
           "title": "Managing Cookies",
@@ -717,7 +369,7 @@
         },
         "contact": {
           "title": "Contact Us",
-          "content": "If you have questions about our use of cookies, please contact us at privacy@dualys.eu."
+          "content": "If you have questions about our use of cookies, please contact us at info@dualys.eu."
         }
       }
     }

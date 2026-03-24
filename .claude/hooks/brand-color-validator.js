@@ -3,6 +3,9 @@
  * Hook: brand-color-validator.js
  * Validates that TSX components only use on-brand Tailwind colors.
  *
+ * Supports Claude Code hook protocol (stdin JSON) and CLI argument.
+ * Exit code 2 = block the operation (Claude Code hook convention).
+ *
  * Dualys Brand Colors:
  * - primary-* (black scale)
  * - accent-* (blue #4F61E7)
@@ -15,139 +18,103 @@
 const fs = require('fs');
 const path = require('path');
 
-// Get file path from environment or arguments
-const filePath = process.env.CLAUDE_FILE_PATH || process.argv[2];
+function validate(filePath) {
+  // Only validate TSX/JSX files in src/
+  if (!filePath) { process.exit(0); }
+  const normalized = filePath.replace(/\\/g, '/');
+  if (!normalized.includes('/src/') || !normalized.match(/\.(tsx|jsx)$/)) {
+    process.exit(0);
+  }
 
-if (!filePath) {
-  console.log('brand-color-validator: No file path provided');
-  process.exit(0);
-}
+  let content;
+  try {
+    content = fs.readFileSync(filePath, 'utf-8');
+  } catch (error) {
+    process.exit(0); // File might not exist yet during Write preview
+  }
 
-// Only validate TSX/JSX files in src/
-if (!filePath.match(/src\/.*\.(tsx|jsx)$/)) {
-  process.exit(0);
-}
+  const violations = [];
 
-// Read file content
-let content;
-try {
-  content = fs.readFileSync(filePath, 'utf-8');
-} catch (error) {
-  console.error(`Error reading file: ${filePath}`);
-  process.exit(1);
-}
+  // Banned Tailwind color families
+  const bannedColors = [
+    'purple', 'violet', 'indigo',
+    'pink', 'rose', 'fuchsia',
+    'cyan', 'sky', 'lime', 'orange',
+    'teal', 'emerald'
+  ];
 
-const violations = [];
+  const colorPrefixes = ['bg', 'text', 'border', 'from', 'to', 'via', 'ring', 'outline', 'fill', 'stroke', 'divide', 'placeholder'];
 
-// ============================================
-// BANNED TAILWIND COLOR CLASSES
-// ============================================
+  for (const color of bannedColors) {
+    for (const prefix of colorPrefixes) {
+      const pattern = new RegExp(`${prefix}-${color}(-\\d+)?`, 'g');
+      const matches = content.match(pattern);
+      if (matches) {
+        violations.push({
+          type: 'OFF-BRAND',
+          classes: [...new Set(matches)],
+          suggestion: `Replace ${color}-* with accent-*, neutral-*, or primary-*`
+        });
+      }
+    }
+  }
 
-const bannedColors = [
-  'purple', 'violet', 'indigo',
-  'pink', 'rose', 'fuchsia',
-  'cyan', 'sky', 'lime', 'orange',
-  'teal', 'emerald'
-];
+  // Check hardcoded hex colors (excluding brand)
+  const allowedHex = ['#000000', '#ffffff', '#fff', '#000', '#4f61e7', '#4F61E7'];
+  const hexMatches = content.match(/#[0-9a-fA-F]{3,6}(?![0-9a-fA-F])/g);
 
-// Pattern to match Tailwind color utilities: bg-purple-50, text-violet-600, etc.
-const colorPrefixes = ['bg', 'text', 'border', 'from', 'to', 'via', 'ring', 'outline', 'fill', 'stroke', 'divide', 'placeholder'];
-
-for (const color of bannedColors) {
-  for (const prefix of colorPrefixes) {
-    // Match patterns like: bg-purple-50, text-purple-600, etc.
-    const pattern = new RegExp(`${prefix}-${color}-\\d+`, 'g');
-    const matches = content.match(pattern);
-
-    if (matches) {
+  if (hexMatches) {
+    const invalid = hexMatches.filter(hex =>
+      !allowedHex.includes(hex.toLowerCase()) && !allowedHex.includes(hex.toUpperCase())
+    );
+    if (invalid.length > 0) {
       violations.push({
-        type: 'OFF-BRAND',
-        classes: [...new Set(matches)],
-        suggestion: `Replace ${color}-* with accent-*, neutral-*, or primary-*`
+        type: 'HARDCODED-COLOR',
+        classes: [...new Set(invalid)],
+        suggestion: 'Use Tailwind tokens: primary-*, accent-*, neutral-*'
       });
     }
   }
-}
 
-// ============================================
-// BANNED RAW TAILWIND COLORS (without scale)
-// ============================================
+  const fileName = path.basename(filePath);
 
-for (const color of bannedColors) {
-  for (const prefix of colorPrefixes) {
-    // Match patterns without scale: bg-purple, text-indigo (less common but possible)
-    const patternNoScale = new RegExp(`\\b${prefix}-${color}\\b(?!-)`, 'g');
-    const matchesNoScale = content.match(patternNoScale);
-
-    if (matchesNoScale) {
-      violations.push({
-        type: 'OFF-BRAND',
-        classes: [...new Set(matchesNoScale)],
-        suggestion: `Replace ${color} with accent, neutral, or primary`
-      });
-    }
+  if (violations.length === 0) {
+    process.exit(0);
   }
-}
 
-// ============================================
-// CHECK FOR HARDCODED HEX COLORS (excluding known brand)
-// ============================================
-
-const allowedHexColors = [
-  '#000000', '#ffffff', '#fff', '#000',  // Black & White
-  '#4f61e7', '#4F61E7',                  // Brand accent blue
-  // Add hex colors from the accent scale if needed
-];
-
-const hexPattern = /#[0-9a-fA-F]{3,6}(?![0-9a-fA-F])/g;
-const hexMatches = content.match(hexPattern);
-
-if (hexMatches) {
-  const invalidHex = hexMatches.filter(hex =>
-    !allowedHexColors.includes(hex.toLowerCase()) &&
-    !allowedHexColors.includes(hex.toUpperCase())
-  );
-
-  if (invalidHex.length > 0) {
-    violations.push({
-      type: 'HARDCODED-COLOR',
-      classes: [...new Set(invalidHex)],
-      suggestion: 'Use Tailwind tokens: primary-*, accent-*, neutral-*'
-    });
-  }
-}
-
-// ============================================
-// OUTPUT
-// ============================================
-
-const fileName = path.basename(filePath);
-
-if (violations.length === 0) {
-  console.log(`brand-color-validator: ${fileName} - All colors on-brand`);
-  process.exit(0);
-}
-
-console.log(`\nBRAND COLOR VIOLATIONS: ${fileName}`);
-console.log('─'.repeat(50));
-
-let totalClasses = 0;
-violations.forEach((v, i) => {
-  console.log(`\n[${v.type}] Found off-brand colors:`);
-  v.classes.forEach(cls => {
-    console.log(`   - ${cls}`);
-    totalClasses++;
+  // Output violations to stderr (Claude Code reads stderr for hook feedback)
+  let msg = `\nBRAND COLOR VIOLATIONS: ${fileName}\n`;
+  msg += '─'.repeat(50) + '\n';
+  let total = 0;
+  violations.forEach(v => {
+    msg += `[${v.type}] ${v.classes.join(', ')}\n`;
+    msg += `   Fix: ${v.suggestion}\n`;
+    total += v.classes.length;
   });
-  console.log(`   Suggestion: ${v.suggestion}`);
-});
+  msg += '─'.repeat(50) + '\n';
+  msg += `${total} violations. Use: primary-*, accent-*, neutral-*, or semantic colors.\n`;
 
-console.log('─'.repeat(50));
-console.log(`Total violations: ${totalClasses} classes in ${violations.length} categories`);
-console.log('\nAllowed color families:');
-console.log('   - primary-* (black scale)');
-console.log('   - accent-* (blue #4F61E7)');
-console.log('   - neutral-* (gray scale)');
-console.log('   - success, warning, destructive, info (semantic)');
+  process.stderr.write(msg);
+  // Exit 2 = block the operation in Claude Code hooks
+  process.exit(2);
+}
 
-// Exit with error to flag the issue
-process.exit(1);
+// Main: determine file path from CLI arg, env var, or stdin
+const directPath = process.argv[2] || process.env.CLAUDE_FILE_PATH;
+
+if (directPath) {
+  validate(directPath);
+} else {
+  // Read from stdin async (Claude Code hook protocol: JSON on stdin)
+  let data = '';
+  process.stdin.setEncoding('utf8');
+  process.stdin.on('data', (chunk) => { data += chunk; });
+  process.stdin.on('end', () => {
+    try {
+      const parsed = JSON.parse(data);
+      validate(parsed.tool_input?.file_path || '');
+    } catch {
+      process.exit(0);
+    }
+  });
+}

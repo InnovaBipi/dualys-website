@@ -236,7 +236,16 @@
       "Bash(Select-String -Pattern \"legal\" -CaseSensitive)",
       "Bash(npx next dev --turbopack --port 3099)",
       "Bash(git diff:*)",
-      "Bash(git restore:*)"
+      "Bash(git restore:*)",
+      "Bash(vercel --prod:*)",
+      "Bash(Preparedness\" to \"Preparing Industrial Companies for the Defense Sector\"\nacross all 6 languages \\(en, es, ca, fr, de, it\\).\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(npm test)",
+      "Bash(gh auth refresh:*)",
+      "Bash(nslookup:*)",
+      "Bash(printf '{\"\"\"\"tool_input\"\"\"\":{\"\"\"\"file_path\"\"\"\":\"\"\"\"/tmp/src/test.tsx\"\"\"\"}}')",
+      "Bash(RC=$?)",
+      "Bash(chmod +x .claude/hooks/run-brand-validator.sh)",
+      "Bash(EXIT=$?)"
     ]
   },
   "enableAllProjectMcpServers": true,
@@ -244,5 +253,18 @@
     "serena",
     "memory",
     "github"
-  ]
+  ],
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/run-brand-validator.sh"
+          }
+        ]
+      }
+    ]
+  }
 }

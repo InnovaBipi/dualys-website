@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/lib/i18n/navigation';
 import { Container } from '@/components/ui/container';
-import { Linkedin, Twitter, Shield, Award, CheckCircle } from 'lucide-react';
+import { Linkedin, MapPin, Mail } from 'lucide-react';
 
 export function Footer() {
   const t = useTranslations('footer');
@@ -11,10 +11,11 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { name: tNav('about'), href: '/about' },
-    { name: tNav('capabilities'), href: '/capabilities' },
-    { name: tNav('sectors'), href: '/sectors' },
-    { name: tNav('news'), href: '/news' },
+    { name: tNav('servicios'), href: '/servicios' },
+    { name: tNav('sectores'), href: '/sectores' },
+    { name: tNav('metodologia'), href: '/metodologia' },
+    { name: tNav('nosotros'), href: '/nosotros' },
+    { name: tNav('recursos'), href: '/recursos' },
     { name: tNav('contact'), href: '/contact' },
   ];
 
@@ -25,48 +26,63 @@ export function Footer() {
   ];
 
   return (
-    <footer className="border-t border-neutral-200 bg-neutral-50">
+    <footer className="bg-primary-950 text-white">
       <Container className="py-12 md:py-16">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
-          {/* Brand */}
-          <div className="md:col-span-2">
-            <Link href="/" className="text-xl font-bold text-primary-500">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
+          {/* Brand & Contact Info */}
+          <div className="md:col-span-5">
+            <Link href="/" className="text-xl font-bold text-white">
               Dualys
             </Link>
-            <p className="mt-4 max-w-md text-sm text-neutral-600">
+            <p className="mt-4 max-w-md text-sm text-neutral-300">
               {t('description')}
             </p>
-            <div className="mt-6 flex gap-4">
+
+            {/* Address */}
+            <div className="mt-6 flex items-start gap-3">
+              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent-400" aria-hidden="true" />
+              <span className="text-sm text-neutral-300">
+                {t('address')}
+              </span>
+            </div>
+
+            {/* Email */}
+            <div className="mt-3 flex items-center gap-3">
+              <Mail className="h-4 w-4 shrink-0 text-accent-400" aria-hidden="true" />
               <a
-                href="https://www.linkedin.com/company/dualys-strategy/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-neutral-500 transition-colors hover:text-accent-500"
-                aria-label="LinkedIn"
+                href={`mailto:${t('email')}`}
+                className="text-sm text-neutral-300 transition-colors hover:text-accent-400"
               >
-                <Linkedin className="h-5 w-5" />
+                {t('email')}
               </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-neutral-500 transition-colors hover:text-accent-500"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-5 w-5" />
-              </a>
+            </div>
+
+            {/* Social */}
+            <div className="mt-6">
+              <p className="text-sm font-semibold text-neutral-200">{t('followUs')}</p>
+              <div className="mt-3 flex gap-4">
+                <a
+                  href="https://www.linkedin.com/company/dualys-strategy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-neutral-400 transition-colors hover:text-accent-400"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="h-5 w-5" />
+                </a>
+              </div>
             </div>
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h3 className="text-sm font-semibold text-neutral-900">{t('quickLinks')}</h3>
+          <div className="md:col-span-3 md:col-start-7">
+            <h3 className="text-sm font-semibold text-neutral-200">{t('quickLinks')}</h3>
             <ul className="mt-4 space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-neutral-600 transition-colors hover:text-accent-500"
+                    className="text-sm text-neutral-400 transition-colors hover:text-accent-400"
                   >
                     {link.name}
                   </Link>
@@ -76,14 +92,14 @@ export function Footer() {
           </div>
 
           {/* Legal */}
-          <div>
-            <h3 className="text-sm font-semibold text-neutral-900">{t('legal')}</h3>
+          <div className="md:col-span-3">
+            <h3 className="text-sm font-semibold text-neutral-200">{t('legal')}</h3>
             <ul className="mt-4 space-y-3">
               {legalLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-neutral-600 transition-colors hover:text-accent-500"
+                    className="text-sm text-neutral-400 transition-colors hover:text-accent-400"
                   >
                     {link.name}
                   </Link>
@@ -93,26 +109,8 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Trust Signals */}
-        <div className="mt-12 border-t border-neutral-200 pt-8">
-          <div className="flex flex-wrap items-center justify-center gap-8 opacity-60">
-            <div className="flex items-center gap-2 text-neutral-500">
-              <Shield className="h-5 w-5" />
-              <span className="text-xs font-medium uppercase tracking-wider">EU Security Standards</span>
-            </div>
-            <div className="flex items-center gap-2 text-neutral-500">
-              <Award className="h-5 w-5" />
-              <span className="text-xs font-medium uppercase tracking-wider">ISO 27001</span>
-            </div>
-            <div className="flex items-center gap-2 text-neutral-500">
-              <CheckCircle className="h-5 w-5" />
-              <span className="text-xs font-medium uppercase tracking-wider">NATO Compatible</span>
-            </div>
-          </div>
-        </div>
-
         {/* Copyright */}
-        <div className="mt-8 border-t border-neutral-200 pt-8">
+        <div className="mt-12 border-t border-neutral-800 pt-8">
           <p className="text-center text-sm text-neutral-500">
             {t('copyright', { year: currentYear })}
           </p>

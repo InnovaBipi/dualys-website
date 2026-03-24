@@ -9,20 +9,30 @@ This rule documents which content on the Dualys website is placeholder (awaiting
 The following content is derived from official Dualys brand documents and should NOT be changed without review:
 
 ### Key Messages
-**Source**: `docs/Reflexions_Posicionament_Dualys_22gen2026.pdf`
+**Source**: `DUALYS_Copy_Web_Completo_ES_final.pdf` (Briefing v2.0, March 2026)
 
-- Slogan: "Protecting democracy with dual deterrence technologies"
-- Social message: Deterrence through technological superiority
-- Industrial message: Enabling capabilities for European autonomy
-- Public message: Protecting democratic values through preparation
+- Slogan: "Building Dual Capabilities for the Industry"
+- Value prop 1: "Construir capacidades duales para la industria."
+- Value prop 2: "Convertimos la capacidad industrial y tecnológica de tu empresa en negocio real dentro del sector defensa."
+- Value prop 3: "Somos el puente estratégico que faltaba entre la industria y los mercados duales europeos."
 
-### Capability Descriptions
-**Source**: Official positioning documents
+### Defense Verticals
+**Source**: Briefing v2.0, Section 6
 
-- Defense: Unmanned systems, autonomous platforms
-- Cybersecurity: Digital infrastructure protection
-- Biosecurity: Bio-sanitary response capabilities
-- Dual-Use: Civil + defense technology applications
+9 verticals defined (terrestres, naval, aeronáutica, aeroespacial, C4ISR, ciberdefensa, UAV/robótica, simulación, auxiliar). See 001-project-identity.md for full list.
+
+### Company Narrative & Founder Profiles
+**Source**: Briefing v2.0, Section 8.6
+
+- Company origin story (real, from briefing)
+- 4 founder profiles (anonymous descriptions, real roles)
+- Vision timeline: 3 phases (2025-2030)
+
+### Contact Information
+**Source**: Briefing v2.0, Section 8.8
+
+- Email: info@dualys.eu (real)
+- Address: Camí Can Ametller 36 Planta Baixa, 08195 Sant Cugat del Vallès (real)
 
 ### Brand Colors and Typography
 **Source**: `docs/branding/Guideline Marca Dualys 2026.pdf`

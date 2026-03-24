@@ -1,724 +1,304 @@
 {
   "metadata": {
-    "title": "Dualys | Tecnologies de Doble Ús per a la Seguretat Europea",
-    "description": "Protegint la democràcia amb tecnologies de dissuasió dual. Dualys desenvolupa capacitats habilitadores en defensa, ciberseguretat i bioseguretat per a l'autonomia estratègica europea."
+    "title": "Dualys | Consultora Estratègica per al Sector Defensa",
+    "description": "Construïm capacitats duals per a la indústria. Facilitem l'entrada d'empreses industrials i tecnològiques al sector defensa europeu."
   },
   "nav": {
     "home": "Inici",
-    "about": "Nosaltres",
-    "aboutUs": "Sobre Nosaltres",
-    "team": "Equip",
-    "partners": "Socis",
-    "capabilities": "Capacitats",
-    "defense": "Defensa",
-    "cybersecurity": "Ciberseguretat",
-    "biosecurity": "Bioseguretat",
-    "dualUse": "Tecnologia Dual",
-    "sectors": "Sectors",
-    "news": "Notícies",
+    "servicios": "Serveis",
+    "sectores": "Sectors",
+    "metodologia": "Metodologia",
+    "nosotros": "Nosaltres",
+    "recursos": "Recursos",
     "contact": "Contacte",
     "language": "Idioma"
   },
   "hero": {
-    "tagline": "Tecnologies de Doble Ús",
-    "title": "Preparant a les empreses industrials pel sector defensa",
-    "subtitle": "Desenvolupem capacitats habilitadores en defensa, ciberseguretat i bioseguretat per enfortir l'autonomia estratègica europea.",
-    "cta": "Descobriu les Nostres Capacitats",
-    "ctaSecondary": "Contacteu-nos"
+    "title": "La teva empresa té el que el sector defensa necessita. Nosaltres t'ajudem a arribar-hi.",
+    "subtitle": "DUALYS és el pont entre la capacitat industrial i tecnològica de les empreses espanyoles, i amb èmfasi inicialment en les catalanes i els mercats duals europeus. Accelerem la teva entrada al sector defensa amb criteri, metodologia i xarxa de contactes real.",
+    "cta": "Sol·licita el teu diagnòstic",
+    "ctaSecondary": "Coneix la nostra metodologia",
+    "contextNote": "Europa ha compromès +800.000 M€ en defensa fins al 2030. El moment de posicionar-se és ara."
   },
-  "capabilities": {
-    "title": "Les Nostres Capacitats",
-    "subtitle": "Tecnologies habilitadores per a una Europa més segura i autònoma",
-    "defense": {
-      "title": "Defensa",
-      "description": "Sistemes no tripulats, sensors avançats i plataformes autònomes per als requisits de defensa moderns."
+  "homepage": {
+    "context": {
+      "title": "Per què ara",
+      "paragraph1": "Europa viu una transformació estructural en matèria de defensa. El Readiness Europe 2030 mobilitza fins a 800.000 milions d'euros en compres i projectes orientats a reforçar la Base Tecnològica i Industrial de Defensa Europea (BTID). A Espanya, el Pla Industrial de Seguretat i Defensa ja està actiu amb 44.000 milions d'euros de dotació per als pròxims anys i la política d'assolir i mantenir el 2% del PIB en inversió defensiva.",
+      "paragraph2": "Espanya disposa d'un ecosistema industrial i tecnològic de primer nivell: empreses líders en automoció, aeronàutica, compostos, electrònica, intel·ligència artificial, robòtica i ciberseguretat. Capacitats que el sector defensa necessita, ara mateix, per construir cadenes de subministrament més resilients i d'origen europeu.",
+      "paragraph3": "El problema no és la manca de potencial. La majoria de pimes i empreses tecnològiques catalanes no coneixen els mecanismes d'entrada, les certificacions necessàries ni els circuits del mercat de defensa. Això és exactament el que DUALYS resol.",
+      "stat1": "800.000 M€",
+      "stat1Label": "Inversió europea en defensa fins al 2030",
+      "stat2": "44.000 M€",
+      "stat2Label": "Pla Industrial de Seguretat i Defensa d'Espanya",
+      "stat3": "2%",
+      "stat3Label": "Objectiu del PIB en inversió defensiva"
     },
-    "cybersecurity": {
-      "title": "Ciberseguretat",
-      "description": "Protecció d'infraestructures digitals crítiques amb sistemes de comunicació resilients i segurs."
+    "audience": {
+      "title": "Per a qui és DUALYS",
+      "industrial": {
+        "title": "Per a industrials",
+        "description": "Fabricants de components, manufactura de precisió, automoció, aeronàutica, compostos, electrònica industrial.",
+        "cta": "Veure com treballem amb industrials"
+      },
+      "tech": {
+        "title": "Per a tecnologia i software",
+        "description": "Empreses d'IA, robòtica, ciberseguretat, comunicacions, simulació, bessons digitals, drons, IoT.",
+        "cta": "Veure com treballem amb empreses tech"
+      },
+      "primes": {
+        "title": "Per a grans primes",
+        "description": "Empreses del sector defensa que necessiten ampliar la seva cadena de subministrament amb capacitat local qualificada.",
+        "cta": "Parlem"
+      }
     },
-    "biosecurity": {
-      "title": "Bioseguretat",
-      "description": "Capacitats de resposta biosanitària i solucions de seguretat sanitària davant amenaces emergents."
+    "messages": {
+      "title": "Per què DUALYS",
+      "message1": {
+        "title": "El moment és ara",
+        "text": "Europa ha compromès centenars de milers de milions en defensa i sobirania tecnològica. El Pla Industrial de Seguretat i Defensa d'Espanya ja està actiu. Les empreses que es posicionin ara tindran avantatge estructural."
+      },
+      "message2": {
+        "title": "Espanya i Catalunya estan preparades, però falta articulació",
+        "text": "Espanya disposa de tecnologia, indústria i talent de primer nivell. El problema no és el potencial: és la desconnexió entre aquest potencial i les regles del joc del sector."
+      },
+      "message3": {
+        "title": "Som una consultora que afegeix valor al teu negoci",
+        "text": "No fem informes que acaben en un calaix. Accelerem entrades al mercat, reduïm el risc, obrim portes comercials reals."
+      },
+      "message4": {
+        "title": "La teva tecnologia civil ja és un avantatge competitiu en defensa",
+        "text": "Si fabriques peces de precisió per a l'automòbil, pots fabricar-les per a plataformes terrestres o navals. DUALYS t'ajuda a veure aquesta transferència i a fer-la operativa."
+      },
+      "message5": {
+        "title": "Reduïm el risc de la transició",
+        "text": "El sector defensa té normativa específica (AQAP/PECAL, RID, EN9100, ISO 27001, ITAR, export controls). DUALYS diagnostica primer, planifica després i executa amb criteri."
+      }
     },
-    "dualUse": {
-      "title": "Tecnologies de Doble Ús",
-      "description": "Aplicacions civils i de defensa que impulsen la innovació garantint la preparació estratègica."
-    }
-  },
-  "about": {
-    "title": "Sobre Dualys",
-    "subtitle": "Construint l'autonomia estratègica europea a través de capacitats habilitadores",
-    "mission": {
-      "title": "La Nostra Missió",
-      "text": "Articulem l'ecosistema tecnològic de Catalunya per desenvolupar capacitats habilitadores, donant-los escala i posicionant-los en els programes i debats europeus."
+    "verticals": {
+      "title": "Verticals de defensa",
+      "subtitle": "Descobreix en quines àrees del sector defensa pot posicionar-se la teva empresa",
+      "cta": "Descobreix en quina vertical encaixa la teva empresa",
+      "terrestrial": { "title": "Plataformes terrestres", "description": "Vehicles, components mecànics, sistemes hidràulics" },
+      "naval": { "title": "Sector naval", "description": "Construcció naval, compostos, electrònica marina" },
+      "aeronautics": { "title": "Aeronàutica militar", "description": "Aeronàutica civil tier 1/2, mecanitzat, compostos" },
+      "aerospace": { "title": "Aeroespacial i New Space", "description": "Materials ultra-lleugers, electrònica d'alta precisió" },
+      "c4isr": { "title": "Comunicacions (C4ISR)", "description": "Telecomunicacions, programari, xarxes segures" },
+      "cyber": { "title": "Ciberdefensa", "description": "Seguretat, encriptació, anàlisi forense digital" },
+      "uav": { "title": "UAV / UGV / USV", "description": "Robòtica, visió artificial, IA aplicada, drons" },
+      "simulation": { "title": "Simulació i entrenament", "description": "Programari de simulació, RV/RA, bessons digitals" },
+      "auxiliary": { "title": "Sector auxiliar", "description": "Tèxtil tècnic, protecció, mecanitzat CNC" }
     },
-    "vision": {
-      "title": "La Nostra Visió",
-      "text": "Una Europa més segura, més autònoma i millor preparada, construïda sobre una base industrial i tecnològica sòlida, integrada i innovadora."
-    },
-    "values": {
-      "title": "Els Nostres Valors",
-      "deterrence": "Dissuasió",
-      "deterrenceDesc": "Seguretat mitjançant superioritat tecnològica i preparació",
-      "autonomy": "Autonomia",
-      "autonomyDesc": "Desenvolupament de capacitats sobiranes per reduir dependències",
-      "innovation": "Innovació",
-      "innovationDesc": "Solucions d'avantguarda per a reptes complexos",
-      "collaboration": "Col·laboració",
-      "collaborationDesc": "Integració de pimes, centres de recerca i socis industrials"
+    "team": {
+      "title": "L'equip",
+      "text": "L'equip fundador de DUALYS combina perfils que rarament es troben junts: experiència directiva en institucions de seguretat i defensa, trajectòria política al més alt nivell amb profund coneixement de l'ecosistema empresarial espanyol i èmfasi en el català, expertise tècnic i comercial en projectes industrials i de defensa d'àmbit internacional, i capacitat per articular ecosistemes d'innovació i cadenes de valor complexes. Junts, cobrim els quatre eixos que requereix una transició dual-use exitosa: el coneixement del sector, el desenvolupament comercial, l'accés institucional i la capacitat executiva.",
+      "cta": "Coneix l'equip"
     }
   },
   "cta": {
-    "title": "Preparat per Enfortir la Seguretat Europea?",
-    "subtitle": "Uniu-vos al nostre ecosistema de socis tecnològics i contribuïu a construir l'autonomia estratègica.",
-    "button": "Contactar"
+    "title": "Construir capacitats duals per a la indústria.",
+    "subtitle": "En 2 sessions et donem un diagnòstic clar, un mapa d'oportunitats i un pla d'acció.",
+    "button": "Sol·licita el teu diagnòstic",
+    "buttonSecondary": "Parla amb nosaltres"
   },
   "footer": {
-    "description": "Protegint la democràcia amb tecnologies de dissuasió dual.",
-    "quickLinks": "Enllaços Ràpids",
+    "description": "Construïm capacitats duals per a la indústria. Facilitem l'entrada d'empreses industrials i tecnològiques al sector defensa europeu.",
+    "quickLinks": "Enllaços ràpids",
     "legal": "Legal",
-    "privacy": "Política de Privacitat",
-    "terms": "Termes d'Ús",
+    "privacy": "Política de Privadesa",
+    "terms": "Avís Legal",
     "cookies": "Política de Cookies",
-    "followUs": "Seguiu-nos",
-    "copyright": "© {year} Dualys AIE. Tots els drets reservats."
+    "followUs": "Segueix-nos",
+    "copyright": "© {year} Dualys AIE. Tots els drets reservats.",
+    "address": "Camí Can Ametller 36 Planta Baixa, 08195 Sant Cugat del Vallès (Barcelona)",
+    "email": "info@dualys.eu"
   },
   "contact": {
-    "title": "Contacteu-nos",
-    "subtitle": "Poseu-vos en contacte amb el nostre equip",
+    "title": "Contacte",
+    "subtitle": "Sol·licita el teu diagnòstic o explica'ns el teu repte",
     "form": {
-      "name": "Nom Complet",
-      "email": "Correu Electrònic",
-      "organization": "Organització",
-      "subject": "Assumpte",
-      "message": "Missatge",
-      "submit": "Enviar Missatge"
+      "name": "Nom",
+      "company": "Empresa",
+      "email": "Correu electrònic",
+      "sector": "Sector",
+      "sectorOptions": {
+        "industrial": "Industrial / Manufactura",
+        "tech": "Tecnologia / Software",
+        "defense": "Defensa / Primes",
+        "other": "Altre"
+      },
+      "challenge": "Descriu breument el teu repte",
+      "privacy": "Accepto la política de privadesa i el tractament de les meves dades.",
+      "submit": "Sol·licita el teu diagnòstic"
+    },
+    "info": {
+      "title": "Informació de contacte",
+      "address": {
+        "title": "Adreça",
+        "line1": "Camí Can Ametller 36 Planta Baixa",
+        "line2": "08195 Sant Cugat del Vallès (Barcelona)"
+      },
+      "email": {
+        "title": "Email",
+        "value": "info@dualys.eu"
+      }
     }
   },
   "common": {
-    "learnMore": "Més Informació",
-    "readMore": "Llegir Més",
-    "viewAll": "Veure Tot",
+    "learnMore": "Saber-ne més",
+    "readMore": "Llegir més",
+    "viewAll": "Veure tot",
     "back": "Tornar",
     "loading": "Carregant..."
   },
+  "servicios": {
+    "meta": {
+      "title": "Serveis | Programa d'entrada al sector defensa | Dualys",
+      "description": "Accelerem la teva entrada al mercat de defensa amb un programa estructurat, provat i orientat a resultats."
+    },
+    "title": "Serveis",
+    "subtitle": "Accelerem la teva entrada al mercat de defensa amb un programa estructurat, provat i orientat a resultats.",
+    "program": {
+      "name": "Programa FFD",
+      "fullName": "FIT FOR DEFENSE",
+      "description": "Un programa d'acompanyament integral dissenyat per transformar la capacitat industrial i tecnològica de la teva empresa en oportunitats reals dins del sector defensa."
+    },
+    "cta": "Sol·licita el teu diagnòstic"
+  },
+  "sectores": {
+    "meta": {
+      "title": "Sectors i Verticals de Defensa | Dualys",
+      "description": "Descobreix en quines àrees del sector defensa pot posicionar-se la teva empresa segons el teu perfil tecnològic i industrial."
+    },
+    "title": "Verticals de defensa",
+    "subtitle": "Descobreix en quines àrees del sector defensa pot posicionar-se la teva empresa i quines capacitats industrials o tecnològiques són transferibles.",
+    "intro": "La web ha de comunicar en quines verticals del sector defensa pot posicionar-se una empresa client, segons el seu perfil tecnològic i industrial.",
+    "originSection": {
+      "title": "D'on véns, on pots anar",
+      "subtitle": "Connexions explícites entre el teu sector d'origen i les verticals de defensa amb major accessibilitat."
+    },
+    "cta": "Sol·licita el teu diagnòstic"
+  },
+  "metodologia": {
+    "meta": {
+      "title": "Metodologia FFD | Programa d'entrada al sector defensa | Dualys",
+      "description": "Coneix el nostre programa FFD: una metodologia provada per accelerar l'entrada de la teva empresa al sector defensa."
+    },
+    "title": "Metodologia",
+    "subtitle": "FFD: Dualys — Metodologia Dualys",
+    "description": "Un programa estructurat, provat i orientat a resultats. Sota acord de confidencialitat.",
+    "phases": {
+      "phase1": { "title": "Diagnòstic", "description": "Avaluació completa de capacitats i encaix amb el sector defensa." },
+      "phase2": { "title": "Posicionament", "description": "Mapa d'oportunitats, certificacions necessàries i pla d'acció." },
+      "phase3": { "title": "Activació", "description": "Entrada real al mercat amb contactes, contractes i acompanyament." }
+    },
+    "nda": "Tots els processos de diagnòstic i assessorament es realitzen sota acord de confidencialitat.",
+    "cta": "Sol·licita el teu diagnòstic"
+  },
+  "nosotros": {
+    "meta": {
+      "title": "Nosaltres | Equip i Visió | Dualys",
+      "description": "DUALYS neix de la convicció que Espanya té els ingredients per convertir-se en un referent europeu del dual use industrial i tecnològic."
+    },
+    "title": "Nosaltres",
+    "subtitle": "Acceleradors estratègics per a la transició dual-use",
+    "narrative": {
+      "paragraph1": "DUALYS neix d'una convicció: Espanya té els ingredients per convertir-se en un referent europeu del dual use industrial i tecnològic. Tecnologia de primer nivell, indústria robusta, ecosistema innovador i talent reconegut internacionalment. El que faltava era algú que articulés aquest potencial amb les regles del joc del mercat de defensa.",
+      "paragraph2": "Fundada recentment, però amb una gran experiència adquirida durant anys, DUALYS és aquest actor. No som una consultora convencional ni un intermediari. Som acceleradors estratègics: ajudem empreses industrials, tecnològiques i de programari a comprendre el sector defensa, a posicionar-s'hi i a aconseguir els seus primers contractes reals. Amb metodologia provada, equip amb experiència de primer nivell i una xarxa de contactes construïda al llarg d'anys en institucions, empreses del sector i organismes europeus.",
+      "vision": "La nostra visió a deu anys: que Espanya sigui un dels pols europeus de referència en innovació i producció dual-use, amb desenes d'empreses com a proveïdors estratègics dels principals programes de defensa europeus i com a hub d'acceleració dual use d'Europa."
+    },
+    "founders": {
+      "title": "L'equip fundador",
+      "profile1": {
+        "title": "Visió institucional i seguretat",
+        "text": "Un dels fundadors aporta una trajectòria d'alta direcció en l'àmbit de la seguretat pública i les institucions catalanes. Ha dirigit organismes de seguretat al màxim nivell executiu i atesora un coneixement profund dels mecanismes de funcionament de les administracions i els processos de presa de decisió en entorns sensibles."
+      },
+      "profile2": {
+        "title": "Estratègia i coneixement politicoinstitucional i ecosistema empresarial",
+        "text": "Un altre dels fundadors té la visió estratègica necessària per a aquest sector. Ha ocupat posicions de lideratge polític al més alt nivell a les institucions catalanes, amb responsabilitat directa sobre política industrial, empresa i treball. El seu accés a xarxes institucionals, empresarials i de finançament públic és un diferencial estratègic per a DUALYS."
+      },
+      "profile3": {
+        "title": "Expertise tecnicoindustrial i operacions internacionals",
+        "text": "L'equip compta amb un perfil amb experiència directa en la construcció i escalat d'empreses a la intersecció de la indústria i la tecnologia d'última generació. La seva experiència en desenvolupament de negocis, execució de projectes, processos d'homologació, cadenes de subministrament complexes i visió empresarial és la columna vertebral de la metodologia d'acompanyament de DUALYS."
+      },
+      "profile4": {
+        "title": "Comercialització en defensa i desenvolupament de negoci",
+        "text": "El quart perfil de l'equip fundador és el motor comercial de DUALYS. Amb experiència específica en desenvolupament de negoci orientat al sector defensa, coneix els canals, els temps, els interlocutors i les dinàmiques de venda en un mercat que funciona de manera radicalment diferent al B2B comercial estàndard."
+      }
+    },
+    "vision": {
+      "title": "Visió de futur",
+      "phase1": {
+        "title": "Fase 1 — El Despertar (2025-2026)",
+        "text": "Identificar i activar el potencial dual-use latent a l'ecosistema català. Ajudar les primeres 20-30 empreses a fer el pas."
+      },
+      "phase2": {
+        "title": "Fase 2 — L'Acceleració (2027-2028)",
+        "text": "Construir un ecosistema dual-use interconnectat. Facilitar aliances entre startups catalanes i grans corporacions europees. Atraure inversió especialitzada."
+      },
+      "phase3": {
+        "title": "Fase 3 — El Lideratge (2029-2030)",
+        "text": "Espanya com a pol europeu de referència en innovació i producció dual-use. Exportar el model a altres regions. Connectar l'ecosistema espanyol amb oportunitats globals."
+      }
+    },
+    "cta": "Sol·licita el teu diagnòstic"
+  },
+  "recursos": {
+    "meta": {
+      "title": "Recursos i Insights | Anàlisi del sector defensa | Dualys",
+      "description": "Articles, guies i anàlisis sobre el mercat de defensa europeu, certificacions i oportunitats per a empreses industrials i tecnològiques."
+    },
+    "title": "Recursos i Insights",
+    "subtitle": "Anàlisis, guies i tendències del mercat de defensa europeu",
+    "categories": {
+      "market": "Anàlisi de mercat",
+      "guides": "Guies i tutorials",
+      "cases": "Casos de transició dual-use",
+      "opinion": "Opinió i tendències"
+    },
+    "empty": "Properament: articles i anàlisis sobre el sector defensa. Estem preparant contingut de valor per ajudar-te a entendre el mercat.",
+    "cta": "Sol·licita el teu diagnòstic"
+  },
   "pages": {
-    "about": {
-      "meta": {
-        "title": "Sobre Dualys | Líder Europeu en Tecnologia de Doble Ús",
-        "description": "Coneixeu Dualys, una Agrupació d'Interès Econòmic catalana especialitzada en tecnologies de doble ús per a defensa, ciberseguretat i bioseguretat."
-      },
-      "title": "Sobre Dualys",
-      "subtitle": "Construint l'autonomia estratègica europea a través de capacitats habilitadores",
-      "mission": {
-        "title": "La Nostra Missió",
-        "text": "Articulem l'ecosistema tecnològic de Catalunya per desenvolupar capacitats habilitadores, donant-los escala i posicionant-los en els programes i debats europeus."
-      },
-      "vision": {
-        "title": "La Nostra Visió",
-        "text": "Una Europa més segura, més autònoma i millor preparada, construïda sobre una base industrial i tecnològica sòlida, integrada i innovadora."
-      },
-      "values": {
-        "title": "Els Nostres Valors",
-        "deterrence": "Dissuasió",
-        "deterrenceDesc": "Seguretat mitjançant superioritat tecnològica i preparació",
-        "autonomy": "Autonomia",
-        "autonomyDesc": "Desenvolupament de capacitats sobiranes per reduir dependències",
-        "innovation": "Innovació",
-        "innovationDesc": "Solucions d'avantguarda per a reptes complexos",
-        "collaboration": "Col·laboració",
-        "collaborationDesc": "Integració de pimes, centres de recerca i socis industrials"
-      },
-      "european": {
-        "title": "Compromís Europeu",
-        "text": "Com a organització amb enfocament europeu, estem compromesos amb l'enfortiment de la sobirania tecnològica i la base industrial del continent. Participem activament en programes de defensa i seguretat de la UE, contribuint a una Europa més resilient i autònoma."
-      },
-      "links": {
-        "team": "Coneixeu el Nostre Equip",
-        "teamDesc": "Descobriu els experts que impulsen la nostra missió.",
-        "partners": "Els Nostres Socis",
-        "partnersDesc": "Exploreu el nostre ecosistema de socis industrials i acadèmics."
-      }
-    },
-    "team": {
-      "meta": {
-        "title": "El Nostre Equip | Lideratge de Dualys",
-        "description": "Coneixeu l'equip directiu de Dualys, experts en defensa, ciberseguretat i tecnologies de doble ús."
-      },
-      "title": "El Nostre Equip",
-      "subtitle": "Coneixeu els experts que impulsen l'autonomia tecnològica europea",
-      "leadership": {
-        "title": "Equip Directiu",
-        "subtitle": "El nostre divers equip reuneix experiència en defensa, tecnologia i institucions europees."
-      },
-      "members": {
-        "member1": {
-          "name": "Director Executiu",
-          "role": "Director General",
-          "description": "Liderant la visió estratègica i el posicionament europeu de Dualys."
-        },
-        "member2": {
-          "name": "Director de Tecnologia",
-          "role": "Director Tècnic",
-          "description": "Supervisant el desenvolupament tecnològic i els programes d'innovació."
-        },
-        "member3": {
-          "name": "Director d'Operacions",
-          "role": "Director d'Operacions",
-          "description": "Gestionant les aliances i l'excel·lència operativa."
-        },
-        "member4": {
-          "name": "Director d'Estratègia",
-          "role": "Director d'Estratègia",
-          "description": "Impulsant la participació en programes europeus i el desenvolupament de mercat."
-        }
-      },
-      "joinUs": {
-        "title": "Uneix-te al Nostre Equip",
-        "text": "Sempre busquem professionals amb talent apassionats per la seguretat europea i les tecnologies de doble ús.",
-        "cta": "Contacteu-nos"
-      }
-    },
-    "partners": {
-      "meta": {
-        "title": "Socis | Ecosistema de Dualys",
-        "description": "Exploreu l'ecosistema de socis de Dualys: líders industrials, institucions acadèmiques i centres de recerca."
-      },
-      "title": "Els Nostres Socis",
-      "subtitle": "Construint capacitats a través de la col·laboració estratègica",
-      "ecosystem": {
-        "title": "Ecosistema de Socis",
-        "text": "La nostra fortalesa rau en la nostra diversa xarxa de socis, combinant experiència industrial, recerca acadèmica i suport institucional per oferir solucions d'avantguarda."
-      },
-      "categories": {
-        "industry": {
-          "title": "Socis Industrials",
-          "description": "Empreses líders en defensa i tecnologia"
-        },
-        "academic": {
-          "title": "Socis Acadèmics",
-          "description": "Universitats i institucions educatives"
-        },
-        "research": {
-          "title": "Centres de Recerca",
-          "description": "Organitzacions d'innovació i R+D"
-        },
-        "institutional": {
-          "title": "Socis Institucionals",
-          "description": "Agències governamentals i de la UE"
-        }
-      },
-      "cta": {
-        "title": "Convertiu-vos en Soci",
-        "text": "Uniu-vos al nostre ecosistema i contribuïu a la sobirania tecnològica europea.",
-        "button": "Contactar"
-      }
-    },
-    "capabilities": {
-      "meta": {
-        "title": "Capacitats | Tecnologies de Dualys",
-        "description": "Exploreu les capacitats de Dualys en defensa, ciberseguretat, bioseguretat i tecnologies de doble ús."
-      },
-      "title": "Les Nostres Capacitats",
-      "subtitle": "Tecnologies habilitadores per a una Europa més segura i autònoma",
-      "approach": {
-        "title": "El Nostre Enfocament",
-        "text": "Seguim un enfocament sistemàtic per desenvolupar i lliurar capacitats habilitadores.",
-        "step1": {
-          "title": "Identificar",
-          "text": "Avaluar necessitats i identificar bretxes tecnològiques"
-        },
-        "step2": {
-          "title": "Desenvolupar",
-          "text": "Construir solucions amb el nostre ecosistema de socis"
-        },
-        "step3": {
-          "title": "Desplegar",
-          "text": "Implementar i donar suport a la preparació operativa"
-        }
-      },
-      "cta": {
-        "title": "Preparat per Explorar les Nostres Capacitats?",
-        "text": "Contacteu-nos per discutir com podem donar suport a les vostres necessitats de seguretat i tecnologia.",
-        "button": "Contactar"
-      }
-    },
-    "defense": {
-      "meta": {
-        "title": "Tecnologies de Defensa | Dualys",
-        "description": "Descobriu les capacitats de defensa de Dualys: sistemes no tripulats, sensors i plataformes autònomes."
-      },
-      "title": "Tecnologies de Defensa",
-      "subtitle": "Sistemes avançats per als requisits de defensa moderns",
-      "overview": {
-        "title": "Resum de Capacitats de Defensa",
-        "text1": "La nostra cartera de tecnologia de defensa abasta sistemes no tripulats d'avantguarda, sensors avançats i plataformes autònomes dissenyades per satisfer les necessitats canviants de les forces armades modernes.",
-        "text2": "Treballem estretament amb institucions de defensa i socis industrials per desenvolupar solucions que millorin les capacitats operatives garantint la interoperabilitat amb sistemes aliats."
-      },
-      "technologies": {
-        "title": "Tecnologies Clau",
-        "subtitle": "Solucions integrals de tecnologia de defensa"
-      },
-      "tech": {
-        "uav": {
-          "title": "Vehicles Aeris No Tripulats",
-          "description": "Sistemes avançats de drons per a reconeixement, vigilància i operacions tàctiques."
-        },
-        "comms": {
-          "title": "Comunicacions Segures",
-          "description": "Sistemes de comunicació xifrada per a coordinació al camp de batalla."
-        },
-        "sensors": {
-          "title": "Sensors Avançats",
-          "description": "Sistemes de detecció multiespectral i adquisició d'objectius."
-        },
-        "surveillance": {
-          "title": "Sistemes de Vigilància",
-          "description": "Xarxes de vigilància integrades per a coneixement situacional."
-        },
-        "autonomous": {
-          "title": "Sistemes Autònoms",
-          "description": "Plataformes autònomes amb IA per a diverses aplicacions de defensa."
-        },
-        "protection": {
-          "title": "Protecció de Forces",
-          "description": "Sistemes per a protecció de personal i actius en entorns hostils."
-        }
-      },
-      "useCases": {
-        "title": "Aplicacions",
-        "defense": "Defensa",
-        "civil": "Civil",
-        "case1": {
-          "title": "Vigilància de Fronteres",
-          "description": "Xarxes de sensors integrades per a monitorització contínua de fronteres."
-        },
-        "case2": {
-          "title": "Cerca i Rescat",
-          "description": "Operacions de cerca assistides per UAV en terrenys difícils."
-        },
-        "case3": {
-          "title": "Seguretat Marítima",
-          "description": "Sistemes de vigilància i protecció naval."
-        }
-      },
-      "cta": {
-        "title": "Interessat en Solucions de Defensa?",
-        "text": "Contacteu-nos per discutir els vostres requisits de tecnologia de defensa.",
-        "button": "Contactar"
-      }
-    },
-    "cybersecurity": {
-      "meta": {
-        "title": "Solucions de Ciberseguretat | Dualys",
-        "description": "Solucions integrals de ciberseguretat per a protecció d'infraestructures crítiques i resiliència digital."
-      },
-      "title": "Ciberseguretat",
-      "subtitle": "Protegint infraestructures digitals crítiques",
-      "overview": {
-        "title": "Capacitats de Ciberseguretat",
-        "text1": "En un món cada vegada més connectat, protegir la infraestructura digital és primordial. Les nostres solucions de ciberseguretat aborden tot l'espectre d'amenaces que enfronten les organitzacions i nacions modernes.",
-        "text2": "Combinem experiència tècnica amb un profund coneixement dels requisits regulatoris per oferir solucions de seguretat integrals."
-      },
-      "services": {
-        "title": "Els Nostres Serveis",
-        "subtitle": "Capacitats de ciberseguretat d'extrem a extrem",
-        "protection": {
-          "title": "Protecció contra Amenaces",
-          "description": "Sistemes avançats de detecció i prevenció d'amenaces."
-        },
-        "infrastructure": {
-          "title": "Seguretat d'Infraestructura",
-          "description": "Protecció d'infraestructures crítiques i tecnologia operativa."
-        },
-        "network": {
-          "title": "Seguretat de Xarxa",
-          "description": "Solucions integrals de monitorització i defensa de xarxes."
-        },
-        "crypto": {
-          "title": "Solucions Criptogràfiques",
-          "description": "Sistemes avançats de xifratge i gestió de claus."
-        },
-        "threat": {
-          "title": "Intel·ligència d'Amenaces",
-          "description": "Serveis d'intel·ligència i anàlisi d'amenaces en temps real."
-        },
-        "compliance": {
-          "title": "Compliment i Governança",
-          "description": "Suport en compliment normatiu i governança de seguretat."
-        }
-      },
-      "standards": {
-        "title": "Estàndards i Compliment",
-        "text": "Les nostres solucions estan dissenyades per complir amb els més alts estàndards internacionals de seguretat i requisits regulatoris."
-      },
-      "cta": {
-        "title": "Enfortiu les Vostres Defenses Cibernètiques",
-        "text": "Contacteu-nos per avaluar la vostra postura i requisits de ciberseguretat.",
-        "button": "Contactar"
-      }
-    },
-    "biosecurity": {
-      "meta": {
-        "title": "Capacitats de Bioseguretat | Dualys",
-        "description": "Capacitats de resposta biosanitària i solucions de seguretat sanitària per a amenaces biològiques emergents."
-      },
-      "title": "Bioseguretat",
-      "subtitle": "Solucions de seguretat sanitària per a amenaces emergents",
-      "overview": {
-        "title": "Capacitats de Bioseguretat",
-        "text1": "La nostra cartera de bioseguretat aborda la creixent necessitat de preparació davant amenaces biològiques, des de pandèmies naturals fins a incidents biològics deliberats.",
-        "text2": "Desenvolupem solucions integrades que combinen capacitats de detecció, resposta i protecció per salvaguardar la salut pública i la seguretat nacional."
-      },
-      "capabilities": {
-        "title": "Capacitats Clau",
-        "subtitle": "Solucions integrals de bioseguretat",
-        "detection": {
-          "title": "Detecció d'Amenaces",
-          "description": "Sistemes d'alerta primerenca per a detecció d'agents biològics."
-        },
-        "monitoring": {
-          "title": "Monitorització Sanitària",
-          "description": "Sistemes de vigilància per a monitorització epidemiològica."
-        },
-        "response": {
-          "title": "Resposta Ràpida",
-          "description": "Capacitats de resposta coordinada davant incidents biològics."
-        },
-        "medical": {
-          "title": "Contramesures Mèdiques",
-          "description": "Desenvolupament i emmagatzematge de contramesures mèdiques."
-        },
-        "protection": {
-          "title": "Protecció Personal",
-          "description": "Equips de protecció avançats i sistemes de descontaminació."
-        },
-        "health": {
-          "title": "Sistemes de Salut Pública",
-          "description": "Sistemes integrats d'informació de salut pública."
-        }
-      },
-      "applications": {
-        "title": "Aplicacions",
-        "text": "Les nostres solucions de bioseguretat serveixen tant a les necessitats de salut pública civil com als requisits de defensa, garantint una protecció integral contra amenaces biològiques."
-      },
-      "cta": {
-        "title": "Milloreu la Vostra Preparació en Bioseguretat",
-        "text": "Contacteu-nos per discutir solucions de bioseguretat per a la vostra organització.",
-        "button": "Contactar"
-      }
-    },
-    "dualUse": {
-      "meta": {
-        "title": "Tecnologies de Doble Ús | Dualys",
-        "description": "Tecnologies amb aplicacions civils i de defensa, impulsant la innovació i garantint la preparació estratègica."
-      },
-      "title": "Tecnologies de Doble Ús",
-      "subtitle": "Innovació per a aplicacions civils i de defensa",
-      "overview": {
-        "title": "L'Avantatge del Doble Ús",
-        "text1": "Les tecnologies de doble ús representen la intersecció entre la innovació civil i la capacitat de defensa. En desenvolupar tecnologies amb aplicacions en ambdós àmbits, maximitzem el valor i accelerem la innovació.",
-        "text2": "Aquest enfocament ens permet aprofitar els avenços comercials per a aplicacions de defensa, assegurant que la societat civil es beneficiï de les innovacions impulsades per la seguretat."
-      },
-      "concept": {
-        "title": "Entenent el Doble Ús",
-        "text": "Les tecnologies de doble ús serveixen a propòsits legítims tant en contextos civils com de defensa, creant sinergies que beneficien tota la societat.",
-        "defense": {
-          "title": "Aplicacions de Defensa",
-          "item1": "Vigilància i reconeixement",
-          "item2": "Comunicacions segures",
-          "item3": "Sistemes autònoms"
-        },
-        "civil": {
-          "title": "Aplicacions Civils",
-          "item1": "Resposta a emergències",
-          "item2": "Monitorització d'infraestructures",
-          "item3": "Protecció mediambiental"
-        }
-      },
-      "civilApps": {
-        "title": "Aplicacions Civils",
-        "subtitle": "Tecnologies de defensa al servei de la societat"
-      },
-      "applications": {
-        "firefighting": {
-          "title": "Suport a Extinció d'Incendis",
-          "description": "Sistemes UAV per a detecció d'incendis, monitorització i coordinació d'esforços d'extinció."
-        },
-        "rescue": {
-          "title": "Cerca i Rescat",
-          "description": "Sensors avançats i sistemes autònoms per localitzar persones desaparegudes en terrenys difícils."
-        },
-        "maritime": {
-          "title": "Seguretat Marítima",
-          "description": "Sistemes de vigilància per a seguretat marítima i protecció mediambiental."
-        },
-        "infrastructure": {
-          "title": "Infraestructura Crítica",
-          "description": "Sistemes de monitorització i protecció per a infraestructures essencials."
-        }
-      },
-      "cta": {
-        "title": "Exploreu les Oportunitats del Doble Ús",
-        "text": "Contacteu-nos per descobrir com les tecnologies de doble ús poden beneficiar la vostra organització.",
-        "button": "Contactar"
-      }
-    },
-    "sectors": {
-      "meta": {
-        "title": "Sectors que Servim | Dualys",
-        "description": "Dualys serveix sectors institucionals, industrials, acadèmics i públics a tota Europa."
-      },
-      "title": "Sectors que Servim",
-      "subtitle": "Lliurant capacitats en diversos sectors",
-      "sectors": {
-        "institutional": {
-          "title": "Sector Institucional",
-          "description": "Donant suport a institucions europees i nacionals en programes de defensa i seguretat.",
-          "service1": "Suport en participació en programes de la UE",
-          "service2": "Assessorament en polítiques i estratègia",
-          "service3": "Avaluació i planificació de capacitats"
-        },
-        "industrial": {
-          "title": "Sector Industrial",
-          "description": "Col·laborant amb contractistes de defensa i empreses tecnològiques.",
-          "service1": "Serveis d'integració tecnològica",
-          "service2": "Gestió de la cadena de subministrament",
-          "service3": "Programes de desenvolupament conjunt"
-        },
-        "academic": {
-          "title": "Sector Acadèmic",
-          "description": "Col·laborant amb universitats i institucions de recerca.",
-          "service1": "Aliances de recerca",
-          "service2": "Programes de transferència tecnològica",
-          "service3": "Iniciatives de desenvolupament de talent"
-        },
-        "public": {
-          "title": "Sector Públic",
-          "description": "Servint a agències de seguretat pública i protecció civil.",
-          "service1": "Sistemes de resposta a emergències",
-          "service2": "Tecnologies de seguretat pública",
-          "service3": "Solucions de protecció civil"
-        }
-      },
-      "european": {
-        "title": "Enfocament Europeu",
-        "text": "Estem compromesos amb l'enfortiment de la sobirania tecnològica europea i la contribució a l'autonomia estratègica de la UE en tecnologies de defensa i seguretat."
-      },
-      "cta": {
-        "title": "Com Podem Ajudar el Vostre Sector?",
-        "text": "Contacteu-nos per discutir solucions i aliances específiques per al vostre sector.",
-        "button": "Contactar"
-      }
-    },
-    "news": {
-      "meta": {
-        "title": "Notícies i Insights | Dualys",
-        "description": "Últimes notícies, anuncis i insights de Dualys sobre defensa, ciberseguretat i tecnologies de doble ús."
-      },
-      "title": "Notícies i Insights",
-      "subtitle": "Manteniu-vos actualitzats amb els nostres últims desenvolupaments",
-      "readMore": "Llegir Més",
-      "categories": {
-        "announcement": "Anunci",
-        "partnership": "Aliança",
-        "technology": "Tecnologia",
-        "event": "Esdeveniment"
-      },
-      "articles": {
-        "article1": {
-          "title": "Dualys Anuncia Aliança Estratègica",
-          "excerpt": "Nova col·laboració per enfortir les capacitats de defensa europees mitjançant tecnologies de doble ús innovadores."
-        },
-        "article2": {
-          "title": "Participació en Programa de Defensa de la UE",
-          "excerpt": "Dualys seleccionada per participar en una important iniciativa de recerca de defensa europea."
-        },
-        "article3": {
-          "title": "Llançament de Nova Solució de Ciberseguretat",
-          "excerpt": "Presentem capacitats avançades de detecció d'amenaces per a protecció d'infraestructures crítiques."
-        },
-        "article4": {
-          "title": "Conferència Europea de Seguretat 2026",
-          "excerpt": "Uniu-vos a nosaltres a la propera conferència per discutir el futur de les tecnologies de defensa europees."
-        },
-        "article5": {
-          "title": "Ampliant la Nostra Xarxa de Socis",
-          "excerpt": "Benvinguts als nostres nous socis industrials i acadèmics que s'uneixen a l'ecosistema Dualys."
-        },
-        "article6": {
-          "title": "Innovació en Bioseguretat",
-          "excerpt": "Últims desenvolupaments en capacitats de detecció i resposta davant amenaces biològiques."
-        }
-      },
-      "newsletter": {
-        "title": "Manteniu-vos Informats",
-        "text": "Subscriviu-vos al nostre butlletí per a les últimes actualitzacions sobre tecnologies de defensa i seguretat europees.",
-        "placeholder": "Introduïu el vostre email",
-        "button": "Subscriure's"
-      }
-    },
-    "contact": {
-      "meta": {
-        "title": "Contacte | Dualys",
-        "description": "Poseu-vos en contacte amb Dualys per a consultes sobre les nostres solucions de defensa, ciberseguretat i tecnologia de doble ús."
-      },
-      "title": "Contacteu-nos",
-      "subtitle": "Ens encantaria saber de vosaltres",
-      "info": {
-        "title": "Informació de Contacte",
-        "address": {
-          "title": "Adreça",
-          "line1": "Barcelona, Catalunya",
-          "line2": "Espanya, Europa"
-        },
-        "email": {
-          "title": "Email",
-          "general": "info@dualys.eu",
-          "press": "press@dualys.eu"
-        },
-        "phone": {
-          "title": "Telèfon",
-          "main": "+34 XXX XXX XXX"
-        },
-        "hours": {
-          "title": "Horari d'Atenció",
-          "weekdays": "Dilluns - Divendres: 9:00 - 18:00 CET",
-          "weekend": "Cap de setmana: Tancat"
-        }
-      },
-      "form": {
-        "title": "Envieu-nos un Missatge"
-      },
-      "social": {
-        "title": "Seguiu-nos"
-      }
-    },
     "privacy": {
-      "meta": {
-        "title": "Política de Privacitat | Dualys",
-        "description": "Política de privacitat de Dualys que explica com recollim, utilitzem i protegim la vostra informació personal."
-      },
-      "title": "Política de Privacitat",
-      "lastUpdated": "Última actualització: Gener 2026",
+      "meta": { "title": "Política de Privadesa | Dualys", "description": "Política de privadesa de Dualys." },
+      "title": "Política de Privadesa",
+      "lastUpdated": "Última actualització: Març 2026",
       "sections": {
-        "introduction": {
-          "title": "Introducció",
-          "content": "Dualys AIE (\"nosaltres\", \"nostra\" o \"ens\") està compromesa amb la protecció de la vostra privacitat. Aquesta Política de Privacitat explica com recollim, utilitzem, divulguem i protegim la vostra informació quan visiteu el nostre lloc web."
-        },
-        "dataCollection": {
-          "title": "Informació que Recollim",
-          "content": "Recollim informació que proporcioneu voluntàriament quan us poseu en contacte amb nosaltres a través del nostre lloc web, incloent el vostre nom, adreça de correu electrònic, organització i qualsevol altra informació que trieu proporcionar en el vostre missatge."
-        },
-        "dataUse": {
-          "title": "Com Utilitzem la Vostra Informació",
-          "content": "Utilitzem la informació que recollim per respondre a les vostres consultes, proporcionar-vos informació sobre els nostres serveis i millorar el nostre lloc web i serveis."
-        },
-        "dataSharing": {
-          "title": "Compartició d'Informació",
-          "content": "No venem, intercanviem ni transferim d'altra manera la vostra informació personal a tercers sense el vostre consentiment, excepte segons ho requereixi la llei o a proveïdors de serveis que ens ajuden a operar el nostre lloc web."
-        },
-        "dataSecurity": {
-          "title": "Seguretat de les Dades",
-          "content": "Implementem mesures tècniques i organitzatives apropiades per protegir la vostra informació personal contra l'accés no autoritzat, alteració, divulgació o destrucció."
-        },
-        "yourRights": {
-          "title": "Els Vostres Drets",
-          "content": "Segons el RGPD, teniu dret a accedir, rectificar, eliminar, restringir el processament i portar les vostres dades personals. També teniu dret a oposar-vos al processament i a retirar el consentiment en qualsevol moment."
-        },
-        "cookies": {
-          "title": "Cookies",
-          "content": "El nostre lloc web utilitza cookies per millorar la vostra experiència. Consulteu la nostra Política de Cookies per a més informació sobre com utilitzem les cookies."
-        },
-        "changes": {
-          "title": "Canvis en Aquesta Política",
-          "content": "Podem actualitzar aquesta Política de Privacitat de tant en tant. Us notificarem qualsevol canvi publicant la nova Política de Privacitat en aquesta pàgina."
-        },
-        "contact": {
-          "title": "Contacteu-nos",
-          "content": "Si teniu alguna pregunta sobre aquesta Política de Privacitat, contacteu-nos a privacy@dualys.eu."
-        }
+        "introduction": { "title": "Introducció", "content": "Dualys AIE està compromesa amb la protecció de la seva privadesa. Aquesta Política de Privadesa explica com recopilem, usem i protegim la seva informació." },
+        "dataCollection": { "title": "Informació que Recopilem", "content": "Recopilem informació que vostè proporciona voluntàriament: nom, empresa, correu electrònic, sector i descripció del seu repte." },
+        "dataUse": { "title": "Com Usem la Seva Informació", "content": "Usem la informació per respondre consultes, proporcionar informació sobre serveis i millorar el lloc web." },
+        "dataSharing": { "title": "Compartició d'Informació", "content": "No venem ni transferim la seva informació personal a tercers sense consentiment." },
+        "dataSecurity": { "title": "Seguretat de les Dades", "content": "Implementem mesures tècniques i organitzatives per protegir la seva informació personal." },
+        "yourRights": { "title": "Els Seus Drets", "content": "Segons el RGPD, té dret a accedir, rectificar, eliminar i portar les seves dades personals." },
+        "cookies": { "title": "Cookies", "content": "El nostre lloc web utilitza cookies. Consulti la Política de Cookies." },
+        "changes": { "title": "Canvis", "content": "Podem actualitzar aquesta política. Li notificarem publicant la nova versió aquí." },
+        "contact": { "title": "Contacte", "content": "Preguntes sobre privadesa: info@dualys.eu." }
       }
     },
     "terms": {
-      "meta": {
-        "title": "Termes d'Ús | Dualys",
-        "description": "Termes i condicions per a l'ús del lloc web i serveis de Dualys."
-      },
-      "title": "Termes d'Ús",
-      "lastUpdated": "Última actualització: Gener 2026",
+      "meta": { "title": "Avís Legal | Dualys", "description": "Avís legal i termes d'ús de Dualys." },
+      "title": "Avís Legal",
+      "lastUpdated": "Última actualització: Març 2026",
       "sections": {
-        "acceptance": {
-          "title": "Acceptació dels Termes",
-          "content": "En accedir i utilitzar aquest lloc web, accepteu i us comprometeu a complir aquests Termes d'Ús. Si no esteu d'acord amb aquests termes, si us plau no utilitzeu aquest lloc web."
-        },
-        "use": {
-          "title": "Ús del Lloc Web",
-          "content": "Aquest lloc web es proporciona amb finalitats informatives sobre Dualys i els seus serveis. Podeu utilitzar aquest lloc web només per a finalitats legals i d'acord amb aquests Termes."
-        },
-        "intellectualProperty": {
-          "title": "Propietat Intel·lectual",
-          "content": "Tot el contingut d'aquest lloc web, incloent text, gràfics, logotips i imatges, és propietat de Dualys o dels seus proveïdors de contingut i està protegit per les lleis de propietat intel·lectual."
-        },
-        "userConduct": {
-          "title": "Conducta de l'Usuari",
-          "content": "Accepteu no utilitzar aquest lloc web de cap manera que pugui danyar, deshabilitar o perjudicar el lloc web, o interferir amb l'ús del lloc web per part d'altres."
-        },
-        "disclaimers": {
-          "title": "Exempció de Responsabilitat",
-          "content": "Aquest lloc web i el seu contingut es proporcionen \"tal qual\" sense garanties de cap tipus, ja siguin expresses o implícites. Dualys no garanteix que el lloc web estigui lliure d'interrupcions o errors."
-        },
-        "limitation": {
-          "title": "Limitació de Responsabilitat",
-          "content": "Dualys no serà responsable de cap dany indirecte, incidental, especial, conseqüent o punitiu que sorgeixi del vostre ús d'aquest lloc web."
-        },
-        "governingLaw": {
-          "title": "Llei Aplicable",
-          "content": "Aquests Termes es regiran i interpretaran d'acord amb les lleis d'Espanya i la Unió Europea. Qualsevol disputa estarà subjecta a la jurisdicció exclusiva dels tribunals de Barcelona."
-        },
-        "changes": {
-          "title": "Canvis en els Termes",
-          "content": "Ens reservem el dret de modificar aquests Termes en qualsevol moment. Els canvis seran efectius immediatament després de la seva publicació al lloc web."
-        },
-        "contact": {
-          "title": "Contacte",
-          "content": "Per a preguntes sobre aquests Termes, contacteu-nos a legal@dualys.eu."
-        }
+        "acceptance": { "title": "Acceptació", "content": "En accedir a aquest lloc web, accepta aquests termes." },
+        "use": { "title": "Ús", "content": "Lloc web amb fins informatius sobre Dualys i serveis." },
+        "intellectualProperty": { "title": "Propietat Intel·lectual", "content": "Tot el contingut és propietat de Dualys." },
+        "disclaimers": { "title": "Descàrrecs", "content": "Contingut proporcionat tal qual sense garanties." },
+        "limitation": { "title": "Limitació", "content": "Dualys no és responsable de danys indirectes." },
+        "governingLaw": { "title": "Llei Aplicable", "content": "Lleis d'Espanya i la UE. Tribunals de Barcelona." },
+        "contact": { "title": "Contacte", "content": "Preguntes legals: info@dualys.eu." }
       }
     },
     "cookies": {
-      "meta": {
-        "title": "Política de Cookies | Dualys",
-        "description": "Informació sobre com Dualys utilitza cookies al seu lloc web."
-      },
+      "meta": { "title": "Política de Cookies | Dualys", "description": "Ús de cookies a Dualys." },
       "title": "Política de Cookies",
-      "lastUpdated": "Última actualització: Gener 2026",
+      "lastUpdated": "Última actualització: Març 2026",
       "sections": {
-        "whatAreCookies": {
-          "title": "Què Són les Cookies?",
-          "content": "Les cookies són petits arxius de text que es col·loquen al vostre dispositiu quan visiteu un lloc web. S'utilitzen àmpliament per fer que els llocs web funcionin de manera més eficient i per proporcionar informació als propietaris del lloc."
-        },
-        "howWeUse": {
-          "title": "Com Utilitzem les Cookies",
-          "content": "Utilitzem cookies per entendre com interactueu amb el nostre lloc web, per recordar les vostres preferències i per millorar la vostra experiència general al nostre lloc."
-        },
-        "types": {
-          "title": "Tipus de Cookies que Utilitzem",
-          "content": "Cookies Essencials: Necessàries perquè el lloc web funcioni correctament.\nCookies d'Anàlisi: Ens ajuden a entendre com els visitants interactuen amb el nostre lloc web.\nCookies de Preferències: Recorden les vostres configuracions i preferències."
-        },
-        "thirdParty": {
-          "title": "Cookies de Tercers",
-          "content": "Podem utilitzar serveis de tercers que col·loquen cookies al vostre dispositiu. Aquests serveis ens ajuden a analitzar el trànsit del lloc web i millorar els nostres serveis."
-        },
-        "manage": {
-          "title": "Gestió de Cookies",
-          "content": "Podeu controlar i gestionar les cookies a través de la configuració del vostre navegador. Tingueu en compte que eliminar o bloquejar cookies pot afectar la vostra experiència al nostre lloc web."
-        },
-        "contact": {
-          "title": "Contacteu-nos",
-          "content": "Si teniu preguntes sobre el nostre ús de cookies, contacteu-nos a privacy@dualys.eu."
-        }
+        "whatAreCookies": { "title": "Què Són?", "content": "Petits arxius de text al seu dispositiu." },
+        "howWeUse": { "title": "Com les Usem", "content": "Per entendre interaccions, preferències i millorar l'experiència." },
+        "types": { "title": "Tipus", "content": "Essencials, d'Anàlisi i de Preferències." },
+        "manage": { "title": "Gestió", "content": "Control via configuració del navegador." },
+        "contact": { "title": "Contacte", "content": "Preguntes sobre cookies: info@dualys.eu." }
       }
     }
   }

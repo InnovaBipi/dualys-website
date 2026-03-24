@@ -12,7 +12,7 @@ export function HeroSection() {
   const t = useTranslations('hero');
 
   return (
-    <section className="relative overflow-hidden bg-primary-500 py-20 md:py-32">
+    <section className="relative overflow-hidden bg-primary-950 py-20 md:py-32">
       {/* Background pattern with accent color */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" style={{
@@ -24,19 +24,20 @@ export function HeroSection() {
 
       <Container className="relative">
         <div className="mx-auto max-w-4xl text-center">
+          {/* Context note badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="inline-flex items-center rounded-full bg-white/10 px-4 py-1.5 text-sm font-medium text-white/90">
-              {t('tagline')}
+            <span className="inline-flex items-center rounded-full bg-accent-500/15 px-4 py-1.5 text-sm font-medium text-accent-300">
+              {t('contextNote')}
               <AccentDot size="sm" className="ml-2" />
             </span>
           </motion.div>
 
           <motion.h1
-            className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl"
+            className="mt-8 font-display text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
@@ -45,7 +46,7 @@ export function HeroSection() {
           </motion.h1>
 
           <motion.p
-            className="mt-6 text-lg text-white/80 sm:text-xl"
+            className="mx-auto mt-6 max-w-3xl text-lg text-white/75 sm:text-xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -60,13 +61,16 @@ export function HeroSection() {
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <Button asChild size="xl" variant="accent">
-              <Link href="/capabilities">
+              <Link href="/contact">
                 {t('cta')}
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
               </Link>
             </Button>
-            <Button asChild size="xl" variant="outline" className="border-white text-white hover:bg-white/10">
-              <Link href="/contact">{t('ctaSecondary')}</Link>
+            <Button asChild size="xl" variant="outline" className="border-white/30 text-white hover:bg-white/10">
+              <Link href="/metodologia">
+                {t('ctaSecondary')}
+                <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
+              </Link>
             </Button>
           </motion.div>
         </div>
