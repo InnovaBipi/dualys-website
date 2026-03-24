@@ -1,7 +1,7 @@
 ---
 id: TASK-182
 title: "Auditoría de validación de marca"
-status: backlog
+status: done
 priority: P2
 type: testing
 phase: 8

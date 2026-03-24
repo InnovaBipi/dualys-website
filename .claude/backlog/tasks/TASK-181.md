@@ -1,7 +1,7 @@
 ---
 id: TASK-181
 title: "Eliminar translation keys y componentes deprecados"
-status: backlog
+status: done
 priority: P2
 type: refactor
 phase: 8

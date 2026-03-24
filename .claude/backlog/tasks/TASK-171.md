@@ -1,7 +1,7 @@
 ---
 id: TASK-171
 title: "Tracking de conversión"
-status: backlog
+status: done
 priority: P2
 type: feature
 phase: 7

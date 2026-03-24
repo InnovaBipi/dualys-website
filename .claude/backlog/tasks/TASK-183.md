@@ -1,7 +1,7 @@
 ---
 id: TASK-183
 title: "Actualizar infraestructura .claude (rules, journeys)"
-status: backlog
+status: done
 priority: P2
 type: infrastructure
 phase: 8

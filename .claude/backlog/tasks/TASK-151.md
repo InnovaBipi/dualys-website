@@ -1,7 +1,7 @@
 ---
 id: TASK-151
 title: "Actualizar metadata SEO de todas las páginas"
-status: backlog
+status: done
 priority: P1
 type: content
 phase: 5

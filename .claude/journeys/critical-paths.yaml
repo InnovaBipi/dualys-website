@@ -1,215 +1,157 @@
 # Critical User Journeys - Dualys Website
-# Defines primary and secondary conversion paths
+# Updated per Briefing v2.0 (March 2026)
 # Used by: E2E tests, UX validation, navigation audits
 
-version: "1.0"
-last_updated: "2026-03-01"
-
-# === PRIMARY JOURNEYS ===
-# Critical conversion paths that must always work
+version: "2.0"
+last_updated: "2026-03-24"
 
 journeys:
   primary_conversion:
     name: "Primary Conversion"
-    description: "Direct path from homepage to contact"
+    description: "Homepage → Contact via CTA 'Solicita tu diagnóstico'"
     priority: critical
-    expected_clicks: 2
+    expected_clicks: 1
     steps:
       - path: "/"
         action: "View homepage hero"
         expected_elements:
-          - "h1 with main value proposition"
-          - "CTA button to capabilities"
-          - "Secondary CTA to contact"
-      - path: "/capabilities"
-        action: "Browse capabilities"
-        expected_elements:
-          - "4 capability cards"
-          - "CTA to contact"
+          - "H1: Tu empresa tiene lo que el sector defensa necesita"
+          - "CTA: Solicita tu diagnóstico →"
+          - "CTA secondary: Conoce nuestra metodología →"
+          - "Context note: 800.000 M€"
       - path: "/contact"
-        action: "Submit inquiry"
+        action: "Submit diagnostic request"
         expected_elements:
-          - "Contact form"
-          - "Office information"
+          - "Contact form with sector dropdown"
+          - "RGPD checkbox"
+          - "Address: Sant Cugat del Vallès"
     success_criteria:
       - "Form submission works"
-      - "All CTAs are visible and clickable"
-      - "Journey completes in under 3 clicks"
+      - "CTA visible above fold"
+      - "1-click conversion from homepage"
 
-  capability_deep_dive:
-    name: "Capability Deep Dive"
-    description: "User explores specific capability before contact"
+  servicios_to_contact:
+    name: "Services Exploration"
+    description: "Homepage → Servicios → Contact"
     priority: critical
-    expected_clicks: 3
-    steps:
-      - path: "/"
-        action: "Land on homepage"
-      - path: "/capabilities/defense"
-        action: "Explore defense capability"
-        expected_elements:
-          - "Detailed capability description"
-          - "Use cases"
-          - "CTA to contact"
-      - path: "/contact"
-        action: "Request information"
-    success_criteria:
-      - "Capability page loads with full content"
-      - "Related capabilities are suggested"
-
-  institutional_inquiry:
-    name: "Institutional Inquiry"
-    description: "Government/EU program stakeholder journey"
-    priority: high
-    expected_clicks: 4
-    steps:
-      - path: "/"
-        action: "Land on homepage"
-      - path: "/about"
-        action: "Learn about company"
-        expected_elements:
-          - "Company mission and vision"
-          - "European positioning"
-      - path: "/about/partners"
-        action: "Review partner ecosystem"
-        expected_elements:
-          - "Partner categories"
-          - "Partnership approach"
-      - path: "/contact"
-        action: "Initiate partnership discussion"
-    success_criteria:
-      - "Trust signals visible throughout"
-      - "European focus emphasized"
-
-  industrial_partnership:
-    name: "Industrial Partnership"
-    description: "Defense contractor evaluating capabilities"
-    priority: high
-    expected_clicks: 4
-    steps:
-      - path: "/"
-        action: "Land on homepage"
-      - path: "/capabilities/dual-use"
-        action: "Explore dual-use technologies"
-      - path: "/sectors"
-        action: "Confirm sector fit"
-      - path: "/contact"
-        action: "Request partnership info"
-    success_criteria:
-      - "Industrial messaging resonates"
-      - "Capabilities clearly presented"
-
-  news_to_contact:
-    name: "Content to Contact"
-    description: "User reads news/insights then contacts"
-    priority: medium
-    expected_clicks: 3
-    steps:
-      - path: "/news"
-        action: "Browse news articles"
-        expected_elements:
-          - "Article list/grid"
-          - "Categories/filters"
-      - path: "/news/[slug]"
-        action: "Read article"
-        expected_elements:
-          - "Full article content"
-          - "CTA to contact"
-      - path: "/contact"
-        action: "Follow up on article topic"
-    success_criteria:
-      - "Articles have clear CTAs"
-      - "Contact form pre-populated context (optional)"
-
-# === SECONDARY JOURNEYS ===
-# Important but not critical paths
-
-  about_exploration:
-    name: "About Exploration"
-    description: "User learning about company culture"
-    priority: medium
-    expected_clicks: 3
-    steps:
-      - path: "/about"
-        action: "Read about company"
-      - path: "/about/team"
-        action: "Meet the team"
-      - path: "/about/partners"
-        action: "Review partnerships"
-    success_criteria:
-      - "Team profiles load correctly"
-      - "Partner logos visible"
-
-  capability_comparison:
-    name: "Capability Comparison"
-    description: "User comparing multiple capabilities"
-    priority: medium
-    expected_clicks: 5
-    steps:
-      - path: "/capabilities"
-        action: "View all capabilities"
-      - path: "/capabilities/defense"
-        action: "Explore defense"
-      - path: "/capabilities/cybersecurity"
-        action: "Compare with cybersecurity"
-      - path: "/capabilities/biosecurity"
-        action: "Compare with biosecurity"
-      - path: "/contact"
-        action: "Discuss integrated solutions"
-    success_criteria:
-      - "Navigation between capabilities is smooth"
-      - "Common elements are consistent"
-
-# === MOBILE-SPECIFIC JOURNEYS ===
-
-  mobile_quick_contact:
-    name: "Mobile Quick Contact"
-    description: "Mobile user seeking quick contact"
-    priority: high
-    device: mobile
     expected_clicks: 2
     steps:
       - path: "/"
-        action: "Land on mobile homepage"
+        action: "Click Servicios in nav"
+      - path: "/servicios"
+        action: "Learn about FFD program"
         expected_elements:
-          - "Mobile-optimized hero"
-          - "Touch-friendly CTAs (48px minimum)"
+          - "Programa FFD branding"
+          - "Enigmatic description (not detailed)"
+          - "CTA to contact"
       - path: "/contact"
-        action: "Access contact form"
-        expected_elements:
-          - "Mobile-optimized form"
-          - "Click-to-call option"
+        action: "Submit inquiry"
     success_criteria:
-      - "All touch targets are 48px minimum"
-      - "Form fields work on mobile keyboards"
+      - "Program name FFD visible"
+      - "No detailed methodology revealed"
 
-# === JOURNEY METRICS ===
-# Expected performance thresholds
+  sectores_exploration:
+    name: "Sectors Deep Dive"
+    description: "Homepage → Sectores → Contact (for industrial/tech companies)"
+    priority: high
+    expected_clicks: 2
+    steps:
+      - path: "/"
+        action: "Click audience card or Sectores in nav"
+      - path: "/sectores"
+        action: "Find matching defense vertical"
+        expected_elements:
+          - "9 defense verticals grid"
+          - "'De dónde vienes, a dónde puedes ir' section"
+          - "CTA to contact"
+      - path: "/contact"
+        action: "Submit with sector selected"
 
-performance_thresholds:
-  page_load_time: 2500ms  # LCP target
-  interaction_delay: 200ms  # INP target
-  layout_shift: 0.1  # CLS target
-  journey_completion_rate: 75%  # Expected conversion
+  metodologia_path:
+    name: "Methodology Path"
+    description: "Homepage → Metodología → Contact"
+    priority: high
+    expected_clicks: 2
+    steps:
+      - path: "/"
+        action: "Click 'Conoce nuestra metodología' CTA"
+      - path: "/metodologia"
+        action: "View 3-phase methodology"
+        expected_elements:
+          - "3 phases: Diagnóstico, Posicionamiento, Activación"
+          - "NDA/confidentiality mention"
+          - "CTA to contact"
+      - path: "/contact"
+        action: "Request diagnostic"
 
-# === VALIDATION CONFIG ===
-# Settings for automated journey testing
+  nosotros_trust:
+    name: "Trust Building"
+    description: "Homepage team section → Nosotros → Contact"
+    priority: medium
+    expected_clicks: 2
+    steps:
+      - path: "/"
+        action: "Click 'Conoce al equipo' in team section"
+      - path: "/nosotros"
+        action: "Read company narrative and founder profiles"
+        expected_elements:
+          - "Company narrative"
+          - "4 founder profiles (anonymous)"
+          - "3-phase vision timeline"
+      - path: "/contact"
+        action: "Contact after trust"
 
-validation:
-  run_frequency: "pre-commit"
-  browsers: ["chromium"]
-  viewports:
-    desktop: { width: 1280, height: 720 }
-    mobile: { width: 375, height: 667 }
-  screenshot_on_failure: true
-  video_on_failure: true
+  mobile_quick_contact:
+    name: "Mobile Quick Contact"
+    description: "Mobile user → CTA in header → Contact"
+    priority: high
+    device: mobile
+    expected_clicks: 1
+    steps:
+      - path: "/"
+        action: "Tap CTA button in header"
+        expected_elements:
+          - "CTA button visible in header"
+          - "Touch target ≥ 48x48px"
+      - path: "/contact"
+        action: "Fill form"
+        expected_elements:
+          - "Sector dropdown works on mobile"
+          - "Submit button visible"
 
-# === BROKEN JOURNEY ALERTS ===
-# Define what constitutes a broken journey
+  recursos_to_contact:
+    name: "Content to Contact"
+    description: "Recursos → Read article → Contact"
+    priority: low
+    expected_clicks: 3
+    steps:
+      - path: "/recursos"
+        action: "Browse resources"
+        expected_elements:
+          - "Category filters"
+          - "Article listings (or empty state)"
+      - path: "/contact"
+        action: "Inquire after reading"
 
-failure_conditions:
-  - "404 error on any step"
-  - "Missing primary CTA"
-  - "Form submission error"
-  - "Navigation link broken"
-  - "Page load timeout (>5s)"
-  - "JavaScript error blocking interaction"
+# Performance thresholds
+performance:
+  lcp: "< 2.5s"
+  inp: "< 200ms"
+  cls: "< 0.1"
+  journey_completion_rate: "75%"
+
+# Navigation validation
+navigation:
+  header_items: 6
+  header_cta: "Solicita tu diagnóstico"
+  footer_links:
+    - "/servicios"
+    - "/sectores"
+    - "/metodologia"
+    - "/nosotros"
+    - "/recursos"
+    - "/contact"
+  legal_links:
+    - "/legal/privacy"
+    - "/legal/terms"
+    - "/legal/cookies"
