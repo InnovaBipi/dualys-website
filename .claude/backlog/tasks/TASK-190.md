@@ -1,7 +1,7 @@
 ---
 id: TASK-190
 title: "Landing /pre-evaluacion (captura leads sin menú)"
-status: backlog
+status: done
 priority: P3
 type: page
 phase: 9

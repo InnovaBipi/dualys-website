@@ -1,7 +1,7 @@
 ---
 id: TASK-192
 title: "Landing /para-tecnologia"
-status: backlog
+status: done
 priority: P3
 type: page
 phase: 9

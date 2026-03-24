@@ -1,7 +1,7 @@
 ---
 id: TASK-193
 title: "Landing /para-primes"
-status: backlog
+status: done
 priority: P3
 type: page
 phase: 9

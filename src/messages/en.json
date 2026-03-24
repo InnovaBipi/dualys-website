@@ -258,6 +258,59 @@
     "empty": "Coming soon: articles and analysis on the defense sector. We are preparing valuable content to help you understand the market.",
     "cta": "Request your assessment"
   },
+  "landings": {
+    "preEvaluacion": {
+      "meta": {
+        "title": "Pre-Assessment | Does Your Company Fit the Defense Sector? | Dualys",
+        "description": "Request a free pre-assessment to find out if your company has transferable capabilities for the defense sector."
+      },
+      "title": "Does your company fit the defense sector?",
+      "subtitle": "Find out in less than 2 minutes. Request your assessment and we will contact you within 48 hours.",
+      "cta": "Request your assessment"
+    },
+    "industriales": {
+      "meta": {
+        "title": "For Industrial Companies | Defense Sector Entry | Dualys",
+        "description": "Component manufacturers, automotive, aeronautics, metalworking: your industrial capability has direct application in defense."
+      },
+      "title": "Your industrial capability has direct application in defense",
+      "subtitle": "Component manufacturers, precision manufacturing, automotive, aeronautics, composites, industrial electronics. If you produce for the civil market, you can produce for the defense sector.",
+      "valueProps": {
+        "prop1": "Fit assessment with defense verticals",
+        "prop2": "Certification roadmap (AQAP/PECAL, EN9100)",
+        "prop3": "Access to real contacts at primes and integrators"
+      },
+      "cta": "Request your assessment"
+    },
+    "tecnologia": {
+      "meta": {
+        "title": "For Technology Companies | Dual-Use Consulting | Dualys",
+        "description": "AI, robotics, cybersecurity, IoT companies: your civil technology is already a competitive advantage in defense."
+      },
+      "title": "Your civil technology is already a competitive advantage in defense",
+      "subtitle": "AI, robotics, cybersecurity, communications, simulation, digital twins, drones, IoT companies. The defense sector is looking for exactly what you develop.",
+      "valueProps": {
+        "prop1": "Identification of defense verticals for your technology",
+        "prop2": "Guidance on dual-use classification and export controls",
+        "prop3": "Connection with opportunities in European defense programs"
+      },
+      "cta": "Request your assessment"
+    },
+    "primes": {
+      "meta": {
+        "title": "For Major Primes & Integrators | Qualified Suppliers | Dualys",
+        "description": "Expand your supply chain with qualified industrial and technology suppliers from the Catalan and Spanish ecosystem."
+      },
+      "title": "Expand your supply chain with qualified local capability",
+      "subtitle": "Access an ecosystem of Spanish industrial and technology suppliers, with transferable capabilities already identified and qualified by DUALYS.",
+      "valueProps": {
+        "prop1": "Pre-qualified supplier base by profile and vertical",
+        "prop2": "Supply chain risk reduction",
+        "prop3": "Access to innovative European-origin capabilities"
+      },
+      "cta": "Talk to us"
+    }
+  },
   "pages": {
     "privacy": {
       "meta": {

@@ -258,6 +258,59 @@
     "empty": "Prochainement : articles et analyses sur le secteur de la défense. Nous préparons du contenu de qualité pour vous aider à comprendre le marché.",
     "cta": "Demandez votre diagnostic"
   },
+  "landings": {
+    "preEvaluacion": {
+      "meta": {
+        "title": "Pré-évaluation | Votre entreprise est-elle adaptée au secteur de la défense ? | Dualys",
+        "description": "Demandez une pré-évaluation gratuite pour savoir si votre entreprise possède des capacités transférables au secteur de la défense."
+      },
+      "title": "Votre entreprise est-elle adaptée au secteur de la défense ?",
+      "subtitle": "Découvrez-le en moins de 2 minutes. Demandez votre diagnostic et nous vous contactons sous 48 heures.",
+      "cta": "Demandez votre diagnostic"
+    },
+    "industriales": {
+      "meta": {
+        "title": "Pour les Entreprises Industrielles | Entrée dans le Secteur Défense | Dualys",
+        "description": "Fabricants de composants, automobile, aéronautique, métallurgie : votre capacité industrielle a une application directe dans la défense."
+      },
+      "title": "Votre capacité industrielle a une application directe dans la défense",
+      "subtitle": "Fabricants de composants, usinage de précision, automobile, aéronautique, composites, électronique industrielle. Si vous produisez pour le marché civil, vous pouvez produire pour le secteur de la défense.",
+      "valueProps": {
+        "prop1": "Diagnostic d'adéquation avec les verticales de défense",
+        "prop2": "Feuille de route des certifications nécessaires (AQAP/PECAL, EN9100)",
+        "prop3": "Accès à des contacts réels chez les donneurs d'ordre et intégrateurs"
+      },
+      "cta": "Demandez votre diagnostic"
+    },
+    "tecnologia": {
+      "meta": {
+        "title": "Pour les Entreprises Technologiques | Conseil Dual-Use | Dualys",
+        "description": "Entreprises d'IA, robotique, cybersécurité, IoT : votre technologie civile est déjà un avantage compétitif dans la défense."
+      },
+      "title": "Votre technologie civile est déjà un avantage compétitif dans la défense",
+      "subtitle": "Entreprises d'IA, robotique, cybersécurité, communications, simulation, jumeaux numériques, drones, IoT. Le secteur de la défense recherche exactement ce que vous développez.",
+      "valueProps": {
+        "prop1": "Identification des verticales de défense pour votre technologie",
+        "prop2": "Orientation sur la classification dual-use et les contrôles à l'exportation",
+        "prop3": "Connexion avec les opportunités des programmes européens de défense"
+      },
+      "cta": "Demandez votre diagnostic"
+    },
+    "primes": {
+      "meta": {
+        "title": "Pour les Grands Donneurs d'Ordre et Intégrateurs | Fournisseurs Qualifiés | Dualys",
+        "description": "Élargissez votre chaîne d'approvisionnement avec des fournisseurs industriels et technologiques qualifiés de l'écosystème catalan et espagnol."
+      },
+      "title": "Élargissez votre chaîne d'approvisionnement avec des capacités locales qualifiées",
+      "subtitle": "Accédez à un écosystème de fournisseurs industriels et technologiques espagnols, avec des capacités transférables déjà identifiées et qualifiées par DUALYS.",
+      "valueProps": {
+        "prop1": "Base de fournisseurs pré-qualifiés par profil et verticale",
+        "prop2": "Réduction du risque dans la chaîne d'approvisionnement",
+        "prop3": "Accès à des capacités innovantes d'origine européenne"
+      },
+      "cta": "Parlons-en"
+    }
+  },
   "pages": {
     "privacy": {
       "meta": {

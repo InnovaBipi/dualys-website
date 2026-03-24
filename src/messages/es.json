@@ -258,6 +258,59 @@
     "empty": "Próximamente: artículos y análisis sobre el sector defensa. Estamos preparando contenido de valor para ayudarte a entender el mercado.",
     "cta": "Solicita tu diagnóstico"
   },
+  "landings": {
+    "preEvaluacion": {
+      "meta": {
+        "title": "Pre-evaluación | ¿Encaja tu empresa en el sector defensa? | Dualys",
+        "description": "Solicita una pre-evaluación gratuita para saber si tu empresa tiene capacidades transferibles al sector defensa."
+      },
+      "title": "¿Tu empresa encaja en el sector defensa?",
+      "subtitle": "Descúbrelo en menos de 2 minutos. Solicita tu diagnóstico y te contactamos en 48 horas.",
+      "cta": "Solicita tu diagnóstico"
+    },
+    "industriales": {
+      "meta": {
+        "title": "Para Empresas Industriales | Entrada al Sector Defensa | Dualys",
+        "description": "Fabricantes de componentes, automoción, aeronáutica, metalmecánica: tu capacidad industrial tiene aplicación directa en defensa."
+      },
+      "title": "Tu capacidad industrial tiene aplicación directa en defensa",
+      "subtitle": "Fabricantes de componentes, manufactura de precisión, automoción, aeronáutica, composites, electrónica industrial. Si produces para el mercado civil, puedes producir para el sector defensa.",
+      "valueProps": {
+        "prop1": "Diagnóstico de encaje con verticales de defensa",
+        "prop2": "Roadmap de certificaciones necesarias (AQAP/PECAL, EN9100)",
+        "prop3": "Acceso a contactos reales en primes e integradores"
+      },
+      "cta": "Solicita tu diagnóstico"
+    },
+    "tecnologia": {
+      "meta": {
+        "title": "Para Empresas de Tecnología | Dual-Use Consulting | Dualys",
+        "description": "Empresas de IA, robótica, ciberseguridad, IoT: tu tecnología civil ya es ventaja competitiva en defensa."
+      },
+      "title": "Tu tecnología civil ya es una ventaja competitiva en defensa",
+      "subtitle": "Empresas de IA, robótica, ciberseguridad, comunicaciones, simulación, digital twins, drones, IoT. El sector defensa busca exactamente lo que tú desarrollas.",
+      "valueProps": {
+        "prop1": "Identificación de verticales de defensa para tu tecnología",
+        "prop2": "Orientación sobre clasificación dual-use y export controls",
+        "prop3": "Conexión con oportunidades en programas europeos de defensa"
+      },
+      "cta": "Solicita tu diagnóstico"
+    },
+    "primes": {
+      "meta": {
+        "title": "Para Grandes Primes e Integradores | Proveedores Cualificados | Dualys",
+        "description": "Amplía tu cadena de suministro con proveedores industriales y tecnológicos cualificados del ecosistema catalán y español."
+      },
+      "title": "Amplía tu cadena de suministro con capacidad local cualificada",
+      "subtitle": "Accede a un ecosistema de proveedores industriales y tecnológicos españoles, con capacidades transferibles ya identificadas y cualificadas por DUALYS.",
+      "valueProps": {
+        "prop1": "Base de proveedores pre-cualificados por perfil y vertical",
+        "prop2": "Reducción de riesgo en cadena de suministro",
+        "prop3": "Acceso a capacidades innovadoras de origen europeo"
+      },
+      "cta": "Hablemos"
+    }
+  },
   "pages": {
     "privacy": {
       "meta": {

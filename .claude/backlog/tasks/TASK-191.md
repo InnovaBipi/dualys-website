@@ -1,7 +1,7 @@
 ---
 id: TASK-191
 title: "Landing /para-industriales"
-status: backlog
+status: done
 priority: P3
 type: page
 phase: 9
