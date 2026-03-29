@@ -1,18 +1,6 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
-import {
-  Truck,
-  Ship,
-  Plane,
-  Rocket,
-  Radio,
-  Shield,
-  Bot,
-  Gamepad2,
-  Wrench,
-  ArrowRight,
-} from 'lucide-react';
-import type { LucideIcon } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Container } from '@/components/ui/container';
 import { PageHeader } from '@/components/content/PageHeader';
 import { Breadcrumbs } from '@/components/content/Breadcrumbs';
@@ -21,27 +9,11 @@ import { Button } from '@/components/ui/button';
 import { Link } from '@/lib/i18n/navigation';
 import { generatePageMetadata, getWebPageSchema, getBreadcrumbSchema } from '@/lib/seo/metadata';
 import type { Locale } from '@/lib/i18n/config';
+import { verticals } from '@/data/verticals';
 
 interface PageProps {
   params: Promise<{ locale: string }>;
 }
-
-interface Vertical {
-  key: string;
-  icon: LucideIcon;
-}
-
-const verticals: Vertical[] = [
-  { key: 'terrestrial', icon: Truck },
-  { key: 'naval', icon: Ship },
-  { key: 'aeronautics', icon: Plane },
-  { key: 'aerospace', icon: Rocket },
-  { key: 'c4isr', icon: Radio },
-  { key: 'cyber', icon: Shield },
-  { key: 'uav', icon: Bot },
-  { key: 'simulation', icon: Gamepad2 },
-  { key: 'auxiliary', icon: Wrench },
-];
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params;
@@ -107,20 +79,25 @@ export default async function SectoresPage({ params }: PageProps) {
               const Icon = vertical.icon;
 
               return (
-                <div
+                <Link
                   key={vertical.key}
-                  className="group rounded-xl border border-neutral-200 bg-white p-6 transition-shadow hover:shadow-lg"
+                  href={`/sectores/${vertical.slug}`}
+                  className="group rounded-xl border border-neutral-200 bg-white p-6 transition-all hover:shadow-lg"
                 >
                   <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent-500/10">
                     <Icon className="h-6 w-6 text-accent-500" aria-hidden="true" />
                   </div>
-                  <h3 className="mb-2 font-display text-lg font-semibold text-primary-950">
+                  <h3 className="mb-2 font-display text-lg font-semibold text-primary-950 group-hover:text-accent-500">
                     {tVerticals(`${vertical.key}.title`)}
                   </h3>
                   <p className="text-sm leading-relaxed text-neutral-500">
                     {tVerticals(`${vertical.key}.description`)}
                   </p>
-                </div>
+                  <span className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-accent-500 opacity-0 transition-opacity group-hover:opacity-100">
+                    {t('cta')}
+                    <ArrowRight className="h-3 w-3" aria-hidden="true" />
+                  </span>
+                </Link>
               );
             })}
           </div>

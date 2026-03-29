@@ -4,36 +4,8 @@ import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { Link } from '@/lib/i18n/navigation';
 import { Container } from '@/components/ui/container';
-import {
-  Truck,
-  Ship,
-  Plane,
-  Rocket,
-  Radio,
-  Shield,
-  Bot,
-  Gamepad2,
-  Wrench,
-  ArrowRight,
-} from 'lucide-react';
-import type { LucideIcon } from 'lucide-react';
-
-interface Vertical {
-  key: string;
-  icon: LucideIcon;
-}
-
-const verticals: Vertical[] = [
-  { key: 'terrestrial', icon: Truck },
-  { key: 'naval', icon: Ship },
-  { key: 'aeronautics', icon: Plane },
-  { key: 'aerospace', icon: Rocket },
-  { key: 'c4isr', icon: Radio },
-  { key: 'cyber', icon: Shield },
-  { key: 'uav', icon: Bot },
-  { key: 'simulation', icon: Gamepad2 },
-  { key: 'auxiliary', icon: Wrench },
-];
+import { ArrowRight } from 'lucide-react';
+import { verticals } from '@/data/verticals';
 
 export function VerticalsSection() {
   const t = useTranslations('homepage');
@@ -63,21 +35,25 @@ export function VerticalsSection() {
             return (
               <motion.div
                 key={vertical.key}
-                className="group rounded-xl border border-neutral-200 bg-white p-6 transition-shadow hover:shadow-lg"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
               >
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent-500/10">
-                  <Icon className="h-6 w-6 text-accent-500" aria-hidden="true" />
-                </div>
-                <h3 className="mb-2 font-display text-base font-semibold text-primary-950 sm:text-lg">
-                  {t(`verticals.${vertical.key}.title`)}
-                </h3>
-                <p className="text-sm leading-relaxed text-neutral-500">
-                  {t(`verticals.${vertical.key}.description`)}
-                </p>
+                <Link
+                  href={`/sectores/${vertical.slug}`}
+                  className="group flex h-full flex-col rounded-xl border border-neutral-200 bg-white p-6 transition-all hover:shadow-lg"
+                >
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent-500/10">
+                    <Icon className="h-6 w-6 text-accent-500" aria-hidden="true" />
+                  </div>
+                  <h3 className="mb-2 font-display text-base font-semibold text-primary-950 group-hover:text-accent-500 sm:text-lg">
+                    {t(`verticals.${vertical.key}.title`)}
+                  </h3>
+                  <p className="text-sm leading-relaxed text-neutral-500">
+                    {t(`verticals.${vertical.key}.description`)}
+                  </p>
+                </Link>
               </motion.div>
             );
           })}

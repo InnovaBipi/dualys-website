@@ -1,10 +1,11 @@
 import { MetadataRoute } from 'next';
 import { locales } from '@/lib/i18n/config';
+import { getAllVerticalSlugs } from '@/data/verticals';
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://dualys.eu';
 
-// Routes with priorities per briefing v2.0 sitemap
-const routes: { path: string; priority: number; changeFrequency: 'weekly' | 'monthly' | 'yearly' }[] = [
+// Static routes with priorities per briefing v2.0 sitemap
+const staticRoutes: { path: string; priority: number; changeFrequency: 'weekly' | 'monthly' | 'yearly' }[] = [
   { path: '', priority: 1.0, changeFrequency: 'weekly' },
   { path: '/servicios', priority: 0.95, changeFrequency: 'monthly' },
   { path: '/sectores', priority: 0.9, changeFrequency: 'monthly' },
@@ -16,6 +17,15 @@ const routes: { path: string; priority: number; changeFrequency: 'weekly' | 'mon
   { path: '/legal/terms', priority: 0.3, changeFrequency: 'yearly' },
   { path: '/legal/cookies', priority: 0.3, changeFrequency: 'yearly' },
 ];
+
+// Dynamic vertical detail routes
+const verticalRoutes = getAllVerticalSlugs().map((slug) => ({
+  path: `/sectores/${slug}`,
+  priority: 0.85,
+  changeFrequency: 'monthly' as const,
+}));
+
+const routes = [...staticRoutes, ...verticalRoutes];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const sitemapEntries: MetadataRoute.Sitemap = [];

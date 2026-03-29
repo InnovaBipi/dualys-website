@@ -34,7 +34,17 @@ clusters:
 
   - name: "Defense Verticals"
     hub: "/sectores"
-    spokes: []
+    spokes:
+      - "/sectores/vehicles-terrestres"
+      - "/sectores/sector-naval"
+      - "/sectores/aeronautica"
+      - "/sectores/aeroespacial"
+      - "/sectores/comunicacions-c4isr"
+      - "/sectores/ciberdefensa"
+      - "/sectores/uav-robotica"
+      - "/sectores/armament-municio"
+      - "/sectores/simulacio-gaming"
+      - "/sectores/sector-auxiliar"
 
   - name: "Company"
     hub: "/nosotros"
@@ -96,6 +106,19 @@ routes:
     entry_points: ["/", "/servicios"]
     exit_points: ["/contact", "/servicios"]
     content_requirements: [has_hero, has_breadcrumbs, has_structured_data, has_verticals]
+
+  - path: "/sectores/[slug]"
+    status: published
+    nav: []
+    priority: 0.85
+    changefreq: monthly
+    seo:
+      focus_keyword: "vertical specific keyword per slug"
+      intent: informational
+      cluster_role: spoke
+    entry_points: ["/sectores", "/"]
+    exit_points: ["/contact", "/sectores"]
+    content_requirements: [has_hero, has_cta, has_breadcrumbs, has_structured_data]
 
   - path: "/metodologia"
     status: draft

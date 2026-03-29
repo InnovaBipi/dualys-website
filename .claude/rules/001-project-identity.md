@@ -32,10 +32,11 @@ DUALYS es el puente estratégico entre la innovación civil y los mercados duale
 5. Comunicaciones (C4ISR)
 6. Ciberdefensa y encriptación
 7. Vehículos no tripulados y robótica (UAV/UGV/USV)
-8. Simulación y gaming / entrenamiento
-9. Sector auxiliar (protección y componentes)
+8. Armamento y munición (componentes de precisión, munición no letal, almacenamiento)
+9. Simulación y gaming / entrenamiento
+10. Sector auxiliar (protección y componentes)
 
-**Editorial policy**: NO incluir referencias a armamento ni munición.
+**Editorial policy**: Incluir armamento y munición como vertical (actualizado per PDF client v2, 2026-03-25). Enfoque en componentes industriales de precisión, no en armas ofensivas.
 
 ## Target Audiences (from Briefing Section 3)
 

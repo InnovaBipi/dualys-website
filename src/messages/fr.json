@@ -85,8 +85,9 @@
       "c4isr": { "title": "Communications (C4ISR)", "description": "Télécommunications, logiciel, réseaux sécurisés" },
       "cyber": { "title": "Cyberdéfense", "description": "Sécurité, chiffrement, analyse forensique numérique" },
       "uav": { "title": "UAV / UGV / USV", "description": "Robotique, vision par ordinateur, IA appliquée, drones" },
-      "simulation": { "title": "Simulation et entraînement", "description": "Logiciel de simulation, VR/AR, jumeaux numériques" },
-      "auxiliary": { "title": "Secteur auxiliaire", "description": "Textile technique, protection, usinage CNC" }
+      "armament": { "title": "Armement et munitions", "description": "Composants de précision, systèmes de stockage, calibrage" },
+      "simulation": { "title": "Simulation et gaming", "description": "Logiciel de simulation, VR/AR, jumeaux numériques" },
+      "auxiliary": { "title": "Secteurs auxiliaires", "description": "Textile technique, protection, usinage CNC" }
     },
     "team": {
       "title": "L'équipe",
@@ -176,7 +177,174 @@
       "title": "D'où vous venez, où vous pouvez aller",
       "subtitle": "Connexions explicites entre votre secteur d'origine et les verticales de défense les plus accessibles."
     },
-    "cta": "Demandez votre diagnostic"
+    "cta": "Demandez votre diagnostic",
+    "verticals": {
+      "terrestrial": {
+        "title": "Véhicules terrestres",
+        "description": "Solutions de mobilité terrestre pour les opérations de défense et de sécurité, des véhicules blindés aux plateformes robotisées avancées.",
+        "meta": {
+          "title": "Véhicules Terrestres | Verticales de Défense | Dualys",
+          "description": "Plateformes terrestres militaires et de sécurité : véhicules blindés, camions logistiques, UGV robotisés et plus. Découvrez comment votre entreprise peut contribuer."
+        },
+        "subcategories": {
+          "armored_4x4": { "title": "Véhicules blindés 4x4", "description": "Transport de personnel avec protection balistique" },
+          "logistics_trucks": { "title": "Camions logistiques", "description": "Véhicules militarisés pour le soutien logistique" },
+          "mine_vehicles": { "title": "Véhicules de déminage", "description": "Plateformes spécialisées pour les opérations EOD" },
+          "utv_atv": { "title": "UTV/ATV militarisés", "description": "Mobilité tactique en terrain complexe" },
+          "ugv_robots": { "title": "UGV robotisés", "description": "Plateformes terrestres sans pilote" },
+          "ambulances": { "title": "Ambulances", "description": "Évacuation médicale militarisée" },
+          "border_control": { "title": "Contrôle des frontières", "description": "Véhicules spécialisés en surveillance" }
+        }
+      },
+      "naval": {
+        "title": "Secteur naval",
+        "description": "Plateformes maritimes pour la surveillance, l'intervention et la reconnaissance, incluant les technologies pilotées et autonomes.",
+        "meta": {
+          "title": "Secteur Naval | Verticales de Défense | Dualys",
+          "description": "Systèmes et plateformes de défense navale : embarcations d'intervention, sous-marins légers, drones de surface. Découvrez les opportunités."
+        },
+        "subcategories": {
+          "intervention_vessels": { "title": "Embarcations d'intervention", "description": "Bateaux rapides pour opérations tactiques immédiates" },
+          "advanced_navigation": { "title": "Navigation avancée", "description": "Systèmes de positionnement et de contrôle précis" },
+          "offshore_patrol": { "title": "Patrouilleurs hauturiers", "description": "Surveillance côtière et maritime à longue portée" },
+          "light_submarines": { "title": "Sous-marins légers", "description": "Reconnaissance sous-marine discrète" },
+          "surface_drones": { "title": "Drones de surface", "description": "USV pour missions autonomes sur l'eau" },
+          "semi_rigid": { "title": "Embarcations semi-rigides", "description": "Embarcations flexibles militarisées" },
+          "smart_mooring": { "title": "Amarrage intelligent", "description": "Systèmes d'amarrage automatisés" }
+        }
+      },
+      "aeronautics": {
+        "title": "Aéronautique",
+        "description": "Composants et systèmes spécialisés pour les aéronefs militaires, des structures légères à l'électronique embarquée de dernière génération.",
+        "meta": {
+          "title": "Aéronautique Militaire | Verticales de Défense | Dualys",
+          "description": "Aviation militaire et systèmes aéronautiques avancés : composants structurels, électronique embarquée, maintenance prédictive. Transférez vos capacités civiles."
+        },
+        "subcategories": {
+          "light_aircraft": { "title": "Aéronefs légers militarisés", "description": "Plateformes aériennes adaptées aux missions de défense" },
+          "structural_components": { "title": "Composants structurels", "description": "Pièces aéronautiques haute résistance et faible poids" },
+          "flight_control": { "title": "Systèmes de contrôle de vol", "description": "Avionique avancée pour la navigation et le pilotage" },
+          "seats_oxygen": { "title": "Sièges renforcés et systèmes d'oxygène", "description": "Équipement de sécurité pour l'équipage" },
+          "onboard_electronics": { "title": "Électronique embarquée", "description": "Systèmes avancés d'avionique et de contrôle intégré" },
+          "predictive_maintenance": { "title": "Maintenance prédictive", "description": "Surveillance intelligente pour prévenir les défaillances" }
+        }
+      },
+      "aerospace": {
+        "title": "Aérospatial et New Space",
+        "description": "Technologie spatiale compacte et efficace pour les missions d'observation terrestre, les communications et la propulsion avancée en orbite basse.",
+        "meta": {
+          "title": "Aérospatial et New Space | Verticales de Défense | Dualys",
+          "description": "Technologie spatiale et nouvelles applications orbitales : nanosatellites, propulsion électrique, fibre de carbone. Opportunités pour les entreprises technologiques."
+        },
+        "subcategories": {
+          "cubesats": { "title": "Nanosatellites (CubeSats)", "description": "Plateformes modulaires pour missions spatiales abordables" },
+          "deployable_antennas": { "title": "Antennes déployables", "description": "Systèmes légers de communication orbitale" },
+          "electric_propulsion": { "title": "Propulsion électrique", "description": "Moteurs efficaces pour manœuvres spatiales" },
+          "carbon_fiber": { "title": "Fibre de carbone", "description": "Composants ultra-légers haute performance" },
+          "ground_tracking": { "title": "Suivi terrestre", "description": "Systèmes d'observation et de surveillance mondiale" },
+          "solar_modules": { "title": "Modules solaires", "description": "Panneaux photovoltaïques haute efficacité énergétique" }
+        }
+      },
+      "c4isr": {
+        "title": "Communications (C4ISR)",
+        "description": "Commandement, contrôle, communications, informatique, renseignement, surveillance et reconnaissance.",
+        "meta": {
+          "title": "Communications C4ISR | Verticales de Défense | Dualys",
+          "description": "Systèmes de commandement, contrôle, communications et renseignement : radios tactiques, radars, liaisons de données. Équipement tactique pour la supériorité informationnelle."
+        },
+        "subcategories": {
+          "tactical_radios": { "title": "Radios tactiques", "description": "Radios chiffrées pour communication sécurisée" },
+          "command_consoles": { "title": "Consoles de commandement", "description": "Consoles de commandement intégrées" },
+          "satellite_terminals": { "title": "Terminaux satellite", "description": "Terminaux pour connectivité mondiale" },
+          "light_radars": { "title": "Radars légers", "description": "Radars légers portables" },
+          "data_links": { "title": "Liaisons de données", "description": "Liaisons de données haut débit" },
+          "iff_systems": { "title": "Systèmes IFF", "description": "Systèmes d'identification ami/ennemi" }
+        }
+      },
+      "cyber": {
+        "title": "Cyberdéfense et chiffrement",
+        "description": "Solutions de sécurité informatique et de chiffrement matériel pour protéger les infrastructures critiques et les communications sensibles contre les cybermenaces.",
+        "meta": {
+          "title": "Cyberdéfense et Chiffrement | Verticales de Défense | Dualys",
+          "description": "Protection numérique, cybersécurité et systèmes de chiffrement avancé : pare-feux militaires, détection d'intrusion, analyse forensique. Protégez les infrastructures critiques."
+        },
+        "subcategories": {
+          "hardware_encryption": { "title": "Chiffrement matériel", "description": "Modules physiques de chiffrement de haut niveau" },
+          "encrypted_comms": { "title": "Communications chiffrées", "description": "Dispositifs sécurisés pour transmissions classifiées" },
+          "military_firewalls": { "title": "Pare-feux militaires", "description": "Protection périmétrique des infrastructures critiques" },
+          "intrusion_detection": { "title": "Détection d'intrusion", "description": "Systèmes avancés de surveillance continue" },
+          "forensic_analysis": { "title": "Analyse forensique", "description": "Plateformes d'investigation post-incident" },
+          "advanced_auth": { "title": "Authentification avancée", "description": "Contrôle d'accès multifacteur robuste" },
+          "drone_security": { "title": "Sécurité des drones", "description": "Logiciel spécialisé anti-piratage UAV" }
+        }
+      },
+      "uav": {
+        "title": "Véhicules sans pilote et robotique",
+        "description": "Plateformes autonomes et télécommandées pour missions aériennes, terrestres et aquatiques, réduisant les risques humains dans les opérations de reconnaissance et d'intervention spécialisée.",
+        "meta": {
+          "title": "UAV et Robotique | Verticales de Défense | Dualys",
+          "description": "Véhicules sans pilote, drones et systèmes robotiques autonomes : UAV, UGV, USV, UUV. Plateformes pour missions de reconnaissance et d'intervention."
+        },
+        "subcategories": {
+          "aerial_drones": { "title": "Drones aériens (UAV)", "description": "Surveillance et reconnaissance aérienne" },
+          "ground_robots": { "title": "Robots terrestres (UGV)", "description": "Exploration et neutralisation au sol" },
+          "usv": { "title": "Navires sans équipage (USV)", "description": "Patrouille maritime autonome" },
+          "uuv": { "title": "Sous-marins autonomes (UUV)", "description": "Reconnaissance sous-marine sans équipage" },
+          "robotic_arms": { "title": "Bras robotiques téléopérés", "description": "Manipulation précise à distance" },
+          "firefighting_robots": { "title": "Robots pompiers", "description": "Extinction d'incendies en zones dangereuses" },
+          "quadruped_robots": { "title": "Robots quadrupèdes", "description": "Mobilité adaptative en terrains complexes" }
+        }
+      },
+      "armament": {
+        "title": "Armement et munitions",
+        "description": "Composants et systèmes pour l'armement de défense, avec un accent sur la précision, la fiabilité et le respect des normes internationales de sécurité.",
+        "meta": {
+          "title": "Armement et Munitions | Verticales de Défense | Dualys",
+          "description": "Composants de précision, munitions non létales, systèmes de stockage et de calibrage pour le secteur de la défense. Fabrication haute résistance."
+        },
+        "subcategories": {
+          "precision_components": { "title": "Composants de précision", "description": "Pièces usinées à haute tolérance pour systèmes d'armes" },
+          "non_lethal_ammo": { "title": "Munitions non létales et d'entraînement", "description": "Projectiles pour le contrôle des foules et l'entraînement sécurisé" },
+          "storage_systems": { "title": "Systèmes de stockage", "description": "Conteneurs et poudrières certifiés pour la sécurité" },
+          "loaders_calibration": { "title": "Chargeurs et calibrage", "description": "Dispositifs d'alimentation et de vérification d'armes" },
+          "metal_parts": { "title": "Pièces métalliques", "description": "Fabrication haute résistance pour composants critiques" }
+        }
+      },
+      "simulation": {
+        "title": "Simulation et gaming",
+        "description": "Environnements virtuels immersifs pour l'entraînement militaire avancé, réduisant les coûts opérationnels et augmentant la préparation du personnel sans risques réels.",
+        "meta": {
+          "title": "Simulation et Gaming | Verticales de Défense | Dualys",
+          "description": "Entraînement et simulation pour environnements de défense : simulateurs de vol, VR/AR, jumeaux numériques, moteurs graphiques 3D. Technologie immersive."
+        },
+        "subcategories": {
+          "flight_simulators": { "title": "Simulateurs de vol", "description": "Entraînement de pilotes avec fidélité réaliste" },
+          "vehicle_simulators": { "title": "Simulateurs de véhicules", "description": "Pratique sécurisée avec blindés et logistique" },
+          "vr_ar_training": { "title": "Formation VR/AR", "description": "Réalité virtuelle et augmentée en immersion totale" },
+          "cybersecurity_training": { "title": "Cybersécurité", "description": "Entraînement contre les attaques numériques" },
+          "digital_twins": { "title": "Jumeaux numériques", "description": "Répliques virtuelles d'équipement réel" },
+          "tactical_simulators": { "title": "Simulateurs tactiques", "description": "Scénarios de combat et de stratégie" },
+          "graphics_engines": { "title": "Moteurs graphiques 3D", "description": "Rendu réaliste d'environnements" }
+        }
+      },
+      "auxiliary": {
+        "title": "Secteur auxiliaire",
+        "description": "Équipement complémentaire essentiel pour la protection personnelle, la dissimulation tactique et les composants mécaniques de précision garantissant sécurité et performance opérationnelle.",
+        "meta": {
+          "title": "Secteur Auxiliaire | Verticales de Défense | Dualys",
+          "description": "Textiles techniques, protection balistique, chaussures tactiques, EPI, usinage CNC et composants de précision pour le secteur de la défense."
+        },
+        "subcategories": {
+          "technical_textiles": { "title": "Textiles techniques ignifuges et résistants", "description": "Matériaux textiles haute performance pour usage militaire" },
+          "anti_reflective_paints": { "title": "Peintures antireflets pour dissimulation", "description": "Revêtements spécialisés pour camouflage tactique" },
+          "ballistic_protection": { "title": "Protection balistique individuelle certifiée", "description": "Casques, lunettes et protection corporelle certifiés" },
+          "tactical_footwear": { "title": "Chaussures tactiques haute performance", "description": "Bottes et chaussures spécialisées pour opérations" },
+          "ppe": { "title": "Équipements de protection individuelle (EPI)", "description": "Équipement complet de protection personnelle" },
+          "modular_armor": { "title": "Structures blindées modulaires", "description": "Blindage modulaire adaptable aux véhicules et installations" },
+          "cnc_machining": { "title": "Usinage CNC de composants critiques", "description": "Fabrication de précision pour pièces critiques de défense" }
+        }
+      }
+    }
   },
   "metodologia": {
     "meta": {
