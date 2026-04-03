@@ -60,4 +60,8 @@ nul
 temp_html.txt
 *.tmp
 
-.vercel
+# Screenshots and test artifacts
+*.png
+!public/**/*.png
+test-screenshots/
+.playwright-mcp/

@@ -78,16 +78,46 @@
       "title": "Defense verticals",
       "subtitle": "Discover which defense sector areas your company can position itself in",
       "cta": "Discover which vertical fits your company",
-      "terrestrial": { "title": "Ground platforms", "description": "Vehicles, mechanical components, hydraulic systems" },
-      "naval": { "title": "Naval sector", "description": "Shipbuilding, composites, marine electronics" },
-      "aeronautics": { "title": "Military aeronautics", "description": "Civil aeronautics tier 1/2, machining, composites" },
-      "aerospace": { "title": "Aerospace and New Space", "description": "Ultra-light materials, high-precision electronics" },
-      "c4isr": { "title": "Communications (C4ISR)", "description": "Telecommunications, software, secure networks" },
-      "cyber": { "title": "Cyber defense", "description": "Security, encryption, digital forensics" },
-      "uav": { "title": "UAV / UGV / USV", "description": "Robotics, machine vision, applied AI, drones" },
-      "armament": { "title": "Armament and munitions", "description": "Precision components, storage systems, calibration" },
-      "simulation": { "title": "Simulation and gaming", "description": "Simulation software, VR/AR, digital twins" },
-      "auxiliary": { "title": "Auxiliary sectors", "description": "Technical textiles, protection, CNC machining" }
+      "terrestrial": {
+        "title": "Ground platforms",
+        "description": "Vehicles, mechanical components, hydraulic systems"
+      },
+      "naval": {
+        "title": "Naval sector",
+        "description": "Shipbuilding, composites, marine electronics"
+      },
+      "aeronautics": {
+        "title": "Military aeronautics",
+        "description": "Civil aeronautics tier 1/2, machining, composites"
+      },
+      "aerospace": {
+        "title": "Aerospace and New Space",
+        "description": "Ultra-light materials, high-precision electronics"
+      },
+      "c4isr": {
+        "title": "Communications (C4ISR)",
+        "description": "Telecommunications, software, secure networks"
+      },
+      "cyber": {
+        "title": "Cyber defense",
+        "description": "Security, encryption, digital forensics"
+      },
+      "uav": {
+        "title": "UAV / UGV / USV",
+        "description": "Robotics, machine vision, applied AI, drones"
+      },
+      "armament": {
+        "title": "Armament and munitions",
+        "description": "Precision components, storage systems, calibration"
+      },
+      "simulation": {
+        "title": "Simulation and gaming",
+        "description": "Simulation software, VR/AR, digital twins"
+      },
+      "auxiliary": {
+        "title": "Auxiliary sectors",
+        "description": "Technical textiles, protection, CNC machining"
+      }
     },
     "team": {
       "title": "The team",
@@ -187,13 +217,34 @@
           "description": "Military and security ground platforms: armored vehicles, logistics trucks, robotic UGVs and more. Discover how your company can contribute."
         },
         "subcategories": {
-          "armored_4x4": { "title": "Armored 4x4 vehicles", "description": "Personnel transport with ballistic protection" },
-          "logistics_trucks": { "title": "Logistics trucks", "description": "Militarized vehicles for logistics support" },
-          "mine_vehicles": { "title": "Mine clearance vehicles", "description": "Specialized platforms for EOD operations" },
-          "utv_atv": { "title": "Military UTV/ATV", "description": "Tactical mobility in complex terrain" },
-          "ugv_robots": { "title": "Robotic UGVs", "description": "Unmanned ground platforms" },
-          "ambulances": { "title": "Ambulances", "description": "Militarized medical evacuation" },
-          "border_control": { "title": "Border control", "description": "Specialized surveillance vehicles" }
+          "armored_4x4": {
+            "title": "Armored 4x4 vehicles",
+            "description": "Personnel transport with ballistic protection"
+          },
+          "logistics_trucks": {
+            "title": "Logistics trucks",
+            "description": "Militarized vehicles for logistics support"
+          },
+          "mine_vehicles": {
+            "title": "Mine clearance vehicles",
+            "description": "Specialized platforms for EOD operations"
+          },
+          "utv_atv": {
+            "title": "Military UTV/ATV",
+            "description": "Tactical mobility in complex terrain"
+          },
+          "ugv_robots": {
+            "title": "Robotic UGVs",
+            "description": "Unmanned ground platforms"
+          },
+          "ambulances": {
+            "title": "Ambulances",
+            "description": "Militarized medical evacuation"
+          },
+          "border_control": {
+            "title": "Border control",
+            "description": "Specialized surveillance vehicles"
+          }
         }
       },
       "naval": {
@@ -204,13 +255,34 @@
           "description": "Naval defense systems and platforms: intervention vessels, light submarines, surface drones. Discover the opportunities."
         },
         "subcategories": {
-          "intervention_vessels": { "title": "Intervention vessels", "description": "Fast boats for immediate tactical operations" },
-          "advanced_navigation": { "title": "Advanced navigation", "description": "Precise positioning and control systems" },
-          "offshore_patrol": { "title": "Offshore patrol vessels", "description": "Long-range coastal and maritime surveillance" },
-          "light_submarines": { "title": "Light submarines", "description": "Discreet submarine reconnaissance" },
-          "surface_drones": { "title": "Surface drones", "description": "USVs for autonomous water missions" },
-          "semi_rigid": { "title": "Semi-rigid boats", "description": "Flexible militarized craft" },
-          "smart_mooring": { "title": "Smart mooring", "description": "Automated mooring systems" }
+          "intervention_vessels": {
+            "title": "Intervention vessels",
+            "description": "Fast boats for immediate tactical operations"
+          },
+          "advanced_navigation": {
+            "title": "Advanced navigation",
+            "description": "Precise positioning and control systems"
+          },
+          "offshore_patrol": {
+            "title": "Offshore patrol vessels",
+            "description": "Long-range coastal and maritime surveillance"
+          },
+          "light_submarines": {
+            "title": "Light submarines",
+            "description": "Discreet submarine reconnaissance"
+          },
+          "surface_drones": {
+            "title": "Surface drones",
+            "description": "USVs for autonomous water missions"
+          },
+          "semi_rigid": {
+            "title": "Semi-rigid boats",
+            "description": "Flexible militarized craft"
+          },
+          "smart_mooring": {
+            "title": "Smart mooring",
+            "description": "Automated mooring systems"
+          }
         }
       },
       "aeronautics": {
@@ -221,12 +293,30 @@
           "description": "Military aviation and advanced aeronautical systems: structural components, onboard electronics, predictive maintenance. Transfer your civil capabilities."
         },
         "subcategories": {
-          "light_aircraft": { "title": "Militarized light aircraft", "description": "Air platforms adapted for defense missions" },
-          "structural_components": { "title": "Structural components", "description": "High-strength, lightweight aeronautical parts" },
-          "flight_control": { "title": "Flight control systems", "description": "Advanced avionics for navigation and piloting" },
-          "seats_oxygen": { "title": "Reinforced seats and oxygen systems", "description": "Crew safety equipment" },
-          "onboard_electronics": { "title": "Onboard electronics", "description": "Advanced avionics and integrated control systems" },
-          "predictive_maintenance": { "title": "Predictive maintenance", "description": "Intelligent monitoring to prevent failures" }
+          "light_aircraft": {
+            "title": "Militarized light aircraft",
+            "description": "Air platforms adapted for defense missions"
+          },
+          "structural_components": {
+            "title": "Structural components",
+            "description": "High-strength, lightweight aeronautical parts"
+          },
+          "flight_control": {
+            "title": "Flight control systems",
+            "description": "Advanced avionics for navigation and piloting"
+          },
+          "seats_oxygen": {
+            "title": "Reinforced seats and oxygen systems",
+            "description": "Crew safety equipment"
+          },
+          "onboard_electronics": {
+            "title": "Onboard electronics",
+            "description": "Advanced avionics and integrated control systems"
+          },
+          "predictive_maintenance": {
+            "title": "Predictive maintenance",
+            "description": "Intelligent monitoring to prevent failures"
+          }
         }
       },
       "aerospace": {
@@ -237,12 +327,30 @@
           "description": "Space technology and new orbital applications: nanosatellites, electric propulsion, carbon fiber. Opportunities for technology companies."
         },
         "subcategories": {
-          "cubesats": { "title": "Nanosatellites (CubeSats)", "description": "Modular platforms for affordable space missions" },
-          "deployable_antennas": { "title": "Deployable antennas", "description": "Lightweight orbital communication systems" },
-          "electric_propulsion": { "title": "Electric propulsion", "description": "Efficient engines for space maneuvers" },
-          "carbon_fiber": { "title": "Carbon fiber", "description": "Ultra-lightweight high-performance components" },
-          "ground_tracking": { "title": "Ground tracking", "description": "Global observation and surveillance systems" },
-          "solar_modules": { "title": "Solar modules", "description": "High-efficiency photovoltaic panels" }
+          "cubesats": {
+            "title": "Nanosatellites (CubeSats)",
+            "description": "Modular platforms for affordable space missions"
+          },
+          "deployable_antennas": {
+            "title": "Deployable antennas",
+            "description": "Lightweight orbital communication systems"
+          },
+          "electric_propulsion": {
+            "title": "Electric propulsion",
+            "description": "Efficient engines for space maneuvers"
+          },
+          "carbon_fiber": {
+            "title": "Carbon fiber",
+            "description": "Ultra-lightweight high-performance components"
+          },
+          "ground_tracking": {
+            "title": "Ground tracking",
+            "description": "Global observation and surveillance systems"
+          },
+          "solar_modules": {
+            "title": "Solar modules",
+            "description": "High-efficiency photovoltaic panels"
+          }
         }
       },
       "c4isr": {
@@ -253,12 +361,30 @@
           "description": "Command, control, communications and intelligence systems: tactical radios, radars, data links. Tactical equipment for information superiority."
         },
         "subcategories": {
-          "tactical_radios": { "title": "Tactical radios", "description": "Encrypted radios for secure communication" },
-          "command_consoles": { "title": "Command consoles", "description": "Integrated command consoles" },
-          "satellite_terminals": { "title": "Satellite terminals", "description": "Terminals for global connectivity" },
-          "light_radars": { "title": "Lightweight radars", "description": "Portable lightweight radars" },
-          "data_links": { "title": "Data links", "description": "High-speed data links" },
-          "iff_systems": { "title": "IFF systems", "description": "Friend-or-foe identification systems" }
+          "tactical_radios": {
+            "title": "Tactical radios",
+            "description": "Encrypted radios for secure communication"
+          },
+          "command_consoles": {
+            "title": "Command consoles",
+            "description": "Integrated command consoles"
+          },
+          "satellite_terminals": {
+            "title": "Satellite terminals",
+            "description": "Terminals for global connectivity"
+          },
+          "light_radars": {
+            "title": "Lightweight radars",
+            "description": "Portable lightweight radars"
+          },
+          "data_links": {
+            "title": "Data links",
+            "description": "High-speed data links"
+          },
+          "iff_systems": {
+            "title": "IFF systems",
+            "description": "Friend-or-foe identification systems"
+          }
         }
       },
       "cyber": {
@@ -269,13 +395,34 @@
           "description": "Digital protection, cybersecurity and advanced encryption systems: military firewalls, intrusion detection, forensic analysis. Protect critical infrastructure."
         },
         "subcategories": {
-          "hardware_encryption": { "title": "Hardware encryption", "description": "High-level physical encryption modules" },
-          "encrypted_comms": { "title": "Encrypted communications", "description": "Secure devices for classified transmissions" },
-          "military_firewalls": { "title": "Military firewalls", "description": "Perimeter protection for critical infrastructure" },
-          "intrusion_detection": { "title": "Intrusion detection", "description": "Advanced continuous monitoring systems" },
-          "forensic_analysis": { "title": "Forensic analysis", "description": "Post-incident investigation platforms" },
-          "advanced_auth": { "title": "Advanced authentication", "description": "Robust multi-factor access control" },
-          "drone_security": { "title": "Drone security", "description": "Specialized anti-hacking UAV software" }
+          "hardware_encryption": {
+            "title": "Hardware encryption",
+            "description": "High-level physical encryption modules"
+          },
+          "encrypted_comms": {
+            "title": "Encrypted communications",
+            "description": "Secure devices for classified transmissions"
+          },
+          "military_firewalls": {
+            "title": "Military firewalls",
+            "description": "Perimeter protection for critical infrastructure"
+          },
+          "intrusion_detection": {
+            "title": "Intrusion detection",
+            "description": "Advanced continuous monitoring systems"
+          },
+          "forensic_analysis": {
+            "title": "Forensic analysis",
+            "description": "Post-incident investigation platforms"
+          },
+          "advanced_auth": {
+            "title": "Advanced authentication",
+            "description": "Robust multi-factor access control"
+          },
+          "drone_security": {
+            "title": "Drone security",
+            "description": "Specialized anti-hacking UAV software"
+          }
         }
       },
       "uav": {
@@ -286,13 +433,34 @@
           "description": "Unmanned vehicles, drones and autonomous robotic systems: UAV, UGV, USV, UUV. Platforms for reconnaissance and intervention missions."
         },
         "subcategories": {
-          "aerial_drones": { "title": "Aerial drones (UAV)", "description": "Airborne surveillance and reconnaissance" },
-          "ground_robots": { "title": "Ground robots (UGV)", "description": "Ground exploration and neutralization" },
-          "usv": { "title": "Unmanned surface vessels (USV)", "description": "Autonomous maritime patrol" },
-          "uuv": { "title": "Autonomous submarines (UUV)", "description": "Unmanned submarine reconnaissance" },
-          "robotic_arms": { "title": "Teleoperated robotic arms", "description": "Precise remote manipulation" },
-          "firefighting_robots": { "title": "Firefighting robots", "description": "Fire extinction in hazardous zones" },
-          "quadruped_robots": { "title": "Quadruped robots", "description": "Adaptive mobility in complex terrain" }
+          "aerial_drones": {
+            "title": "Aerial drones (UAV)",
+            "description": "Airborne surveillance and reconnaissance"
+          },
+          "ground_robots": {
+            "title": "Ground robots (UGV)",
+            "description": "Ground exploration and neutralization"
+          },
+          "usv": {
+            "title": "Unmanned surface vessels (USV)",
+            "description": "Autonomous maritime patrol"
+          },
+          "uuv": {
+            "title": "Autonomous submarines (UUV)",
+            "description": "Unmanned submarine reconnaissance"
+          },
+          "robotic_arms": {
+            "title": "Teleoperated robotic arms",
+            "description": "Precise remote manipulation"
+          },
+          "firefighting_robots": {
+            "title": "Firefighting robots",
+            "description": "Fire extinction in hazardous zones"
+          },
+          "quadruped_robots": {
+            "title": "Quadruped robots",
+            "description": "Adaptive mobility in complex terrain"
+          }
         }
       },
       "armament": {
@@ -303,11 +471,26 @@
           "description": "Precision components, non-lethal ammunition, storage and calibration systems for the defense sector. High-resistance manufacturing."
         },
         "subcategories": {
-          "precision_components": { "title": "Precision components", "description": "High-tolerance machined parts for weapons systems" },
-          "non_lethal_ammo": { "title": "Non-lethal and training ammunition", "description": "Projectiles for crowd control and safe training" },
-          "storage_systems": { "title": "Storage systems", "description": "Certified containers and magazines for safety" },
-          "loaders_calibration": { "title": "Loaders and calibration", "description": "Feeding and weapons verification devices" },
-          "metal_parts": { "title": "Metal parts", "description": "High-resistance manufacturing for critical components" }
+          "precision_components": {
+            "title": "Precision components",
+            "description": "High-tolerance machined parts for weapons systems"
+          },
+          "non_lethal_ammo": {
+            "title": "Non-lethal and training ammunition",
+            "description": "Projectiles for crowd control and safe training"
+          },
+          "storage_systems": {
+            "title": "Storage systems",
+            "description": "Certified containers and magazines for safety"
+          },
+          "loaders_calibration": {
+            "title": "Loaders and calibration",
+            "description": "Feeding and weapons verification devices"
+          },
+          "metal_parts": {
+            "title": "Metal parts",
+            "description": "High-resistance manufacturing for critical components"
+          }
         }
       },
       "simulation": {
@@ -318,13 +501,34 @@
           "description": "Training and simulation for defense environments: flight simulators, VR/AR, digital twins, 3D graphics engines. Immersive technology."
         },
         "subcategories": {
-          "flight_simulators": { "title": "Flight simulators", "description": "Realistic fidelity pilot training" },
-          "vehicle_simulators": { "title": "Vehicle simulators", "description": "Safe practice with armored and logistics vehicles" },
-          "vr_ar_training": { "title": "VR/AR training", "description": "Full immersion virtual and augmented reality" },
-          "cybersecurity_training": { "title": "Cybersecurity", "description": "Training against digital attacks" },
-          "digital_twins": { "title": "Digital twins", "description": "Virtual replicas of real equipment" },
-          "tactical_simulators": { "title": "Tactical simulators", "description": "Combat and strategy scenarios" },
-          "graphics_engines": { "title": "3D graphics engines", "description": "Realistic environment rendering" }
+          "flight_simulators": {
+            "title": "Flight simulators",
+            "description": "Realistic fidelity pilot training"
+          },
+          "vehicle_simulators": {
+            "title": "Vehicle simulators",
+            "description": "Safe practice with armored and logistics vehicles"
+          },
+          "vr_ar_training": {
+            "title": "VR/AR training",
+            "description": "Full immersion virtual and augmented reality"
+          },
+          "cybersecurity_training": {
+            "title": "Cybersecurity",
+            "description": "Training against digital attacks"
+          },
+          "digital_twins": {
+            "title": "Digital twins",
+            "description": "Virtual replicas of real equipment"
+          },
+          "tactical_simulators": {
+            "title": "Tactical simulators",
+            "description": "Combat and strategy scenarios"
+          },
+          "graphics_engines": {
+            "title": "3D graphics engines",
+            "description": "Realistic environment rendering"
+          }
         }
       },
       "auxiliary": {
@@ -335,13 +539,34 @@
           "description": "Technical textiles, ballistic protection, tactical footwear, PPE, CNC machining and precision components for the defense sector."
         },
         "subcategories": {
-          "technical_textiles": { "title": "Fire-resistant technical textiles", "description": "High-performance textile materials for military use" },
-          "anti_reflective_paints": { "title": "Anti-reflective concealment paints", "description": "Specialized coatings for tactical camouflage" },
-          "ballistic_protection": { "title": "Certified individual ballistic protection", "description": "Certified helmets, goggles and body protection" },
-          "tactical_footwear": { "title": "High-performance tactical footwear", "description": "Specialized boots and footwear for operations" },
-          "ppe": { "title": "Personal protective equipment (PPE)", "description": "Complete personal protection equipment" },
-          "modular_armor": { "title": "Modular armored structures", "description": "Modular armor adaptable to vehicles and facilities" },
-          "cnc_machining": { "title": "CNC machining of critical components", "description": "Precision manufacturing for critical defense parts" }
+          "technical_textiles": {
+            "title": "Fire-resistant technical textiles",
+            "description": "High-performance textile materials for military use"
+          },
+          "anti_reflective_paints": {
+            "title": "Anti-reflective concealment paints",
+            "description": "Specialized coatings for tactical camouflage"
+          },
+          "ballistic_protection": {
+            "title": "Certified individual ballistic protection",
+            "description": "Certified helmets, goggles and body protection"
+          },
+          "tactical_footwear": {
+            "title": "High-performance tactical footwear",
+            "description": "Specialized boots and footwear for operations"
+          },
+          "ppe": {
+            "title": "Personal protective equipment (PPE)",
+            "description": "Complete personal protection equipment"
+          },
+          "modular_armor": {
+            "title": "Modular armored structures",
+            "description": "Modular armor adaptable to vehicles and facilities"
+          },
+          "cnc_machining": {
+            "title": "CNC machining of critical components",
+            "description": "Precision manufacturing for critical defense parts"
+          }
         }
       }
     }
@@ -355,9 +580,18 @@
     "subtitle": "FFD: Dualys — Dualys Methodology",
     "description": "A structured, proven, and results-oriented program. Under non-disclosure agreement.",
     "phases": {
-      "phase1": { "title": "Assessment", "description": "Comprehensive evaluation of capabilities and fit with the defense sector." },
-      "phase2": { "title": "Positioning", "description": "Opportunity map, required certifications, and action plan." },
-      "phase3": { "title": "Activation", "description": "Real market entry with contacts, contracts, and ongoing support." }
+      "phase1": {
+        "title": "Assessment",
+        "description": "Comprehensive evaluation of capabilities and fit with the defense sector."
+      },
+      "phase2": {
+        "title": "Positioning",
+        "description": "Opportunity map, required certifications, and action plan."
+      },
+      "phase3": {
+        "title": "Activation",
+        "description": "Real market entry with contacts, contracts, and ongoing support."
+      }
     },
     "nda": "All assessment and advisory processes are carried out under a non-disclosure agreement.",
     "cta": "Request your assessment"
@@ -424,7 +658,8 @@
       "opinion": "Opinion and trends"
     },
     "empty": "Coming soon: articles and analysis on the defense sector. We are preparing valuable content to help you understand the market.",
-    "cta": "Request your assessment"
+    "cta": "Request your assessment",
+    "backToList": "Back to resources"
   },
   "landings": {
     "preEvaluacion": {

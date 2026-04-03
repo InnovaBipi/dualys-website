@@ -78,16 +78,46 @@
       "title": "Verticals de defensa",
       "subtitle": "Descobreix en quines àrees del sector defensa pot posicionar-se la teva empresa",
       "cta": "Descobreix en quina vertical encaixa la teva empresa",
-      "terrestrial": { "title": "Plataformes terrestres", "description": "Vehicles, components mecànics, sistemes hidràulics" },
-      "naval": { "title": "Sector naval", "description": "Construcció naval, compostos, electrònica marina" },
-      "aeronautics": { "title": "Aeronàutica militar", "description": "Aeronàutica civil tier 1/2, mecanitzat, compostos" },
-      "aerospace": { "title": "Aeroespacial i New Space", "description": "Materials ultra-lleugers, electrònica d'alta precisió" },
-      "c4isr": { "title": "Comunicacions (C4ISR)", "description": "Telecomunicacions, programari, xarxes segures" },
-      "cyber": { "title": "Ciberdefensa", "description": "Seguretat, encriptació, anàlisi forense digital" },
-      "uav": { "title": "UAV / UGV / USV", "description": "Robòtica, visió artificial, IA aplicada, drons" },
-      "armament": { "title": "Armament i munició", "description": "Components de precisió, sistemes d'emmagatzematge, calibratge" },
-      "simulation": { "title": "Simulació i gaming", "description": "Programari de simulació, RV/RA, bessons digitals" },
-      "auxiliary": { "title": "Sectors auxiliars", "description": "Tèxtil tècnic, protecció, mecanitzat CNC" }
+      "terrestrial": {
+        "title": "Plataformes terrestres",
+        "description": "Vehicles, components mecànics, sistemes hidràulics"
+      },
+      "naval": {
+        "title": "Sector naval",
+        "description": "Construcció naval, compostos, electrònica marina"
+      },
+      "aeronautics": {
+        "title": "Aeronàutica militar",
+        "description": "Aeronàutica civil tier 1/2, mecanitzat, compostos"
+      },
+      "aerospace": {
+        "title": "Aeroespacial i New Space",
+        "description": "Materials ultra-lleugers, electrònica d'alta precisió"
+      },
+      "c4isr": {
+        "title": "Comunicacions (C4ISR)",
+        "description": "Telecomunicacions, programari, xarxes segures"
+      },
+      "cyber": {
+        "title": "Ciberdefensa",
+        "description": "Seguretat, encriptació, anàlisi forense digital"
+      },
+      "uav": {
+        "title": "UAV / UGV / USV",
+        "description": "Robòtica, visió artificial, IA aplicada, drons"
+      },
+      "armament": {
+        "title": "Armament i munició",
+        "description": "Components de precisió, sistemes d'emmagatzematge, calibratge"
+      },
+      "simulation": {
+        "title": "Simulació i gaming",
+        "description": "Programari de simulació, RV/RA, bessons digitals"
+      },
+      "auxiliary": {
+        "title": "Sectors auxiliars",
+        "description": "Tèxtil tècnic, protecció, mecanitzat CNC"
+      }
     },
     "team": {
       "title": "L'equip",
@@ -187,13 +217,34 @@
           "description": "Plataformes terrestres militars i de seguretat: vehicles blindats, camions logístics, UGV robotitzats i més. Descobreix com la teva empresa pot contribuir."
         },
         "subcategories": {
-          "armored_4x4": { "title": "Vehicles blindats 4x4", "description": "Transport de personal amb protecció balística" },
-          "logistics_trucks": { "title": "Camions logístics", "description": "Vehicles militaritzats per suport logístic" },
-          "mine_vehicles": { "title": "Vehicles antimines", "description": "Plataformes especialitzades per EOD" },
-          "utv_atv": { "title": "UTV/ATV militaritzats", "description": "Mobilitat tàctica en terreny complex" },
-          "ugv_robots": { "title": "UGV robotitzats", "description": "Plataformes terrestres no tripulades" },
-          "ambulances": { "title": "Ambulàncies", "description": "Evacuació mèdica militaritzada" },
-          "border_control": { "title": "Control de fronteres", "description": "Vehicles especialitzats en vigilància" }
+          "armored_4x4": {
+            "title": "Vehicles blindats 4x4",
+            "description": "Transport de personal amb protecció balística"
+          },
+          "logistics_trucks": {
+            "title": "Camions logístics",
+            "description": "Vehicles militaritzats per suport logístic"
+          },
+          "mine_vehicles": {
+            "title": "Vehicles antimines",
+            "description": "Plataformes especialitzades per EOD"
+          },
+          "utv_atv": {
+            "title": "UTV/ATV militaritzats",
+            "description": "Mobilitat tàctica en terreny complex"
+          },
+          "ugv_robots": {
+            "title": "UGV robotitzats",
+            "description": "Plataformes terrestres no tripulades"
+          },
+          "ambulances": {
+            "title": "Ambulàncies",
+            "description": "Evacuació mèdica militaritzada"
+          },
+          "border_control": {
+            "title": "Control de fronteres",
+            "description": "Vehicles especialitzats en vigilància"
+          }
         }
       },
       "naval": {
@@ -204,13 +255,34 @@
           "description": "Sistemes i plataformes de defensa naval: embarcacions d'intervenció, submarins lleugers, drons de superfície. Descobreix les oportunitats."
         },
         "subcategories": {
-          "intervention_vessels": { "title": "Embarcacions d'intervenció", "description": "Vaixells ràpids per operacions tàctiques immediates" },
-          "advanced_navigation": { "title": "Navegació avançada", "description": "Sistemes de posicionament i control precís" },
-          "offshore_patrol": { "title": "Patrulleres d'altura", "description": "Vigilància costanera i marítima de llarg abast" },
-          "light_submarines": { "title": "Submarins lleugers", "description": "Reconeixement submarí discret" },
-          "surface_drones": { "title": "Drons de superfície", "description": "USV per missions autònomes a l'aigua" },
-          "semi_rigid": { "title": "Embarcacions semirígides", "description": "Embarcacions flexibles militaritzades" },
-          "smart_mooring": { "title": "Ancoratge intel·ligent", "description": "Sistemes automatitzats d'amarratge" }
+          "intervention_vessels": {
+            "title": "Embarcacions d'intervenció",
+            "description": "Vaixells ràpids per operacions tàctiques immediates"
+          },
+          "advanced_navigation": {
+            "title": "Navegació avançada",
+            "description": "Sistemes de posicionament i control precís"
+          },
+          "offshore_patrol": {
+            "title": "Patrulleres d'altura",
+            "description": "Vigilància costanera i marítima de llarg abast"
+          },
+          "light_submarines": {
+            "title": "Submarins lleugers",
+            "description": "Reconeixement submarí discret"
+          },
+          "surface_drones": {
+            "title": "Drons de superfície",
+            "description": "USV per missions autònomes a l'aigua"
+          },
+          "semi_rigid": {
+            "title": "Embarcacions semirígides",
+            "description": "Embarcacions flexibles militaritzades"
+          },
+          "smart_mooring": {
+            "title": "Ancoratge intel·ligent",
+            "description": "Sistemes automatitzats d'amarratge"
+          }
         }
       },
       "aeronautics": {
@@ -221,12 +293,30 @@
           "description": "Aviació militar i sistemes aeronàutics avançats: components estructurals, electrònica embarcada, manteniment predictiu. Transfereix la teva capacitat civil."
         },
         "subcategories": {
-          "light_aircraft": { "title": "Aeronaus lleugeres militaritzades", "description": "Plataformes aèries adaptades a missions de defensa" },
-          "structural_components": { "title": "Components estructurals", "description": "Peces aeronàutiques d'alta resistència i poc pes" },
-          "flight_control": { "title": "Sistemes de control de vol", "description": "Aviònica avançada per a la navegació i el pilotatge" },
-          "seats_oxygen": { "title": "Seients reforçats i sistemes d'oxigen", "description": "Equipament de seguretat per a la tripulació" },
-          "onboard_electronics": { "title": "Electrònica embarcada", "description": "Sistemes avançats d'aviònica i control integrat" },
-          "predictive_maintenance": { "title": "Manteniment predictiu", "description": "Monitoratge intel·ligent per prevenir fallades" }
+          "light_aircraft": {
+            "title": "Aeronaus lleugeres militaritzades",
+            "description": "Plataformes aèries adaptades a missions de defensa"
+          },
+          "structural_components": {
+            "title": "Components estructurals",
+            "description": "Peces aeronàutiques d'alta resistència i poc pes"
+          },
+          "flight_control": {
+            "title": "Sistemes de control de vol",
+            "description": "Aviònica avançada per a la navegació i el pilotatge"
+          },
+          "seats_oxygen": {
+            "title": "Seients reforçats i sistemes d'oxigen",
+            "description": "Equipament de seguretat per a la tripulació"
+          },
+          "onboard_electronics": {
+            "title": "Electrònica embarcada",
+            "description": "Sistemes avançats d'aviònica i control integrat"
+          },
+          "predictive_maintenance": {
+            "title": "Manteniment predictiu",
+            "description": "Monitoratge intel·ligent per prevenir fallades"
+          }
         }
       },
       "aerospace": {
@@ -237,12 +327,30 @@
           "description": "Tecnologia espacial i noves aplicacions orbitals: nanosatèl·lits, propulsió elèctrica, fibra de carboni. Oportunitats per a empreses tecnològiques."
         },
         "subcategories": {
-          "cubesats": { "title": "Nanosatèl·lits (CubeSats)", "description": "Plataformes modulars per missions espacials assequibles" },
-          "deployable_antennas": { "title": "Antenes desplegables", "description": "Sistemes lleugers de comunicació orbital" },
-          "electric_propulsion": { "title": "Propulsió elèctrica", "description": "Motors eficients per maniobres espacials" },
-          "carbon_fiber": { "title": "Fibra de carboni", "description": "Components ultralleugers d'alt rendiment" },
-          "ground_tracking": { "title": "Rastreig terrestre", "description": "Sistemes d'observació i vigilància global" },
-          "solar_modules": { "title": "Mòduls solars", "description": "Panells fotovoltaics d'alta eficiència energètica" }
+          "cubesats": {
+            "title": "Nanosatèl·lits (CubeSats)",
+            "description": "Plataformes modulars per missions espacials assequibles"
+          },
+          "deployable_antennas": {
+            "title": "Antenes desplegables",
+            "description": "Sistemes lleugers de comunicació orbital"
+          },
+          "electric_propulsion": {
+            "title": "Propulsió elèctrica",
+            "description": "Motors eficients per maniobres espacials"
+          },
+          "carbon_fiber": {
+            "title": "Fibra de carboni",
+            "description": "Components ultralleugers d'alt rendiment"
+          },
+          "ground_tracking": {
+            "title": "Rastreig terrestre",
+            "description": "Sistemes d'observació i vigilància global"
+          },
+          "solar_modules": {
+            "title": "Mòduls solars",
+            "description": "Panells fotovoltaics d'alta eficiència energètica"
+          }
         }
       },
       "c4isr": {
@@ -253,12 +361,30 @@
           "description": "Sistemes de comandament, control, comunicacions i intel·ligència: ràdios tàctiques, radars, enllaços de dades. Equipament tàctic per a superioritat informacional."
         },
         "subcategories": {
-          "tactical_radios": { "title": "Ràdios tàctiques", "description": "Ràdios xifrades per comunicació segura" },
-          "command_consoles": { "title": "Consoles de comandament", "description": "Consoles de comandament integrades" },
-          "satellite_terminals": { "title": "Terminals satèl·lit", "description": "Terminals per connectivitat global" },
-          "light_radars": { "title": "Radars lleugers", "description": "Radars lleugers portàtils" },
-          "data_links": { "title": "Enllaços de dades", "description": "Enllaços de dades d'alta velocitat" },
-          "iff_systems": { "title": "Sistemes IFF", "description": "Sistemes IFF d'identificació amic/enemic" }
+          "tactical_radios": {
+            "title": "Ràdios tàctiques",
+            "description": "Ràdios xifrades per comunicació segura"
+          },
+          "command_consoles": {
+            "title": "Consoles de comandament",
+            "description": "Consoles de comandament integrades"
+          },
+          "satellite_terminals": {
+            "title": "Terminals satèl·lit",
+            "description": "Terminals per connectivitat global"
+          },
+          "light_radars": {
+            "title": "Radars lleugers",
+            "description": "Radars lleugers portàtils"
+          },
+          "data_links": {
+            "title": "Enllaços de dades",
+            "description": "Enllaços de dades d'alta velocitat"
+          },
+          "iff_systems": {
+            "title": "Sistemes IFF",
+            "description": "Sistemes IFF d'identificació amic/enemic"
+          }
         }
       },
       "cyber": {
@@ -269,13 +395,34 @@
           "description": "Protecció digital, ciberseguretat i sistemes d'encriptació avançada: firewalls militars, detecció d'intrusió, anàlisi forense. Protegeix infraestructures crítiques."
         },
         "subcategories": {
-          "hardware_encryption": { "title": "Xifrat hardware", "description": "Mòduls físics d'encriptació d'alt nivell" },
-          "encrypted_comms": { "title": "Comunicació xifrada", "description": "Dispositius segurs per transmissions classificades" },
-          "military_firewalls": { "title": "Firewalls militars", "description": "Protecció perimetral d'infraestructures crítiques" },
-          "intrusion_detection": { "title": "Detecció d'intrusió", "description": "Sistemes avançats de monitorització contínua" },
-          "forensic_analysis": { "title": "Anàlisi forense", "description": "Plataformes d'investigació postincident" },
-          "advanced_auth": { "title": "Autentificació avançada", "description": "Control d'accés multifactor robust" },
-          "drone_security": { "title": "Seguretat per drons", "description": "Software especialitzat antihacking UAV" }
+          "hardware_encryption": {
+            "title": "Xifrat hardware",
+            "description": "Mòduls físics d'encriptació d'alt nivell"
+          },
+          "encrypted_comms": {
+            "title": "Comunicació xifrada",
+            "description": "Dispositius segurs per transmissions classificades"
+          },
+          "military_firewalls": {
+            "title": "Firewalls militars",
+            "description": "Protecció perimetral d'infraestructures crítiques"
+          },
+          "intrusion_detection": {
+            "title": "Detecció d'intrusió",
+            "description": "Sistemes avançats de monitorització contínua"
+          },
+          "forensic_analysis": {
+            "title": "Anàlisi forense",
+            "description": "Plataformes d'investigació postincident"
+          },
+          "advanced_auth": {
+            "title": "Autentificació avançada",
+            "description": "Control d'accés multifactor robust"
+          },
+          "drone_security": {
+            "title": "Seguretat per drons",
+            "description": "Software especialitzat antihacking UAV"
+          }
         }
       },
       "uav": {
@@ -286,13 +433,34 @@
           "description": "Vehicles no tripulats, drons i sistemes robòtics autònoms: UAV, UGV, USV, UUV. Plataformes per a missions de reconeixement i intervenció."
         },
         "subcategories": {
-          "aerial_drones": { "title": "Drons aeris (UAV)", "description": "Vigilància i reconeixement des de l'aire" },
-          "ground_robots": { "title": "Robots terrestres (UGV)", "description": "Exploració i desactivació en terra" },
-          "usv": { "title": "Vaixells no tripulats (USV)", "description": "Patrulla marítima autònoma" },
-          "uuv": { "title": "Submarins autònoms (UUV)", "description": "Reconeixement submarí sense tripulació" },
-          "robotic_arms": { "title": "Braços robòtics tele operats", "description": "Manipulació precisa a distància" },
-          "firefighting_robots": { "title": "Robots bombers", "description": "Extinció d'incendis en zones perilloses" },
-          "quadruped_robots": { "title": "Robots quadrúpedes", "description": "Mobilitat adaptativa en terrenys complexos" }
+          "aerial_drones": {
+            "title": "Drons aeris (UAV)",
+            "description": "Vigilància i reconeixement des de l'aire"
+          },
+          "ground_robots": {
+            "title": "Robots terrestres (UGV)",
+            "description": "Exploració i desactivació en terra"
+          },
+          "usv": {
+            "title": "Vaixells no tripulats (USV)",
+            "description": "Patrulla marítima autònoma"
+          },
+          "uuv": {
+            "title": "Submarins autònoms (UUV)",
+            "description": "Reconeixement submarí sense tripulació"
+          },
+          "robotic_arms": {
+            "title": "Braços robòtics tele operats",
+            "description": "Manipulació precisa a distància"
+          },
+          "firefighting_robots": {
+            "title": "Robots bombers",
+            "description": "Extinció d'incendis en zones perilloses"
+          },
+          "quadruped_robots": {
+            "title": "Robots quadrúpedes",
+            "description": "Mobilitat adaptativa en terrenys complexos"
+          }
         }
       },
       "armament": {
@@ -303,11 +471,26 @@
           "description": "Components de precisió, munició no letal, sistemes d'emmagatzematge i calibratge per al sector defensa. Fabricació d'alta resistència."
         },
         "subcategories": {
-          "precision_components": { "title": "Components de precisió", "description": "Peces mecanitzades d'alta tolerància per a sistemes d'armes" },
-          "non_lethal_ammo": { "title": "Munició no letal i d'entrenament", "description": "Projectils per al control de masses i per a entrenament segur" },
-          "storage_systems": { "title": "Sistemes d'emmagatzematge", "description": "Contenidors i polvorins certificats per a la seguretat" },
-          "loaders_calibration": { "title": "Carregadors i calibratge", "description": "Dispositius d'alimentació i verificació d'armes" },
-          "metal_parts": { "title": "Parts metàl·liques", "description": "Fabricació d'alta resistència per a components crítics" }
+          "precision_components": {
+            "title": "Components de precisió",
+            "description": "Peces mecanitzades d'alta tolerància per a sistemes d'armes"
+          },
+          "non_lethal_ammo": {
+            "title": "Munició no letal i d'entrenament",
+            "description": "Projectils per al control de masses i per a entrenament segur"
+          },
+          "storage_systems": {
+            "title": "Sistemes d'emmagatzematge",
+            "description": "Contenidors i polvorins certificats per a la seguretat"
+          },
+          "loaders_calibration": {
+            "title": "Carregadors i calibratge",
+            "description": "Dispositius d'alimentació i verificació d'armes"
+          },
+          "metal_parts": {
+            "title": "Parts metàl·liques",
+            "description": "Fabricació d'alta resistència per a components crítics"
+          }
         }
       },
       "simulation": {
@@ -318,13 +501,34 @@
           "description": "Entrenament i simulació per a entorns de defensa: simuladors de vol, VR/AR, digital twins, motors gràfics 3D. Tecnologia immersiva."
         },
         "subcategories": {
-          "flight_simulators": { "title": "Simuladors de vol", "description": "Entrenament de pilots amb fidelitat realista" },
-          "vehicle_simulators": { "title": "Simuladors de vehicles", "description": "Pràctica segura amb blindats i logística" },
-          "vr_ar_training": { "title": "Formació VR/AR", "description": "Realitat virtual i augmentada d'immersió total" },
-          "cybersecurity_training": { "title": "Ciberseguretat", "description": "Entrenament contra atacs digitals" },
-          "digital_twins": { "title": "Digital twins", "description": "Rèpliques virtuals d'equipament real" },
-          "tactical_simulators": { "title": "Simuladors tàctics", "description": "Escenaris de combat i estratègia" },
-          "graphics_engines": { "title": "Motors gràfics 3D", "description": "Renderització realista d'entorns" }
+          "flight_simulators": {
+            "title": "Simuladors de vol",
+            "description": "Entrenament de pilots amb fidelitat realista"
+          },
+          "vehicle_simulators": {
+            "title": "Simuladors de vehicles",
+            "description": "Pràctica segura amb blindats i logística"
+          },
+          "vr_ar_training": {
+            "title": "Formació VR/AR",
+            "description": "Realitat virtual i augmentada d'immersió total"
+          },
+          "cybersecurity_training": {
+            "title": "Ciberseguretat",
+            "description": "Entrenament contra atacs digitals"
+          },
+          "digital_twins": {
+            "title": "Digital twins",
+            "description": "Rèpliques virtuals d'equipament real"
+          },
+          "tactical_simulators": {
+            "title": "Simuladors tàctics",
+            "description": "Escenaris de combat i estratègia"
+          },
+          "graphics_engines": {
+            "title": "Motors gràfics 3D",
+            "description": "Renderització realista d'entorns"
+          }
         }
       },
       "auxiliary": {
@@ -335,13 +539,34 @@
           "description": "Tèxtils tècnics, protecció balística, calçat tàctic, EPI, mecanitzat CNC i components de precisió per al sector defensa."
         },
         "subcategories": {
-          "technical_textiles": { "title": "Tèxtils tècnics ignífugs i resistents", "description": "Materials tèxtils d'alt rendiment per a ús militar" },
-          "anti_reflective_paints": { "title": "Pintures antireflectants per ocultació", "description": "Recobriments especialitzats per camuflatge tàctic" },
-          "ballistic_protection": { "title": "Protecció balística individual certificada", "description": "Cascos, ulleres i protecció corporal certificada" },
-          "tactical_footwear": { "title": "Calçat tàctic d'alt rendiment", "description": "Botes i calçat especialitzat per operacions" },
-          "ppe": { "title": "Equips de protecció individual (EPI)", "description": "Equipament complet de protecció personal" },
-          "modular_armor": { "title": "Estructures blindades modulars", "description": "Blindatge modular adaptable a vehicles i instal·lacions" },
-          "cnc_machining": { "title": "Mecanitzat CNC de components crítics", "description": "Fabricació de precisió per a peces crítiques de defensa" }
+          "technical_textiles": {
+            "title": "Tèxtils tècnics ignífugs i resistents",
+            "description": "Materials tèxtils d'alt rendiment per a ús militar"
+          },
+          "anti_reflective_paints": {
+            "title": "Pintures antireflectants per ocultació",
+            "description": "Recobriments especialitzats per camuflatge tàctic"
+          },
+          "ballistic_protection": {
+            "title": "Protecció balística individual certificada",
+            "description": "Cascos, ulleres i protecció corporal certificada"
+          },
+          "tactical_footwear": {
+            "title": "Calçat tàctic d'alt rendiment",
+            "description": "Botes i calçat especialitzat per operacions"
+          },
+          "ppe": {
+            "title": "Equips de protecció individual (EPI)",
+            "description": "Equipament complet de protecció personal"
+          },
+          "modular_armor": {
+            "title": "Estructures blindades modulars",
+            "description": "Blindatge modular adaptable a vehicles i instal·lacions"
+          },
+          "cnc_machining": {
+            "title": "Mecanitzat CNC de components crítics",
+            "description": "Fabricació de precisió per a peces crítiques de defensa"
+          }
         }
       }
     }
@@ -355,9 +580,18 @@
     "subtitle": "FFD: Dualys — Metodologia Dualys",
     "description": "Un programa estructurat, provat i orientat a resultats. Sota acord de confidencialitat.",
     "phases": {
-      "phase1": { "title": "Diagnòstic", "description": "Avaluació completa de capacitats i encaix amb el sector defensa." },
-      "phase2": { "title": "Posicionament", "description": "Mapa d'oportunitats, certificacions necessàries i pla d'acció." },
-      "phase3": { "title": "Activació", "description": "Entrada real al mercat amb contactes, contractes i acompanyament." }
+      "phase1": {
+        "title": "Diagnòstic",
+        "description": "Avaluació completa de capacitats i encaix amb el sector defensa."
+      },
+      "phase2": {
+        "title": "Posicionament",
+        "description": "Mapa d'oportunitats, certificacions necessàries i pla d'acció."
+      },
+      "phase3": {
+        "title": "Activació",
+        "description": "Entrada real al mercat amb contactes, contractes i acompanyament."
+      }
     },
     "nda": "Tots els processos de diagnòstic i assessorament es realitzen sota acord de confidencialitat.",
     "cta": "Sol·licita el teu diagnòstic"
@@ -424,7 +658,8 @@
       "opinion": "Opinió i tendències"
     },
     "empty": "Properament: articles i anàlisis sobre el sector defensa. Estem preparant contingut de valor per ajudar-te a entendre el mercat.",
-    "cta": "Sol·licita el teu diagnòstic"
+    "cta": "Sol·licita el teu diagnòstic",
+    "backToList": "Tornar a recursos"
   },
   "landings": {
     "preEvaluacion": {
@@ -481,45 +716,117 @@
   },
   "pages": {
     "privacy": {
-      "meta": { "title": "Política de Privadesa | Dualys", "description": "Política de privadesa de Dualys." },
+      "meta": {
+        "title": "Política de Privadesa | Dualys",
+        "description": "Política de privadesa de Dualys."
+      },
       "title": "Política de Privadesa",
       "lastUpdated": "Última actualització: Març 2026",
       "sections": {
-        "introduction": { "title": "Introducció", "content": "Dualys AIE està compromesa amb la protecció de la seva privadesa. Aquesta Política de Privadesa explica com recopilem, usem i protegim la seva informació." },
-        "dataCollection": { "title": "Informació que Recopilem", "content": "Recopilem informació que vostè proporciona voluntàriament: nom, empresa, correu electrònic, sector i descripció del seu repte." },
-        "dataUse": { "title": "Com Usem la Seva Informació", "content": "Usem la informació per respondre consultes, proporcionar informació sobre serveis i millorar el lloc web." },
-        "dataSharing": { "title": "Compartició d'Informació", "content": "No venem ni transferim la seva informació personal a tercers sense consentiment." },
-        "dataSecurity": { "title": "Seguretat de les Dades", "content": "Implementem mesures tècniques i organitzatives per protegir la seva informació personal." },
-        "yourRights": { "title": "Els Seus Drets", "content": "Segons el RGPD, té dret a accedir, rectificar, eliminar i portar les seves dades personals." },
-        "cookies": { "title": "Cookies", "content": "El nostre lloc web utilitza cookies. Consulti la Política de Cookies." },
-        "changes": { "title": "Canvis", "content": "Podem actualitzar aquesta política. Li notificarem publicant la nova versió aquí." },
-        "contact": { "title": "Contacte", "content": "Preguntes sobre privadesa: info@dualys.eu." }
+        "introduction": {
+          "title": "Introducció",
+          "content": "Dualys AIE està compromesa amb la protecció de la seva privadesa. Aquesta Política de Privadesa explica com recopilem, usem i protegim la seva informació."
+        },
+        "dataCollection": {
+          "title": "Informació que Recopilem",
+          "content": "Recopilem informació que vostè proporciona voluntàriament: nom, empresa, correu electrònic, sector i descripció del seu repte."
+        },
+        "dataUse": {
+          "title": "Com Usem la Seva Informació",
+          "content": "Usem la informació per respondre consultes, proporcionar informació sobre serveis i millorar el lloc web."
+        },
+        "dataSharing": {
+          "title": "Compartició d'Informació",
+          "content": "No venem ni transferim la seva informació personal a tercers sense consentiment."
+        },
+        "dataSecurity": {
+          "title": "Seguretat de les Dades",
+          "content": "Implementem mesures tècniques i organitzatives per protegir la seva informació personal."
+        },
+        "yourRights": {
+          "title": "Els Seus Drets",
+          "content": "Segons el RGPD, té dret a accedir, rectificar, eliminar i portar les seves dades personals."
+        },
+        "cookies": {
+          "title": "Cookies",
+          "content": "El nostre lloc web utilitza cookies. Consulti la Política de Cookies."
+        },
+        "changes": {
+          "title": "Canvis",
+          "content": "Podem actualitzar aquesta política. Li notificarem publicant la nova versió aquí."
+        },
+        "contact": {
+          "title": "Contacte",
+          "content": "Preguntes sobre privadesa: info@dualys.eu."
+        }
       }
     },
     "terms": {
-      "meta": { "title": "Avís Legal | Dualys", "description": "Avís legal i termes d'ús de Dualys." },
+      "meta": {
+        "title": "Avís Legal | Dualys",
+        "description": "Avís legal i termes d'ús de Dualys."
+      },
       "title": "Avís Legal",
       "lastUpdated": "Última actualització: Març 2026",
       "sections": {
-        "acceptance": { "title": "Acceptació", "content": "En accedir a aquest lloc web, accepta aquests termes." },
-        "use": { "title": "Ús", "content": "Lloc web amb fins informatius sobre Dualys i serveis." },
-        "intellectualProperty": { "title": "Propietat Intel·lectual", "content": "Tot el contingut és propietat de Dualys." },
-        "disclaimers": { "title": "Descàrrecs", "content": "Contingut proporcionat tal qual sense garanties." },
-        "limitation": { "title": "Limitació", "content": "Dualys no és responsable de danys indirectes." },
-        "governingLaw": { "title": "Llei Aplicable", "content": "Lleis d'Espanya i la UE. Tribunals de Barcelona." },
-        "contact": { "title": "Contacte", "content": "Preguntes legals: info@dualys.eu." }
+        "acceptance": {
+          "title": "Acceptació",
+          "content": "En accedir a aquest lloc web, accepta aquests termes."
+        },
+        "use": {
+          "title": "Ús",
+          "content": "Lloc web amb fins informatius sobre Dualys i serveis."
+        },
+        "intellectualProperty": {
+          "title": "Propietat Intel·lectual",
+          "content": "Tot el contingut és propietat de Dualys."
+        },
+        "disclaimers": {
+          "title": "Descàrrecs",
+          "content": "Contingut proporcionat tal qual sense garanties."
+        },
+        "limitation": {
+          "title": "Limitació",
+          "content": "Dualys no és responsable de danys indirectes."
+        },
+        "governingLaw": {
+          "title": "Llei Aplicable",
+          "content": "Lleis d'Espanya i la UE. Tribunals de Barcelona."
+        },
+        "contact": {
+          "title": "Contacte",
+          "content": "Preguntes legals: info@dualys.eu."
+        }
       }
     },
     "cookies": {
-      "meta": { "title": "Política de Cookies | Dualys", "description": "Ús de cookies a Dualys." },
+      "meta": {
+        "title": "Política de Cookies | Dualys",
+        "description": "Ús de cookies a Dualys."
+      },
       "title": "Política de Cookies",
       "lastUpdated": "Última actualització: Març 2026",
       "sections": {
-        "whatAreCookies": { "title": "Què Són?", "content": "Petits arxius de text al seu dispositiu." },
-        "howWeUse": { "title": "Com les Usem", "content": "Per entendre interaccions, preferències i millorar l'experiència." },
-        "types": { "title": "Tipus", "content": "Essencials, d'Anàlisi i de Preferències." },
-        "manage": { "title": "Gestió", "content": "Control via configuració del navegador." },
-        "contact": { "title": "Contacte", "content": "Preguntes sobre cookies: info@dualys.eu." }
+        "whatAreCookies": {
+          "title": "Què Són?",
+          "content": "Petits arxius de text al seu dispositiu."
+        },
+        "howWeUse": {
+          "title": "Com les Usem",
+          "content": "Per entendre interaccions, preferències i millorar l'experiència."
+        },
+        "types": {
+          "title": "Tipus",
+          "content": "Essencials, d'Anàlisi i de Preferències."
+        },
+        "manage": {
+          "title": "Gestió",
+          "content": "Control via configuració del navegador."
+        },
+        "contact": {
+          "title": "Contacte",
+          "content": "Preguntes sobre cookies: info@dualys.eu."
+        }
       }
     }
   }
