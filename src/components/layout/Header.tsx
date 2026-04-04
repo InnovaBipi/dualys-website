@@ -325,9 +325,9 @@ export function Header() {
             })}
             {/* Mobile actions - stacked vertically for better touch UX */}
             <div className="mt-4 space-y-3 px-3 border-t border-neutral-200 pt-4">
-              <div className="flex items-center justify-between">
+              <div className="space-y-2">
                 <span className="text-sm text-neutral-500">{t('language') || 'Language'}</span>
-                <LanguageSwitcher />
+                <LanguageSwitcher variant="inline" onLanguageChange={() => setMobileMenuOpen(false)} />
               </div>
               <Button asChild variant="accent" className="w-full min-h-[48px]">
                 <Link href="/contact" onClick={() => setMobileMenuOpen(false)} className="flex items-center justify-center gap-1">

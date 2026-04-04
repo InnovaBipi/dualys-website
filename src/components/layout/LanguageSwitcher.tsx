@@ -7,7 +7,12 @@ import { cn } from '@/lib/utils';
 import { ChevronDown } from 'lucide-react';
 import { useState, useRef, useEffect } from 'react';
 
-export function LanguageSwitcher() {
+interface LanguageSwitcherProps {
+  variant?: 'dropdown' | 'inline';
+  onLanguageChange?: () => void;
+}
+
+export function LanguageSwitcher({ variant = 'dropdown', onLanguageChange }: LanguageSwitcherProps) {
   const locale = useLocale() as Locale;
   const router = useRouter();
   const pathname = usePathname();
@@ -15,30 +20,55 @@ export function LanguageSwitcher() {
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    function handleClickOutside(event: MouseEvent | TouchEvent) {
+    if (variant === 'inline') return;
+
+    function handleClickOutside(event: MouseEvent) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
         setIsOpen(false);
       }
     }
-    // Support both mouse and touch events for mobile compatibility
     document.addEventListener('mousedown', handleClickOutside);
-    document.addEventListener('touchstart', handleClickOutside);
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
-      document.removeEventListener('touchstart', handleClickOutside);
     };
-  }, []);
+  }, [variant]);
 
   const handleLanguageChange = (newLocale: Locale) => {
     router.replace(pathname, { locale: newLocale });
     setIsOpen(false);
+    onLanguageChange?.();
   };
+
+  if (variant === 'inline') {
+    return (
+      <div className="flex items-center gap-2" role="radiogroup" aria-label="Language">
+        {locales.map((loc) => (
+          <button
+            key={loc}
+            type="button"
+            onClick={() => handleLanguageChange(loc)}
+            className={cn(
+              'inline-flex items-center justify-center rounded-full px-3 py-2 text-sm font-medium min-h-[44px] min-w-[44px] transition-colors',
+              locale === loc
+                ? 'bg-accent-500 text-white'
+                : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200'
+            )}
+            role="radio"
+            aria-checked={locale === loc}
+            aria-label={localeNames[loc]}
+          >
+            <span className="uppercase">{loc}</span>
+          </button>
+        ))}
+      </div>
+    );
+  }
 
   return (
     <div className="relative" ref={dropdownRef}>
       <button
         type="button"
-        className="flex items-center gap-1.5 rounded-md px-3 py-2.5 text-sm font-medium text-neutral-300 hover:bg-neutral-800 hover:text-white min-h-[44px] min-w-[44px]"
+        className="flex items-center gap-1.5 rounded-md px-3 py-2.5 text-sm font-medium text-neutral-600 hover:bg-neutral-100 hover:text-primary-950 min-h-[44px] min-w-[44px]"
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
         aria-haspopup="true"

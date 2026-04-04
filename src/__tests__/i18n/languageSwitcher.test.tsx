@@ -189,4 +189,61 @@ describe('LanguageSwitcher', () => {
       expect(screen.getByText('Català')).toBeInTheDocument();
     });
   });
+
+  describe('Inline variant', () => {
+    it('renders all 4 language buttons directly without dropdown', () => {
+      render(<LanguageSwitcher variant="inline" />);
+
+      const radios = screen.getAllByRole('radio');
+      expect(radios).toHaveLength(4);
+      // No menu role should exist
+      expect(screen.queryByRole('menu')).not.toBeInTheDocument();
+    });
+
+    it('has radiogroup container', () => {
+      render(<LanguageSwitcher variant="inline" />);
+
+      expect(screen.getByRole('radiogroup')).toBeInTheDocument();
+    });
+
+    it('marks current locale as checked', () => {
+      currentLocale = 'es';
+      render(<LanguageSwitcher variant="inline" />);
+
+      const esButton = screen.getByRole('radio', { name: 'Español' });
+      expect(esButton).toHaveAttribute('aria-checked', 'true');
+
+      const enButton = screen.getByRole('radio', { name: 'English' });
+      expect(enButton).toHaveAttribute('aria-checked', 'false');
+    });
+
+    it('calls router.replace when clicking a language pill', () => {
+      render(<LanguageSwitcher variant="inline" />);
+
+      const frButton = screen.getByRole('radio', { name: 'Français' });
+      fireEvent.click(frButton);
+
+      expect(mockReplace).toHaveBeenCalledWith('/about', { locale: 'fr' });
+    });
+
+    it('calls onLanguageChange callback after selection', () => {
+      const onChangeMock = vi.fn();
+      render(<LanguageSwitcher variant="inline" onLanguageChange={onChangeMock} />);
+
+      const frButton = screen.getByRole('radio', { name: 'Français' });
+      fireEvent.click(frButton);
+
+      expect(onChangeMock).toHaveBeenCalledOnce();
+    });
+
+    it('each pill has minimum touch target size classes', () => {
+      render(<LanguageSwitcher variant="inline" />);
+
+      const radios = screen.getAllByRole('radio');
+      radios.forEach(radio => {
+        expect(radio.className).toContain('min-h-[44px]');
+        expect(radio.className).toContain('min-w-[44px]');
+      });
+    });
+  });
 });
