@@ -52,10 +52,6 @@ function isRateLimited(ip: string): boolean {
   return entry.count > RATE_LIMIT_MAX;
 }
 
-/**
- * Periodically clean up expired rate-limit entries to prevent unbounded
- * memory growth. Runs at most once every 10 minutes.
- */
 let lastCleanup = Date.now();
 const CLEANUP_INTERVAL_MS = 10 * 60 * 1000;
 
@@ -81,6 +77,91 @@ function getClientIp(request: NextRequest): string {
     request.headers.get('x-real-ip') ||
     'unknown'
   );
+}
+
+function splitName(fullName: string): { firstname: string; lastname: string } {
+  const parts = fullName.trim().split(/\s+/);
+  if (parts.length === 1) return { firstname: parts[0], lastname: '' };
+  return { firstname: parts[0], lastname: parts.slice(1).join(' ') };
+}
+
+const SECTOR_TO_INDUSTRY: Record<string, string> = {
+  industrial: 'Industrial / Manufacturing',
+  tech: 'Technology / Software',
+  defense: 'Defense / Primes',
+  other: 'Other',
+};
+
+// ---------------------------------------------------------------------------
+// HubSpot CRM integration
+// ---------------------------------------------------------------------------
+
+async function createOrUpdateHubSpotContact(data: {
+  name: string;
+  company: string;
+  email: string;
+  sector: string;
+  challenge: string;
+}): Promise<void> {
+  const token = process.env.HUBSPOT_ACCESS_TOKEN;
+  if (!token) {
+    console.warn('[HubSpot] HUBSPOT_ACCESS_TOKEN not set — skipping CRM sync');
+    return;
+  }
+
+  const { firstname, lastname } = splitName(data.name);
+
+  const properties: Record<string, string> = {
+    email: data.email,
+    firstname,
+    lastname,
+    company: data.company,
+    industry: SECTOR_TO_INDUSTRY[data.sector] || data.sector,
+    message: data.challenge,
+  };
+
+  // Try to create contact
+  const createRes = await fetch('https://api.hubapi.com/crm/v3/objects/contacts', {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${token}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ properties }),
+  });
+
+  if (createRes.ok) {
+    console.log('[HubSpot] Contact created:', data.email);
+    return;
+  }
+
+  // If contact already exists (409), update it instead
+  if (createRes.status === 409) {
+    const updateRes = await fetch(
+      `https://api.hubapi.com/crm/v3/objects/contacts/${data.email}?idProperty=email`,
+      {
+        method: 'PATCH',
+        headers: {
+          Authorization: `Bearer ${token}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ properties }),
+      }
+    );
+
+    if (updateRes.ok) {
+      console.log('[HubSpot] Contact updated:', data.email);
+      return;
+    }
+
+    const updateErr = await updateRes.text();
+    console.error('[HubSpot] Update failed:', updateRes.status, updateErr);
+    throw new Error(`HubSpot update failed: ${updateRes.status}`);
+  }
+
+  const createErr = await createRes.text();
+  console.error('[HubSpot] Create failed:', createRes.status, createErr);
+  throw new Error(`HubSpot create failed: ${createRes.status}`);
 }
 
 // ---------------------------------------------------------------------------
@@ -134,8 +215,6 @@ export async function POST(request: NextRequest) {
     const data = result.data;
 
     // ----- Honeypot check ----------------------------------------------------
-    // If the hidden "website" field has a value, it is almost certainly a bot.
-    // Return 200 silently so the bot thinks the submission succeeded.
     if (data.website) {
       return NextResponse.json(
         { success: true, message: 'Message sent successfully' },
@@ -143,21 +222,13 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // ----- Send email (placeholder) ------------------------------------------
-    // TODO: Integrate a real email service (Resend, SendGrid, AWS SES, etc.)
-    // Target email: info@dualys.eu
-    // The implementation should:
-    //   1. Send a notification email to info@dualys.eu with the form data
-    //   2. Optionally send a confirmation email to the submitter
-    //   3. Handle delivery failures gracefully
-    console.log('[Contact Form Submission]', {
+    // ----- Send to HubSpot CRM -----------------------------------------------
+    await createOrUpdateHubSpotContact({
       name: data.name,
       company: data.company,
       email: data.email,
       sector: data.sector,
       challenge: data.challenge,
-      submittedAt: new Date().toISOString(),
-      ip,
     });
 
     // ----- Success -----------------------------------------------------------
