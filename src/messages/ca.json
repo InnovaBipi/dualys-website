@@ -829,5 +829,12 @@
         }
       }
     }
+  },
+  "cookieConsent": {
+    "title": "Utilitzem cookies",
+    "description": "Aquest lloc web utilitza cookies pròpies i de tercers per millorar la teva experiència de navegació i analitzar el trànsit.",
+    "accept": "Acceptar totes",
+    "reject": "Rebutjar",
+    "cookiePolicy": "Política de cookies"
   }
 }

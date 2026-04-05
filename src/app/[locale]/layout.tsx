@@ -6,6 +6,8 @@ import { getMessages, setRequestLocale } from 'next-intl/server';
 import { locales, type Locale } from '@/lib/i18n/config';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { HubSpotProvider } from '@/components/shared/HubSpotProvider';
+import { CookieConsent } from '@/components/shared/CookieConsent';
 import '@/app/globals.css';
 
 /** Routes that render as standalone landing pages without Header/Footer */
@@ -70,7 +72,14 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
           {!isLanding && <Header />}
           <main className="flex-1">{children}</main>
           {!isLanding && <Footer />}
+          <CookieConsent />
         </NextIntlClientProvider>
+        {process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID && (
+          <HubSpotProvider
+            portalId={process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID}
+            locale={locale}
+          />
+        )}
       </body>
     </html>
   );
