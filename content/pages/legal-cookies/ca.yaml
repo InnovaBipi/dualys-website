@@ -1,0 +1,21 @@
+meta:
+  title: Política de Cookies | Dualys
+  description: Ús de cookies a Dualys.
+title: Política de Cookies
+lastUpdated: "Última actualització: Març 2026"
+sections:
+  - key: whatAreCookies
+    title: Què Són?
+    content: Petits arxius de text al seu dispositiu.
+  - key: howWeUse
+    title: Com les Usem
+    content: Per entendre interaccions, preferències i millorar l'experiència.
+  - key: types
+    title: Tipus
+    content: Essencials, d'Anàlisi i de Preferències.
+  - key: manage
+    title: Gestió
+    content: Control via configuració del navegador.
+  - key: contact
+    title: Contacte
+    content: "Preguntes sobre cookies: info@dualys.eu."

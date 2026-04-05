@@ -1,14 +1,19 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { Link } from '@/lib/i18n/navigation';
 import { Container } from '@/components/ui/container';
 import { ArrowRight } from 'lucide-react';
 import { verticals } from '@/data/verticals';
+import type { HomepageContent } from '@/lib/keystatic/types';
 
-export function VerticalsSection() {
-  const t = useTranslations('homepage');
+interface VerticalsSectionProps {
+  content: HomepageContent['verticals'];
+}
+
+export function VerticalsSection({ content }: VerticalsSectionProps) {
+  // Map CMS items by key for lookup
+  const itemsByKey = new Map(content.items.map((item) => [item.key, item]));
 
   return (
     <section className="bg-white py-16 md:py-24">
@@ -21,16 +26,17 @@ export function VerticalsSection() {
           transition={{ duration: 0.5 }}
         >
           <h2 className="font-display text-3xl font-bold tracking-tight text-primary-950 sm:text-4xl">
-            {t('verticals.title')}
+            {content.title}
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-neutral-500">
-            {t('verticals.subtitle')}
+            {content.subtitle}
           </p>
         </motion.div>
 
         <div className="grid grid-cols-2 gap-6 md:grid-cols-3 md:gap-8">
           {verticals.map((vertical, index) => {
             const Icon = vertical.icon;
+            const item = itemsByKey.get(vertical.key);
 
             return (
               <motion.div
@@ -48,10 +54,10 @@ export function VerticalsSection() {
                     <Icon className="h-6 w-6 text-accent-500" aria-hidden="true" />
                   </div>
                   <h3 className="mb-2 font-display text-base font-semibold text-primary-950 group-hover:text-accent-500 sm:text-lg">
-                    {t(`verticals.${vertical.key}.title`)}
+                    {item?.title || vertical.key}
                   </h3>
                   <p className="text-sm leading-relaxed text-neutral-500">
-                    {t(`verticals.${vertical.key}.description`)}
+                    {item?.description || ''}
                   </p>
                 </Link>
               </motion.div>
@@ -70,7 +76,7 @@ export function VerticalsSection() {
             href="/sectores"
             className="inline-flex items-center gap-2 font-medium text-accent-500 transition-colors hover:text-accent-600"
           >
-            {t('verticals.cta')}
+            {content.cta}
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </Link>
         </motion.div>

@@ -1,16 +1,18 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { Link } from '@/lib/i18n/navigation';
 import { Container } from '@/components/ui/container';
 import { Button } from '@/components/ui/button';
 import { AccentDot } from '@/components/brand/AccentDot';
+import type { HomepageContent } from '@/lib/keystatic/types';
 
-export function HeroSection() {
-  const t = useTranslations('hero');
+interface HeroSectionProps {
+  content: HomepageContent['hero'];
+}
 
+export function HeroSection({ content }: HeroSectionProps) {
   return (
     <section className="relative overflow-hidden bg-primary-950 py-20 md:py-32">
       {/* Background pattern with accent color */}
@@ -31,7 +33,7 @@ export function HeroSection() {
             transition={{ duration: 0.5 }}
           >
             <span className="inline-flex items-center rounded-full bg-accent-500/15 px-4 py-1.5 text-sm font-medium text-accent-300">
-              {t('contextNote')}
+              {content.contextNote}
               <AccentDot size="sm" className="ml-2" />
             </span>
           </motion.div>
@@ -42,7 +44,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            {t('title')}
+            {content.title}
           </motion.h1>
 
           <motion.p
@@ -51,7 +53,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            {t('subtitle')}
+            {content.subtitle}
           </motion.p>
 
           <motion.div
@@ -62,13 +64,13 @@ export function HeroSection() {
           >
             <Button asChild size="xl" variant="accent">
               <Link href="/contact">
-                {t('cta')}
+                {content.cta}
                 <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
               </Link>
             </Button>
             <Button asChild size="xl" variant="outline" className="border-white/30 text-white hover:bg-white/10">
               <Link href="/metodologia">
-                {t('ctaSecondary')}
+                {content.ctaSecondary}
                 <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
               </Link>
             </Button>

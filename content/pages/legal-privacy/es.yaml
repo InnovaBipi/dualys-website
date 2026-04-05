@@ -1,0 +1,33 @@
+meta:
+  title: Política de Privacidad | Dualys
+  description: Política de privacidad de Dualys que explica cómo recopilamos, usamos y protegemos su información personal.
+title: Política de Privacidad
+lastUpdated: "Última actualización: Marzo 2026"
+sections:
+  - key: introduction
+    title: Introducción
+    content: Dualys AIE ("nosotros", "nuestro" o "nos") está comprometida con la protección de su privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos, divulgamos y protegemos su información cuando visita nuestro sitio web.
+  - key: dataCollection
+    title: Información que Recopilamos
+    content: Recopilamos información que usted proporciona voluntariamente cuando se pone en contacto con nosotros a través de nuestro sitio web, incluyendo su nombre, empresa, dirección de correo electrónico, sector y descripción de su reto.
+  - key: dataUse
+    title: Cómo Usamos Su Información
+    content: Usamos la información que recopilamos para responder a sus consultas, proporcionarle información sobre nuestros servicios y mejorar nuestro sitio web y servicios.
+  - key: dataSharing
+    title: Compartición de Información
+    content: No vendemos, intercambiamos ni transferimos de otra manera su información personal a terceros sin su consentimiento, excepto según lo requiera la ley o a proveedores de servicios que nos ayudan a operar nuestro sitio web.
+  - key: dataSecurity
+    title: Seguridad de los Datos
+    content: Implementamos medidas técnicas y organizativas apropiadas para proteger su información personal contra el acceso no autorizado, alteración, divulgación o destrucción.
+  - key: yourRights
+    title: Sus Derechos
+    content: Según el RGPD, usted tiene derecho a acceder, rectificar, eliminar, restringir el procesamiento y portar sus datos personales. También tiene derecho a oponerse al procesamiento y a retirar el consentimiento en cualquier momento.
+  - key: cookies
+    title: Cookies
+    content: Nuestro sitio web utiliza cookies para mejorar su experiencia. Consulte nuestra Política de Cookies para más información.
+  - key: changes
+    title: Cambios en Esta Política
+    content: Podemos actualizar esta Política de Privacidad de vez en cuando. Le notificaremos cualquier cambio publicando la nueva Política de Privacidad en esta página.
+  - key: contact
+    title: Contáctenos
+    content: Si tiene alguna pregunta sobre esta Política de Privacidad, contáctenos en info@dualys.eu.

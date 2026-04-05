@@ -1,18 +1,14 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { Container } from '@/components/ui/container';
+import type { HomepageContent } from '@/lib/keystatic/types';
 
-const stats = [
-  { value: 'context.stat1', label: 'context.stat1Label' },
-  { value: 'context.stat2', label: 'context.stat2Label' },
-  { value: 'context.stat3', label: 'context.stat3Label' },
-] as const;
+interface ContextSectionProps {
+  content: HomepageContent['context'];
+}
 
-export function ContextSection() {
-  const t = useTranslations('homepage');
-
+export function ContextSection({ content }: ContextSectionProps) {
   return (
     <section className="bg-white py-16 md:py-24">
       <Container>
@@ -24,14 +20,14 @@ export function ContextSection() {
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.5 }}
         >
-          {t('context.title')}
+          {content.title}
         </motion.h2>
 
         {/* Stats grid */}
         <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-3">
-          {stats.map((stat, index) => (
+          {content.stats.map((stat, index) => (
             <motion.div
-              key={stat.value}
+              key={stat.label}
               className="rounded-2xl border border-neutral-200 bg-neutral-50 p-6 text-center"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -39,10 +35,10 @@ export function ContextSection() {
               transition={{ duration: 0.5, delay: 0.1 * (index + 1) }}
             >
               <p className="font-display text-3xl font-bold text-accent-500 sm:text-4xl">
-                {t(stat.value)}
+                {stat.value}
               </p>
               <p className="mt-2 text-sm text-neutral-600">
-                {t(stat.label)}
+                {stat.label}
               </p>
             </motion.div>
           ))}
@@ -57,7 +53,7 @@ export function ContextSection() {
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            {t('context.paragraph1')}
+            {content.paragraph1}
           </motion.p>
 
           <motion.p
@@ -67,7 +63,7 @@ export function ContextSection() {
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            {t('context.paragraph2')}
+            {content.paragraph2}
           </motion.p>
 
           <motion.p
@@ -77,7 +73,7 @@ export function ContextSection() {
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            {t('context.paragraph3')}
+            {content.paragraph3}
           </motion.p>
         </div>
       </Container>

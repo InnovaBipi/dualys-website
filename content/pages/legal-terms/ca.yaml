@@ -1,0 +1,27 @@
+meta:
+  title: Avís Legal | Dualys
+  description: Avís legal i termes d'ús de Dualys.
+title: Avís Legal
+lastUpdated: "Última actualització: Març 2026"
+sections:
+  - key: acceptance
+    title: Acceptació
+    content: En accedir a aquest lloc web, accepta aquests termes.
+  - key: use
+    title: Ús
+    content: Lloc web amb fins informatius sobre Dualys i serveis.
+  - key: intellectualProperty
+    title: Propietat Intel·lectual
+    content: Tot el contingut és propietat de Dualys.
+  - key: disclaimers
+    title: Descàrrecs
+    content: Contingut proporcionat tal qual sense garanties.
+  - key: limitation
+    title: Limitació
+    content: Dualys no és responsable de danys indirectes.
+  - key: governingLaw
+    title: Llei Aplicable
+    content: Lleis d'Espanya i la UE. Tribunals de Barcelona.
+  - key: contact
+    title: Contacte
+    content: "Preguntes legals: info@dualys.eu."

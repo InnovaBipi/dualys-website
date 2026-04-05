@@ -1,0 +1,33 @@
+meta:
+  title: Politique de Confidentialité | Dualys
+  description: Politique de confidentialité de Dualys expliquant comment nous collectons, utilisons et protégeons vos informations personnelles.
+title: Politique de Confidentialité
+lastUpdated: "Dernière mise à jour : Mars 2026"
+sections:
+  - key: introduction
+    title: Introduction
+    content: Dualys AIE (« nous », « notre » ou « nos ») s'engage à protéger votre vie privée. La présente Politique de Confidentialité explique comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous visitez notre site web.
+  - key: dataCollection
+    title: Informations que nous collectons
+    content: Nous collectons les informations que vous fournissez volontairement lorsque vous nous contactez via notre site web, notamment votre nom, votre entreprise, votre adresse e-mail, votre secteur d'activité et la description de votre défi.
+  - key: dataUse
+    title: Comment nous utilisons vos informations
+    content: Nous utilisons les informations collectées pour répondre à vos demandes, vous fournir des informations sur nos services et améliorer notre site web et nos services.
+  - key: dataSharing
+    title: Partage des informations
+    content: Nous ne vendons, n'échangeons ni ne transférons vos informations personnelles à des tiers sans votre consentement, sauf dans les cas requis par la loi ou auprès de prestataires de services qui nous aident à exploiter notre site web.
+  - key: dataSecurity
+    title: Sécurité des données
+    content: Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos informations personnelles contre tout accès non autorisé, toute altération, divulgation ou destruction.
+  - key: yourRights
+    title: Vos droits
+    content: Conformément au RGPD, vous disposez du droit d'accès, de rectification, de suppression, de limitation du traitement et de portabilité de vos données personnelles. Vous avez également le droit de vous opposer au traitement et de retirer votre consentement à tout moment.
+  - key: cookies
+    title: Cookies
+    content: Notre site web utilise des cookies pour améliorer votre expérience. Consultez notre Politique de Cookies pour plus d'informations.
+  - key: changes
+    title: Modifications de cette politique
+    content: Nous pouvons mettre à jour cette Politique de Confidentialité de temps à autre. Nous vous informerons de tout changement en publiant la nouvelle Politique de Confidentialité sur cette page.
+  - key: contact
+    title: Nous contacter
+    content: Si vous avez des questions concernant cette Politique de Confidentialité, contactez-nous à l'adresse info@dualys.eu.

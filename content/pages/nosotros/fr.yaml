@@ -1,0 +1,30 @@
+meta:
+  title: À propos | Équipe et Vision | Dualys
+  description: DUALYS naît de la conviction que l'Espagne possède les ingrédients pour devenir une référence européenne du dual-use industriel et technologique.
+title: À propos
+subtitle: Accélérateurs stratégiques pour la transition dual-use
+narrative:
+  paragraph1: "DUALYS naît d'une conviction : l'Espagne possède les ingrédients pour devenir une référence européenne du dual-use industriel et technologique. Une technologie de premier plan, une industrie solide, un écosystème innovant et des talents reconnus à l'international. Ce qui manquait, c'était quelqu'un pour articuler ce potentiel avec les règles du jeu du marché de la défense."
+  paragraph2: "Fondée récemment, mais forte d'une grande expérience acquise au fil des années, DUALYS est cet acteur. Nous ne sommes ni un cabinet de conseil conventionnel, ni un intermédiaire. Nous sommes des accélérateurs stratégiques : nous aidons les entreprises industrielles, technologiques et logicielles à comprendre le secteur de la défense, à s'y positionner et à décrocher leurs premiers contrats réels. Avec une méthodologie éprouvée, une équipe possédant une expérience de premier niveau et un réseau de contacts construit au fil des années au sein d'institutions, d'entreprises du secteur et d'organismes européens."
+  vision: "Notre vision à dix ans : que l'Espagne devienne l'un des pôles européens de référence en innovation et production dual-use, avec des dizaines d'entreprises comme fournisseurs stratégiques des principaux programmes de défense européens et comme hub d'accélération dual-use en Europe."
+founders:
+  title: L'équipe fondatrice
+  profiles:
+    - title: Vision institutionnelle et sécurité
+      text: L'un des fondateurs apporte un parcours de haute direction dans le domaine de la sécurité publique et des institutions catalanes. Il a dirigé des organismes de sécurité au plus haut niveau exécutif et possède une connaissance approfondie des mécanismes de fonctionnement des administrations et des processus de prise de décision dans des environnements sensibles.
+    - title: Stratégie et connaissance politico-institutionnelle et de l'écosystème entrepreneurial
+      text: Un autre fondateur apporte la vision stratégique nécessaire à ce secteur. Il a occupé des postes de leadership politique au plus haut niveau dans les institutions catalanes, avec une responsabilité directe sur la politique industrielle, l'entreprise et l'emploi. Son accès aux réseaux institutionnels, entrepreneuriaux et de financement public constitue un différenciateur stratégique pour DUALYS.
+    - title: Expertise technico-industrielle et opérations internationales
+      text: L'équipe compte un profil ayant une expérience directe dans la création et le développement d'entreprises à l'intersection de l'industrie et de la technologie de pointe. Son expérience en développement d'affaires, exécution de projets, processus d'homologation, chaînes d'approvisionnement complexes et vision entrepreneuriale constitue la colonne vertébrale de la méthodologie d'accompagnement de DUALYS.
+    - title: Commercialisation dans la défense et développement d'affaires
+      text: Le quatrième profil de l'équipe fondatrice est le moteur commercial de DUALYS. Doté d'une expérience spécifique en développement d'affaires orienté vers le secteur de la défense, il connaît les canaux, les délais, les interlocuteurs et les dynamiques de vente dans un marché qui fonctionne de manière radicalement différente du B2B commercial standard.
+vision:
+  title: Vision d'avenir
+  phases:
+    - title: Phase 1 — L'Éveil (2025-2026)
+      text: Identifier et activer le potentiel dual-use latent dans l'écosystème catalan. Aider les 20 à 30 premières entreprises à franchir le pas.
+    - title: Phase 2 — L'Accélération (2027-2028)
+      text: Construire un écosystème dual-use interconnecté. Faciliter les alliances entre startups catalanes et grandes entreprises européennes. Attirer des investissements spécialisés.
+    - title: Phase 3 — Le Leadership (2029-2030)
+      text: L'Espagne comme pôle européen de référence en innovation et production dual-use. Exporter le modèle vers d'autres régions. Connecter l'écosystème espagnol aux opportunités mondiales.
+cta: Demandez votre diagnostic

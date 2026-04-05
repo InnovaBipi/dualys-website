@@ -1,0 +1,93 @@
+meta:
+  title: Dualys | Consultora Estratègica per al Sector Defensa
+  description: Construïm capacitats duals per a la indústria. Facilitem l'entrada d'empreses industrials i tecnològiques al sector defensa europeu.
+hero:
+  title: La teva empresa té el que el sector defensa necessita. Nosaltres t'ajudem a arribar-hi.
+  subtitle: DUALYS és el pont entre la capacitat industrial i tecnològica de les empreses espanyoles, i amb èmfasi inicialment en les catalanes i els mercats duals europeus. Accelerem la teva entrada al sector defensa amb criteri, metodologia i xarxa de contactes real.
+  cta: Sol·licita el teu diagnòstic
+  ctaSecondary: Coneix la nostra metodologia
+  contextNote: Europa ha compromès +800.000 M€ en defensa fins al 2030. El moment de posicionar-se és ara.
+context:
+  title: Per què ara
+  paragraph1: Europa viu una transformació estructural en matèria de defensa. El Readiness Europe 2030 mobilitza fins a 800.000 milions d'euros en compres i projectes orientats a reforçar la Base Tecnològica i Industrial de Defensa Europea (BTID). A Espanya, el Pla Industrial de Seguretat i Defensa ja està actiu amb 44.000 milions d'euros de dotació per als pròxims anys i la política d'assolir i mantenir el 2% del PIB en inversió defensiva.
+  paragraph2: "Espanya disposa d'un ecosistema industrial i tecnològic de primer nivell: empreses líders en automoció, aeronàutica, compostos, electrònica, intel·ligència artificial, robòtica i ciberseguretat. Capacitats que el sector defensa necessita, ara mateix, per construir cadenes de subministrament més resilients i d'origen europeu."
+  paragraph3: El problema no és la manca de potencial. La majoria de pimes i empreses tecnològiques catalanes no coneixen els mecanismes d'entrada, les certificacions necessàries ni els circuits del mercat de defensa. Això és exactament el que DUALYS resol.
+  stats:
+    - value: 800.000 M€
+      label: Inversió europea en defensa fins al 2030
+    - value: 44.000 M€
+      label: Pla Industrial de Seguretat i Defensa d'Espanya
+    - value: 2%
+      label: Objectiu del PIB en inversió defensiva
+audience:
+  title: Per a qui és DUALYS
+  cards:
+    - key: industrial
+      title: Per a industrials
+      description: Fabricants de components, manufactura de precisió, automoció, aeronàutica, compostos, electrònica industrial.
+      cta: Veure com treballem amb industrials
+    - key: tech
+      title: Per a tecnologia i software
+      description: Empreses d'IA, robòtica, ciberseguretat, comunicacions, simulació, bessons digitals, drons, IoT.
+      cta: Veure com treballem amb empreses tech
+    - key: primes
+      title: Per a grans primes
+      description: Empreses del sector defensa que necessiten ampliar la seva cadena de subministrament amb capacitat local qualificada.
+      cta: Parlem
+messages:
+  title: Per què DUALYS
+  items:
+    - title: El moment és ara
+      text: Europa ha compromès centenars de milers de milions en defensa i sobirania tecnològica. El Pla Industrial de Seguretat i Defensa d'Espanya ja està actiu. Les empreses que es posicionin ara tindran avantatge estructural.
+    - title: Espanya i Catalunya estan preparades, però falta articulació
+      text: "Espanya disposa de tecnologia, indústria i talent de primer nivell. El problema no és el potencial: és la desconnexió entre aquest potencial i les regles del joc del sector."
+    - title: Som una consultora que afegeix valor al teu negoci
+      text: No fem informes que acaben en un calaix. Accelerem entrades al mercat, reduïm el risc, obrim portes comercials reals.
+    - title: La teva tecnologia civil ja és un avantatge competitiu en defensa
+      text: Si fabriques peces de precisió per a l'automòbil, pots fabricar-les per a plataformes terrestres o navals. DUALYS t'ajuda a veure aquesta transferència i a fer-la operativa.
+    - title: Reduïm el risc de la transició
+      text: El sector defensa té normativa específica (AQAP/PECAL, RID, EN9100, ISO 27001, ITAR, export controls). DUALYS diagnostica primer, planifica després i executa amb criteri.
+verticals:
+  title: Verticals de defensa
+  subtitle: Descobreix en quines àrees del sector defensa pot posicionar-se la teva empresa
+  cta: Descobreix en quina vertical encaixa la teva empresa
+  items:
+    - key: terrestrial
+      title: Plataformes terrestres
+      description: Vehicles, components mecànics, sistemes hidràulics
+    - key: naval
+      title: Sector naval
+      description: Construcció naval, compostos, electrònica marina
+    - key: aeronautics
+      title: Aeronàutica militar
+      description: Aeronàutica civil tier 1/2, mecanitzat, compostos
+    - key: aerospace
+      title: Aeroespacial i New Space
+      description: Materials ultra-lleugers, electrònica d'alta precisió
+    - key: c4isr
+      title: Comunicacions (C4ISR)
+      description: Telecomunicacions, programari, xarxes segures
+    - key: cyber
+      title: Ciberdefensa
+      description: Seguretat, encriptació, anàlisi forense digital
+    - key: uav
+      title: UAV / UGV / USV
+      description: Robòtica, visió artificial, IA aplicada, drons
+    - key: armament
+      title: Armament i munició
+      description: Components de precisió, sistemes d'emmagatzematge, calibratge
+    - key: simulation
+      title: Simulació i gaming
+      description: Programari de simulació, RV/RA, bessons digitals
+    - key: auxiliary
+      title: Sectors auxiliars
+      description: Tèxtil tècnic, protecció, mecanitzat CNC
+team:
+  title: L'equip
+  text: "L'equip fundador de DUALYS combina perfils que rarament es troben junts: experiència directiva en institucions de seguretat i defensa, trajectòria política al més alt nivell amb profund coneixement de l'ecosistema empresarial espanyol i èmfasi en el català, expertise tècnic i comercial en projectes industrials i de defensa d'àmbit internacional, i capacitat per articular ecosistemes d'innovació i cadenes de valor complexes. Junts, cobrim els quatre eixos que requereix una transició dual-use exitosa: el coneixement del sector, el desenvolupament comercial, l'accés institucional i la capacitat executiva."
+  cta: Coneix l'equip
+cta:
+  title: Construir capacitats duals per a la indústria.
+  subtitle: En 2 sessions et donem un diagnòstic clar, un mapa d'oportunitats i un pla d'acció.
+  button: Sol·licita el teu diagnòstic
+  buttonSecondary: Parla amb nosaltres

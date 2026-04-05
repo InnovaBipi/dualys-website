@@ -1,14 +1,16 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { Link } from '@/lib/i18n/navigation';
 import { Container } from '@/components/ui/container';
 import { ArrowRight } from 'lucide-react';
+import type { HomepageContent } from '@/lib/keystatic/types';
 
-export function TeamTrustSection() {
-  const t = useTranslations('homepage');
+interface TeamTrustSectionProps {
+  content: HomepageContent['team'];
+}
 
+export function TeamTrustSection({ content }: TeamTrustSectionProps) {
   return (
     <section className="bg-neutral-50 py-16 md:py-24">
       <Container>
@@ -20,7 +22,7 @@ export function TeamTrustSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            {t('team.title')}
+            {content.title}
           </motion.h2>
 
           <motion.div
@@ -31,7 +33,7 @@ export function TeamTrustSection() {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <p className="text-lg leading-relaxed text-neutral-700">
-              {t('team.text')}
+              {content.text}
             </p>
           </motion.div>
 
@@ -46,7 +48,7 @@ export function TeamTrustSection() {
               href="/nosotros"
               className="inline-flex items-center gap-2 font-medium text-accent-500 transition-colors hover:text-accent-600"
             >
-              {t('team.cta')}
+              {content.cta}
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Link>
           </motion.div>

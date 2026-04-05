@@ -1,4 +1,4 @@
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { MapPin, Mail } from 'lucide-react';
 import { Container } from '@/components/ui/container';
@@ -7,6 +7,8 @@ import { Breadcrumbs } from '@/components/content/Breadcrumbs';
 import { ContactForm } from '@/components/forms/ContactForm';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { generatePageMetadata, getWebPageSchema, getBreadcrumbSchema } from '@/lib/seo/metadata';
+import { getPageContent } from '@/lib/keystatic/get-page-content';
+import type { ContactContent } from '@/lib/keystatic/types';
 import type { Locale } from '@/lib/i18n/config';
 
 interface PageProps {
@@ -15,11 +17,11 @@ interface PageProps {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'contact' });
+  const content = await getPageContent<ContactContent>('contact', locale as Locale);
 
   return generatePageMetadata({
-    title: t('title'),
-    description: t('subtitle'),
+    title: content.meta.title,
+    description: content.meta.description,
     locale: locale as Locale,
     path: '/contact',
   });
@@ -28,18 +30,18 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function ContactPage({ params }: PageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: 'contact' });
+  const content = await getPageContent<ContactContent>('contact', locale as Locale);
 
   const pageSchema = getWebPageSchema({
-    title: t('title'),
-    description: t('subtitle'),
+    title: content.meta.title,
+    description: content.meta.description,
     locale: locale as Locale,
     path: '/contact',
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Home', url: '' },
-    { name: t('title'), url: '/contact' },
+    { name: content.title, url: '/contact' },
   ], locale as Locale);
 
   return (
@@ -47,13 +49,11 @@ export default async function ContactPage({ params }: PageProps) {
       <JsonLd data={pageSchema} />
       <JsonLd data={breadcrumbSchema} />
 
-      <Breadcrumbs
-        items={[{ label: t('title') }]}
-      />
+      <Breadcrumbs items={[{ label: content.title }]} />
 
       <PageHeader
-        title={t('title')}
-        subtitle={t('subtitle')}
+        title={content.title}
+        subtitle={content.subtitle}
         variant="gradient"
       />
 
@@ -62,7 +62,7 @@ export default async function ContactPage({ params }: PageProps) {
           <div className="grid gap-12 lg:grid-cols-3">
             {/* Contact Info */}
             <div className="lg:col-span-1">
-              <h2 className="mb-6 text-2xl font-bold text-neutral-900">{t('info.title')}</h2>
+              <h2 className="mb-6 text-2xl font-bold text-neutral-900">{content.info.title}</h2>
               <div className="space-y-6">
                 {/* Address */}
                 <div className="flex gap-4">
@@ -70,9 +70,9 @@ export default async function ContactPage({ params }: PageProps) {
                     <MapPin className="h-5 w-5" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-neutral-900">{t('info.address.title')}</h3>
-                    <p className="text-sm text-neutral-600">{t('info.address.line1')}</p>
-                    <p className="text-sm text-neutral-600">{t('info.address.line2')}</p>
+                    <h3 className="font-semibold text-neutral-900">{content.info.addressTitle}</h3>
+                    <p className="text-sm text-neutral-600">{content.info.addressLine1}</p>
+                    <p className="text-sm text-neutral-600">{content.info.addressLine2}</p>
                   </div>
                 </div>
 
@@ -82,12 +82,12 @@ export default async function ContactPage({ params }: PageProps) {
                     <Mail className="h-5 w-5" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-neutral-900">{t('info.email.title')}</h3>
+                    <h3 className="font-semibold text-neutral-900">{content.info.emailTitle}</h3>
                     <a
-                      href={`mailto:${t('info.email.value')}`}
+                      href={`mailto:${content.info.emailValue}`}
                       className="text-sm text-accent-600 hover:text-accent-700 hover:underline"
                     >
-                      {t('info.email.value')}
+                      {content.info.emailValue}
                     </a>
                   </div>
                 </div>
@@ -123,7 +123,7 @@ export default async function ContactPage({ params }: PageProps) {
               </div>
             </div>
 
-            {/* Contact Form */}
+            {/* Contact Form — still uses useTranslations internally for form labels */}
             <div className="lg:col-span-2">
               <div className="rounded-xl border border-neutral-200 bg-white p-8 shadow-sm">
                 <ContactForm />

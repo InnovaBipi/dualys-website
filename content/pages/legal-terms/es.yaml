@@ -1,0 +1,27 @@
+meta:
+  title: Aviso Legal | Dualys
+  description: Aviso legal y términos de uso del sitio web de Dualys.
+title: Aviso Legal
+lastUpdated: "Última actualización: Marzo 2026"
+sections:
+  - key: acceptance
+    title: Aceptación de los Términos
+    content: Al acceder y usar este sitio web, usted acepta y se compromete a cumplir estos Términos de Uso. Si no está de acuerdo con estos términos, por favor no use este sitio web.
+  - key: use
+    title: Uso del Sitio Web
+    content: Este sitio web se proporciona con fines informativos sobre Dualys y sus servicios. Puede usar este sitio web solo para fines legales y de acuerdo con estos Términos.
+  - key: intellectualProperty
+    title: Propiedad Intelectual
+    content: Todo el contenido de este sitio web, incluyendo texto, gráficos, logotipos e imágenes, es propiedad de Dualys o sus proveedores de contenido y está protegido por las leyes de propiedad intelectual.
+  - key: disclaimers
+    title: Descargos de Responsabilidad
+    content: Este sitio web y su contenido se proporcionan "tal cual" sin garantías de ningún tipo. Dualys no garantiza que el sitio web esté libre de interrupciones o errores.
+  - key: limitation
+    title: Limitación de Responsabilidad
+    content: Dualys no será responsable de ningún daño indirecto, incidental, especial, consecuente o punitivo que surja de su uso de este sitio web.
+  - key: governingLaw
+    title: Ley Aplicable
+    content: Estos Términos se regirán e interpretarán de acuerdo con las leyes de España y la Unión Europea. Cualquier disputa estará sujeta a la jurisdicción exclusiva de los tribunales de Barcelona.
+  - key: contact
+    title: Contacto
+    content: Para preguntas sobre este Aviso Legal, contáctenos en info@dualys.eu.

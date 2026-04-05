@@ -1,0 +1,265 @@
+terrestrial:
+  title: Vehículos terrestres
+  description: Soluciones de movilidad terrestre para operaciones de defensa y seguridad, desde vehículos blindados hasta plataformas robotizadas avanzadas.
+  meta:
+    title: Vehículos Terrestres | Verticales de Defensa | Dualys
+    description: "Plataformas terrestres militares y de seguridad: vehículos blindados, camiones logísticos, UGV robotizados y más. Descubre cómo tu empresa puede contribuir."
+  subcategories:
+    - key: armored_4x4
+      title: Vehículos blindados 4x4
+      description: Transporte de personal con protección balística
+    - key: logistics_trucks
+      title: Camiones logísticos
+      description: Vehículos militarizados para soporte logístico
+    - key: mine_vehicles
+      title: Vehículos antiminas
+      description: Plataformas especializadas para EOD
+    - key: utv_atv
+      title: UTV/ATV militarizados
+      description: Movilidad táctica en terreno complejo
+    - key: ugv_robots
+      title: UGV robotizados
+      description: Plataformas terrestres no tripuladas
+    - key: ambulances
+      title: Ambulancias
+      description: Evacuación médica militarizada
+    - key: border_control
+      title: Control de fronteras
+      description: Vehículos especializados en vigilancia
+naval:
+  title: Sector naval
+  description: Plataformas marítimas para vigilancia, intervención y reconocimiento, incluyendo tecnologías tripuladas y no tripuladas.
+  meta:
+    title: Sector Naval | Verticales de Defensa | Dualys
+    description: "Sistemas y plataformas de defensa naval: embarcaciones de intervención, submarinos ligeros, drones de superficie. Descubre las oportunidades."
+  subcategories:
+    - key: intervention_vessels
+      title: Embarcaciones de intervención
+      description: Buques rápidos para operaciones tácticas inmediatas
+    - key: advanced_navigation
+      title: Navegación avanzada
+      description: Sistemas de posicionamiento y control preciso
+    - key: offshore_patrol
+      title: Patrulleras de altura
+      description: Vigilancia costera y marítima de largo alcance
+    - key: light_submarines
+      title: Submarinos ligeros
+      description: Reconocimiento submarino discreto
+    - key: surface_drones
+      title: Drones de superficie
+      description: USV para misiones autónomas en el agua
+    - key: semi_rigid
+      title: Embarcaciones semirrígidas
+      description: Embarcaciones flexibles militarizadas
+    - key: smart_mooring
+      title: Amarre inteligente
+      description: Sistemas automatizados de amarre
+aeronautics:
+  title: Aeronáutica
+  description: Componentes y sistemas especializados para aeronaves militares, desde estructuras ligeras hasta electrónica embarcada de última generación.
+  meta:
+    title: Aeronáutica Militar | Verticales de Defensa | Dualys
+    description: "Aviación militar y sistemas aeronáuticos avanzados: componentes estructurales, electrónica embarcada, mantenimiento predictivo. Transfiere tu capacidad civil."
+  subcategories:
+    - key: light_aircraft
+      title: Aeronaves ligeras militarizadas
+      description: Plataformas aéreas adaptadas a misiones de defensa
+    - key: structural_components
+      title: Componentes estructurales
+      description: Piezas aeronáuticas de alta resistencia y bajo peso
+    - key: flight_control
+      title: Sistemas de control de vuelo
+      description: Aviónica avanzada para navegación y pilotaje
+    - key: seats_oxygen
+      title: Asientos reforzados y sistemas de oxígeno
+      description: Equipamiento de seguridad para la tripulación
+    - key: onboard_electronics
+      title: Electrónica embarcada
+      description: Sistemas avanzados de aviónica y control integrado
+    - key: predictive_maintenance
+      title: Mantenimiento predictivo
+      description: Monitorización inteligente para prevenir fallos
+aerospace:
+  title: Aeroespacial y New Space
+  description: Tecnología espacial compacta y eficiente para misiones de observación terrestre, comunicaciones y propulsión avanzada en órbita baja.
+  meta:
+    title: Aeroespacial y New Space | Verticales de Defensa | Dualys
+    description: "Tecnología espacial y nuevas aplicaciones orbitales: nanosatélites, propulsión eléctrica, fibra de carbono. Oportunidades para empresas tecnológicas."
+  subcategories:
+    - key: cubesats
+      title: Nanosatélites (CubeSats)
+      description: Plataformas modulares para misiones espaciales asequibles
+    - key: deployable_antennas
+      title: Antenas desplegables
+      description: Sistemas ligeros de comunicación orbital
+    - key: electric_propulsion
+      title: Propulsión eléctrica
+      description: Motores eficientes para maniobras espaciales
+    - key: carbon_fiber
+      title: Fibra de carbono
+      description: Componentes ultraligeros de alto rendimiento
+    - key: ground_tracking
+      title: Rastreo terrestre
+      description: Sistemas de observación y vigilancia global
+    - key: solar_modules
+      title: Módulos solares
+      description: Paneles fotovoltaicos de alta eficiencia energética
+c4isr:
+  title: Comunicaciones (C4ISR)
+  description: Mando, control, comunicaciones, computadoras, inteligencia, vigilancia y reconocimiento.
+  meta:
+    title: Comunicaciones C4ISR | Verticales de Defensa | Dualys
+    description: "Sistemas de mando, control, comunicaciones e inteligencia: radios tácticas, radares, enlaces de datos. Equipamiento táctico para superioridad informacional."
+  subcategories:
+    - key: tactical_radios
+      title: Radios tácticas
+      description: Radios cifradas para comunicación segura
+    - key: command_consoles
+      title: Consolas de mando
+      description: Consolas de mando integradas
+    - key: satellite_terminals
+      title: Terminales satélite
+      description: Terminales para conectividad global
+    - key: light_radars
+      title: Radares ligeros
+      description: Radares ligeros portátiles
+    - key: data_links
+      title: Enlaces de datos
+      description: Enlaces de datos de alta velocidad
+    - key: iff_systems
+      title: Sistemas IFF
+      description: Sistemas IFF de identificación amigo/enemigo
+cyber:
+  title: Ciberdefensa y cifrado
+  description: Soluciones de seguridad informática y encriptación hardware para proteger infraestructuras críticas y comunicaciones sensibles contra amenazas cibernéticas.
+  meta:
+    title: Ciberdefensa y Cifrado | Verticales de Defensa | Dualys
+    description: "Protección digital, ciberseguridad y sistemas de encriptación avanzada: firewalls militares, detección de intrusión, análisis forense. Protege infraestructuras críticas."
+  subcategories:
+    - key: hardware_encryption
+      title: Cifrado hardware
+      description: Módulos físicos de encriptación de alto nivel
+    - key: encrypted_comms
+      title: Comunicación cifrada
+      description: Dispositivos seguros para transmisiones clasificadas
+    - key: military_firewalls
+      title: Firewalls militares
+      description: Protección perimetral de infraestructuras críticas
+    - key: intrusion_detection
+      title: Detección de intrusión
+      description: Sistemas avanzados de monitorización continua
+    - key: forensic_analysis
+      title: Análisis forense
+      description: Plataformas de investigación postincidente
+    - key: advanced_auth
+      title: Autenticación avanzada
+      description: Control de acceso multifactor robusto
+    - key: drone_security
+      title: Seguridad para drones
+      description: Software especializado antihacking UAV
+uav:
+  title: Vehículos no tripulados y robótica
+  description: Plataformas autónomas y teledirigidas para misiones aéreas, terrestres y acuáticas, reduciendo riesgos humanos en operaciones de reconocimiento e intervención especializada.
+  meta:
+    title: UAV y Robótica | Verticales de Defensa | Dualys
+    description: "Vehículos no tripulados, drones y sistemas robóticos autónomos: UAV, UGV, USV, UUV. Plataformas para misiones de reconocimiento e intervención."
+  subcategories:
+    - key: aerial_drones
+      title: Drones aéreos (UAV)
+      description: Vigilancia y reconocimiento desde el aire
+    - key: ground_robots
+      title: Robots terrestres (UGV)
+      description: Exploración y desactivación en tierra
+    - key: usv
+      title: Buques no tripulados (USV)
+      description: Patrulla marítima autónoma
+    - key: uuv
+      title: Submarinos autónomos (UUV)
+      description: Reconocimiento submarino sin tripulación
+    - key: robotic_arms
+      title: Brazos robóticos teleoperados
+      description: Manipulación precisa a distancia
+    - key: firefighting_robots
+      title: Robots bomberos
+      description: Extinción de incendios en zonas peligrosas
+    - key: quadruped_robots
+      title: Robots cuadrúpedos
+      description: Movilidad adaptativa en terrenos complejos
+armament:
+  title: Armamento y munición
+  description: Componentes y sistemas para armamento de defensa, con énfasis en precisión, fiabilidad y cumplimiento de normativas internacionales de seguridad.
+  meta:
+    title: Armamento y Munición | Verticales de Defensa | Dualys
+    description: Componentes de precisión, munición no letal, sistemas de almacenamiento y calibración para el sector defensa. Fabricación de alta resistencia.
+  subcategories:
+    - key: precision_components
+      title: Componentes de precisión
+      description: Piezas mecanizadas de alta tolerancia para sistemas de armas
+    - key: non_lethal_ammo
+      title: Munición no letal y de entrenamiento
+      description: Proyectiles para control de masas y entrenamiento seguro
+    - key: storage_systems
+      title: Sistemas de almacenamiento
+      description: Contenedores y polvorines certificados para seguridad
+    - key: loaders_calibration
+      title: Cargadores y calibración
+      description: Dispositivos de alimentación y verificación de armas
+    - key: metal_parts
+      title: Partes metálicas
+      description: Fabricación de alta resistencia para componentes críticos
+simulation:
+  title: Simulación y gaming
+  description: Entornos virtuales inmersivos para entrenamiento militar avanzado, reduciendo costes operativos y aumentando la preparación del personal sin riesgos reales.
+  meta:
+    title: Simulación y Gaming | Verticales de Defensa | Dualys
+    description: "Entrenamiento y simulación para entornos de defensa: simuladores de vuelo, VR/AR, digital twins, motores gráficos 3D. Tecnología inmersiva."
+  subcategories:
+    - key: flight_simulators
+      title: Simuladores de vuelo
+      description: Entrenamiento de pilotos con fidelidad realista
+    - key: vehicle_simulators
+      title: Simuladores de vehículos
+      description: Práctica segura con blindados y logística
+    - key: vr_ar_training
+      title: Formación VR/AR
+      description: Realidad virtual y aumentada de inmersión total
+    - key: cybersecurity_training
+      title: Ciberseguridad
+      description: Entrenamiento contra ataques digitales
+    - key: digital_twins
+      title: Digital twins
+      description: Réplicas virtuales de equipamiento real
+    - key: tactical_simulators
+      title: Simuladores tácticos
+      description: Escenarios de combate y estrategia
+    - key: graphics_engines
+      title: Motores gráficos 3D
+      description: Renderización realista de entornos
+auxiliary:
+  title: Sector auxiliar
+  description: Equipamiento complementario esencial para protección personal, ocultación táctica y componentes mecánicos de precisión que garantizan seguridad y rendimiento operacional.
+  meta:
+    title: Sector Auxiliar | Verticales de Defensa | Dualys
+    description: Textiles técnicos, protección balística, calzado táctico, EPI, mecanizado CNC y componentes de precisión para el sector defensa.
+  subcategories:
+    - key: technical_textiles
+      title: Textiles técnicos ignífugos y resistentes
+      description: Materiales textiles de alto rendimiento para uso militar
+    - key: anti_reflective_paints
+      title: Pinturas antirreflectantes para ocultación
+      description: Recubrimientos especializados para camuflaje táctico
+    - key: ballistic_protection
+      title: Protección balística individual certificada
+      description: Cascos, gafas y protección corporal certificada
+    - key: tactical_footwear
+      title: Calzado táctico de alto rendimiento
+      description: Botas y calzado especializado para operaciones
+    - key: ppe
+      title: Equipos de protección individual (EPI)
+      description: Equipamiento completo de protección personal
+    - key: modular_armor
+      title: Estructuras blindadas modulares
+      description: Blindaje modular adaptable a vehículos e instalaciones
+    - key: cnc_machining
+      title: Mecanizado CNC de componentes críticos
+      description: Fabricación de precisión para piezas críticas de defensa

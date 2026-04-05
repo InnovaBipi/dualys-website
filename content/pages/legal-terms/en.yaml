@@ -1,0 +1,27 @@
+meta:
+  title: Legal Notice | Dualys
+  description: Legal notice and terms of use for the Dualys website.
+title: Legal Notice
+lastUpdated: "Last updated: March 2026"
+sections:
+  - key: acceptance
+    title: Acceptance of Terms
+    content: By accessing and using this website, you accept and agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use this website.
+  - key: use
+    title: Use of Website
+    content: This website is provided for informational purposes about Dualys and its services. You may use this website only for lawful purposes and in accordance with these Terms.
+  - key: intellectualProperty
+    title: Intellectual Property
+    content: All content on this website, including text, graphics, logos, and images, is the property of Dualys or its content suppliers and is protected by intellectual property laws.
+  - key: disclaimers
+    title: Disclaimers
+    content: This website and its content are provided "as is" without warranties of any kind. Dualys does not warrant that the website will be uninterrupted or error-free.
+  - key: limitation
+    title: Limitation of Liability
+    content: Dualys shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of this website.
+  - key: governingLaw
+    title: Governing Law
+    content: These Terms shall be governed by and construed in accordance with the laws of Spain and the European Union. Any disputes shall be subject to the exclusive jurisdiction of the courts of Barcelona.
+  - key: contact
+    title: Contact
+    content: For questions about this Legal Notice, please contact us at info@dualys.eu.

@@ -1,0 +1,30 @@
+meta:
+  title: Nosotros | Equipo y Visión | Dualys
+  description: DUALYS nace de la convicción de que España tiene los ingredientes para convertirse en un referente europeo del dual use industrial y tecnológico.
+title: Nosotros
+subtitle: Aceleradores estratégicos para la transición dual-use
+narrative:
+  paragraph1: "DUALYS nace de una convicción: España tiene los ingredientes para convertirse en un referente europeo del dual use industrial y tecnológico. Tecnología de primer nivel, industria robusta, ecosistema innovador y talento reconocido internacionalmente. Lo que faltaba era alguien que articulase ese potencial con las reglas del juego del mercado de defensa."
+  paragraph2: "Fundada recientemente, pero con una gran experiencia adquirida durante años, DUALYS es ese actor. No somos una consultora convencional ni un intermediario. Somos aceleradores estratégicos: ayudamos a empresas industriales, tecnológicas y de software a comprender el sector defensa, a posicionarse en él y a conseguir sus primeros contratos reales. Con metodología probada, equipo con experiencia de primer nivel y una red de contactos construida a lo largo de años en instituciones, empresas del sector y organismos europeos."
+  vision: "Nuestra visión a diez años: que España sea uno de los polos europeos de referencia en innovación y producción dual-use, con decenas de empresas como proveedores estratégicos de los principales programas de defensa europeos y como hub de aceleración dual use de Europa."
+founders:
+  title: El equipo fundador
+  profiles:
+    - title: Visión institucional y seguridad
+      text: Uno de los fundadores aporta una trayectoria de alta dirección en el ámbito de la seguridad pública y las instituciones catalanas. Ha dirigido organismos de seguridad al máximo nivel ejecutivo y atesora un conocimiento profundo de los mecanismos de funcionamiento de las administraciones y los procesos de toma de decisión en entornos sensibles.
+    - title: Estrategia y conocimiento político-institucional y ecosistema empresarial
+      text: Otro de los fundadores tiene la visión estratégica necesaria para este sector. Ha ocupado posiciones de liderazgo político al más alto nivel en las instituciones catalanas, con responsabilidad directa sobre política industrial, empresa y trabajo. Su acceso a redes institucionales, empresariales y de financiación pública es un diferencial estratégico para DUALYS.
+    - title: Expertise técnico-industrial y operaciones internacionales
+      text: El equipo cuenta con un perfil con experiencia directa en la construcción y escalado de empresas en la intersección de la industria y la tecnología de última generación. Su experiencia en desarrollo de negocios, ejecución de proyectos, procesos de homologación, cadenas de suministro complejas y visión empresarial es la columna vertebral de la metodología de acompañamiento de DUALYS.
+    - title: Comercialización en defensa y desarrollo de negocio
+      text: El cuarto perfil del equipo fundador es el motor comercial de DUALYS. Con experiencia específica en desarrollo de negocio orientado al sector defensa, conoce los canales, los tiempos, los interlocutores y las dinámicas de venta en un mercado que funciona de manera radicalmente distinta al B2B comercial estándar.
+vision:
+  title: Visión de futuro
+  phases:
+    - title: Fase 1 — El Despertar (2025-2026)
+      text: Identificar y activar el potencial dual-use latente en el ecosistema catalán. Ayudar a las primeras 20-30 empresas a dar el paso.
+    - title: Fase 2 — La Aceleración (2027-2028)
+      text: Construir un ecosistema dual-use interconectado. Facilitar alianzas entre startups catalanas y grandes corporaciones europeas. Atraer inversión especializada.
+    - title: Fase 3 — El Liderazgo (2029-2030)
+      text: España como polo europeo de referencia en innovación y producción dual-use. Exportar el modelo a otras regiones. Conectar el ecosistema español con oportunidades globales.
+cta: Solicita tu diagnóstico

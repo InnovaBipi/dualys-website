@@ -1,0 +1,24 @@
+meta:
+  title: Politique de Cookies | Dualys
+  description: Informations sur la manière dont Dualys utilise les cookies sur son site web.
+title: Politique de Cookies
+lastUpdated: "Dernière mise à jour : Mars 2026"
+sections:
+  - key: whatAreCookies
+    title: Que sont les cookies ?
+    content: Les cookies sont de petits fichiers texte placés sur votre appareil lorsque vous visitez un site web. Ils sont largement utilisés pour assurer le bon fonctionnement des sites web et fournir des informations aux propriétaires du site.
+  - key: howWeUse
+    title: Comment nous utilisons les cookies
+    content: Nous utilisons des cookies pour comprendre comment vous interagissez avec notre site web, pour mémoriser vos préférences et pour améliorer votre expérience globale.
+  - key: types
+    title: Types de cookies que nous utilisons
+    content: |-
+      Cookies essentiels : Nécessaires au bon fonctionnement du site web.
+      Cookies d'analyse : Nous aident à comprendre comment les visiteurs interagissent avec notre site web.
+      Cookies de préférences : Mémorisent vos paramètres et préférences.
+  - key: manage
+    title: Gestion des cookies
+    content: Vous pouvez contrôler et gérer les cookies via les paramètres de votre navigateur. Veuillez noter que la suppression ou le blocage des cookies peut affecter votre expérience sur notre site web.
+  - key: contact
+    title: Nous contacter
+    content: Si vous avez des questions concernant notre utilisation des cookies, contactez-nous à l'adresse info@dualys.eu.

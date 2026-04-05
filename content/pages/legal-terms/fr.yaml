@@ -1,0 +1,27 @@
+meta:
+  title: Mentions Légales | Dualys
+  description: Mentions légales et conditions d'utilisation du site web de Dualys.
+title: Mentions Légales
+lastUpdated: "Dernière mise à jour : Mars 2026"
+sections:
+  - key: acceptance
+    title: Acceptation des conditions
+    content: En accédant à ce site web et en l'utilisant, vous acceptez et vous engagez à respecter les présentes Conditions d'Utilisation. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser ce site web.
+  - key: use
+    title: Utilisation du site web
+    content: Ce site web est fourni à des fins d'information sur Dualys et ses services. Vous ne pouvez utiliser ce site web qu'à des fins licites et conformément aux présentes Conditions.
+  - key: intellectualProperty
+    title: Propriété intellectuelle
+    content: L'ensemble du contenu de ce site web, y compris les textes, graphiques, logos et images, est la propriété de Dualys ou de ses fournisseurs de contenu et est protégé par les lois sur la propriété intellectuelle.
+  - key: disclaimers
+    title: Clause de non-responsabilité
+    content: Ce site web et son contenu sont fournis « en l'état » sans garantie d'aucune sorte. Dualys ne garantit pas que le site web sera exempt d'interruptions ou d'erreurs.
+  - key: limitation
+    title: Limitation de responsabilité
+    content: Dualys ne saurait être tenue responsable de tout dommage indirect, accessoire, spécial, consécutif ou punitif découlant de votre utilisation de ce site web.
+  - key: governingLaw
+    title: Droit applicable
+    content: Les présentes Conditions sont régies et interprétées conformément aux lois de l'Espagne et de l'Union européenne. Tout litige sera soumis à la juridiction exclusive des tribunaux de Barcelone.
+  - key: contact
+    title: Contact
+    content: Pour toute question relative aux présentes Mentions Légales, contactez-nous à l'adresse info@dualys.eu.

@@ -1,0 +1,30 @@
+meta:
+  title: About Us | Team and Vision | Dualys
+  description: DUALYS was born from the conviction that Spain has the ingredients to become a European benchmark in industrial and technological dual-use.
+title: About Us
+subtitle: Strategic accelerators for the dual-use transition
+narrative:
+  paragraph1: "DUALYS was born from a conviction: Spain has the ingredients to become a European benchmark in industrial and technological dual-use. World-class technology, robust industry, an innovative ecosystem, and internationally recognized talent. What was missing was someone to align that potential with the rules of the game in the defense market."
+  paragraph2: "Recently founded but with extensive experience gained over years, DUALYS is that player. We are not a conventional consultancy or an intermediary. We are strategic accelerators: we help industrial, technology, and software companies understand the defense sector, position themselves within it, and secure their first real contracts. With a proven methodology, a team with top-level experience, and a network of contacts built over years in institutions, sector companies, and European organizations."
+  vision: "Our ten-year vision: for Spain to be one of Europe's leading hubs for dual-use innovation and production, with dozens of companies serving as strategic suppliers to the major European defense programs and as a dual-use acceleration hub for Europe."
+founders:
+  title: The founding team
+  profiles:
+    - title: Institutional vision and security
+      text: One of the founders brings a senior management career in public security and Catalan institutions. He has led security agencies at the highest executive level and possesses deep knowledge of how administrations function and how decisions are made in sensitive environments.
+    - title: Strategy and political-institutional knowledge and business ecosystem
+      text: Another founder provides the strategic vision required for this sector. He has held top-level political leadership positions in Catalan institutions, with direct responsibility over industrial policy, enterprise, and labor. His access to institutional, business, and public funding networks is a strategic differentiator for DUALYS.
+    - title: Technical-industrial expertise and international operations
+      text: The team includes a profile with direct experience in building and scaling companies at the intersection of industry and cutting-edge technology. His experience in business development, project execution, certification processes, complex supply chains, and entrepreneurial vision is the backbone of DUALYS's support methodology.
+    - title: Defense commercialization and business development
+      text: The fourth founding team profile is the commercial engine of DUALYS. With specific experience in business development focused on the defense sector, he knows the channels, the timelines, the stakeholders, and the sales dynamics in a market that operates in a radically different way from standard B2B commerce.
+vision:
+  title: Future vision
+  phases:
+    - title: Phase 1 — The Awakening (2025-2026)
+      text: Identify and activate the latent dual-use potential in the Catalan ecosystem. Help the first 20-30 companies take the step.
+    - title: Phase 2 — The Acceleration (2027-2028)
+      text: Build an interconnected dual-use ecosystem. Facilitate alliances between Catalan startups and major European corporations. Attract specialized investment.
+    - title: Phase 3 — The Leadership (2029-2030)
+      text: Spain as a leading European hub for dual-use innovation and production. Export the model to other regions. Connect the Spanish ecosystem with global opportunities.
+cta: Request your assessment
