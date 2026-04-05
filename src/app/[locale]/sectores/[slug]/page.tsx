@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { ArrowRight } from 'lucide-react';
 import { Container } from '@/components/ui/container';
@@ -9,6 +9,8 @@ import { JsonLd } from '@/components/seo/JsonLd';
 import { Button } from '@/components/ui/button';
 import { Link } from '@/lib/i18n/navigation';
 import { generatePageMetadata, getWebPageSchema, getBreadcrumbSchema } from '@/lib/seo/metadata';
+import { getPageContent } from '@/lib/keystatic/get-page-content';
+import type { SectoresContent, SectoresVerticalsContent, HomepageContent } from '@/lib/keystatic/types';
 import type { Locale } from '@/lib/i18n/config';
 import { verticals, getVerticalBySlug, getAllVerticalSlugs } from '@/data/verticals';
 
@@ -25,11 +27,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const vertical = getVerticalBySlug(slug);
   if (!vertical) return {};
 
-  const t = await getTranslations({ locale, namespace: 'sectores.verticals' });
+  const vContent = await getPageContent<SectoresVerticalsContent>('sectores_verticals', locale as Locale);
+  const data = vContent[vertical.key as keyof SectoresVerticalsContent];
 
   return generatePageMetadata({
-    title: t(`${vertical.key}.meta.title`),
-    description: t(`${vertical.key}.meta.description`),
+    title: data.meta.title,
+    description: data.meta.description,
     locale: locale as Locale,
     path: `/sectores/${slug}`,
   });
@@ -42,23 +45,24 @@ export default async function VerticalDetailPage({ params }: PageProps) {
   const vertical = getVerticalBySlug(slug);
   if (!vertical) notFound();
 
-  const t = await getTranslations({ locale, namespace: 'sectores.verticals' });
-  const tSectores = await getTranslations({ locale, namespace: 'sectores' });
-  const tCta = await getTranslations({ locale, namespace: 'cta' });
+  const vContent = await getPageContent<SectoresVerticalsContent>('sectores_verticals', locale as Locale);
+  const sectoresContent = await getPageContent<SectoresContent>('sectores', locale as Locale);
+  const homepage = await getPageContent<HomepageContent>('homepage', locale as Locale);
 
+  const data = vContent[vertical.key as keyof SectoresVerticalsContent];
   const Icon = vertical.icon;
 
   const pageSchema = getWebPageSchema({
-    title: t(`${vertical.key}.meta.title`),
-    description: t(`${vertical.key}.meta.description`),
+    title: data.meta.title,
+    description: data.meta.description,
     locale: locale as Locale,
     path: `/sectores/${slug}`,
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Home', url: '' },
-    { name: tSectores('title'), url: '/sectores' },
-    { name: t(`${vertical.key}.title`), url: `/sectores/${slug}` },
+    { name: sectoresContent.title, url: '/sectores' },
+    { name: data.title, url: `/sectores/${slug}` },
   ], locale as Locale);
 
   // Get 3 related verticals (next in array, wrapping around)
@@ -75,8 +79,8 @@ export default async function VerticalDetailPage({ params }: PageProps) {
 
       <Breadcrumbs
         items={[
-          { label: tSectores('title'), href: '/sectores' },
-          { label: t(`${vertical.key}.title`) },
+          { label: sectoresContent.title, href: '/sectores' },
+          { label: data.title },
         ]}
       />
 
@@ -88,10 +92,10 @@ export default async function VerticalDetailPage({ params }: PageProps) {
               <Icon className="h-8 w-8 text-accent-500" aria-hidden="true" />
             </div>
             <h1 className="font-display text-3xl font-bold tracking-tight text-primary-950 sm:text-4xl lg:text-5xl">
-              {t(`${vertical.key}.title`)}
+              {data.title}
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-neutral-600">
-              {t(`${vertical.key}.description`)}
+              {data.description}
             </p>
           </div>
         </Container>
@@ -101,11 +105,11 @@ export default async function VerticalDetailPage({ params }: PageProps) {
       <section className="py-16 md:py-24">
         <Container>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {vertical.subcategories.map((subcat) => (
+            {data.subcategories.map((subcat) => (
               <SubcategoryCard
                 key={subcat.key}
-                title={t(`${vertical.key}.subcategories.${subcat.key}.title`)}
-                description={t(`${vertical.key}.subcategories.${subcat.key}.description`)}
+                title={subcat.title}
+                description={subcat.description}
               />
             ))}
           </div>
@@ -116,11 +120,12 @@ export default async function VerticalDetailPage({ params }: PageProps) {
       <section className="bg-neutral-50 py-16 md:py-24">
         <Container>
           <h2 className="mb-8 text-center font-display text-2xl font-bold text-primary-950">
-            {tSectores('originSection.title')}
+            {sectoresContent.originSection.title}
           </h2>
           <div className="grid gap-6 sm:grid-cols-3">
             {relatedVerticals.map((related) => {
               const RelatedIcon = related.icon;
+              const relData = vContent[related.key as keyof SectoresVerticalsContent];
               return (
                 <Link
                   key={related.slug}
@@ -131,10 +136,10 @@ export default async function VerticalDetailPage({ params }: PageProps) {
                     <RelatedIcon className="h-5 w-5 text-accent-500" aria-hidden="true" />
                   </div>
                   <h3 className="font-display text-base font-semibold text-primary-950 group-hover:text-accent-500">
-                    {t(`${related.key}.title`)}
+                    {relData.title}
                   </h3>
                   <p className="mt-1 line-clamp-2 text-sm text-neutral-500">
-                    {t(`${related.key}.description`)}
+                    {relData.description}
                   </p>
                 </Link>
               );
@@ -147,16 +152,12 @@ export default async function VerticalDetailPage({ params }: PageProps) {
       <section className="bg-primary-950 py-16">
         <Container>
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-bold text-white">
-              {tCta('title')}
-            </h2>
-            <p className="mt-4 text-lg text-white/80">
-              {tCta('subtitle')}
-            </p>
+            <h2 className="text-3xl font-bold text-white">{homepage.cta.title}</h2>
+            <p className="mt-4 text-lg text-white/80">{homepage.cta.subtitle}</p>
             <div className="mt-8">
               <Button variant="accent" size="lg" asChild>
                 <Link href="/contact" className="inline-flex items-center gap-2">
-                  {tCta('button')}
+                  {homepage.cta.button}
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </Link>
               </Button>

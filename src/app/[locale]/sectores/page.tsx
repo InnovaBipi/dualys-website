@@ -1,4 +1,4 @@
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { ArrowRight } from 'lucide-react';
 import { Container } from '@/components/ui/container';
@@ -8,6 +8,8 @@ import { JsonLd } from '@/components/seo/JsonLd';
 import { Button } from '@/components/ui/button';
 import { Link } from '@/lib/i18n/navigation';
 import { generatePageMetadata, getWebPageSchema, getBreadcrumbSchema } from '@/lib/seo/metadata';
+import { getPageContent } from '@/lib/keystatic/get-page-content';
+import type { SectoresContent, HomepageContent } from '@/lib/keystatic/types';
 import type { Locale } from '@/lib/i18n/config';
 import { verticals } from '@/data/verticals';
 
@@ -17,11 +19,11 @@ interface PageProps {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'sectores' });
+  const content = await getPageContent<SectoresContent>('sectores', locale as Locale);
 
   return generatePageMetadata({
-    title: t('meta.title'),
-    description: t('meta.description'),
+    title: content.meta.title,
+    description: content.meta.description,
     locale: locale as Locale,
     path: '/sectores',
   });
@@ -30,19 +32,21 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function SectoresPage({ params }: PageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: 'sectores' });
-  const tVerticals = await getTranslations({ locale, namespace: 'homepage.verticals' });
+  const content = await getPageContent<SectoresContent>('sectores', locale as Locale);
+  const homepage = await getPageContent<HomepageContent>('homepage', locale as Locale);
+
+  const verticalsByKey = new Map(homepage.verticals.items.map((v) => [v.key, v]));
 
   const pageSchema = getWebPageSchema({
-    title: t('meta.title'),
-    description: t('meta.description'),
+    title: content.meta.title,
+    description: content.meta.description,
     locale: locale as Locale,
     path: '/sectores',
   });
 
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Home', url: '' },
-    { name: t('title'), url: '/sectores' },
+    { name: content.title, url: '/sectores' },
   ], locale as Locale);
 
   return (
@@ -50,13 +54,11 @@ export default async function SectoresPage({ params }: PageProps) {
       <JsonLd data={pageSchema} />
       <JsonLd data={breadcrumbSchema} />
 
-      <Breadcrumbs
-        items={[{ label: t('title') }]}
-      />
+      <Breadcrumbs items={[{ label: content.title }]} />
 
       <PageHeader
-        title={t('title')}
-        subtitle={t('subtitle')}
+        title={content.title}
+        subtitle={content.subtitle}
         variant="gradient"
       />
 
@@ -65,7 +67,7 @@ export default async function SectoresPage({ params }: PageProps) {
         <Container>
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-lg leading-relaxed text-neutral-600">
-              {t('intro')}
+              {content.intro}
             </p>
           </div>
         </Container>
@@ -77,6 +79,7 @@ export default async function SectoresPage({ params }: PageProps) {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {verticals.map((vertical) => {
               const Icon = vertical.icon;
+              const item = verticalsByKey.get(vertical.key);
 
               return (
                 <Link
@@ -88,13 +91,13 @@ export default async function SectoresPage({ params }: PageProps) {
                     <Icon className="h-6 w-6 text-accent-500" aria-hidden="true" />
                   </div>
                   <h3 className="mb-2 font-display text-lg font-semibold text-primary-950 group-hover:text-accent-500">
-                    {tVerticals(`${vertical.key}.title`)}
+                    {item?.title || vertical.key}
                   </h3>
                   <p className="text-sm leading-relaxed text-neutral-500">
-                    {tVerticals(`${vertical.key}.description`)}
+                    {item?.description || ''}
                   </p>
                   <span className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-accent-500 opacity-0 transition-opacity group-hover:opacity-100">
-                    {t('cta')}
+                    {content.cta}
                     <ArrowRight className="h-3 w-3" aria-hidden="true" />
                   </span>
                 </Link>
@@ -109,10 +112,10 @@ export default async function SectoresPage({ params }: PageProps) {
         <Container>
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-primary-950 sm:text-4xl">
-              {t('originSection.title')}
+              {content.originSection.title}
             </h2>
             <p className="mt-4 text-lg text-neutral-600">
-              {t('originSection.subtitle')}
+              {content.originSection.subtitle}
             </p>
           </div>
         </Container>
@@ -122,16 +125,12 @@ export default async function SectoresPage({ params }: PageProps) {
       <section className="bg-primary-500 py-16">
         <Container>
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-bold text-white">
-              {t('title')}
-            </h2>
-            <p className="mt-4 text-lg text-white/80">
-              {t('subtitle')}
-            </p>
+            <h2 className="text-3xl font-bold text-white">{content.title}</h2>
+            <p className="mt-4 text-lg text-white/80">{content.subtitle}</p>
             <div className="mt-8">
               <Button variant="accent" size="lg" asChild>
                 <Link href="/contact" className="inline-flex items-center gap-2">
-                  {t('cta')}
+                  {content.cta}
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </Link>
               </Button>
