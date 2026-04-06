@@ -1,8 +1,8 @@
 meta:
-  title: Avís Legal | Dualys
-  description: Avís legal i termes d'ús de Dualys.
+  title: Avís Legal | Dualys Strategy AIE
+  description: Avís legal i termes d'ús de Dualys Strategy AIE
 title: Avís Legal
-lastUpdated: "Última actualització: Març 2026"
+lastUpdated: 'Última actualització: Març 2026'
 sections:
   - key: acceptance
     title: Acceptació
@@ -12,7 +12,7 @@ sections:
     content: Lloc web amb fins informatius sobre Dualys i serveis.
   - key: intellectualProperty
     title: Propietat Intel·lectual
-    content: Tot el contingut és propietat de Dualys.
+    content: Tot el contingut és propietat de Dualys Strategy AIE
   - key: disclaimers
     title: Descàrrecs
     content: Contingut proporcionat tal qual sense garanties.
@@ -24,4 +24,4 @@ sections:
     content: Lleis d'Espanya i la UE. Tribunals de Barcelona.
   - key: contact
     title: Contacte
-    content: "Preguntes legals: info@dualys.eu."
+    content: 'Preguntes legals: info@dualys.eu.'
