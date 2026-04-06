@@ -48,19 +48,19 @@ audience:
   title: Per a qui és Dualys
   cards:
     - key: industrial
-      title: Per a industrials
+      title: Per a industrials Tier 2 i Tier 3
       description: >-
         Fabricants de components, manufactura de precisió, automoció,
         aeronàutica, compostos, electrònica industrial.
       cta: Veure com treballem amb industrials
     - key: tech
-      title: Per a tecnologia i software
+      title: Per empreses de tecnologia i software
       description: >-
-        Empreses d'IA, robòtica, ciberseguretat, comunicacions, simulació,
-        bessons digitals, drons, IoT.
+        Empreses d'IA, robòtica, electrònica, ciberseguretat, comunicacions,
+        simulació, bessons digitals, drons, IoT.
       cta: Veure com treballem amb empreses tech
     - key: primes
-      title: Per a grans primes
+      title: Per a grans primes i Tier 1
       description: >-
         Empreses del sector defensa que necessiten ampliar la seva cadena de
         subministrament amb capacitat local qualificada.
