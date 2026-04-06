@@ -8,6 +8,7 @@ type HsqCommand =
   | ['trackPageView']
   | ['identify', Record<string, string>]
   | ['revokeCookieConsent']
+  | ['doNotTrack']
   | ['trackCustomBehavioralEvent', { name: string; properties?: Record<string, string> }];
 
 interface Window {
