@@ -37,10 +37,10 @@ export function CookieConsent() {
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-[60] p-4 md:p-6">
-      <div className="mx-auto max-w-4xl rounded-2xl border border-neutral-200 bg-white p-6 shadow-2xl md:p-8">
+      <div className="mx-auto max-w-4xl rounded-2xl border border-neutral-200 bg-white p-4 shadow-2xl sm:p-6 md:p-8">
         <div className="flex flex-col gap-6 md:flex-row md:items-center">
           <div className="flex-grow">
-            <h3 className="mb-2 text-lg font-semibold text-primary-950">
+            <h3 className="mb-2 text-base font-semibold text-primary-950 sm:text-lg">
               {t('title')}
             </h3>
             <p className="text-sm leading-relaxed text-neutral-600">
@@ -55,10 +55,10 @@ export function CookieConsent() {
           </div>
 
           <div className="flex flex-shrink-0 flex-col gap-3 sm:flex-row">
-            <Button variant="outline" size="sm" onClick={handleReject}>
+            <Button variant="outline" size="sm" onClick={handleReject} className="w-full sm:w-auto">
               {t('reject')}
             </Button>
-            <Button variant="accent" size="sm" onClick={handleAccept}>
+            <Button variant="accent" size="sm" onClick={handleAccept} className="w-full sm:w-auto">
               {t('accept')}
             </Button>
           </div>
