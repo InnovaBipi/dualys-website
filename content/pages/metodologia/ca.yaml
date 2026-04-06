@@ -1,15 +1,30 @@
 meta:
   title: Metodologia FFD | Programa d'entrada al sector defensa | Dualys
-  description: "Coneix el nostre programa FFD: una metodologia provada per accelerar l'entrada de la teva empresa al sector defensa."
+  description: >-
+    Coneix el nostre programa FFD: una metodologia provada per accelerar
+    l'entrada de la teva empresa al sector defensa.
 title: Metodologia
-subtitle: "FFD: Dualys — Metodologia Dualys"
-description: Un programa estructurat, provat i orientat a resultats. Sota acord de confidencialitat.
+subtitle: 'FFD: Dualys — Metodologia Dualys'
+description: >-
+  Un programa estructurat, provat i orientat a resultats. Sota acord de
+  confidencialitat.
 phases:
-  - title: Diagnòstic
-    description: Avaluació completa de capacitats i encaix amb el sector defensa.
-  - title: Posicionament
-    description: Mapa d'oportunitats, certificacions necessàries i pla d'acció.
-  - title: Activació
+  - title: Diagnosi
+    description: >-
+      Avaluació completa de capacitats, anàlisi de Gaps i encaix en el sector
+      defensa.
+  - title: Oportunitats
+    description: >-
+      Mapa d'oportunitats de negoci, posicionament sectorial, dossier comercial,
+      certificacions necessàries i pla d'acció.
+  - title: Connexió
     description: Entrada real al mercat amb contactes, contractes i acompanyament.
-nda: Tots els processos de diagnòstic i assessorament es realitzen sota acord de confidencialitat.
+  - title: Adaptació
+    description: >+
+      Adaptació en processos, Anàlisi impacte financer, Acompanyament
+      Certificacions
+
+nda: >-
+  Tots els processos de diagnosi i assessorament es realitzen sota acord de
+  confidencialitat.
 cta: Sol·licita el teu diagnòstic
