@@ -41,20 +41,19 @@ export function HubSpotProvider({ portalId, locale }: HubSpotProviderProps) {
     return () => window.removeEventListener('cookie-consent-changed', handler);
   }, []);
 
-  // Configure chat widget deferred loading when consent is granted
-  useEffect(() => {
-    if (consent === 'accepted') {
-      window.hsConversationsSettings = {
-        loadImmediately: false,
-        ...(locale && { locale }),
-      };
-      window.hsConversationsOnReady = [
-        () => {
-          window.HubSpotConversations?.widget.load();
-        },
-      ];
-    }
-  }, [consent, locale]);
+  // Configure chat widget BEFORE the script loads (must be synchronous)
+  // HubSpot requires these globals to exist before the tracking code executes
+  if (typeof window !== 'undefined' && consent === 'accepted') {
+    window.hsConversationsSettings = {
+      loadImmediately: false,
+      ...(locale && { locale }),
+    };
+    window.hsConversationsOnReady = [
+      () => {
+        window.HubSpotConversations?.widget.load();
+      },
+    ];
+  }
 
   // Remove chat widget if consent is revoked
   useEffect(() => {
@@ -92,6 +91,15 @@ export function HubSpotProvider({ portalId, locale }: HubSpotProviderProps) {
       id="hs-script-loader"
       src={`//js-eu1.hs-scripts.com/${portalId}.js`}
       strategy="afterInteractive"
+      onReady={() => {
+        // Fallback: load widget if onReady callback was missed
+        if (window.HubSpotConversations) {
+          const status = window.HubSpotConversations.widget.status();
+          if (!status.loaded) {
+            window.HubSpotConversations.widget.load();
+          }
+        }
+      }}
     />
   );
 }
