@@ -50,23 +50,25 @@ messages:
   title: Per què Dualys
   items:
     - title: El moment és ara
-      text: >-
-        El Pla Industrial de Seguretat i Defensa d'Espanya ja està actiu. Les
-        empreses que es posicionin ara tindran avantatge estructural.
+      text: |-
+        El Pla Industrial de Seguretat i Defensa d'Espanya ja està actiu. 
+        Les empreses que es posicionin ara tindran avantatge estructural.
     - title: Espanya i Catalunya estan preparades, però falta articulació
-      text: >-
-        Espanya disposa de tecnologia, indústria i talent de primer nivell. Hi
-        ha una desconnexió entre aquest potencial i les regles del joc.
+      text: |-
+        Espanya disposa de tecnologia, indústria i talent de primer nivell. 
+        Hi ha una desconnexió entre aquest potencial i les regles del joc.
     - title: Som una consultora que afegeix valor al teu negoci
       text: >-
-        No fem informes que acaben en un calaix. Accelerem entrades al mercat,
-        reduïm el risc, obrim portes comercials reals.
+        No fem informes que acaben en un calaix. 
+
+        Accelerem entrades al mercat, reduïm el risc, obrim portes comercials
+        reals.
     - title: La teva tecnologia civil ja és un avantatge competitiu en defensa
       text: DUALYS t'ajuda a veure aquesta transferència i a fer-la operativa.
     - title: Reduïm el risc de la transició
-      text: >-
-        El sector defensa té normativa específica. DUALYS diagnostica primer,
-        planifica després i executa amb criteri.
+      text: |-
+        El sector defensa té normativa específica. 
+        DUALYS diagnostica primer, planifica després i executa amb criteri.
 verticals:
   title: Verticals de defensa
   subtitle: >-
