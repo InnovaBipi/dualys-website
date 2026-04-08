@@ -107,19 +107,7 @@ verticals:
     - key: auxiliary
       title: Auxiliary sectors
       description: Technical textiles, protection, CNC machining
-team:
-  title: The team
-  text: >-
-    The founding team of DUALYS combines profiles rarely found together:
-    executive experience in security and defense institutions, top-level
-    political career with deep knowledge of the Spanish — and particularly the
-    Catalan — business ecosystem, technical and commercial expertise in
-    international industrial and defense projects, and the ability to
-    orchestrate innovation ecosystems and complex value chains. Together, we
-    cover the four pillars required for a successful dual-use transition: sector
-    knowledge, business development, institutional access, and executive
-    capability.
-  cta: Meet the team
+team: {}
 cta:
   title: Building dual-use capabilities for industry.
   subtitle: >-
