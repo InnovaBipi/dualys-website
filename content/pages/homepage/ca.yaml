@@ -106,19 +106,7 @@ verticals:
     - key: auxiliary
       title: Sectors auxiliars
       description: Tèxtil tècnic, protecció, mecanitzat CNC
-team:
-  title: L'equip
-  text: >-
-    L'equip fundador de Dualys combina perfils que rarament es troben junts:
-    experiència directiva en institucions de seguretat i defensa, trajectòria
-    política al més alt nivell amb profund coneixement de l'ecosistema
-    empresarial espanyol i èmfasi en el català, expertise tècnic i comercial en
-    projectes industrials i de defensa d'àmbit internacional, i capacitat per
-    articular ecosistemes d'innovació i cadenes de valor complexes. Junts,
-    cobrim els quatre eixos que requereix una transició dual-use exitosa: el
-    coneixement del sector, el desenvolupament comercial, l'accés institucional
-    i la capacitat executiva.
-  cta: Coneix l'equip
+team: {}
 cta:
   title: Construir capacitats duals per a la indústria.
   subtitle: >-
