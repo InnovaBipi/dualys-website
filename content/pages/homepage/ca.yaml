@@ -26,22 +26,22 @@ context:
     - value: 2%
       label: Objectiu del PIB en inversió defensiva
 audience:
-  title: Per a qui és Dualys
+  title: Per a qui és?
   cards:
     - key: industrial
-      title: Per a industrials Tier 2 i Tier 3
+      title: Industrials
       description: >-
         Fabricants de components, manufactura de precisió, automoció,
         aeronàutica, compostos, electrònica industrial.
       cta: Veure com treballem amb industrials
     - key: tech
-      title: Per empreses de tecnologia i software
+      title: Tecnologia i software
       description: >-
         Empreses d'IA, robòtica, electrònica, ciberseguretat, comunicacions,
         simulació, bessons digitals, drons, IoT.
       cta: Veure com treballem amb empreses tech
     - key: primes
-      title: Per a grans primes i Tier 1
+      title: Grans primes
       description: >-
         Empreses del sector defensa que necessiten ampliar la seva cadena de
         subministrament amb capacitat local qualificada.
