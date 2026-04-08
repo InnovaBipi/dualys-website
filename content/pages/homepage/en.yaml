@@ -5,17 +5,17 @@ meta:
     industrial and technology companies into the European defense sector.
 hero:
   title: Your company has what the defense sector needs. We help you get there.
-  subtitle: >-
-    DUALYS is the bridge between the industrial and technological capability of
-    Spanish companies — with an initial emphasis on Catalan firms — and European
-    dual-use markets. We accelerate your entry into the defense sector with
-    expertise, methodology, and a real network of contacts.
   cta: Request your assessment
   ctaSecondary: Learn about our methodology
   contextNote: >-
     Europe has committed over 800,000 M€ to defense through 2030. The time to
     position yourself is now.
 context:
+  paragraph1: >-
+    DUALYS is the bridge between the industrial and technological capability of
+    Spanish companies — with an initial emphasis on Catalan firms — and European
+    dual-use markets. We accelerate your entry into the defense sector with
+    expertise, methodology, and a real network of contacts.
   stats:
     - value: 800,000 M€
       label: European defense investment through 2030
@@ -24,22 +24,22 @@ context:
     - value: 2%
       label: GDP target for defense investment
 audience:
-  title: Who DUALYS is for
+  title: Who is it for?
   cards:
     - key: industrial
-      title: For manufacturers
+      title: Manufacturers
       description: >-
         Component manufacturers, precision manufacturing, automotive,
         aeronautics, composites, industrial electronics.
       cta: See how we work with manufacturers
     - key: tech
-      title: For technology and software
+      title: Technology and software
       description: >-
         AI, robotics, cybersecurity, communications, simulation, digital twins,
         drones, and IoT companies.
       cta: See how we work with tech companies
     - key: primes
-      title: For major primes
+      title: Major primes
       description: >-
         Defense sector companies that need to expand their supply chain with
         qualified local capability.
@@ -49,29 +49,23 @@ messages:
   items:
     - title: The time is now
       text: >-
-        Europe has committed hundreds of billions to defense and technological
-        sovereignty. Spain's Industrial Security and Defense Plan is already
-        active. Companies that position themselves now will gain a structural
-        advantage.
+        Spain's Industrial Security and Defense Plan is already active.
+        Companies that position themselves now will gain a structural advantage.
     - title: Spain and Catalonia are ready, but alignment is missing
       text: >-
-        Spain has world-class technology, industry, and talent. The problem is
-        not potential: it is the disconnect between that potential and the rules
-        of the game in the sector.
+        Spain has world-class technology, industry, and talent. There is a
+        disconnection between that potential and the rules of the game in the
+        sector.
     - title: We are a consultancy that adds real value to your business
       text: >-
         We do not produce reports that end up in a drawer. We accelerate market
         entry, reduce risk, and open real commercial doors.
     - title: Your civil technology is already a competitive advantage in defense
-      text: >-
-        If you manufacture precision parts for the automotive industry, you can
-        manufacture them for ground or naval platforms. DUALYS helps you see
-        that transfer and make it operational.
+      text: DUALYS helps you see that transfer and make it operational.
     - title: We reduce the risk of transition
       text: >-
-        The defense sector has specific regulations (AQAP/PECAL, RID, EN9100,
-        ISO 27001, ITAR, export controls). DUALYS diagnoses first, plans second,
-        and executes with expertise.
+        The defense sector has specific regulations. DUALYS diagnoses first,
+        plans second, and executes with expertise.
 verticals:
   title: Defense verticals
   subtitle: Discover which defense sector areas your company can position itself in
