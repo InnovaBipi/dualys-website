@@ -7,17 +7,17 @@ hero:
   title: >-
     La teva empresa pot competir en el sector de defensa. Nosaltres t'ajudem a
     arribar-hi.
-  subtitle: >-
-    Dualys és l’ acceleradora estratègica entre la capacitat industrial i
-    tecnològica de les empreses espanyoles i els mercats duals europeus.
-    Impulsem la teva entrada al sector defensa amb criteri, metodologia i xarxa
-    de contactes real.
   cta: Sol·licita el teu diagnòstic
   ctaSecondary: Coneix la nostra metodologia
   contextNote: >-
     Europa ha compromès +800.000 M€ en defensa fins al 2030. El moment de
     posicionar-se és ara.
 context:
+  paragraph1: >-
+    Dualys és l’ acceleradora estratègica entre la capacitat industrial i
+    tecnològica de les empreses espanyoles i els mercats duals europeus.
+    Impulsem la teva entrada al sector defensa amb criteri, metodologia i xarxa
+    de contactes real.
   stats:
     - value: 800.000 M€
       label: Inversió europea en defensa fins al 2030
