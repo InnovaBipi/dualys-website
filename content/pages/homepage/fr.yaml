@@ -1,17 +1,25 @@
 meta:
   title: Dualys | Cabinet de Conseil Stratégique pour le Secteur de la Défense
-  description: Nous développons des capacités duales pour l'industrie. Nous facilitons l'entrée des entreprises industrielles et technologiques dans le secteur de la défense européen.
+  description: >-
+    Nous développons des capacités duales pour l'industrie. Nous facilitons
+    l'entrée des entreprises industrielles et technologiques dans le secteur de
+    la défense européen.
 hero:
-  title: Ton entreprise a ce que le secteur de la défense recherche. Nous t'aidons à y accéder.
-  subtitle: DUALYS est le pont entre la capacité industrielle et technologique des entreprises espagnoles, avec un accent initial sur les entreprises catalanes, et les marchés duaux européens. Nous accélérons ton entrée dans le secteur de la défense avec rigueur, méthodologie et un réseau de contacts concret.
+  title: >-
+    Ton entreprise a ce que le secteur de la défense recherche. Nous t'aidons à
+    y accéder.
+  subtitle: >-
+    DUALYS est le pont entre la capacité industrielle et technologique des
+    entreprises espagnoles, avec un accent initial sur les entreprises
+    catalanes, et les marchés duaux européens. Nous accélérons ton entrée dans
+    le secteur de la défense avec rigueur, méthodologie et un réseau de contacts
+    concret.
   cta: Demandez votre diagnostic
   ctaSecondary: Découvrez notre méthodologie
-  contextNote: L'Europe a engagé plus de 800 000 M€ dans la défense d'ici 2030. Le moment de se positionner, c'est maintenant.
+  contextNote: >-
+    L'Europe a engagé plus de 800 000 M€ dans la défense d'ici 2030. Le moment
+    de se positionner, c'est maintenant.
 context:
-  title: Pourquoi maintenant
-  paragraph1: L'Europe connaît une transformation structurelle en matière de défense. Le Readiness Europe 2030 mobilise jusqu'à 800 000 millions d'euros en acquisitions et projets visant à renforcer la Base Technologique et Industrielle de Défense Européenne (BTIDE). En Espagne, le Plan Industriel de Sécurité et de Défense est déjà actif avec une dotation de 44 000 millions d'euros pour les prochaines années et l'objectif d'atteindre et de maintenir 2 % du PIB en investissement de défense.
-  paragraph2: "L'Espagne dispose d'un écosystème industriel et technologique de premier plan : des entreprises leaders dans l'automobile, l'aéronautique, les composites, l'électronique, l'intelligence artificielle, la robotique et la cybersécurité. Des capacités dont le secteur de la défense a besoin, dès maintenant, pour construire des chaînes d'approvisionnement plus résilientes et d'origine européenne."
-  paragraph3: Le problème n'est pas le manque de potentiel. La plupart des PME et entreprises technologiques catalanes ne connaissent pas les mécanismes d'entrée, les certifications nécessaires ni les circuits du marché de la défense. C'est exactement ce que DUALYS résout.
   stats:
     - value: 800 000 M€
       label: Investissement européen dans la défense d'ici 2030
@@ -24,32 +32,58 @@ audience:
   cards:
     - key: industrial
       title: Pour les industriels
-      description: Fabricants de composants, usinage de précision, automobile, aéronautique, composites, électronique industrielle.
+      description: >-
+        Fabricants de composants, usinage de précision, automobile,
+        aéronautique, composites, électronique industrielle.
       cta: Découvrir comment nous travaillons avec les industriels
     - key: tech
       title: Pour la technologie et le logiciel
-      description: Entreprises d'IA, robotique, cybersécurité, communications, simulation, jumeaux numériques, drones, IoT.
+      description: >-
+        Entreprises d'IA, robotique, cybersécurité, communications, simulation,
+        jumeaux numériques, drones, IoT.
       cta: Découvrir comment nous travaillons avec les entreprises tech
     - key: primes
       title: Pour les grands donneurs d'ordre
-      description: Entreprises du secteur de la défense qui ont besoin d'élargir leur chaîne d'approvisionnement avec des capacités locales qualifiées.
+      description: >-
+        Entreprises du secteur de la défense qui ont besoin d'élargir leur
+        chaîne d'approvisionnement avec des capacités locales qualifiées.
       cta: Parlons-en
 messages:
   title: Pourquoi DUALYS
   items:
     - title: Le moment est maintenant
-      text: L'Europe a engagé des centaines de milliards dans la défense et la souveraineté technologique. Le Plan Industriel de Sécurité et de Défense de l'Espagne est déjà actif. Les entreprises qui se positionnent maintenant bénéficieront d'un avantage structurel.
+      text: >-
+        L'Europe a engagé des centaines de milliards dans la défense et la
+        souveraineté technologique. Le Plan Industriel de Sécurité et de Défense
+        de l'Espagne est déjà actif. Les entreprises qui se positionnent
+        maintenant bénéficieront d'un avantage structurel.
     - title: L'Espagne et la Catalogne sont prêtes, mais il manque l'articulation
-      text: "L'Espagne dispose de technologie, d'industrie et de talents de premier plan. Le problème n'est pas le potentiel : c'est la déconnexion entre ce potentiel et les règles du jeu du secteur."
-    - title: Nous sommes un cabinet de conseil qui crée de la valeur pour votre activité
-      text: Nous ne rédigeons pas de rapports qui finissent dans un tiroir. Nous accélérons les entrées sur le marché, réduisons les risques et ouvrons de véritables portes commerciales.
+      text: >-
+        L'Espagne dispose de technologie, d'industrie et de talents de premier
+        plan. Le problème n'est pas le potentiel : c'est la déconnexion entre ce
+        potentiel et les règles du jeu du secteur.
+    - title: >-
+        Nous sommes un cabinet de conseil qui crée de la valeur pour votre
+        activité
+      text: >-
+        Nous ne rédigeons pas de rapports qui finissent dans un tiroir. Nous
+        accélérons les entrées sur le marché, réduisons les risques et ouvrons
+        de véritables portes commerciales.
     - title: Votre technologie civile est déjà un avantage compétitif dans la défense
-      text: Si vous fabriquez des pièces de précision pour l'automobile, vous pouvez les fabriquer pour des plateformes terrestres ou navales. DUALYS vous aide à identifier ce transfert et à le rendre opérationnel.
+      text: >-
+        Si vous fabriquez des pièces de précision pour l'automobile, vous pouvez
+        les fabriquer pour des plateformes terrestres ou navales. DUALYS vous
+        aide à identifier ce transfert et à le rendre opérationnel.
     - title: Nous réduisons le risque de la transition
-      text: Le secteur de la défense possède une réglementation spécifique (AQAP/PECAL, RID, EN9100, ISO 27001, ITAR, contrôles à l'exportation). DUALYS diagnostique d'abord, planifie ensuite et exécute avec rigueur.
+      text: >-
+        Le secteur de la défense possède une réglementation spécifique
+        (AQAP/PECAL, RID, EN9100, ISO 27001, ITAR, contrôles à l'exportation).
+        DUALYS diagnostique d'abord, planifie ensuite et exécute avec rigueur.
 verticals:
   title: Verticales de défense
-  subtitle: Découvrez dans quels domaines du secteur de la défense votre entreprise peut se positionner
+  subtitle: >-
+    Découvrez dans quels domaines du secteur de la défense votre entreprise peut
+    se positionner
   cta: Découvre dans quelle verticale ton entreprise s'intègre
   items:
     - key: terrestrial
@@ -84,10 +118,22 @@ verticals:
       description: Textile technique, protection, usinage CNC
 team:
   title: L'équipe
-  text: "L'équipe fondatrice de DUALYS réunit des profils que l'on trouve rarement ensemble : une expérience de direction au sein d'institutions de sécurité et de défense, un parcours politique au plus haut niveau avec une connaissance approfondie de l'écosystème entrepreneurial espagnol et notamment catalan, une expertise technique et commerciale dans des projets industriels et de défense de portée internationale, et la capacité d'articuler des écosystèmes d'innovation et des chaînes de valeur complexes. Ensemble, nous couvrons les quatre axes nécessaires à une transition dual-use réussie : la connaissance du secteur, le développement commercial, l'accès institutionnel et la capacité d'exécution."
+  text: >-
+    L'équipe fondatrice de DUALYS réunit des profils que l'on trouve rarement
+    ensemble : une expérience de direction au sein d'institutions de sécurité et
+    de défense, un parcours politique au plus haut niveau avec une connaissance
+    approfondie de l'écosystème entrepreneurial espagnol et notamment catalan,
+    une expertise technique et commerciale dans des projets industriels et de
+    défense de portée internationale, et la capacité d'articuler des écosystèmes
+    d'innovation et des chaînes de valeur complexes. Ensemble, nous couvrons les
+    quatre axes nécessaires à une transition dual-use réussie : la connaissance
+    du secteur, le développement commercial, l'accès institutionnel et la
+    capacité d'exécution.
   cta: Découvrir l'équipe
 cta:
   title: Développer des capacités duales pour l'industrie.
-  subtitle: En 2 séances, nous vous fournissons un diagnostic clair, une carte des opportunités et un plan d'action.
+  subtitle: >-
+    En 2 séances, nous vous fournissons un diagnostic clair, une carte des
+    opportunités et un plan d'action.
   button: Demandez votre diagnostic
   buttonSecondary: Parlons-en
