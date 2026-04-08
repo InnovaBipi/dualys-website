@@ -116,8 +116,7 @@ verticals:
     - key: auxiliary
       title: Secteurs auxiliaires
       description: Textile technique, protection, usinage CNC
-team:
-  cta: Découvrir l'équipe
+team: {}
 cta:
   title: Développer des capacités duales pour l'industrie.
   subtitle: >-
