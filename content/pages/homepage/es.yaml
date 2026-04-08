@@ -109,19 +109,7 @@ verticals:
     - key: auxiliary
       title: Sectores auxiliares
       description: Textil técnico, protección, mecanizado CNC
-team:
-  title: El equipo
-  text: >-
-    El equipo fundador de DUALYS combina perfiles que raramente se encuentran
-    juntos: experiencia directiva en instituciones de seguridad y defensa,
-    trayectoria política al más alto nivel con profundo conocimiento del
-    ecosistema empresarial español y énfasis en el catalán, expertise técnico y
-    comercial en proyectos industriales y de defensa de ámbito internacional, y
-    capacidad para articular ecosistemas de innovación y cadenas de valor
-    complejas. Juntos, cubrimos los cuatro ejes que requiere una transición
-    dual-use exitosa: el conocimiento del sector, el desarrollo comercial, el
-    acceso institucional y la capacidad ejecutiva.
-  cta: Conoce al equipo
+team: {}
 cta:
   title: Construir capacidades duales para la industria.
   subtitle: >-
