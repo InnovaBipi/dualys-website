@@ -4,7 +4,7 @@ meta:
     We build dual-use capabilities for industry. We facilitate the entry of
     industrial and technology companies into the European defense sector.
 hero:
-  title: Your company has what the defense sector needs. We help you get there.
+  title: Your company can compete in the defense sector. We help you get there.
   cta: Request your assessment
   ctaSecondary: Learn about our methodology
   contextNote: >-
@@ -35,10 +35,10 @@ audience:
     - key: tech
       title: Technology and software
       description: >-
-        AI, robotics, cybersecurity, communications, simulation, digital twins,
-        drones, and IoT companies.
+        AI, robotics, electronics, cybersecurity, communications, simulation,
+        digital twins, drones, and IoT companies.
       cta: See how we work with tech companies
-    - key: primes
+    - key: empreses
       title: Large companies
       description: >-
         Defense sector companies that need to expand their supply chain with
@@ -54,8 +54,7 @@ messages:
     - title: Spain and Catalonia are ready, but alignment is missing
       text: >-
         Spain has world-class technology, industry, and talent. There is a
-        disconnection between that potential and the rules of the game in the
-        sector.
+        disconnection between that potential and the rules of the game.
     - title: We are a consultancy that adds real value to your business
       text: >-
         We do not produce reports that end up in a drawer. We accelerate market
@@ -68,7 +67,9 @@ messages:
         plans second, and executes with expertise.
 verticals:
   title: Defense verticals
-  subtitle: Discover which defense sector areas your company can position itself in
+  subtitle: >-
+    Discover which defense and security sector areas your company can position
+    itself in
   cta: Discover which vertical fits your company
   items:
     - key: terrestrial
@@ -105,7 +106,7 @@ team: {}
 cta:
   title: Building dual-use capabilities for industry.
   subtitle: >-
-    In 2 sessions we give you a clear assessment, an opportunity map, and an
-    action plan.
+    In well-oriented, practical sessions we give you a clear assessment, an
+    opportunity map, and an action plan.
   button: Request your assessment
   buttonSecondary: Talk to us

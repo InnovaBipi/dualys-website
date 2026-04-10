@@ -13,15 +13,17 @@ export function ContextSection({ content }: ContextSectionProps) {
     <section className="bg-white py-16 md:py-24">
       <Container>
         {/* Section title */}
-        <motion.h2
-          className="font-display text-3xl font-bold tracking-tight text-primary-950 sm:text-4xl"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-100px' }}
-          transition={{ duration: 0.5 }}
-        >
-          {content.title}
-        </motion.h2>
+        {content.title && (
+          <motion.h2
+            className="font-display text-3xl font-bold tracking-tight text-primary-950 sm:text-4xl"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-100px' }}
+            transition={{ duration: 0.5 }}
+          >
+            {content.title}
+          </motion.h2>
+        )}
 
         {/* Stats grid */}
         <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-3">
@@ -56,25 +58,29 @@ export function ContextSection({ content }: ContextSectionProps) {
             {content.paragraph1}
           </motion.p>
 
-          <motion.p
-            className="text-lg leading-relaxed text-neutral-600"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            {content.paragraph2}
-          </motion.p>
+          {content.paragraph2 && (
+            <motion.p
+              className="text-lg leading-relaxed text-neutral-600"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-100px' }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              {content.paragraph2}
+            </motion.p>
+          )}
 
-          <motion.p
-            className="text-lg leading-relaxed text-neutral-600"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-          >
-            {content.paragraph3}
-          </motion.p>
+          {content.paragraph3 && (
+            <motion.p
+              className="text-lg leading-relaxed text-neutral-600"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-100px' }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+            >
+              {content.paragraph3}
+            </motion.p>
+          )}
         </div>
       </Container>
     </section>

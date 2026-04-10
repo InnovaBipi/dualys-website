@@ -23,7 +23,7 @@ export default async function ParaPrimesPage({ params }: PageProps) {
   setRequestLocale(locale);
   const content = await getPageContent<LandingContent>('landing_primes', locale as Locale);
   const homepage = await getPageContent<HomepageContent>('homepage', locale as Locale);
-  const audienceCard = homepage.audience.cards.find((c) => c.key === 'primes');
+  const audienceCard = homepage.audience.cards.find((c) => c.key === 'empreses');
 
   const pageSchema = getWebPageSchema({ title: content.meta.title, description: content.meta.description, locale: locale as Locale, path: '/para-primes' });
   const breadcrumbSchema = getBreadcrumbSchema([{ name: 'Home', url: '' }, { name: content.title, url: '/para-primes' }], locale as Locale);

@@ -10,7 +10,7 @@ import type { LucideIcon } from 'lucide-react';
 const audienceIcons: Record<string, { icon: LucideIcon; href: string }> = {
   industrial: { icon: Factory, href: '/sectores' },
   tech: { icon: Cpu, href: '/sectores' },
-  primes: { icon: Building2, href: '/contact' },
+  empreses: { icon: Building2, href: '/contact' },
 };
 
 interface AudienceSectionProps {

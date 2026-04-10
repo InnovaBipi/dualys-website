@@ -47,14 +47,16 @@ export function HeroSection({ content }: HeroSectionProps) {
             {content.title}
           </motion.h1>
 
-          <motion.p
-            className="mx-auto mt-6 max-w-3xl text-lg text-white/75 sm:text-xl"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            {content.subtitle}
-          </motion.p>
+          {content.subtitle && (
+            <motion.p
+              className="mx-auto mt-6 max-w-3xl text-lg text-white/75 sm:text-xl"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              {content.subtitle}
+            </motion.p>
+          )}
 
           <motion.div
             className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"

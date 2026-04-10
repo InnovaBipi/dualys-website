@@ -6,8 +6,8 @@ meta:
     la défense européen.
 hero:
   title: >-
-    Ton entreprise a ce que le secteur de la défense recherche. Nous t'aidons à
-    y accéder.
+    Ton entreprise peut rivaliser dans le secteur de la défense. Nous t'aidons à
+    y arriver.
   cta: Demandez votre diagnostic
   ctaSecondary: Découvrez notre méthodologie
   contextNote: >-
@@ -28,7 +28,7 @@ context:
     - value: 2%
       label: Objectif du PIB en investissement de défense
 audience:
-  title: À qui s'adresse DUALYS
+  title: À qui ça s'adresse ?
   cards:
     - key: industrial
       title: Industriels
@@ -39,10 +39,10 @@ audience:
     - key: tech
       title: Technologie et logiciel
       description: >-
-        Entreprises d'IA, robotique, cybersécurité, communications, simulation,
-        jumeaux numériques, drones, IoT.
+        Entreprises d'IA, robotique, électronique, cybersécurité,
+        communications, simulation, jumeaux numériques, drones, IoT.
       cta: Découvrir comment nous travaillons avec les entreprises tech
-    - key: primes
+    - key: empreses
       title: Grandes entreprises
       description: >-
         Entreprises du secteur de la défense qui ont besoin d'élargir leur
@@ -77,8 +77,8 @@ messages:
 verticals:
   title: Verticales de défense
   subtitle: >-
-    Découvrez dans quels domaines du secteur de la défense votre entreprise peut
-    se positionner
+    Découvrez dans quels domaines du secteur de la défense et de la sécurité
+    votre entreprise peut se positionner
   cta: Découvre dans quelle verticale ton entreprise s'intègre
   items:
     - key: terrestrial
@@ -115,7 +115,7 @@ team: {}
 cta:
   title: Développer des capacités duales pour l'industrie.
   subtitle: >-
-    En 2 séances, nous vous fournissons un diagnostic clair, une carte des
-    opportunités et un plan d'action.
+    Lors de séances bien orientées et pratiques, nous vous fournissons un
+    diagnostic clair, une carte des opportunités et un plan d'action.
   button: Demandez votre diagnostic
   buttonSecondary: Parlons-en

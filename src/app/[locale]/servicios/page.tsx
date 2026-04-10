@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 const audienceIcons = [
   { key: 'industrial', icon: Factory },
   { key: 'tech', icon: Cpu },
-  { key: 'primes', icon: Building2 },
+  { key: 'empreses', icon: Building2 },
 ] as const;
 
 export default async function ServiciosPage({ params }: PageProps) {

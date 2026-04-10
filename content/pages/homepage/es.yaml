@@ -5,8 +5,8 @@ meta:
     empresas industriales y tecnológicas en el sector defensa europeo.
 hero:
   title: >-
-    Tu empresa tiene lo que el sector defensa necesita. Nosotros te ayudamos a
-    llegar hasta allí.
+    Tu empresa puede competir en el sector defensa. Nosotros te ayudamos a
+    llegar.
   cta: Solicita tu diagnóstico
   ctaSecondary: Conoce nuestra metodología
   contextNote: >-
@@ -37,10 +37,10 @@ audience:
     - key: tech
       title: Tecnología y software
       description: >-
-        Empresas de IA, robótica, ciberseguridad, comunicaciones, simulación,
-        digital twins, drones, IoT.
+        Empresas de IA, robótica, electrónica, ciberseguridad, comunicaciones,
+        simulación, digital twins, drones, IoT.
       cta: Ver cómo trabajamos con empresas tech
-    - key: primes
+    - key: empreses
       title: Grandes empresas
       description: >-
         Empresas del sector defensa que necesitan ampliar su cadena de
@@ -55,10 +55,9 @@ messages:
         Las empresas que se posicionen ahora tendrán ventaja estructural.
     - title: España y Catalunya están preparadas, pero falta articulación
       text: >-
-        España dispone de tecnología, industria y talento de primer nivel. 
+        España dispone de tecnología, industria y talento de primer nivel.
 
-        Hay una desconexión entre ese potencial y las reglas del juego del
-        sector.
+        Hay una desconexión entre ese potencial y las reglas del juego.
     - title: Somos una consultora que añade valor a tu negocio
       text: >-
         No hacemos informes que acaban en un cajón. 
@@ -73,7 +72,9 @@ messages:
         DUALYS diagnostica primero, planifica después y ejecuta con criterio.
 verticals:
   title: Verticales de defensa
-  subtitle: Descubre en qué áreas del sector defensa puede posicionarse tu empresa
+  subtitle: >-
+    Descubre en qué áreas del sector defensa y seguridad puede posicionarse tu
+    empresa
   cta: Descubre en qué vertical encaja tu empresa
   items:
     - key: terrestrial
@@ -110,7 +111,7 @@ team: {}
 cta:
   title: Construir capacidades duales para la industria.
   subtitle: >-
-    En 2 sesiones te damos un diagnóstico claro, un mapa de oportunidades y un
-    plan de acción.
+    En sesiones bien orientadas y prácticas te damos un diagnóstico claro, un
+    mapa de oportunidades y un plan de acción.
   button: Solicita tu diagnóstico
   buttonSecondary: Habla con nosotros

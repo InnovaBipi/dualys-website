@@ -4,16 +4,16 @@ export interface HomepageContent {
   meta: { title: string; description: string };
   hero: {
     title: string;
-    subtitle: string;
+    subtitle?: string | null;
     cta: string;
     ctaSecondary: string;
     contextNote: string;
   };
   context: {
-    title: string;
+    title?: string | null;
     paragraph1: string;
-    paragraph2: string;
-    paragraph3: string;
+    paragraph2?: string | null;
+    paragraph3?: string | null;
     stats: Array<{ value: string; label: string }>;
   };
   audience: {
@@ -30,11 +30,11 @@ export interface HomepageContent {
     cta: string;
     items: Array<{ key: string; title: string; description: string }>;
   };
-  team: {
-    title: string;
-    text: string;
-    cta: string;
-  };
+  team?: {
+    title?: string | null;
+    text?: string | null;
+    cta?: string | null;
+  } | null;
   cta: {
     title: string;
     subtitle: string;

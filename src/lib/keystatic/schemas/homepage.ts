@@ -42,7 +42,7 @@ export function makeHomepageSingleton(locale: string, label: string) {
           title: fields.text({ label: 'Section Title' }),
           cards: fields.array(
             fields.object({
-              key: fields.text({ label: 'Key (industrial/tech/primes)' }),
+              key: fields.text({ label: 'Key (industrial/tech/empreses)' }),
               title: fields.text({ label: 'Card Title' }),
               description: fields.text({ label: 'Description', multiline: true }),
               cta: fields.text({ label: 'CTA Text' }),

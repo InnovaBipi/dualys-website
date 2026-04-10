@@ -46,7 +46,9 @@ export default async function HomePage({ params }: PageProps) {
       <AudienceSection content={content.audience} />
       <KeyMessagesSection content={content.messages} />
       <VerticalsSection content={content.verticals} />
-      <TeamTrustSection content={content.team} />
+      {content.team && (content.team.title || content.team.text || content.team.cta) && (
+        <TeamTrustSection content={content.team} />
+      )}
       <CTASection content={content.cta} />
     </>
   );
