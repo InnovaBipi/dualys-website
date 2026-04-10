@@ -17,13 +17,14 @@ phases:
     description: >-
       Mapa d'oportunitats de negoci, posicionament sectorial, dossier comercial,
       certificacions necessàries i pla d'acció.
-  - title: Connexió
-    description: Entrada real al mercat amb contactes, contractes i acompanyament.
   - title: Adaptació
     description: >+
-      Adaptació en processos, Anàlisi impacte financer, Acompanyament
-      Certificacions
+      Adaptació en processos, Adaptació en posicionament comercial, a
+      necessitats financers, anàlisi impacte financer, Adaptació i acompanyament
+      en Certificacions
 
+  - title: Connexió
+    description: Entrada real al mercat amb contactes, contractes i acompanyament.
 nda: >-
   Tots els processos de diagnosi i assessorament es realitzen sota acord de
   confidencialitat.
