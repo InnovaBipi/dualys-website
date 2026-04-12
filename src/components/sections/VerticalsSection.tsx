@@ -1,10 +1,24 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Link } from '@/lib/i18n/navigation';
 import { Container } from '@/components/ui/container';
 import { verticals } from '@/data/verticals';
 import type { HomepageContent } from '@/lib/keystatic/types';
+
+const verticalImages: Record<string, string> = {
+  'vehicles-terrestres': '/images/verticals/vehicles-terrestres.jpg',
+  'sector-naval': '/images/verticals/sector-naval.jpg',
+  'aeronautica': '/images/verticals/aeronautica.jpg',
+  'aeroespacial': '/images/verticals/aeroespacial.jpg',
+  'comunicacions-c4isr': '/images/verticals/comunicacions-c4isr.jpg',
+  'ciberdefensa': '/images/verticals/ciberdefensa.jpg',
+  'uav-robotica': '/images/verticals/uav-robotica.jpg',
+  'armament-municio': '/images/verticals/armament-municio.jpg',
+  'simulacio-gaming': '/images/verticals/simulacio-gaming.jpg',
+  'sector-auxiliar': '/images/verticals/sector-auxiliar.jpg',
+};
 
 interface VerticalsSectionProps {
   content: HomepageContent['verticals'];
@@ -29,6 +43,7 @@ export function VerticalsSection({ content }: VerticalsSectionProps) {
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5 md:gap-5">
           {verticals.map((vertical, index) => {
             const item = itemsByKey.get(vertical.key);
+            const imageSrc = verticalImages[vertical.slug];
 
             return (
               <motion.div
@@ -40,10 +55,17 @@ export function VerticalsSection({ content }: VerticalsSectionProps) {
               >
                 <Link
                   href={`/sectores/${vertical.slug}`}
-                  className="group relative block aspect-[4/3] overflow-hidden rounded-xl bg-gradient-to-br from-neutral-700 to-neutral-900"
+                  className="group relative block aspect-[4/3] overflow-hidden rounded-xl"
                 >
-                  {/* TODO: Add actual vertical images when available */}
-                  {/* <Image src={`/images/verticals/${vertical.slug}.jpg`} alt="" fill className="object-cover transition-transform group-hover:scale-105" /> */}
+                  {imageSrc && (
+                    <Image
+                      src={imageSrc}
+                      alt={item?.title || vertical.key}
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 20vw"
+                    />
+                  )}
 
                   {/* Dark gradient overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/80 via-neutral-900/20 to-transparent" />
