@@ -1,7 +1,7 @@
 ---
 id: TASK-230
 title: "Redisenar Metodologia con timeline horizontal"
-status: backlog
+status: done
 priority: P1
 type: feature
 phase: 13
