@@ -1,7 +1,7 @@
 ---
 id: TASK-220
 title: "Redisenar HeroSection con imagen de fondo"
-status: backlog
+status: done
 priority: P0
 type: feature
 phase: 12
