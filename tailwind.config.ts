@@ -51,30 +51,30 @@ const config: Config = {
           950: '#000000',
         },
         accent: {
-          50: '#eef0fd',
-          100: '#d5d9f9',
-          200: '#b3baf4',
-          300: '#8a96ed',
-          400: '#6c7ae9',
+          50: '#EEF0FD',
+          100: '#D8DBFB',
+          200: '#B5BBFA',
+          300: '#8F97F4',
+          400: '#6B77EE',
           500: '#4F61E7', // Pantone 2132 C - The blue "y"
-          600: '#3d4fd4',
-          700: '#2b3dc1',
-          800: '#1f2d9e',
-          900: '#151f7a',
-          950: '#0c1357',
+          600: '#3D4FD6',
+          700: '#2D3EC0',
+          800: '#1E2EA8',
+          900: '#111E8C',
+          950: '#091268',
         },
         neutral: {
-          50: '#fafafa',
-          100: '#f5f5f5',
-          200: '#e5e5e5',
-          300: '#d4d4d4',
-          400: '#a3a3a3',
-          500: '#737373',
-          600: '#525252',
-          700: '#404040',
-          800: '#262626',
-          900: '#171717',
-          950: '#0a0a0a',
+          50: '#F7F8FA',  // Figma neutral02 (blue-tinted)
+          100: '#ECEEF3', // Figma neutral03
+          200: '#D5D9E4', // Figma neutral04
+          300: '#B0B6C8', // Figma neutral05
+          400: '#7E86A0', // Figma neutral06
+          500: '#555D78', // Figma neutral07
+          600: '#3A4157', // Figma neutral08
+          700: '#252B3E', // Figma neutral09
+          800: '#161928', // Figma neutral10
+          900: '#080B15', // Figma neutral11
+          950: '#010203', // Figma neutral12
         },
         // Semantic colors
         success: {

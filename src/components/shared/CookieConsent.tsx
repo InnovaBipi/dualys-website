@@ -55,10 +55,10 @@ export function CookieConsent() {
           </div>
 
           <div className="flex flex-shrink-0 flex-col gap-3 sm:flex-row">
-            <Button variant="outline" size="sm" onClick={handleReject} className="w-full sm:w-auto">
+            <Button variant="secondary" size="sm" onClick={handleReject} className="w-full sm:w-auto">
               {t('reject')}
             </Button>
-            <Button variant="accent" size="sm" onClick={handleAccept} className="w-full sm:w-auto">
+            <Button variant="primary" size="sm" onClick={handleAccept} className="w-full sm:w-auto">
               {t('accept')}
             </Button>
           </div>

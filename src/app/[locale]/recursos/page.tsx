@@ -168,7 +168,7 @@ export default async function RecursosPage({ params }: PageProps) {
               {t('subtitle')}
             </p>
             <div className="mt-8">
-              <Button variant="accent" size="lg" asChild>
+              <Button variant="primary" size="lg" asChild>
                 <Link href="/contact" className="inline-flex items-center gap-2">
                   {t('cta')}
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />

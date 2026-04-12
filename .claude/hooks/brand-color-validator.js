@@ -6,10 +6,10 @@
  * Supports Claude Code hook protocol (stdin JSON) and CLI argument.
  * Exit code 2 = block the operation (Claude Code hook convention).
  *
- * Dualys Brand Colors:
+ * Dualys Brand Colors (Figma redesign 2026):
  * - primary-* (black scale)
- * - accent-* (blue #4F61E7)
- * - neutral-* (grays)
+ * - accent-* (blue #4F61E7, Pantone 2132 C)
+ * - neutral-* (blue-tinted grays, from Figma design system)
  * - semantic: success, warning, destructive, info
  *
  * Banned colors: purple, violet, indigo, pink, rose, fuchsia, cyan, sky, lime, orange
@@ -59,14 +59,22 @@ function validate(filePath) {
     }
   }
 
-  // Check hardcoded hex colors (excluding brand)
-  const allowedHex = ['#000000', '#ffffff', '#fff', '#000', '#4f61e7', '#4F61E7'];
+  // Check hardcoded hex colors (excluding brand palette)
+  // Brand palette: primary (black), accent (blue), neutral (blue-tinted grays)
+  const allowedHex = new Set([
+    // Core
+    '#000000', '#ffffff', '#fff', '#000',
+    // Accent scale (Figma brand01-10)
+    '#eef0fd', '#d8dbfb', '#b5bbfa', '#8f97f4', '#6b77ee',
+    '#4f61e7', '#3d4fd6', '#2d3ec0', '#1e2ea8', '#111e8c', '#091268',
+    // Neutral scale (Figma neutral01-12, blue-tinted)
+    '#f7f8fa', '#eceef3', '#d5d9e4', '#b0b6c8', '#7e86a0',
+    '#555d78', '#3a4157', '#252b3e', '#161928', '#080b15', '#010203',
+  ]);
   const hexMatches = content.match(/#[0-9a-fA-F]{3,6}(?![0-9a-fA-F])/g);
 
   if (hexMatches) {
-    const invalid = hexMatches.filter(hex =>
-      !allowedHex.includes(hex.toLowerCase()) && !allowedHex.includes(hex.toUpperCase())
-    );
+    const invalid = hexMatches.filter(hex => !allowedHex.has(hex.toLowerCase()));
     if (invalid.length > 0) {
       violations.push({
         type: 'HARDCODED-COLOR',

@@ -64,13 +64,13 @@ export function HeroSection({ content }: HeroSectionProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <Button asChild size="xl" variant="accent">
+            <Button asChild size="xl" variant="primary">
               <Link href="/contact">
                 {content.cta}
                 <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
               </Link>
             </Button>
-            <Button asChild size="xl" variant="outline" className="border-white/30 text-white hover:bg-white/10">
+            <Button asChild size="xl" variant="secondary" className="border-white/30 text-white hover:bg-white/10">
               <Link href="/metodologia">
                 {content.ctaSecondary}
                 <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />

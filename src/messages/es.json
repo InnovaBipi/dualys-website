@@ -141,7 +141,9 @@
     "followUs": "Síguenos",
     "copyright": "© {year} Dualys AIE. Todos los derechos reservados.",
     "address": "Camí Can Ametller 36 Planta Baixa, 08195 Sant Cugat del Vallès (Barcelona)",
-    "email": "info@dualys.eu"
+    "email": "info@dualys.eu",
+    "navigation": "Navegación",
+    "contactTitle": "Contacto"
   },
   "contact": {
     "title": "Contacto",

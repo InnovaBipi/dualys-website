@@ -37,20 +37,37 @@ auto_triggers:
 - **40% White** (#FFFFFF) - Clean, professional
 - **20% Blue** (#4F61E7) - The "y" in Dualys logo, accent color
 
-### Tailwind Implementation
-```typescript
-// tailwind.config.ts
-colors: {
-  primary: {
-    500: '#000000', // Brand black
-    // Grayscale for variations
-  },
-  accent: {
-    500: '#4F61E7', // Pantone 2132 C
-    // Blue scale for variations
-  }
-}
-```
+### Accent Blue Scale (Figma brand01-10)
+| Stop | Hex | Usage |
+|------|-----|-------|
+| accent-50 | `#EEF0FD` | Light backgrounds, icon containers |
+| accent-100 | `#D8DBFB` | Hover backgrounds |
+| accent-200 | `#B5BBFA` | Borders, light accents |
+| accent-300 | `#8F97F4` | Card hover borders |
+| accent-400 | `#6B77EE` | Secondary buttons |
+| accent-500 | `#4F61E7` | **Primary accent** (Pantone 2132 C) |
+| accent-600 | `#3D4FD6` | Hover states |
+| accent-700 | `#2D3EC0` | Active states |
+| accent-800 | `#1E2EA8` | Dark accent |
+| accent-900 | `#111E8C` | Very dark accent |
+| accent-950 | `#091268` | Darkest accent |
+
+### Neutral Scale (Figma neutral02-12, blue-tinted)
+| Stop | Hex | Usage |
+|------|-----|-------|
+| neutral-50 | `#F7F8FA` | Page backgrounds, secondary bg |
+| neutral-100 | `#ECEEF3` | Muted backgrounds, cards |
+| neutral-200 | `#D5D9E4` | Borders, dividers |
+| neutral-300 | `#B0B6C8` | Disabled text, placeholders |
+| neutral-400 | `#7E86A0` | Muted foreground text |
+| neutral-500 | `#555D78` | Secondary text |
+| neutral-600 | `#3A4157` | Body text (dark) |
+| neutral-700 | `#252B3E` | Headings (dark) |
+| neutral-800 | `#161928` | Near-black backgrounds |
+| neutral-900 | `#080B15` | Dark backgrounds |
+| neutral-950 | `#010203` | Darkest backgrounds |
+
+**NOTE**: Neutrals have a subtle blue undertone for cohesion with the accent blue.
 
 ### CSS Variables
 ```css
@@ -58,6 +75,9 @@ colors: {
   --primary: 0 0% 0%;          /* Black */
   --accent: 232 77% 61%;       /* Blue #4F61E7 */
   --ring: 232 77% 61%;         /* Blue for focus states */
+  --border: 222 18% 86%;       /* neutral-200 */
+  --muted: 222 16% 94%;        /* neutral-100 */
+  --muted-foreground: 226 15% 56%; /* neutral-400 */
 }
 ```
 
@@ -307,13 +327,19 @@ The only exceptions are **semantic colors** for form feedback:
 ```
 BRAND COLORS:
   Primary:  #000000 (black)
-  Accent:   #4F61E7 (blue)
+  Accent:   #4F61E7 (blue, Pantone 2132 C)
   White:    #FFFFFF
+  Neutrals: Blue-tinted grays (#F7F8FA to #010203)
 
 TYPOGRAPHY:
-  Headings: TOSH A (Adobe) / Inter fallback
+  Headings: Outfit (Google) / TOSH A (Adobe, deferred)
   Body:     Inter (Google)
+  Buttons:  Inter Medium (500)
 
 DISTRIBUTION:
-  40% Black + 40% White + 20% Blue
+  40% Black + 40% White + 20% Blue Accent
+
+NEUTRAL NOTE:
+  Neutrals use blue undertone (not pure gray).
+  This creates visual cohesion with the accent blue.
 ```

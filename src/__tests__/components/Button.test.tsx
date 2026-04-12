@@ -11,13 +11,13 @@ describe('Button', () => {
   });
 
   it('renders with outline variant', () => {
-    render(<Button variant="outline">Outline</Button>);
+    render(<Button variant="secondary">Outline</Button>);
     const button = screen.getByRole('button', { name: 'Outline' });
     expect(button).toHaveClass('border-primary-500');
   });
 
   it('renders with accent variant', () => {
-    render(<Button variant="accent">Accent</Button>);
+    render(<Button variant="primary">Accent</Button>);
     const button = screen.getByRole('button', { name: 'Accent' });
     expect(button).toHaveClass('bg-accent-500');
   });

@@ -118,7 +118,7 @@ export function ContactForm({ className }: ContactFormProps) {
         <CheckCircle className="mx-auto mb-4 h-12 w-12 text-success" />
         <h3 className="mb-2 text-xl font-semibold text-neutral-900">{t('submit')}</h3>
         <Button
-          variant="outline"
+          variant="secondary"
           className="mt-4"
           onClick={() => setSubmitStatus('idle')}
         >

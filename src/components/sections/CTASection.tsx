@@ -34,13 +34,13 @@ export function CTASection({ content }: CTASectionProps) {
               {content.subtitle}
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-              <Button asChild size="xl" variant="accent">
+              <Button asChild size="xl" variant="primary">
                 <Link href="/contact">
                   {content.button}
                   <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
                 </Link>
               </Button>
-              <Button asChild size="xl" variant="outline" className="border-white/30 text-white hover:bg-white/10">
+              <Button asChild size="xl" variant="secondary" className="border-white/30 text-white hover:bg-white/10">
                 <Link href="/contact">
                   {content.buttonSecondary}
                 </Link>
