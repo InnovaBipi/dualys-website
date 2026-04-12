@@ -1,7 +1,7 @@
 ---
 id: TASK-224
 title: "Simplificar CTASection"
-status: backlog
+status: done
 priority: P2
 type: feature
 phase: 12

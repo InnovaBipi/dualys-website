@@ -1,7 +1,7 @@
 ---
 id: TASK-240
 title: "Exportar imagenes del Figma"
-status: backlog
+status: done
 priority: P0
 type: infrastructure
 phase: 14

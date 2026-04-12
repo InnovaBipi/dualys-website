@@ -10,10 +10,10 @@ interface KeyMessagesSectionProps {
 
 export function KeyMessagesSection({ content }: KeyMessagesSectionProps) {
   return (
-    <section className="bg-primary-950 py-16 md:py-24">
+    <section className="bg-white py-16 md:py-24">
       <Container>
         <motion.h2
-          className="mb-16 text-center font-display text-3xl font-bold tracking-tight text-white sm:text-4xl"
+          className="mb-16 text-center font-display text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -22,41 +22,27 @@ export function KeyMessagesSection({ content }: KeyMessagesSectionProps) {
           {content.title}
         </motion.h2>
 
-        <div className="space-y-12 md:space-y-16">
-          {content.items.map((item, index) => {
-            const isEven = index % 2 === 0;
-            const number = String(index + 1).padStart(2, '0');
-
-            return (
-              <motion.div
-                key={index}
-                className={`flex flex-col gap-6 md:flex-row md:items-start md:gap-12 ${
-                  isEven ? '' : 'md:flex-row-reverse'
-                }`}
-                initial={{ opacity: 0, x: isEven ? -30 : 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                {/* Number badge */}
-                <div className="flex shrink-0 items-center gap-4 md:w-48 md:justify-center">
-                  <span className="flex h-12 w-12 items-center justify-center rounded-full bg-accent-500 font-display text-lg font-bold text-white">
-                    {number}
-                  </span>
-                </div>
-
-                {/* Content */}
-                <div className="flex-1">
-                  <h3 className="mb-3 font-display text-xl font-semibold text-accent-300 sm:text-2xl">
-                    {item.title}
-                  </h3>
-                  <p className="max-w-2xl text-base leading-relaxed text-white/75 sm:text-lg">
-                    {item.text}
-                  </p>
-                </div>
-              </motion.div>
-            );
-          })}
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12">
+          {content.items.map((item, index) => (
+            <motion.div
+              key={index}
+              className="border-l-2 border-accent-500 pl-6"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: index * 0.08 }}
+            >
+              <span className="font-display text-3xl font-bold text-accent-500">
+                {index + 1}.
+              </span>
+              <h3 className="mt-1 font-display text-xl font-semibold text-accent-500 sm:text-2xl">
+                {item.title}
+              </h3>
+              <p className="mt-2 text-base leading-relaxed text-neutral-500">
+                {item.text}
+              </p>
+            </motion.div>
+          ))}
         </div>
       </Container>
     </section>

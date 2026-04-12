@@ -1,7 +1,7 @@
 ---
 id: TASK-222
 title: "Redisenar KeyMessagesSection con layout numerado"
-status: backlog
+status: done
 priority: P1
 type: feature
 phase: 12
