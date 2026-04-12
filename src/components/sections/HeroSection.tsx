@@ -25,8 +25,8 @@ export function HeroSection({ content }: HeroSectionProps) {
         sizes="100vw"
       />
 
-      {/* Dark gradient overlay - heavier at bottom to mask baked-in Figma text */}
-      <div className="absolute inset-0 bg-gradient-to-b from-neutral-900/40 via-neutral-900/50 to-neutral-900/95" />
+      {/* Dark gradient overlay for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-neutral-900/30 via-neutral-900/40 to-neutral-900/75" />
 
       {/* Content */}
       <Container className="relative z-10 flex min-h-[600px] flex-col justify-end pb-16 pt-32 md:min-h-[700px] md:pb-24">
