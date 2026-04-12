@@ -20,13 +20,13 @@ export function HeroSection({ content }: HeroSectionProps) {
         src="/images/hero-homepage.jpg"
         alt=""
         fill
-        className="object-cover"
+        className="object-cover object-top"
         priority
         sizes="100vw"
       />
 
-      {/* Dark gradient overlay for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-neutral-900/50 via-neutral-900/40 to-neutral-900/80" />
+      {/* Dark gradient overlay - heavier at bottom to mask baked-in Figma text */}
+      <div className="absolute inset-0 bg-gradient-to-b from-neutral-900/40 via-neutral-900/50 to-neutral-900/95" />
 
       {/* Content */}
       <Container className="relative z-10 flex min-h-[600px] flex-col justify-end pb-16 pt-32 md:min-h-[700px] md:pb-24">
