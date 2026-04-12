@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import { Link } from '@/lib/i18n/navigation';
 import { Container } from '@/components/ui/container';
-import { ArrowRight } from 'lucide-react';
 import { verticals } from '@/data/verticals';
 import type { HomepageContent } from '@/lib/keystatic/types';
 
@@ -12,74 +11,54 @@ interface VerticalsSectionProps {
 }
 
 export function VerticalsSection({ content }: VerticalsSectionProps) {
-  // Map CMS items by key for lookup
   const itemsByKey = new Map(content.items.map((item) => [item.key, item]));
 
   return (
-    <section className="bg-white py-16 md:py-24">
+    <section className="py-16 md:py-24">
       <Container>
-        <motion.div
-          className="mb-12 text-center md:mb-16"
+        <motion.h2
+          className="mb-12 text-center font-display text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="font-display text-3xl font-bold tracking-tight text-primary-950 sm:text-4xl">
-            {content.title}
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-neutral-500">
-            {content.subtitle}
-          </p>
-        </motion.div>
+          {content.title}
+        </motion.h2>
 
-        <div className="grid grid-cols-2 gap-6 md:grid-cols-3 md:gap-8">
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5 md:gap-5">
           {verticals.map((vertical, index) => {
-            const Icon = vertical.icon;
             const item = itemsByKey.get(vertical.key);
 
             return (
               <motion.div
                 key={vertical.key}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: index * 0.05 }}
+                transition={{ duration: 0.3, delay: index * 0.04 }}
               >
                 <Link
                   href={`/sectores/${vertical.slug}`}
-                  className="group flex h-full flex-col rounded-xl border border-neutral-200 bg-white p-6 transition-all hover:shadow-lg"
+                  className="group relative block aspect-[4/3] overflow-hidden rounded-xl bg-gradient-to-br from-neutral-700 to-neutral-900"
                 >
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-accent-500/10">
-                    <Icon className="h-6 w-6 text-accent-500" aria-hidden="true" />
+                  {/* TODO: Add actual vertical images when available */}
+                  {/* <Image src={`/images/verticals/${vertical.slug}.jpg`} alt="" fill className="object-cover transition-transform group-hover:scale-105" /> */}
+
+                  {/* Dark gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/80 via-neutral-900/20 to-transparent" />
+
+                  {/* Content at bottom */}
+                  <div className="absolute inset-x-0 bottom-0 p-4">
+                    <h3 className="text-sm font-semibold text-white md:text-base">
+                      {item?.title || vertical.key}
+                    </h3>
                   </div>
-                  <h3 className="mb-2 font-display text-base font-semibold text-primary-950 group-hover:text-accent-500 sm:text-lg">
-                    {item?.title || vertical.key}
-                  </h3>
-                  <p className="text-sm leading-relaxed text-neutral-500">
-                    {item?.description || ''}
-                  </p>
                 </Link>
               </motion.div>
             );
           })}
         </div>
-
-        <motion.div
-          className="mt-12 text-center"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-        >
-          <Link
-            href="/sectores"
-            className="inline-flex items-center gap-2 font-medium text-accent-500 transition-colors hover:text-accent-600"
-          >
-            {content.cta}
-            <ArrowRight className="h-4 w-4" aria-hidden="true" />
-          </Link>
-        </motion.div>
       </Container>
     </section>
   );

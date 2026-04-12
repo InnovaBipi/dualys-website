@@ -1,7 +1,7 @@
 ---
 id: TASK-223
 title: "Redisenar VerticalsSection con imagen cards"
-status: backlog
+status: done
 priority: P1
 type: feature
 phase: 12
