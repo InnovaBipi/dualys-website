@@ -1,7 +1,7 @@
 ---
 id: TASK-232
 title: "Redisenar pagina detalle de vertical"
-status: backlog
+status: done
 priority: P1
 type: feature
 phase: 13

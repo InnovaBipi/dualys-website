@@ -14,12 +14,11 @@ export function SubcategoryCard({
   return (
     <div
       className={cn(
-        'rounded-xl border border-neutral-200 bg-white p-6 transition-shadow hover:shadow-md',
+        'border-l-2 border-accent-500 pl-5 py-2',
         className
       )}
     >
-      <div className="mb-2 h-1 w-8 rounded-full bg-accent-500" aria-hidden="true" />
-      <h3 className="font-display text-base font-semibold text-primary-950">
+      <h3 className="font-display text-base font-semibold text-neutral-900">
         {title}
       </h3>
       <p className="mt-1 text-sm leading-relaxed text-neutral-500">
