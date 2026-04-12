@@ -1,7 +1,7 @@
 ---
 id: TASK-231
 title: "Refinar Nosaltres segun Figma"
-status: backlog
+status: done
 priority: P1
 type: feature
 phase: 13
