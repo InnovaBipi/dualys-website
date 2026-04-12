@@ -5,7 +5,6 @@ import { ContextSection } from '@/components/sections/ContextSection';
 import { AudienceSection } from '@/components/sections/AudienceSection';
 import { KeyMessagesSection } from '@/components/sections/KeyMessagesSection';
 import { VerticalsSection } from '@/components/sections/VerticalsSection';
-import { TeamTrustSection } from '@/components/sections/TeamTrustSection';
 import { CTASection } from '@/components/sections/CTASection';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { generatePageMetadata, getOrganizationSchema, getWebSiteSchema } from '@/lib/seo/metadata';
@@ -46,9 +45,6 @@ export default async function HomePage({ params }: PageProps) {
       <AudienceSection content={content.audience} />
       <KeyMessagesSection content={content.messages} />
       <VerticalsSection content={content.verticals} />
-      {content.team && (content.team.title || content.team.text || content.team.cta) && (
-        <TeamTrustSection content={content.team} />
-      )}
       <CTASection content={content.cta} />
     </>
   );

@@ -1,7 +1,7 @@
 ---
 id: TASK-225
 title: "Evaluar y decidir TeamTrustSection"
-status: backlog
+status: done
 priority: P2
 type: refactor
 phase: 12
