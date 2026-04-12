@@ -1,7 +1,7 @@
 ---
 id: TASK-250
 title: "Validacion SEO completa post-redesign"
-status: backlog
+status: done
 priority: P0
 type: testing
 phase: 15

@@ -1,7 +1,7 @@
 ---
 id: TASK-251
 title: "Validacion accesibilidad WCAG 2.2 AA"
-status: backlog
+status: done
 priority: P0
 type: testing
 phase: 15

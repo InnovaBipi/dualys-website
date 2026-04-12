@@ -1,7 +1,7 @@
 ---
 id: TASK-253
 title: "Verificacion i18n 4 idiomas"
-status: backlog
+status: done
 priority: P0
 type: testing
 phase: 15

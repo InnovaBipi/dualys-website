@@ -1,7 +1,7 @@
 ---
 id: TASK-252
 title: "Validacion performance Lighthouse 95+"
-status: backlog
+status: done
 priority: P0
 type: testing
 phase: 15
