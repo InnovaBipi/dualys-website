@@ -177,6 +177,13 @@ interface BreadcrumbItem {
   url: string;
 }
 
+const homeLabel: Record<Locale, string> = {
+  ca: 'Inici',
+  es: 'Inicio',
+  en: 'Home',
+  fr: 'Accueil',
+};
+
 export function getBreadcrumbSchema(items: BreadcrumbItem[], locale: Locale) {
   return {
     '@context': 'https://schema.org',
@@ -184,7 +191,7 @@ export function getBreadcrumbSchema(items: BreadcrumbItem[], locale: Locale) {
     itemListElement: items.map((item, index) => ({
       '@type': 'ListItem',
       position: index + 1,
-      name: item.name,
+      name: item.name === 'Home' ? homeLabel[locale] : item.name,
       item: `${baseUrl}/${locale}${item.url}`,
     })),
   };

@@ -1,11 +1,11 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { Link } from '@/lib/i18n/navigation';
 import { Container } from '@/components/ui/container';
 import { Button } from '@/components/ui/button';
-import { AccentDot } from '@/components/brand/AccentDot';
 import type { HomepageContent } from '@/lib/keystatic/types';
 
 interface HeroSectionProps {
@@ -14,70 +14,62 @@ interface HeroSectionProps {
 
 export function HeroSection({ content }: HeroSectionProps) {
   return (
-    <section className="relative overflow-hidden bg-primary-950 py-20 md:py-32">
-      {/* Background pattern with accent color */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234F61E7' fill-opacity='0.6'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-        }} />
-      </div>
-      {/* Accent gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-accent-500/10" />
+    <section className="relative min-h-[600px] overflow-hidden md:min-h-[700px]">
+      {/* Background image */}
+      <Image
+        src="/images/hero-homepage.jpg"
+        alt=""
+        role="presentation"
+        fill
+        className="object-cover object-top"
+        priority
+        sizes="100vw"
+      />
 
-      <Container className="relative">
-        <div className="mx-auto max-w-4xl text-center">
-          {/* Context note badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <span className="inline-flex items-center rounded-full bg-accent-500/15 px-4 py-1.5 text-sm font-medium text-accent-300">
-              {content.contextNote}
-              <AccentDot size="sm" className="ml-2" />
-            </span>
-          </motion.div>
+      {/* Dark gradient overlay for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-neutral-900/30 via-neutral-900/40 to-neutral-900/75" />
 
-          <motion.h1
-            className="mt-8 font-display text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-          >
-            {content.title}
-          </motion.h1>
+      {/* Content */}
+      <Container className="relative z-10 flex min-h-[600px] flex-col justify-end pb-16 pt-32 md:min-h-[700px] md:pb-24">
+        {/* Context note */}
+        <motion.p
+          className="max-w-2xl text-sm text-neutral-300 md:text-base"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          {content.contextNote}
+        </motion.p>
 
-          {content.subtitle && (
-            <motion.p
-              className="mx-auto mt-6 max-w-3xl text-lg text-white/75 sm:text-xl"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              {content.subtitle}
-            </motion.p>
-          )}
+        {/* Headline */}
+        <motion.h1
+          className="mt-4 max-w-3xl font-display text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
+          {content.title}
+        </motion.h1>
 
-          <motion.div
-            className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-          >
-            <Button asChild size="xl" variant="accent">
-              <Link href="/contact">
-                {content.cta}
-                <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
-              </Link>
-            </Button>
-            <Button asChild size="xl" variant="outline" className="border-white/30 text-white hover:bg-white/10">
-              <Link href="/metodologia">
-                {content.ctaSecondary}
-                <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
-              </Link>
-            </Button>
-          </motion.div>
-        </div>
+        {/* CTAs */}
+        <motion.div
+          className="mt-8 flex flex-col gap-4 sm:flex-row"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          <Button asChild size="lg" variant="primary">
+            <Link href="/contact">
+              {content.cta}
+              <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
+            </Link>
+          </Button>
+          <Button asChild size="lg" variant="secondary" className="border-white/30 text-white hover:bg-white/10">
+            <Link href="/metodologia">
+              {content.ctaSecondary}
+            </Link>
+          </Button>
+        </motion.div>
       </Container>
     </section>
   );

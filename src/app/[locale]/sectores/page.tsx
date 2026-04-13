@@ -128,7 +128,7 @@ export default async function SectoresPage({ params }: PageProps) {
             <h2 className="text-3xl font-bold text-white">{content.title}</h2>
             <p className="mt-4 text-lg text-white/80">{content.subtitle}</p>
             <div className="mt-8">
-              <Button variant="accent" size="lg" asChild>
+              <Button variant="primary" size="lg" asChild>
                 <Link href="/contact" className="inline-flex items-center gap-2">
                   {content.cta}
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />

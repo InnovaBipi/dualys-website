@@ -135,7 +135,7 @@ export default async function RecursoDetailPage({ params }: PageProps) {
 
             {/* Back link */}
             <div className="mt-16 border-t border-neutral-200 pt-8">
-              <Button variant="outline" asChild>
+              <Button variant="secondary" asChild>
                 <Link href="/recursos" className="inline-flex items-center gap-2">
                   <ArrowLeft className="h-4 w-4" aria-hidden="true" />
                   {t('backToList')}
@@ -157,7 +157,7 @@ export default async function RecursoDetailPage({ params }: PageProps) {
               {t('subtitle')}
             </p>
             <div className="mt-8">
-              <Button variant="accent" size="lg" asChild>
+              <Button variant="primary" size="lg" asChild>
                 <Link href="/contact" className="inline-flex items-center gap-2">
                   {t('cta')}
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />

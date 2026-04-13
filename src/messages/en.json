@@ -141,7 +141,9 @@
     "followUs": "Follow Us",
     "copyright": "© {year} Dualys AIE. All rights reserved.",
     "address": "Camí Can Ametller 36 Planta Baixa, 08195 Sant Cugat del Vallès (Barcelona)",
-    "email": "info@dualys.eu"
+    "email": "info@dualys.eu",
+    "navigation": "Navigation",
+    "contactTitle": "Contact"
   },
   "contact": {
     "title": "Contact",
@@ -569,7 +571,8 @@
           }
         }
       }
-    }
+    },
+    "moreVerticals": "More verticals"
   },
   "metodologia": {
     "meta": {
@@ -659,7 +662,8 @@
     },
     "empty": "Coming soon: articles and analysis on the defense sector. We are preparing valuable content to help you understand the market.",
     "cta": "Request your assessment",
-    "backToList": "Back to resources"
+    "backToList": "Back to resources",
+    "featured": "Featured"
   },
   "landings": {
     "preEvaluacion": {
@@ -798,6 +802,16 @@
           "content": "For questions about this Legal Notice, please contact us at info@dualys.eu."
         }
       }
+    },
+    "error": {
+      "title": "Something went wrong",
+      "description": "We're sorry, an unexpected error occurred. Please try again.",
+      "button": "Try again"
+    },
+    "notFound": {
+      "title": "404",
+      "description": "The page you're looking for doesn't exist.",
+      "button": "Go home"
     },
     "cookies": {
       "meta": {

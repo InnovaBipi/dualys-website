@@ -4,29 +4,34 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
+  'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg font-medium ring-offset-background transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
   {
     variants: {
       variant: {
-        default: 'bg-primary-500 text-white hover:bg-primary-600 active:scale-[0.98]',
-        destructive: 'bg-destructive text-destructive-foreground hover:bg-destructive/90 active:scale-[0.98]',
-        outline: 'border border-primary-500 text-primary-500 bg-transparent hover:bg-primary-50 active:scale-[0.98]',
-        secondary: 'bg-secondary text-secondary-foreground hover:bg-secondary/80 active:scale-[0.98]',
-        ghost: 'hover:bg-accent hover:text-accent-foreground',
-        link: 'text-primary-500 underline-offset-4 hover:underline',
-        accent: 'bg-accent-500 text-white hover:bg-accent-600 hover:shadow-lg hover:shadow-accent-500/25 active:scale-[0.98]',
+        // Figma: type=primary — accent blue bg, white text
+        primary: 'bg-accent-500 text-white hover:bg-accent-600 hover:shadow-lg hover:shadow-accent-500/25 active:scale-[0.98]',
+        // Figma: type=secondary — accent blue border, transparent bg
+        secondary: 'border border-accent-500 text-accent-500 bg-transparent hover:bg-accent-50 active:scale-[0.98]',
+        // Figma: type=tertiary — no border, accent text
+        tertiary: 'text-accent-500 hover:bg-accent-50 active:scale-[0.98]',
+        // Figma: type=ghost — neutral text, subtle hover
+        ghost: 'text-neutral-500 hover:bg-neutral-50 hover:text-neutral-700 active:scale-[0.98]',
+        // Semantic: destructive actions (forms)
+        destructive: 'bg-destructive text-white hover:bg-destructive/90 active:scale-[0.98]',
+        // Inline text links
+        link: 'text-accent-500 underline-offset-4 hover:underline',
       },
       size: {
-        default: 'h-10 px-4 py-2',
-        sm: 'h-9 rounded-md px-3',
-        lg: 'h-12 rounded-md px-8 text-base',
-        xl: 'h-14 rounded-md px-10 text-lg',
-        icon: 'h-10 w-10',
+        sm: 'h-[33px] px-3 text-sm',   // Figma sm: 33px, 14px, pad 12px
+        md: 'h-[39px] px-4 text-base',  // Figma md: 39px, 16px, pad 16px
+        lg: 'h-12 px-8 text-base',      // Extended: larger CTAs
+        xl: 'h-14 px-10 text-lg',       // Extended: hero CTAs
+        icon: 'h-10 w-10',              // Square icon button
       },
     },
     defaultVariants: {
-      variant: 'default',
-      size: 'default',
+      variant: 'primary',
+      size: 'md',
     },
   }
 );

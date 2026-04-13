@@ -198,7 +198,7 @@ export function Header() {
           {/* Desktop Actions */}
           <div className="hidden md:flex md:items-center md:gap-x-4">
             <LanguageSwitcher />
-            <Button asChild size="sm" variant="accent">
+            <Button asChild size="sm" variant="primary">
               <Link href="/contact" className="flex items-center gap-1">
                 {tCta('button')}
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -329,7 +329,7 @@ export function Header() {
                 <span className="text-sm text-neutral-500">{t('language') || 'Language'}</span>
                 <LanguageSwitcher variant="inline" onLanguageChange={() => setMobileMenuOpen(false)} />
               </div>
-              <Button asChild variant="accent" className="w-full min-h-[48px]">
+              <Button asChild variant="primary" className="w-full min-h-[48px]">
                 <Link href="/contact" onClick={() => setMobileMenuOpen(false)} className="flex items-center justify-center gap-1">
                   {tCta('button')}
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />

@@ -14,10 +14,10 @@
     --popover-foreground: 0 0% 0%;
     --primary: 0 0% 0%; /* Black #000000 */
     --primary-foreground: 0 0% 100%;
-    --secondary: 0 0% 96%;
+    --secondary: 220 20% 97%; /* neutral-50 #F7F8FA */
     --secondary-foreground: 0 0% 0%;
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 222 16% 94%; /* neutral-100 #ECEEF3 */
+    --muted-foreground: 226 15% 56%; /* neutral-400 #7E86A0 */
     --accent: 232 77% 61%; /* Blue #4F61E7 */
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
@@ -28,8 +28,8 @@
     --warning-foreground: 0 0% 0%;
     --info: 217 91% 60%;
     --info-foreground: 0 0% 100%;
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
+    --border: 222 18% 86%; /* neutral-200 #D5D9E4 */
+    --input: 222 18% 86%; /* neutral-200 #D5D9E4 */
     --ring: 232 77% 61%; /* Blue accent for focus rings */
     --radius: 0.5rem;
   }

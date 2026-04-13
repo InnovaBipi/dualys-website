@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
-import { setRequestLocale } from 'next-intl/server';
+import { setRequestLocale, getTranslations } from 'next-intl/server';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 import { ArrowRight } from 'lucide-react';
 import { Container } from '@/components/ui/container';
@@ -48,9 +49,9 @@ export default async function VerticalDetailPage({ params }: PageProps) {
   const vContent = await getPageContent<SectoresVerticalsContent>('sectores_verticals', locale as Locale);
   const sectoresContent = await getPageContent<SectoresContent>('sectores', locale as Locale);
   const homepage = await getPageContent<HomepageContent>('homepage', locale as Locale);
+  const t = await getTranslations({ locale, namespace: 'sectores' });
 
   const data = vContent[vertical.key as keyof SectoresVerticalsContent];
-  const Icon = vertical.icon;
 
   const pageSchema = getWebPageSchema({
     title: data.meta.title,
@@ -84,27 +85,33 @@ export default async function VerticalDetailPage({ params }: PageProps) {
         ]}
       />
 
-      {/* Hero section */}
-      <section className="bg-gradient-to-b from-neutral-50 to-white py-16 md:py-24">
-        <Container>
-          <div className="mx-auto max-w-3xl text-center">
-            <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-accent-500/10">
-              <Icon className="h-8 w-8 text-accent-500" aria-hidden="true" />
-            </div>
-            <h1 className="font-display text-3xl font-bold tracking-tight text-primary-950 sm:text-4xl lg:text-5xl">
+      {/* Hero with background image */}
+      <section className="relative overflow-hidden bg-neutral-900 py-16 md:py-24">
+        <Image
+          src={`/images/verticals/${vertical.slug}.jpg`}
+          alt=""
+          role="presentation"
+          fill
+          className="object-cover"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-neutral-900/40 via-neutral-900/50 to-neutral-900/80" />
+        <Container className="relative z-10">
+          <div className="max-w-3xl">
+            <h1 className="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
               {data.title}
             </h1>
-            <p className="mt-6 text-lg leading-relaxed text-neutral-600">
+            <p className="mt-4 text-lg leading-relaxed text-neutral-300">
               {data.description}
             </p>
           </div>
         </Container>
       </section>
 
-      {/* Subcategories grid */}
+      {/* Subcategories */}
       <section className="py-16 md:py-24">
         <Container>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {data.subcategories.map((subcat) => (
               <SubcategoryCard
                 key={subcat.key}
@@ -116,31 +123,38 @@ export default async function VerticalDetailPage({ params }: PageProps) {
         </Container>
       </section>
 
-      {/* Related verticals */}
-      <section className="bg-neutral-50 py-16 md:py-24">
+      {/* Més verticals */}
+      <section className="py-16 md:py-24">
         <Container>
-          <h2 className="mb-8 text-center font-display text-2xl font-bold text-primary-950">
-            {sectoresContent.originSection.title}
+          <h2 className="mb-10 text-center font-display text-2xl font-bold text-neutral-900 md:text-3xl">
+            {t('moreVerticals')}
           </h2>
           <div className="grid gap-6 sm:grid-cols-3">
             {relatedVerticals.map((related) => {
-              const RelatedIcon = related.icon;
               const relData = vContent[related.key as keyof SectoresVerticalsContent];
               return (
                 <Link
                   key={related.slug}
                   href={`/sectores/${related.slug}`}
-                  className="group rounded-xl border border-neutral-200 bg-white p-6 transition-all hover:shadow-lg"
+                  className="group relative block aspect-[16/9] overflow-hidden rounded-xl"
                 >
-                  <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-accent-500/10">
-                    <RelatedIcon className="h-5 w-5 text-accent-500" aria-hidden="true" />
+                  <Image
+                    src={`/images/verticals/${related.slug}.jpg`}
+                    alt={relData.title}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    sizes="(max-width: 640px) 100vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/80 via-neutral-900/20 to-transparent" />
+                  <div className="absolute inset-x-0 bottom-0 p-5">
+                    <h3 className="flex items-center gap-1 text-base font-semibold text-white">
+                      {relData.title}
+                      <ArrowRight className="h-4 w-4 opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true" />
+                    </h3>
+                    <p className="mt-1 line-clamp-2 text-sm text-white/70">
+                      {relData.description}
+                    </p>
                   </div>
-                  <h3 className="font-display text-base font-semibold text-primary-950 group-hover:text-accent-500">
-                    {relData.title}
-                  </h3>
-                  <p className="mt-1 line-clamp-2 text-sm text-neutral-500">
-                    {relData.description}
-                  </p>
                 </Link>
               );
             })}
@@ -148,17 +162,17 @@ export default async function VerticalDetailPage({ params }: PageProps) {
         </Container>
       </section>
 
-      {/* CTA section */}
-      <section className="bg-primary-950 py-16">
+      {/* CTA */}
+      <section className="bg-neutral-950 py-16">
         <Container>
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-3xl font-bold text-white">{homepage.cta.title}</h2>
-            <p className="mt-4 text-lg text-white/80">{homepage.cta.subtitle}</p>
+            <h2 className="font-display text-2xl font-bold text-white md:text-3xl">{homepage.cta.title}</h2>
+            <p className="mt-4 text-lg text-neutral-400">{homepage.cta.subtitle}</p>
             <div className="mt-8">
-              <Button variant="accent" size="lg" asChild>
-                <Link href="/contact" className="inline-flex items-center gap-2">
+              <Button variant="secondary" size="lg" asChild className="border-white/30 text-white hover:bg-white/10">
+                <Link href="/contact">
                   {homepage.cta.button}
-                  <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                  <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
                 </Link>
               </Button>
             </div>
