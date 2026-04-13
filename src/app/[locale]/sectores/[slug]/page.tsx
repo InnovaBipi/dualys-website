@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
+import Image from 'next/image';
 import type { Metadata } from 'next';
 import { ArrowRight } from 'lucide-react';
 import { Container } from '@/components/ui/container';
@@ -84,10 +85,16 @@ export default async function VerticalDetailPage({ params }: PageProps) {
         ]}
       />
 
-      {/* Hero with background */}
+      {/* Hero with background image */}
       <section className="relative overflow-hidden bg-neutral-900 py-16 md:py-24">
-        {/* TODO: Add per-vertical hero images when available */}
-        <div className="absolute inset-0 bg-gradient-to-br from-neutral-800 to-neutral-950" />
+        <Image
+          src={`/images/verticals/${vertical.slug}.jpg`}
+          alt=""
+          fill
+          className="object-cover"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-neutral-900/40 via-neutral-900/50 to-neutral-900/80" />
         <Container className="relative z-10">
           <div className="max-w-3xl">
             <h1 className="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
@@ -128,9 +135,15 @@ export default async function VerticalDetailPage({ params }: PageProps) {
                 <Link
                   key={related.slug}
                   href={`/sectores/${related.slug}`}
-                  className="group relative block aspect-[16/9] overflow-hidden rounded-xl bg-gradient-to-br from-neutral-700 to-neutral-900"
+                  className="group relative block aspect-[16/9] overflow-hidden rounded-xl"
                 >
-                  {/* TODO: Add vertical images when available */}
+                  <Image
+                    src={`/images/verticals/${related.slug}.jpg`}
+                    alt={relData.title}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    sizes="(max-width: 640px) 100vw, 33vw"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/80 via-neutral-900/20 to-transparent" />
                   <div className="absolute inset-x-0 bottom-0 p-5">
                     <h3 className="flex items-center gap-1 text-base font-semibold text-white">

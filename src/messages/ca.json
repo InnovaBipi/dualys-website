@@ -662,7 +662,8 @@
     },
     "empty": "Properament: articles i anàlisis sobre el sector defensa. Estem preparant contingut de valor per ajudar-te a entendre el mercat.",
     "cta": "Sol·licita el teu diagnòstic",
-    "backToList": "Tornar a recursos"
+    "backToList": "Tornar a recursos",
+    "featured": "Destacat"
   },
   "landings": {
     "preEvaluacion": {

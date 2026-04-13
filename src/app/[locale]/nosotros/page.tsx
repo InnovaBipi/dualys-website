@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 import { generatePageMetadata, getWebPageSchema, getBreadcrumbSchema } from '@/lib/seo/metadata';
 import { Link } from '@/lib/i18n/navigation';
 import { getPageContent } from '@/lib/keystatic/get-page-content';
-import type { NosotrosContent } from '@/lib/keystatic/types';
+import type { NosotrosContent, HomepageContent } from '@/lib/keystatic/types';
 import type { Locale } from '@/lib/i18n/config';
 
 interface PageProps {
@@ -31,6 +31,7 @@ export default async function NosotrosPage({ params }: PageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
   const content = await getPageContent<NosotrosContent>('nosotros', locale as Locale);
+  const homepage = await getPageContent<HomepageContent>('homepage', locale as Locale);
 
   const pageSchema = getWebPageSchema({
     title: content.meta.title,
@@ -157,7 +158,7 @@ export default async function NosotrosPage({ params }: PageProps) {
         <Container>
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="font-display text-2xl font-bold text-white md:text-3xl">
-              {content.cta}
+              {homepage.cta.title}
             </h2>
             <div className="mt-8">
               <Button asChild size="lg" variant="secondary" className="border-white/30 text-white hover:bg-white/10">

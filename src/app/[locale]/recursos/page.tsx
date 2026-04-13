@@ -127,7 +127,7 @@ export default async function RecursosPage({ params }: PageProps) {
                       </span>
                       {article.featured && (
                         <span className="rounded-full bg-primary-100 px-3 py-1 text-xs font-medium text-primary-700">
-                          Featured
+                          {t('featured')}
                         </span>
                       )}
                     </div>

@@ -662,7 +662,8 @@
     },
     "empty": "Prochainement : articles et analyses sur le secteur de la défense. Nous préparons du contenu de qualité pour vous aider à comprendre le marché.",
     "cta": "Demandez votre diagnostic",
-    "backToList": "Retour aux ressources"
+    "backToList": "Retour aux ressources",
+    "featured": "En vedette"
   },
   "landings": {
     "preEvaluacion": {
