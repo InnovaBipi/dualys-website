@@ -64,11 +64,13 @@ messages:
         Accelerem entrades al mercat, reduïm el risc, obrim portes comercials
         reals.
     - title: La teva tecnologia civil ja és un avantatge competitiu en defensa
-      text: DUALYS t'ajuda a veure aquesta transferència i a fer-la operativa.
+      text: Dualys t'ajuda a veure aquesta transferència i a fer-la operativa.
     - title: Reduïm el risc de la transició
-      text: |-
+      text: >-
         El sector defensa té normativa específica. 
-        DUALYS diagnostica primer, planifica després i executa amb criteri.
+
+        Dualys diagnostica primer, planifica després, connecta i executa amb
+        criteri.
 verticals:
   title: Verticals de defensa
   subtitle: >-
