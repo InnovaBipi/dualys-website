@@ -77,8 +77,10 @@ export function Header() {
 
   const navigation = [
     { name: t('home'), href: '/' },
+    { name: t('servicios'), href: '/servicios' },
     { name: t('sectores'), href: '/sectores', hasSub: true },
     { name: t('metodologia'), href: '/metodologia' },
+    { name: t('nosotros'), href: '/nosotros' },
     { name: t('recursos'), href: '/recursos' },
   ];
 

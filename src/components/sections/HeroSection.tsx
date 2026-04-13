@@ -19,6 +19,7 @@ export function HeroSection({ content }: HeroSectionProps) {
       <Image
         src="/images/hero-homepage.jpg"
         alt=""
+        role="presentation"
         fill
         className="object-cover object-top"
         priority

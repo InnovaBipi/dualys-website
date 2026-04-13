@@ -722,46 +722,46 @@
     "privacy": {
       "meta": {
         "title": "Política de Privadesa | Dualys",
-        "description": "Política de privadesa de Dualys."
+        "description": "Política de privadesa de Dualys que explica com recopilem, usem i protegim la seva informació personal quan visita el nostre lloc web."
       },
       "title": "Política de Privadesa",
       "lastUpdated": "Última actualització: Març 2026",
       "sections": {
         "introduction": {
           "title": "Introducció",
-          "content": "Dualys AIE està compromesa amb la protecció de la seva privadesa. Aquesta Política de Privadesa explica com recopilem, usem i protegim la seva informació."
+          "content": "Dualys AIE (\"nosaltres\", \"nostre\" o \"ens\") està compromesa amb la protecció de la seva privadesa. Aquesta Política de Privadesa explica com recopilem, usem, divulguem i protegim la seva informació quan visita el nostre lloc web."
         },
         "dataCollection": {
           "title": "Informació que Recopilem",
-          "content": "Recopilem informació que vostè proporciona voluntàriament: nom, empresa, correu electrònic, sector i descripció del seu repte."
+          "content": "Recopilem informació que vostè proporciona voluntàriament quan es posa en contacte amb nosaltres a través del nostre lloc web, incloent-hi el seu nom, empresa, adreça de correu electrònic, sector i descripció del seu repte."
         },
         "dataUse": {
           "title": "Com Usem la Seva Informació",
-          "content": "Usem la informació per respondre consultes, proporcionar informació sobre serveis i millorar el lloc web."
+          "content": "Usem la informació que recopilem per respondre a les seves consultes, proporcionar-li informació sobre els nostres serveis i millorar el nostre lloc web i serveis."
         },
         "dataSharing": {
           "title": "Compartició d'Informació",
-          "content": "No venem ni transferim la seva informació personal a tercers sense consentiment."
+          "content": "No venem, intercanviem ni transferim d'altra manera la seva informació personal a tercers sense el seu consentiment, excepte segons ho requereixi la llei o a proveïdors de serveis que ens ajuden a operar el nostre lloc web."
         },
         "dataSecurity": {
           "title": "Seguretat de les Dades",
-          "content": "Implementem mesures tècniques i organitzatives per protegir la seva informació personal."
+          "content": "Implementem mesures tècniques i organitzatives adequades per protegir la seva informació personal contra l'accés no autoritzat, alteració, divulgació o destrucció."
         },
         "yourRights": {
           "title": "Els Seus Drets",
-          "content": "Segons el RGPD, té dret a accedir, rectificar, eliminar i portar les seves dades personals."
+          "content": "Segons el RGPD, vostè té dret a accedir, rectificar, eliminar, restringir el processament i portar les seves dades personals. També té dret a oposar-se al processament i a retirar el consentiment en qualsevol moment."
         },
         "cookies": {
           "title": "Cookies",
-          "content": "El nostre lloc web utilitza cookies. Consulti la Política de Cookies."
+          "content": "El nostre lloc web utilitza cookies per millorar la seva experiència. Consulti la nostra Política de Cookies per a més informació."
         },
         "changes": {
-          "title": "Canvis",
-          "content": "Podem actualitzar aquesta política. Li notificarem publicant la nova versió aquí."
+          "title": "Canvis en Aquesta Política",
+          "content": "Podem actualitzar aquesta Política de Privadesa de tant en tant. Li notificarem qualsevol canvi publicant la nova Política de Privadesa en aquesta pàgina."
         },
         "contact": {
           "title": "Contacte",
-          "content": "Preguntes sobre privadesa: info@dualys.eu."
+          "content": "Si té alguna pregunta sobre aquesta Política de Privadesa, posi's en contacte amb nosaltres a info@dualys.eu."
         }
       }
     },
@@ -803,33 +803,43 @@
         }
       }
     },
+    "error": {
+      "title": "Alguna cosa ha anat malament",
+      "description": "Ho sentim, s'ha produït un error inesperat. Si us plau, torna-ho a provar.",
+      "button": "Torna-ho a provar"
+    },
+    "notFound": {
+      "title": "404",
+      "description": "La pàgina que busques no existeix.",
+      "button": "Torna a l'inici"
+    },
     "cookies": {
       "meta": {
         "title": "Política de Cookies | Dualys",
-        "description": "Ús de cookies a Dualys."
+        "description": "Informació sobre com Dualys utilitza cookies al seu lloc web per millorar la seva experiència de navegació."
       },
       "title": "Política de Cookies",
       "lastUpdated": "Última actualització: Març 2026",
       "sections": {
         "whatAreCookies": {
-          "title": "Què Són?",
-          "content": "Petits arxius de text al seu dispositiu."
+          "title": "Què Són les Cookies?",
+          "content": "Les cookies són petits arxius de text que es col·loquen al seu dispositiu quan visita un lloc web. S'utilitzen àmpliament per fer que els llocs web funcionin de manera més eficient i per proporcionar informació als propietaris del lloc."
         },
         "howWeUse": {
-          "title": "Com les Usem",
-          "content": "Per entendre interaccions, preferències i millorar l'experiència."
+          "title": "Com Usem les Cookies",
+          "content": "Usem cookies per entendre com interactua amb el nostre lloc web, per recordar les seves preferències i per millorar la seva experiència general."
         },
         "types": {
-          "title": "Tipus",
-          "content": "Essencials, d'Anàlisi i de Preferències."
+          "title": "Tipus de Cookies que Usem",
+          "content": "Cookies Essencials: Necessàries perquè el lloc web funcioni correctament.\nCookies d'Anàlisi: Ens ajuden a entendre com els visitants interactuen amb el nostre lloc web.\nCookies de Preferències: Recorden les seves configuracions i preferències."
         },
         "manage": {
-          "title": "Gestió",
-          "content": "Control via configuració del navegador."
+          "title": "Gestió de Cookies",
+          "content": "Pot controlar i gestionar les cookies a través de la configuració del seu navegador. Tingui en compte que eliminar o bloquejar cookies pot afectar la seva experiència al nostre lloc web."
         },
         "contact": {
           "title": "Contacte",
-          "content": "Preguntes sobre cookies: info@dualys.eu."
+          "content": "Si té preguntes sobre el nostre ús de cookies, posi's en contacte amb nosaltres a info@dualys.eu."
         }
       }
     }

@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Linkedin, Mail } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -38,9 +39,11 @@ export function TeamCard({
     >
       <div className="mx-auto mb-4 h-24 w-24 overflow-hidden rounded-full bg-neutral-100">
         {image ? (
-          <img
+          <Image
             src={image}
             alt={name}
+            width={96}
+            height={96}
             className="h-full w-full object-cover"
           />
         ) : (

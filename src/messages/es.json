@@ -803,6 +803,16 @@
         }
       }
     },
+    "error": {
+      "title": "Algo ha salido mal",
+      "description": "Lo sentimos, se ha producido un error inesperado. Por favor, inténtalo de nuevo.",
+      "button": "Reintentar"
+    },
+    "notFound": {
+      "title": "404",
+      "description": "La página que buscas no existe.",
+      "button": "Volver al inicio"
+    },
     "cookies": {
       "meta": {
         "title": "Política de Cookies | Dualys",

@@ -803,6 +803,16 @@
         }
       }
     },
+    "error": {
+      "title": "Something went wrong",
+      "description": "We're sorry, an unexpected error occurred. Please try again.",
+      "button": "Try again"
+    },
+    "notFound": {
+      "title": "404",
+      "description": "The page you're looking for doesn't exist.",
+      "button": "Go home"
+    },
     "cookies": {
       "meta": {
         "title": "Cookie Policy | Dualys",

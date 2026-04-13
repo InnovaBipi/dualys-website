@@ -90,6 +90,7 @@ export default async function VerticalDetailPage({ params }: PageProps) {
         <Image
           src={`/images/verticals/${vertical.slug}.jpg`}
           alt=""
+          role="presentation"
           fill
           className="object-cover"
           sizes="100vw"
