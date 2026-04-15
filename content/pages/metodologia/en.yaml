@@ -1,24 +1,29 @@
 meta:
   title: FFD Methodology | Defense Sector Entry Program | Dualys
-  description: "Learn about our FFD program: a proven methodology to accelerate your company's entry into the defense sector."
+  description: >-
+    Learn about our FFD program: a proven methodology to accelerate your
+    company's entry into the defense sector.
 title: Methodology
 subtitle: Fit For Defense (FFD) Dualys — Dualys Methodology
-description: A structured, proven, and results-oriented program. Under non-disclosure agreement.
+description: >-
+  A structured, proven, and results-oriented program. Under non-disclosure
+  agreement.
 phases:
-  - title: Assessment
+  - title: Diagnosis
     description: >-
-      Comprehensive evaluation of capabilities, gap analysis, and fit with the
+      Comprehensive capability assessment, gap analysis, and alignment with the
       defense sector.
-  - title: Positioning
+  - title: Opportunities
     description: >-
-      Business opportunity map, sectorial positioning, commercial dossier,
-      required certifications, and action plan.
+      Opportunity mapping, sector positioning, commercial dossier, required
+      certifications, and action plan.
   - title: Adaptation
     description: >-
-      Process adaptation, commercial positioning adaptation, adaptation to
-      financial requirements, financial impact analysis, and certification
-      adaptation and support.
-  - title: Activation
-    description: Real market entry with contacts, contracts, and ongoing support.
-nda: All assessment and advisory processes are carried out under a non-disclosure agreement.
+      Process adaptation, commercial positioning adjustment, financial
+      alignment, impact analysis, and support in certification processes.
+  - title: Connection
+    description: Market entry through real contacts, contracts, and ongoing support.
+nda: >-
+  All assessment and advisory processes are carried out under a non-disclosure
+  agreement.
 cta: Request your assessment
