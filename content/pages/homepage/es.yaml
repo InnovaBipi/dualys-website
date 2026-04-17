@@ -5,7 +5,7 @@ meta:
     empresas industriales y tecnológicas en el sector defensa europeo.
 hero:
   title: >-
-    Tu empresa puede competir en el sector defensa. Nosotros te ayudamos a
+    Tu empresa puede competir en el sector de la defensa. Nosotros te ayudamos a
     llegar.
   cta: Solicita tu diagnóstico
   ctaSecondary: Conoce nuestra metodología
@@ -54,9 +54,8 @@ messages:
         El Plan Industrial de Seguridad y Defensa de España ya está activo. 
         Las empresas que se posicionen ahora tendrán ventaja estructural.
     - title: España y Catalunya están preparadas, pero falta articulación
-      text: >-
+      text: |-
         España dispone de tecnología, industria y talento de primer nivel.
-
         Hay una desconexión entre ese potencial y las reglas del juego.
     - title: Somos una consultora que añade valor a tu negocio
       text: >-
