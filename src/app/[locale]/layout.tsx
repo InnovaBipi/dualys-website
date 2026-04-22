@@ -6,7 +6,6 @@ import { locales, type Locale } from '@/lib/i18n/config';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { LayoutShell } from '@/components/layout/LayoutShell';
-import { HubSpotProvider } from '@/components/shared/HubSpotProvider';
 import { CookieConsent } from '@/components/shared/CookieConsent';
 import '@/app/globals.css';
 
@@ -66,12 +65,6 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
           </LayoutShell>
           <CookieConsent />
         </NextIntlClientProvider>
-        {process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID && (
-          <HubSpotProvider
-            portalId={process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID}
-            locale={locale}
-          />
-        )}
       </body>
     </html>
   );
