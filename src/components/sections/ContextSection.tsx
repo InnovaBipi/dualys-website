@@ -23,7 +23,7 @@ export function ContextSection({ content }: ContextSectionProps) {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: 0.1 * index }}
             >
-              <p className="font-display text-3xl font-bold text-neutral-900 sm:text-4xl">
+              <p className="font-display text-3xl font-light text-accent-500 sm:text-4xl md:text-[48px]">
                 {stat.value}
               </p>
               <p className="mt-1 text-sm text-neutral-500">
@@ -36,7 +36,7 @@ export function ContextSection({ content }: ContextSectionProps) {
         {/* Description */}
         {content.paragraph1 && (
           <motion.p
-            className="mx-auto mt-10 max-w-3xl text-center text-base leading-relaxed text-neutral-500"
+            className="mx-auto mt-10 max-w-5xl text-center text-base leading-relaxed text-neutral-500"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

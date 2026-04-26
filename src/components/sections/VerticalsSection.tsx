@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { ArrowRight } from 'lucide-react';
 import { Link } from '@/lib/i18n/navigation';
 import { Container } from '@/components/ui/container';
 import { verticals } from '@/data/verticals';
@@ -31,7 +32,7 @@ export function VerticalsSection({ content }: VerticalsSectionProps) {
     <section className="py-16 md:py-24">
       <Container>
         <motion.h2
-          className="mb-12 text-center font-display text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl"
+          className="mb-12 text-center font-display text-3xl font-light tracking-tight text-neutral-900 sm:text-4xl md:text-[48px] md:leading-[1.1]"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -72,9 +73,17 @@ export function VerticalsSection({ content }: VerticalsSectionProps) {
 
                   {/* Content at bottom */}
                   <div className="absolute inset-x-0 bottom-0 p-4">
-                    <h3 className="text-sm font-semibold text-white md:text-base">
-                      {item?.title || vertical.key}
-                    </h3>
+                    <div className="flex items-center gap-1.5">
+                      <h3 className="text-sm font-semibold text-white md:text-base">
+                        {item?.title || vertical.key}
+                      </h3>
+                      <ArrowRight className="h-3.5 w-3.5 shrink-0 text-white opacity-70" aria-hidden="true" />
+                    </div>
+                    {item?.description && (
+                      <p className="mt-1 line-clamp-2 text-xs text-neutral-300">
+                        {item.description}
+                      </p>
+                    )}
                   </div>
                 </Link>
               </motion.div>

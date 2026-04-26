@@ -79,7 +79,7 @@ verticals:
   cta: Descobreix en quin vertical encaixa la teva empresa
   items:
     - key: terrestrial
-      title: Plataformes terrestres
+      title: Vehicles terrestres
       description: Vehicles, components mecànics, sistemes hidràulics
     - key: naval
       title: Sector naval

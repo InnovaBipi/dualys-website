@@ -5,7 +5,7 @@ import { ContextSection } from '@/components/sections/ContextSection';
 import { AudienceSection } from '@/components/sections/AudienceSection';
 import { KeyMessagesSection } from '@/components/sections/KeyMessagesSection';
 import { VerticalsSection } from '@/components/sections/VerticalsSection';
-import { CTASection } from '@/components/sections/CTASection';
+import { ContactCTA } from '@/components/sections/ContactCTA';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { generatePageMetadata, getOrganizationSchema, getWebSiteSchema } from '@/lib/seo/metadata';
 import { getPageContent } from '@/lib/keystatic/get-page-content';
@@ -45,7 +45,7 @@ export default async function HomePage({ params }: PageProps) {
       <AudienceSection content={content.audience} />
       <KeyMessagesSection content={content.messages} />
       <VerticalsSection content={content.verticals} />
-      <CTASection content={content.cta} />
+      <ContactCTA variant="dark" />
     </>
   );
 }

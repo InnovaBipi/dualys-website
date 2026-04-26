@@ -20,7 +20,7 @@ export function AudienceSection({ content }: AudienceSectionProps) {
     <section className="py-16 md:py-24">
       <Container>
         <motion.h2
-          className="text-center font-display text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl"
+          className="text-center font-display text-3xl font-light tracking-tight text-neutral-900 sm:text-4xl md:text-[48px] md:leading-[1.1]"
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

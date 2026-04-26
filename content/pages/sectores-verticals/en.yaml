@@ -1,6 +1,6 @@
 terrestrial:
   title: Ground vehicles
-  description: Ground mobility solutions for defense and security operations, from armored vehicles to advanced robotic platforms.
+  description: Ground mobility solutions for defense and security operations.
   meta:
     title: Ground Vehicles | Defense Verticals | Dualys
     description: "Military and security ground platforms: armored vehicles, logistics trucks, robotic UGVs and more. Discover how your company can contribute."
@@ -28,7 +28,7 @@ terrestrial:
       description: Specialized surveillance vehicles
 naval:
   title: Naval sector
-  description: Maritime platforms for surveillance, intervention and reconnaissance, including manned and unmanned technologies.
+  description: Maritime platforms for surveillance, intervention and reconnaissance.
   meta:
     title: Naval Sector | Defense Verticals | Dualys
     description: "Naval defense systems and platforms: intervention vessels, light submarines, surface drones. Discover the opportunities."
@@ -56,7 +56,7 @@ naval:
       description: Automated mooring systems
 aeronautics:
   title: Aeronautics
-  description: Specialized components and systems for military aircraft, from lightweight structures to latest-generation onboard electronics.
+  description: Specialized components and systems for military aircraft.
   meta:
     title: Military Aeronautics | Defense Verticals | Dualys
     description: "Military aviation and advanced aeronautical systems: structural components, onboard electronics, predictive maintenance. Transfer your civil capabilities."
@@ -81,7 +81,7 @@ aeronautics:
       description: Intelligent monitoring to prevent failures
 aerospace:
   title: Aerospace and New Space
-  description: Compact and efficient space technology for Earth observation missions, communications and advanced propulsion in low orbit.
+  description: Compact and efficient space technology for Earth observation missions.
   meta:
     title: Aerospace and New Space | Defense Verticals | Dualys
     description: "Space technology and new orbital applications: nanosatellites, electric propulsion, carbon fiber. Opportunities for technology companies."
@@ -131,7 +131,7 @@ c4isr:
       description: Friend-or-foe identification systems
 cyber:
   title: Cyber defense and encryption
-  description: IT security and hardware encryption solutions to protect critical infrastructure and sensitive communications against cyber threats.
+  description: IT security and hardware encryption solutions to protect critical infrastructure.
   meta:
     title: Cyber Defense and Encryption | Defense Verticals | Dualys
     description: "Digital protection, cybersecurity and advanced encryption systems: military firewalls, intrusion detection, forensic analysis. Protect critical infrastructure."
@@ -159,7 +159,7 @@ cyber:
       description: Specialized anti-hacking UAV software
 uav:
   title: Unmanned vehicles and robotics
-  description: Autonomous and remote-controlled platforms for air, ground and water missions, reducing human risks in specialized reconnaissance and intervention operations.
+  description: Autonomous and remote-controlled platforms for air, ground and water missions.
   meta:
     title: UAV and Robotics | Defense Verticals | Dualys
     description: "Unmanned vehicles, drones and autonomous robotic systems: UAV, UGV, USV, UUV. Platforms for reconnaissance and intervention missions."
@@ -187,7 +187,7 @@ uav:
       description: Adaptive mobility in complex terrain
 armament:
   title: Armament and munitions
-  description: Components and systems for defense armament, with emphasis on precision, reliability and compliance with international safety standards.
+  description: Components and systems for defense armament.
   meta:
     title: Armament and Munitions | Defense Verticals | Dualys
     description: Precision components, non-lethal ammunition, storage and calibration systems for the defense sector. High-resistance manufacturing.
@@ -209,7 +209,7 @@ armament:
       description: High-resistance manufacturing for critical components
 simulation:
   title: Simulation and gaming
-  description: Immersive virtual environments for advanced military training, reducing operational costs and increasing personnel readiness without real risks.
+  description: Immersive virtual environments for advanced military training.
   meta:
     title: Simulation and Gaming | Defense Verticals | Dualys
     description: "Training and simulation for defense environments: flight simulators, VR/AR, digital twins, 3D graphics engines. Immersive technology."
@@ -237,7 +237,7 @@ simulation:
       description: Realistic environment rendering
 auxiliary:
   title: Auxiliary sector
-  description: Essential complementary equipment for personal protection, tactical concealment and precision mechanical components ensuring safety and operational performance.
+  description: Essential complementary equipment for personal protection, tactical concealment and precision mechanical components.
   meta:
     title: Auxiliary Sector | Defense Verticals | Dualys
     description: Technical textiles, ballistic protection, tactical footwear, PPE, CNC machining and precision components for the defense sector.

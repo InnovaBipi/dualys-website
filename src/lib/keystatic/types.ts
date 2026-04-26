@@ -65,7 +65,7 @@ export interface NosotrosContent {
   meta: { title: string; description: string };
   title: string;
   subtitle: string;
-  narrative: { paragraph1: string; paragraph2: string; vision: string };
+  narrative: { title: string; paragraph1: string; paragraph2: string; vision: string };
   founders: {
     title: string;
     profiles: Array<{ title: string; text: string }>;

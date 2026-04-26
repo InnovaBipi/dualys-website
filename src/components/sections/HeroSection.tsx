@@ -14,7 +14,7 @@ interface HeroSectionProps {
 
 export function HeroSection({ content }: HeroSectionProps) {
   return (
-    <section className="relative min-h-[600px] overflow-hidden md:min-h-[700px]">
+    <section className="relative min-h-screen overflow-hidden">
       {/* Background image */}
       <Image
         src="/images/hero-homepage.jpg"
@@ -27,18 +27,22 @@ export function HeroSection({ content }: HeroSectionProps) {
       />
 
       {/* Dark gradient overlay for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-neutral-900/30 via-neutral-900/40 to-neutral-900/75" />
+      <div className="absolute inset-0 bg-gradient-to-b from-neutral-900/10 via-neutral-900/30 to-neutral-900/75" />
 
       {/* Content */}
-      <Container className="relative z-10 flex min-h-[600px] flex-col justify-end pb-16 pt-32 md:min-h-[700px] md:pb-24">
-        {/* Context note */}
+      <Container className="relative z-10 flex min-h-screen flex-col justify-end pb-16 pt-32 md:pb-24">
+        {/* Context note with highlighted monetary amount */}
         <motion.p
-          className="max-w-2xl text-sm text-neutral-300 md:text-base"
+          className="max-w-2xl text-base text-white md:text-[20px] md:leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          {content.contextNote}
+          {content.contextNote.split(/([\+\d\.]+\s*M€)/).map((part, i) =>
+            /[\+\d\.]+\s*M€/.test(part)
+              ? <span key={i} className="text-accent-400">{part}</span>
+              : <span key={i}>{part}</span>
+          )}
         </motion.p>
 
         {/* Headline */}
@@ -51,22 +55,17 @@ export function HeroSection({ content }: HeroSectionProps) {
           {content.title}
         </motion.h1>
 
-        {/* CTAs */}
+        {/* CTA */}
         <motion.div
-          className="mt-8 flex flex-col gap-4 sm:flex-row"
+          className="mt-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <Button asChild size="lg" variant="primary">
-            <Link href="/contact">
-              {content.cta}
-              <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
-            </Link>
-          </Button>
           <Button asChild size="lg" variant="secondary" className="border-white/30 text-white hover:bg-white/10">
             <Link href="/metodologia">
               {content.ctaSecondary}
+              <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
             </Link>
           </Button>
         </motion.div>

@@ -12,11 +12,12 @@ export function makeNosotrosSingleton(locale: string, label: string) {
       subtitle: fields.text({ label: 'Subtitle', multiline: true }),
       narrative: fields.object(
         {
+          title: fields.text({ label: 'Section Title' }),
           paragraph1: fields.text({ label: 'Paragraph 1', multiline: true }),
           paragraph2: fields.text({ label: 'Paragraph 2', multiline: true }),
           vision: fields.text({ label: 'Vision Statement', multiline: true }),
         },
-        { label: 'Company Narrative' }
+        { label: 'Mission / Company Narrative' }
       ),
       founders: fields.object(
         {

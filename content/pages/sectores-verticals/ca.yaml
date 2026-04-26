@@ -1,6 +1,6 @@
 terrestrial:
   title: Vehicles terrestres
-  description: Solucions de mobilitat terrestre per a operacions de defensa i seguretat, des de vehicles blindats fins a plataformes robotitzades avançades.
+  description: Solucions de mobilitat terrestre per a operacions de defensa i seguretat.
   meta:
     title: Vehicles Terrestres | Verticals de Defensa | Dualys
     description: "Plataformes terrestres militars i de seguretat: vehicles blindats, camions logístics, UGV robotitzats i més. Descobreix com la teva empresa pot contribuir."
@@ -28,7 +28,7 @@ terrestrial:
       description: Vehicles especialitzats en vigilància
 naval:
   title: Sector naval
-  description: Plataformes marítimes per a vigilància, intervenció i reconeixement, incloent tecnologies tripulades i no tripulades.
+  description: Plataformes marítimes per a vigilància, intervenció i reconeixement.
   meta:
     title: Sector Naval | Verticals de Defensa | Dualys
     description: "Sistemes i plataformes de defensa naval: embarcacions d'intervenció, submarins lleugers, drons de superfície. Descobreix les oportunitats."
@@ -56,7 +56,7 @@ naval:
       description: Sistemes automatitzats d'amarratge
 aeronautics:
   title: Aeronàutica
-  description: Components i sistemes especialitzats per a aeronaus militars, des d'estructures lleugeres fins a electrònica embarcada de darrera generació.
+  description: Components i sistemes especialitzats per a aeronaus militars.
   meta:
     title: Aeronàutica Militar | Verticals de Defensa | Dualys
     description: "Aviació militar i sistemes aeronàutics avançats: components estructurals, electrònica embarcada, manteniment predictiu. Transfereix la teva capacitat civil."
@@ -81,7 +81,7 @@ aeronautics:
       description: Monitoratge intel·ligent per prevenir fallades
 aerospace:
   title: Aeroespacial i New Space
-  description: Tecnologia espacial compacta i eficient per a missions d'observació terrestre, comunicacions i propulsió avançada en òrbita baixa.
+  description: Tecnologia espacial compacta i eficient per a missions d'observació terrestre.
   meta:
     title: Aeroespacial i New Space | Verticals de Defensa | Dualys
     description: "Tecnologia espacial i noves aplicacions orbitals: nanosatèl·lits, propulsió elèctrica, fibra de carboni. Oportunitats per a empreses tecnològiques."
@@ -131,7 +131,7 @@ c4isr:
       description: Sistemes IFF d'identificació amic/enemic
 cyber:
   title: Ciberdefensa i xifrat
-  description: Solucions de seguretat informàtica i encriptació hardware per protegir infraestructures crítiques i comunicacions sensibles contra amenaces cibernètiques.
+  description: Solucions de seguretat informàtica i encriptació hardware per protegir infraestructures crítiques.
   meta:
     title: Ciberdefensa i Xifrat | Verticals de Defensa | Dualys
     description: "Protecció digital, ciberseguretat i sistemes d'encriptació avançada: firewalls militars, detecció d'intrusió, anàlisi forense. Protegeix infraestructures crítiques."
@@ -159,7 +159,7 @@ cyber:
       description: Software especialitzat antihacking UAV
 uav:
   title: Vehicles no tripulats i robòtica
-  description: Plataformes autònomes i teledirigides per a missions aèries, terrestres i aquàtiques, reduint riscos humans en operacions de reconeixement i intervenció especialitzada.
+  description: Plataformes autònomes i teledirigides per a missions aèries, terrestres i aquàtiques.
   meta:
     title: UAV i Robòtica | Verticals de Defensa | Dualys
     description: "Vehicles no tripulats, drons i sistemes robòtics autònoms: UAV, UGV, USV, UUV. Plataformes per a missions de reconeixement i intervenció."
@@ -187,7 +187,7 @@ uav:
       description: Mobilitat adaptativa en terrenys complexos
 armament:
   title: Armament i munició
-  description: Components i sistemes per armament de defensa, amb èmfasi en precisió, fiabilitat i compliment de normatives internacionals de seguretat.
+  description: Components i sistemes per armament de defensa.
   meta:
     title: Armament i Munició | Verticals de Defensa | Dualys
     description: Components de precisió, munició no letal, sistemes d'emmagatzematge i calibratge per al sector defensa. Fabricació d'alta resistència.
@@ -209,7 +209,7 @@ armament:
       description: Fabricació d'alta resistència per a components crítics
 simulation:
   title: Simulació i gaming
-  description: Entorns virtuals immersius per entrenament militar avançat, reduint costos operatius i augmentant la preparació del personal sense riscos reals.
+  description: Entorns virtuals immersius per entrenament militar avançat.
   meta:
     title: Simulació i Gaming | Verticals de Defensa | Dualys
     description: "Entrenament i simulació per a entorns de defensa: simuladors de vol, VR/AR, digital twins, motors gràfics 3D. Tecnologia immersiva."
@@ -237,7 +237,7 @@ simulation:
       description: Renderització realista d'entorns
 auxiliary:
   title: Sector auxiliar
-  description: Equipament complementari essencial per protecció personal, ocultació tàctica i components mecànics de precisió que garanteixen seguretat i rendiment operacional.
+  description: Equipament complementari essencial per protecció personal, ocultació tàctica i components mecànics de precisió.
   meta:
     title: Sector Auxiliar | Verticals de Defensa | Dualys
     description: Tèxtils tècnics, protecció balística, calçat tàctic, EPI, mecanitzat CNC i components de precisió per al sector defensa.

@@ -1,6 +1,6 @@
 terrestrial:
   title: Vehículos terrestres
-  description: Soluciones de movilidad terrestre para operaciones de defensa y seguridad, desde vehículos blindados hasta plataformas robotizadas avanzadas.
+  description: Soluciones de movilidad terrestre para operaciones de defensa y seguridad.
   meta:
     title: Vehículos Terrestres | Verticales de Defensa | Dualys
     description: "Plataformas terrestres militares y de seguridad: vehículos blindados, camiones logísticos, UGV robotizados y más. Descubre cómo tu empresa puede contribuir."
@@ -28,7 +28,7 @@ terrestrial:
       description: Vehículos especializados en vigilancia
 naval:
   title: Sector naval
-  description: Plataformas marítimas para vigilancia, intervención y reconocimiento, incluyendo tecnologías tripuladas y no tripuladas.
+  description: Plataformas marítimas para vigilancia, intervención y reconocimiento.
   meta:
     title: Sector Naval | Verticales de Defensa | Dualys
     description: "Sistemas y plataformas de defensa naval: embarcaciones de intervención, submarinos ligeros, drones de superficie. Descubre las oportunidades."
@@ -56,7 +56,7 @@ naval:
       description: Sistemas automatizados de amarre
 aeronautics:
   title: Aeronáutica
-  description: Componentes y sistemas especializados para aeronaves militares, desde estructuras ligeras hasta electrónica embarcada de última generación.
+  description: Componentes y sistemas especializados para aeronaves militares.
   meta:
     title: Aeronáutica Militar | Verticales de Defensa | Dualys
     description: "Aviación militar y sistemas aeronáuticos avanzados: componentes estructurales, electrónica embarcada, mantenimiento predictivo. Transfiere tu capacidad civil."
@@ -81,7 +81,7 @@ aeronautics:
       description: Monitorización inteligente para prevenir fallos
 aerospace:
   title: Aeroespacial y New Space
-  description: Tecnología espacial compacta y eficiente para misiones de observación terrestre, comunicaciones y propulsión avanzada en órbita baja.
+  description: Tecnología espacial compacta y eficiente para misiones de observación terrestre.
   meta:
     title: Aeroespacial y New Space | Verticales de Defensa | Dualys
     description: "Tecnología espacial y nuevas aplicaciones orbitales: nanosatélites, propulsión eléctrica, fibra de carbono. Oportunidades para empresas tecnológicas."
@@ -131,7 +131,7 @@ c4isr:
       description: Sistemas IFF de identificación amigo/enemigo
 cyber:
   title: Ciberdefensa y cifrado
-  description: Soluciones de seguridad informática y encriptación hardware para proteger infraestructuras críticas y comunicaciones sensibles contra amenazas cibernéticas.
+  description: Soluciones de seguridad informática y encriptación hardware para proteger infraestructuras críticas.
   meta:
     title: Ciberdefensa y Cifrado | Verticales de Defensa | Dualys
     description: "Protección digital, ciberseguridad y sistemas de encriptación avanzada: firewalls militares, detección de intrusión, análisis forense. Protege infraestructuras críticas."
@@ -159,7 +159,7 @@ cyber:
       description: Software especializado antihacking UAV
 uav:
   title: Vehículos no tripulados y robótica
-  description: Plataformas autónomas y teledirigidas para misiones aéreas, terrestres y acuáticas, reduciendo riesgos humanos en operaciones de reconocimiento e intervención especializada.
+  description: Plataformas autónomas y teledirigidas para misiones aéreas, terrestres y acuáticas.
   meta:
     title: UAV y Robótica | Verticales de Defensa | Dualys
     description: "Vehículos no tripulados, drones y sistemas robóticos autónomos: UAV, UGV, USV, UUV. Plataformas para misiones de reconocimiento e intervención."
@@ -187,7 +187,7 @@ uav:
       description: Movilidad adaptativa en terrenos complejos
 armament:
   title: Armamento y munición
-  description: Componentes y sistemas para armamento de defensa, con énfasis en precisión, fiabilidad y cumplimiento de normativas internacionales de seguridad.
+  description: Componentes y sistemas para armamento de defensa.
   meta:
     title: Armamento y Munición | Verticales de Defensa | Dualys
     description: Componentes de precisión, munición no letal, sistemas de almacenamiento y calibración para el sector defensa. Fabricación de alta resistencia.
@@ -209,7 +209,7 @@ armament:
       description: Fabricación de alta resistencia para componentes críticos
 simulation:
   title: Simulación y gaming
-  description: Entornos virtuales inmersivos para entrenamiento militar avanzado, reduciendo costes operativos y aumentando la preparación del personal sin riesgos reales.
+  description: Entornos virtuales inmersivos para entrenamiento militar avanzado.
   meta:
     title: Simulación y Gaming | Verticales de Defensa | Dualys
     description: "Entrenamiento y simulación para entornos de defensa: simuladores de vuelo, VR/AR, digital twins, motores gráficos 3D. Tecnología inmersiva."
@@ -237,7 +237,7 @@ simulation:
       description: Renderización realista de entornos
 auxiliary:
   title: Sector auxiliar
-  description: Equipamiento complementario esencial para protección personal, ocultación táctica y componentes mecánicos de precisión que garantizan seguridad y rendimiento operacional.
+  description: Equipamiento complementario esencial para protección personal, ocultación táctica y componentes mecánicos de precisión.
   meta:
     title: Sector Auxiliar | Verticales de Defensa | Dualys
     description: Textiles técnicos, protección balística, calzado táctico, EPI, mecanizado CNC y componentes de precisión para el sector defensa.

@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/lib/i18n/navigation';
 import { Container } from '@/components/ui/container';
@@ -24,9 +25,26 @@ export function Footer() {
   ];
 
   return (
-    <footer className="border-t border-neutral-700 bg-neutral-800 text-white">
+    <footer className="border-t border-neutral-800 bg-neutral-900 text-white">
       <Container className="py-12 md:py-16">
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
+        {/* Logo + Description */}
+        <div className="mb-10">
+          <Link href="/" className="inline-block">
+            <Image
+              src="/logo.png"
+              alt="Dualys Strategy"
+              width={120}
+              height={40}
+              className="h-8 w-auto brightness-0 invert"
+            />
+          </Link>
+          <p className="mt-3 max-w-md text-sm leading-relaxed text-neutral-300">
+            {t('description')}
+          </p>
+        </div>
+
+        {/* 2 columns: Navigation | Contact */}
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
           {/* Column 1: Navigation */}
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-wider text-neutral-400">
@@ -81,20 +99,10 @@ export function Footer() {
               </li>
             </ul>
           </div>
-
-          {/* Column 3: Brand */}
-          <div>
-            <Link href="/" className="text-lg font-bold tracking-tight text-white">
-              DUALYS
-            </Link>
-            <p className="mt-3 text-sm leading-relaxed text-neutral-300">
-              {t('description')}
-            </p>
-          </div>
         </div>
 
         {/* Bottom row: legal + copyright */}
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-neutral-700 pt-6 md:flex-row">
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-neutral-800 pt-6 md:flex-row">
           <nav className="flex flex-wrap gap-x-6 gap-y-2" aria-label="Legal">
             {legalLinks.map((link) => (
               <Link

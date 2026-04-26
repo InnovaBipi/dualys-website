@@ -7,11 +7,11 @@ import { Container } from '@/components/ui/container';
 import { Breadcrumbs } from '@/components/content/Breadcrumbs';
 import { SubcategoryCard } from '@/components/content/SubcategoryCard';
 import { JsonLd } from '@/components/seo/JsonLd';
-import { Button } from '@/components/ui/button';
 import { Link } from '@/lib/i18n/navigation';
+import { ContactCTA } from '@/components/sections/ContactCTA';
 import { generatePageMetadata, getWebPageSchema, getBreadcrumbSchema } from '@/lib/seo/metadata';
 import { getPageContent } from '@/lib/keystatic/get-page-content';
-import type { SectoresContent, SectoresVerticalsContent, HomepageContent } from '@/lib/keystatic/types';
+import type { SectoresContent, SectoresVerticalsContent } from '@/lib/keystatic/types';
 import type { Locale } from '@/lib/i18n/config';
 import { verticals, getVerticalBySlug, getAllVerticalSlugs } from '@/data/verticals';
 
@@ -48,7 +48,6 @@ export default async function VerticalDetailPage({ params }: PageProps) {
 
   const vContent = await getPageContent<SectoresVerticalsContent>('sectores_verticals', locale as Locale);
   const sectoresContent = await getPageContent<SectoresContent>('sectores', locale as Locale);
-  const homepage = await getPageContent<HomepageContent>('homepage', locale as Locale);
   const t = await getTranslations({ locale, namespace: 'sectores' });
 
   const data = vContent[vertical.key as keyof SectoresVerticalsContent];
@@ -126,7 +125,7 @@ export default async function VerticalDetailPage({ params }: PageProps) {
       {/* Més verticals */}
       <section className="py-16 md:py-24">
         <Container>
-          <h2 className="mb-10 text-center font-display text-2xl font-bold text-neutral-900 md:text-3xl">
+          <h2 className="mb-10 text-center font-display text-3xl font-light tracking-tight text-neutral-900 sm:text-4xl md:text-[48px] md:leading-[1.1]">
             {t('moreVerticals')}
           </h2>
           <div className="grid gap-6 sm:grid-cols-3">
@@ -163,22 +162,7 @@ export default async function VerticalDetailPage({ params }: PageProps) {
       </section>
 
       {/* CTA */}
-      <section className="bg-neutral-950 py-16">
-        <Container>
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="font-display text-2xl font-bold text-white md:text-3xl">{homepage.cta.title}</h2>
-            <p className="mt-4 text-lg text-neutral-400">{homepage.cta.subtitle}</p>
-            <div className="mt-8">
-              <Button variant="secondary" size="lg" asChild className="border-white/30 text-white hover:bg-white/10">
-                <Link href="/contact">
-                  {homepage.cta.button}
-                  <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </Container>
-      </section>
+      <ContactCTA variant="light" />
     </>
   );
 }

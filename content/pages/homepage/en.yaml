@@ -73,7 +73,7 @@ verticals:
   cta: Discover which vertical fits your company
   items:
     - key: terrestrial
-      title: Ground platforms
+      title: Ground vehicles
       description: Vehicles, mechanical components, hydraulic systems
     - key: naval
       title: Naval sector

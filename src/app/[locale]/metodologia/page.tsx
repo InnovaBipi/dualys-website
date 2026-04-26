@@ -1,12 +1,11 @@
 import { setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
-import { Lock, ArrowRight } from 'lucide-react';
+import { Lock } from 'lucide-react';
 import { Container } from '@/components/ui/container';
 import { Breadcrumbs } from '@/components/content/Breadcrumbs';
 import { JsonLd } from '@/components/seo/JsonLd';
-import { Button } from '@/components/ui/button';
+import { ContactCTA } from '@/components/sections/ContactCTA';
 import { generatePageMetadata, getWebPageSchema, getBreadcrumbSchema } from '@/lib/seo/metadata';
-import { Link } from '@/lib/i18n/navigation';
 import { getPageContent } from '@/lib/keystatic/get-page-content';
 import type { MetodologiaContent } from '@/lib/keystatic/types';
 import type { Locale } from '@/lib/i18n/config';
@@ -54,8 +53,8 @@ export default async function MetodologiaPage({ params }: PageProps) {
       {/* Dark hero */}
       <section className="bg-neutral-900 py-20 md:py-28">
         <Container>
-          <div className="mx-auto max-w-3xl text-center">
-            <h1 className="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">
+          <div className="max-w-3xl">
+            <h1 className="font-display text-3xl font-light tracking-tight text-white sm:text-4xl md:text-[48px] md:leading-[1.1]">
               {content.subtitle}
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-neutral-300">
@@ -132,18 +131,7 @@ export default async function MetodologiaPage({ params }: PageProps) {
       </section>
 
       {/* CTA */}
-      <section className="py-16 md:py-24">
-        <Container>
-          <div className="mx-auto max-w-2xl text-center">
-            <Button asChild size="lg" variant="primary">
-              <Link href="/contact">
-                {content.cta}
-                <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
-              </Link>
-            </Button>
-          </div>
-        </Container>
-      </section>
+      <ContactCTA variant="light" />
     </>
   );
 }
