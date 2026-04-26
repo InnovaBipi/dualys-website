@@ -248,14 +248,18 @@
       "Bash(EXIT=$?)",
       "Bash(bridging civil industry into the European defense sector.\":*)",
       "Bash(for t:*)",
-      "Bash(do sed:*)"
+      "Bash(do sed:*)",
+      "mcp__asana__*",
+      "Bash(npx -y @roychri/mcp-server-asana --help)",
+      "Bash(npx next:*)"
     ]
   },
   "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
     "serena",
     "memory",
-    "github"
+    "github",
+    "asana"
   ],
   "hooks": {
     "PostToolUse": [

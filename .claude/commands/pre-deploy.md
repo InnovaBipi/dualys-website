@@ -1,6 +1,6 @@
 ---
 description: "Validación pre-deploy completa: build + lint + SEO + brand + a11y + i18n. Ejecutar antes de cada commit significativo."
-allowed-tools: "Read, Bash, Grep, Glob, Skill"
+allowed-tools: "Read, Bash, Grep, Glob, Skill, mcp__asana__asana_search_tasks"
 ---
 
 # /pre-deploy — Validación Pre-Deploy Completa
@@ -91,14 +91,29 @@ echo "Divs with onClick:" && grep -rn "div.*onClick\|div.*onKeyDown" src/ --incl
 echo "Missing aria-labels:" && grep -rn "role=\"button\"\|role=\"link\"" src/ --include="*.tsx" | grep -v "aria-label" | head -5 || echo "✅ All roles have aria-labels"
 ```
 
-## Paso 7: Backlog Status
+## Paso 7: Sprint Status (Asana)
 
-Mostrar estado del backlog:
-```bash
-echo "=== BACKLOG STATUS ==="
-echo "Done:" && grep -l "status: done" .claude/backlog/tasks/*.md 2>/dev/null | wc -l
-echo "In Progress:" && grep -l "status: in_progress" .claude/backlog/tasks/*.md 2>/dev/null | wc -l
-echo "Backlog:" && grep -l "status: backlog" .claude/backlog/tasks/*.md 2>/dev/null | wc -l
+Mostrar estado del sprint desde Asana:
+
+Usar `mcp__asana__asana_search_tasks` con:
+- `workspace`: `1205833383496870`
+- `projects_any`: `1209462838057597`
+- `text`: `[DUALYS]`
+- `completed`: `false`
+- `is_subtask`: `false`
+- `opt_fields`: `name,completed,custom_fields`
+
+Contar tareas por Sprint Stage (CF GID `1209484061783081`):
+- To do (enum `1209484061783084`)
+- In process (enum `1209484061783085`)
+- To Review (enum `1209507757193796`)
+
+Mostrar resumen:
+```
+=== SPRINT STATUS (Asana) ===
+To do: [N]
+In process: [N]
+To Review: [N]
 ```
 
 ## Informe Final

@@ -1,92 +1,107 @@
 ---
-description: Suggest the next task to work on based on dependencies, status, and complexity
-allowed-tools: Glob, Read, Grep
+description: Suggest the next [DUALYS] task from Asana Sprint Board based on dependencies, priority, and hours
+allowed-tools: mcp__asana__asana_search_tasks, mcp__asana__asana_get_task, mcp__asana__asana_get_tasks_for_project
 ---
 
 # suggest-task
 
+Analyze the Asana Sprint Board to recommend the next [DUALYS] task to work on.
 
-Analyze the backlog to recommend the next task to work on.
+## Asana Constants
 
-## Purpose
-
-Help developers prioritize work by analyzing task dependencies, complexity, and status. Shows tasks that are ready to be started (all dependencies completed).
+| Constant | GID |
+|----------|-----|
+| WORKSPACE | `1205833383496870` |
+| PROJECT (Sprint Board) | `1209462838057597` |
+| CF_SPRINT_STAGE | `1209484061783081` |
+| CF_PRIORITY | `1206745226672023` |
+| CF_HORAS | `1209700607881769` |
+| SPRINT_TODO | `1209484061783084` |
+| SPRINT_IN_PROCESS | `1209484061783085` |
+| SPRINT_TO_REVIEW | `1209507757193796` |
+| SPRINT_DONE | `1209484061783086` |
+| PRIORITY_HIGH | `1206745226675835` |
+| PRIORITY_MEDIUM | `1206745226675836` |
+| PRIORITY_LOW | `1206745226675837` |
 
 ## Instructions
 
-### Step 1: Gather Task Data
+### Step 1: Fetch [DUALYS] Tasks from Asana
 
-1. **Check for tasks.json**
-   - Read `backlog/tasks.json` if it exists
-   - If not, fall back to scanning individual task files
+Use `mcp__asana__asana_search_tasks` with:
+- `workspace`: `1205833383496870`
+- `projects_any`: `1209462838057597`
+- `text`: `[DUALYS]`
+- `completed`: `false`
+- `is_subtask`: `false`
+- `opt_fields`: `name,completed,due_on,custom_fields,dependencies`
 
-2. **Scan task files**
-   - Use Glob to find all `backlog/tasks/TASK-*.md` files
-   - Read the frontmatter of each task file
-   - Extract: id, type, status, complexity, depends_on
+### Step 2: Classify Tasks by Sprint Stage
 
-### Step 2: Filter Available Tasks
+From the results, read each task's `custom_fields` to extract:
+- **Sprint Stage** (GID `1209484061783081`): read `enum_value.gid`
+- **Priority** (GID `1206745226672023`): read `enum_value.name`
+- **Horas** (GID `1209700607881769`): read `number_value`
 
-1. **Status filter**
-   - Only include tasks with `status: backlog`
-   - Exclude `in_progress` and `done` tasks
+Classify into groups:
+- **To do**: Sprint Stage enum_value.gid = `1209484061783084`
+- **In process**: Sprint Stage enum_value.gid = `1209484061783085`
+- **To Review**: Sprint Stage enum_value.gid = `1209507757193796`
 
-2. **Dependency filter**
-   - Check each task's `depends_on` field
-   - Task is "ready" if:
-     - `depends_on` is empty OR
-     - All tasks in `depends_on` have `status: done`
+### Step 3: Check Dependencies for "To do" Tasks
 
-### Step 3: Prioritize
+For each "To do" task that has `dependencies` (non-empty array):
+- Use `mcp__asana__asana_get_task` for each dependency GID with `opt_fields: "name,completed"`
+- Task is **ready** if all dependencies have `completed: true`
+- Task is **blocked** if any dependency has `completed: false`
+
+Tasks with no dependencies are always **ready**.
+
+### Step 4: Prioritize Ready Tasks
 
 Sort ready tasks by:
-1. **Blockers first** - Tasks that block other tasks (appear in others' depends_on)
-2. **Complexity ascending** - Lower complexity tasks first (quick wins)
-3. **Created date ascending** - Older tasks before newer
+1. **Priority**: High > Medium > Low (High first)
+2. **Horas ascending**: Lower hours first (quick wins)
+3. **Due date ascending**: Earlier due dates first
 
-### Step 4: Present Recommendations
-
-Show top 3 recommendations:
+### Step 5: Present Recommendations
 
 ```markdown
-## Next Task Recommendations
+## Next Task Recommendations (Asana Sprint Board)
 
 ### Ready to Start
 
-| Priority | Task | Type | Complexity | Blocks | Why |
-|----------|------|------|------------|--------|-----|
-| 1 | TASK-XXX | [type] | [N]/10 | [count] | [reason] |
-| 2 | TASK-YYY | [type] | [N]/10 | [count] | [reason] |
-| 3 | TASK-ZZZ | [type] | [N]/10 | [count] | [reason] |
+| # | Task | Priority | Hours | Due | Why |
+|---|------|----------|-------|-----|-----|
+| 1 | [DUALYS] N - [title] | High | 4h | 25 abr | [reason: blocks N tasks / quick win / overdue] |
+| 2 | ... | ... | ... | ... | ... |
 
 ### Blocked Tasks
-- TASK-AAA: Waiting on [TASK-BBB, TASK-CCC]
-- TASK-DDD: Waiting on [TASK-XXX]
+- [DUALYS] N - [title]: Waiting on [dependency names]
 
 ### In Progress
-- TASK-EEE: [title] (started [date])
+- [DUALYS] N - [title] (Sprint Stage: In process)
+
+### To Review
+- [DUALYS] N - [title] (Sprint Stage: To Review)
 
 ### Quick Actions
-- Start #1: `/update-task TASK-XXX in_progress`
-- View task: Read `backlog/tasks/TASK-XXX.md`
-- Full list: `/list-tasks`
+- Start #1: `/develop N`
+- Update status: `/update-task N in_process`
 ```
 
 ## Error Handling
 
-| Situation | Error | Exit |
-|-----------|-------|------|
-| No tasks in backlog | [INFO] No tasks in backlog. Run `/generate-task "idea"` to create one. | 0 |
-| All tasks blocked | [INFO] All tasks are blocked. Showing dependency analysis... | 0 |
-| No tasks.json | [INFO] No index found, scanning files... (then proceed) | 0 |
-| Circular dependency | [WARNING] E204: Circular dependency detected: [chain]. Resolve before proceeding. | 0 |
-| File read error | [ERROR] E107: Could not read [file]. Check file permissions. | 2 |
-
-**Error Format Reference**: See `.claude/skills/error-handling/error-codes.md`
+| Situation | Message |
+|-----------|---------|
+| No [DUALYS] tasks found | `[INFO] No [DUALYS] tasks found in Asana Sprint Board. Create tasks in Asana first.` |
+| All tasks blocked | `[INFO] All [DUALYS] tasks are blocked. Showing dependency analysis...` |
+| All tasks done/in progress | `[INFO] No "To do" tasks remaining. All tasks are in progress or completed.` |
+| Asana API error | `[ERROR] Could not reach Asana. Check MCP server configuration in .mcp.json` |
 
 ## CRITICAL RULES
 
-- **NEVER modify any files** - this is a read-only analysis command
+- **NEVER modify any tasks** - this is a read-only analysis command
 - **ALWAYS check dependency status** before recommending a task
 - **ALWAYS show what's blocking** tasks that can't be started
 - **PREFER tasks that unblock others** over isolated tasks
