@@ -14,20 +14,23 @@ interface HeroSectionProps {
 
 export function HeroSection({ content }: HeroSectionProps) {
   return (
-    <section className="relative min-h-screen overflow-hidden">
+    <section className="relative -mt-[68px] min-h-screen overflow-hidden">
       {/* Background image */}
       <Image
         src="/images/hero-homepage.jpg"
         alt=""
         role="presentation"
         fill
-        className="object-cover object-top"
+        className="object-cover object-[center_8%]"
         priority
         sizes="100vw"
       />
 
       {/* Dark gradient overlay for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-neutral-900/10 via-neutral-900/30 to-neutral-900/75" />
+      <div className="absolute inset-0 z-[1] bg-gradient-to-b from-neutral-900/10 via-neutral-900/30 to-neutral-900/75" />
+
+      {/* White blend at top to mask letterbox and blend with header */}
+      <div className="absolute inset-x-0 top-0 z-[2] h-24 bg-gradient-to-b from-white to-transparent" />
 
       {/* Content */}
       <Container className="relative z-10 flex min-h-screen flex-col justify-end pb-16 pt-32 md:pb-24">
