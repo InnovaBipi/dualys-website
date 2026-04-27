@@ -91,7 +91,7 @@ export function getOrganizationSchema() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'Dualys',
-    alternateName: 'Dualys AIE',
+    alternateName: 'Dualys Strategy AIE',
     url: baseUrl,
     logo: `${baseUrl}/logo.png`,
     description: 'Consultora estratégica especializada en facilitar la entrada de empresas industriales, tecnológicas y de software en la cadena de suministro del sector defensa europeo.',

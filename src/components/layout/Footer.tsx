@@ -27,7 +27,7 @@ export function Footer() {
   return (
     <footer className="border-t border-neutral-800 bg-neutral-900 text-white">
       <Container className="py-12 md:py-16">
-        {/* Logo + Description */}
+        {/* Logo */}
         <div className="mb-10">
           <Link href="/" className="inline-block">
             <Image
@@ -38,9 +38,6 @@ export function Footer() {
               className="h-8 w-auto brightness-0 invert"
             />
           </Link>
-          <p className="mt-3 max-w-md text-sm leading-relaxed text-neutral-300">
-            {t('description')}
-          </p>
         </div>
 
         {/* 2 columns: Navigation | Contact */}

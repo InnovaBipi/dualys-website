@@ -38,9 +38,9 @@ export function HeroSection({ content }: HeroSectionProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          {content.contextNote.split(/([\+\d\.]+\s*M€)/).map((part, i) =>
-            /[\+\d\.]+\s*M€/.test(part)
-              ? <span key={i} className="text-accent-400">{part}</span>
+          {content.contextNote.split(/(Dualys)/).map((part, i) =>
+            part === 'Dualys'
+              ? <span key={i} className="font-semibold text-accent-400">{part}</span>
               : <span key={i}>{part}</span>
           )}
         </motion.p>
