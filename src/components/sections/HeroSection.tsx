@@ -15,13 +15,13 @@ interface HeroSectionProps {
 export function HeroSection({ content }: HeroSectionProps) {
   return (
     <section className="relative -mt-[68px] min-h-screen overflow-hidden">
-      {/* Background image */}
+      {/* Background image — cropped, no letterbox bars */}
       <Image
         src="/images/hero-homepage.jpg"
         alt=""
         role="presentation"
         fill
-        className="object-cover object-[center_8%]"
+        className="object-cover"
         priority
         sizes="100vw"
       />
@@ -29,34 +29,27 @@ export function HeroSection({ content }: HeroSectionProps) {
       {/* Dark gradient overlay for text readability */}
       <div className="absolute inset-0 z-[1] bg-gradient-to-b from-neutral-900/10 via-neutral-900/30 to-neutral-900/75" />
 
-      {/* White blend at top to mask letterbox and blend with header */}
-      <div className="absolute inset-x-0 top-0 z-[2] h-24 bg-gradient-to-b from-white to-transparent" />
-
       {/* Content */}
       <Container className="relative z-10 flex min-h-screen flex-col justify-end pb-16 pt-32 md:pb-24">
-        {/* Context note with highlighted monetary amount */}
-        <motion.p
-          className="max-w-2xl text-base text-white md:text-[20px] md:leading-relaxed"
+        {/* H1 — Slogan: Outfit, 60px, extralight */}
+        <motion.h1
+          className="max-w-3xl font-display text-4xl font-extralight tracking-tight text-white sm:text-5xl md:text-[60px] md:leading-[1.1]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          {content.contextNote.split(/(Dualys)/).map((part, i) =>
-            part === 'Dualys'
-              ? <span key={i} className="font-semibold text-accent-400">{part}</span>
-              : <span key={i}>{part}</span>
-          )}
-        </motion.p>
+          {content.contextNote}
+        </motion.h1>
 
-        {/* Headline */}
-        <motion.h1
-          className="mt-4 max-w-3xl font-display text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl"
+        {/* Subtitle — Description: Inter, 36px, light, line-height 140% */}
+        <motion.p
+          className="mt-6 max-w-2xl font-sans text-lg font-light text-white/90 sm:text-xl md:text-[36px] md:leading-[1.4]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           {content.title}
-        </motion.h1>
+        </motion.p>
 
         {/* CTA */}
         <motion.div
