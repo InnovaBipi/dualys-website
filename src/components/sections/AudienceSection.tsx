@@ -55,10 +55,10 @@ export function AudienceSection({ content }: AudienceSectionProps) {
                 <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/80 via-neutral-900/30 to-transparent" />
 
                 <div className="relative z-10 flex min-h-[280px] flex-col justify-end p-6">
-                  <h3 className="font-display text-xl font-semibold text-white">
+                  <h3 className="font-display text-2xl font-medium text-white">
                     {card.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-white/75">
+                  <p className="mt-2 text-sm leading-tight text-white/75">
                     {card.description}
                   </p>
                 </div>

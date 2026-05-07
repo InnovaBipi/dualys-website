@@ -24,7 +24,7 @@ context:
     - value: 2%
       label: Objectiu del PIB en inversió defensiva
 audience:
-  title: Per a qui és?
+  title: A qui ens dirigim
   cards:
     - key: industrial
       title: Industrials
@@ -45,9 +45,9 @@ audience:
         subministrament amb capacitat local qualificada.
       cta: Parlem
 messages:
-  title: Per què Dualys
+  title: Per què dualys
   items:
-    - title: El moment és ara
+    - title: Ara és el moment
       text: |-
         El Pla Industrial de Seguretat i Defensa d'Espanya ja està actiu. 
         Les empreses que es posicionin ara tindran avantatge estructural.

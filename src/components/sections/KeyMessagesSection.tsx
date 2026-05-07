@@ -8,6 +8,17 @@ interface KeyMessagesSectionProps {
   content: HomepageContent['messages'];
 }
 
+function renderBrandedTitle(title: string) {
+  const match = title.match(/(.*?)(dualys)(.*)/i);
+  if (!match) return title;
+  const [, before, , after] = match;
+  return (
+    <>
+      {before}dual<span className="text-accent-500">y</span>s{after}
+    </>
+  );
+}
+
 function MessageCard({ item, index }: { item: { title: string; text: string }; index: number }) {
   return (
     <motion.div
@@ -16,13 +27,13 @@ function MessageCard({ item, index }: { item: { title: string; text: string }; i
       viewport={{ once: true }}
       transition={{ duration: 0.4, delay: index * 0.08 }}
     >
-      <div className="w-fit">
-        <h3 className="font-display text-2xl font-light text-neutral-900 sm:text-3xl md:text-[36px] md:leading-[1.2]">
+      <div className="flex items-stretch gap-4">
+        <div className="w-[4px] shrink-0 rounded-full bg-accent-500" aria-hidden="true" />
+        <h3 className="font-display text-2xl font-light text-accent-500 sm:text-3xl md:text-[36px] md:leading-[1.2]">
           {item.title}
         </h3>
-        <div className="mt-2 h-0.5 bg-accent-500" />
       </div>
-      <p className="mt-4 text-base leading-relaxed text-neutral-500">
+      <p className="mt-4 pl-5 text-base leading-relaxed text-neutral-500">
         {item.text}
       </p>
     </motion.div>
@@ -40,7 +51,7 @@ export function KeyMessagesSection({ content }: KeyMessagesSectionProps) {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          {content.title}
+          {renderBrandedTitle(content.title)}
         </motion.h2>
 
         <div className="flex flex-col gap-16 md:flex-row md:gap-20">

@@ -27,7 +27,7 @@ context:
     - value: 2%
       label: Objectif du PIB en investissement de défense
 audience:
-  title: À qui ça s'adresse ?
+  title: À qui nous nous adressons
   cards:
     - key: industrial
       title: Industriels
@@ -48,9 +48,9 @@ audience:
         chaîne d'approvisionnement avec des capacités locales qualifiées.
       cta: Parlons-en
 messages:
-  title: Pourquoi DUALYS
+  title: Pourquoi dualys
   items:
-    - title: Le moment est maintenant
+    - title: C'est le moment
       text: >-
         Le Plan Industriel de Sécurité et de Défense de l'Espagne est déjà
         actif. Les entreprises qui se positionnent maintenant bénéficieront d'un

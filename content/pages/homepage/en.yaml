@@ -24,7 +24,7 @@ context:
     - value: 2%
       label: GDP target for defense investment
 audience:
-  title: Who is it for?
+  title: Who we work with
   cards:
     - key: industrial
       title: Manufacturers
@@ -45,9 +45,9 @@ audience:
         qualified local capability.
       cta: Talk to us
 messages:
-  title: Why DUALYS
+  title: Why dualys
   items:
-    - title: The time is now
+    - title: Now is the time
       text: >-
         Spain's Industrial Security and Defense Plan is already active.
         Companies that position themselves now will gain a structural advantage.
