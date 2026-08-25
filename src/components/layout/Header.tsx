@@ -88,8 +88,8 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-neutral-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
       <Container>
         <nav className="flex h-16 items-center justify-between" aria-label="Global">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
+          {/* Logo — shrink-0 so longer locales (fr/en) can never squash the mark */}
+          <Link href="/" className="flex shrink-0 items-center gap-2">
             <Image
               src="/logo.png"
               alt="Dualys"
@@ -101,7 +101,7 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex md:items-center md:gap-x-8">
+          <div className="hidden lg:flex lg:items-center lg:gap-x-5">
             {navigation.map((item) => {
               if (item.hasSub) {
                 return (
@@ -115,7 +115,7 @@ export function Header() {
                     <button
                       type="button"
                       className={cn(
-                        'flex items-center gap-1 text-sm font-medium transition-colors hover:text-accent-500',
+                        'flex items-center gap-1 whitespace-nowrap text-sm font-medium transition-colors hover:text-accent-500',
                         isSectorsActive ? 'text-accent-500' : 'text-neutral-600'
                       )}
                       onClick={() => setSectorsDropdownOpen(!sectorsDropdownOpen)}
@@ -183,7 +183,7 @@ export function Header() {
                   key={item.name}
                   href={item.href}
                   className={cn(
-                    'text-sm font-medium transition-colors hover:text-accent-500',
+                    'whitespace-nowrap text-sm font-medium transition-colors hover:text-accent-500',
                     pathname === item.href
                       ? 'text-accent-500'
                       : 'text-neutral-600'
@@ -196,7 +196,7 @@ export function Header() {
           </div>
 
           {/* Desktop Actions */}
-          <div className="hidden md:flex md:items-center md:gap-x-4">
+          <div className="hidden shrink-0 lg:flex lg:items-center lg:gap-x-2">
             <LanguageSwitcher />
             <Button asChild size="sm" variant="primary">
               <Link href="/contact">
@@ -206,7 +206,7 @@ export function Header() {
           </div>
 
           {/* Mobile menu button */}
-          <div className="flex md:hidden">
+          <div className="flex lg:hidden">
             <button
               type="button"
               className="inline-flex items-center justify-center rounded-md p-2.5 text-neutral-600 hover:text-primary-900 min-h-[44px] min-w-[44px]"
@@ -229,7 +229,7 @@ export function Header() {
         <div
           id="mobile-menu"
           className={cn(
-            "md:hidden overflow-hidden transition-all duration-200 ease-in-out",
+            "lg:hidden overflow-hidden transition-all duration-200 ease-in-out",
             mobileMenuOpen ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"
           )}
         >
