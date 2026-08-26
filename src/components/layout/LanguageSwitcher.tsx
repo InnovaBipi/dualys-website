@@ -68,7 +68,7 @@ export function LanguageSwitcher({ variant = 'dropdown', onLanguageChange }: Lan
     <div className="relative" ref={dropdownRef}>
       <button
         type="button"
-        className="flex items-center gap-1.5 rounded-md px-3 py-2.5 text-sm font-medium text-neutral-600 hover:bg-neutral-100 hover:text-primary-950 min-h-[44px] min-w-[44px]"
+        className="flex items-center gap-1.5 rounded-md px-2 py-2.5 text-sm font-medium text-neutral-600 hover:bg-neutral-100 hover:text-primary-950 min-h-[44px] min-w-[44px]"
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
         aria-haspopup="true"

@@ -87,21 +87,22 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-neutral-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
       <Container>
-        <nav className="flex h-16 items-center justify-between" aria-label="Global">
-          {/* Logo — shrink-0 so longer locales (fr/en) can never squash the mark */}
+        <nav className="flex h-20 items-center justify-between" aria-label="Global">
+          {/* Logo — 120px is the brand minimum digital width; shrink-0 so longer
+              locales (fr/en) can never squash the mark below it */}
           <Link href="/" className="flex shrink-0 items-center gap-2">
             <Image
               src="/logo.png"
               alt="Dualys"
               width={120}
-              height={40}
-              className="h-8 w-auto"
+              height={49}
+              className="h-auto w-[120px]"
               priority
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex lg:items-center lg:gap-x-5">
+          <div className="hidden lg:flex lg:items-center lg:gap-x-3">
             {navigation.map((item) => {
               if (item.hasSub) {
                 return (
