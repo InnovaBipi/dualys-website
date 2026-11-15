@@ -133,4 +133,5 @@ export interface LandingContent {
   subtitle: string;
   valueProps: Array<{ text: string }>;
   cta: string;
+  keystone?: { title: string; missionLabel: string; mission: string; text: string };
 }

@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Factory, ArrowRight, CheckCircle } from 'lucide-react';
 import { Container } from '@/components/ui/container';
 import { Breadcrumbs } from '@/components/content/Breadcrumbs';
+import { KeystoneSection } from '@/components/content/KeystoneSection';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { Link } from '@/lib/i18n/navigation';
 import { generatePageMetadata, getWebPageSchema, getBreadcrumbSchema } from '@/lib/seo/metadata';
@@ -48,6 +49,8 @@ export default async function ParaIndustrialesPage({ params }: PageProps) {
           </div>
         </Container>
       </section>
+
+      <KeystoneSection content={content.keystone} />
 
       <section className="py-16 md:py-24">
         <Container>
